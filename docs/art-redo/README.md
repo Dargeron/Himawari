@@ -14,7 +14,7 @@ In October 2026 every scene picture was checked against the text shown with it (
 
 ## Valentine
 
-She is a manipulator and an actor: in every scene before the reveal she must look like a genuinely sweet, kind girl. Three quiet clues pay off in hindsight and must appear consistently: an eclipsed-sun hair clip (black disc, thin golden ring), unusually bright attentive amber eyes that rest on the one thing that matters, and a sticker-covered child's notebook with a page of real schematics peeking out. Unmasked (2121, 2257, 2474–2478): lab coat, brass goggles, the same clip, a brass machine stamped with the same eclipse emblem.
+She is a manipulator and an actor: in every scene before the reveal she must look like a genuinely sweet, kind girl. Three quiet clues pay off in hindsight and must appear consistently: an eclipsed-sun hair clip (black disc, thin golden ring), unusually bright attentive amber eyes that rest on the one thing that matters, and a sticker-covered child's notebook with a page of real schematics peeking out. Unmasked (2475–2478): lab coat, brass goggles, the same clip, a brass machine stamped with the same eclipse emblem.
 
 ## Telling the story through the pictures
 
@@ -41,4 +41,4 @@ The pictures are a sequence, not separate illustrations. Plan each one by what t
 3. Look at every result against the scene's full `text` before accepting it; regenerate until it is right.
 4. Save as `assets/art/scenes/<key>.webp` at 1024×768 (quality 75, like `tools/compress_art.py`), update size and sha256 in `content/scene-illustrations.json`, check the text-box side in `content/scene-focus.json`, then `npm test`.
 
-Credentials: a Google Cloud service-account key with the "Vertex AI User" role, stored as the environment secret `VERTEX_SA_KEY` (the JSON), with `VERTEX_PROJECT` (project id) and `VERTEX_LOCATION` (e.g. `us-central1`). Never commit it.
+Credentials: either sign in with `gcloud auth application-default login --no-launch-browser` (the author opens the link and pastes back the one-time code), or a Google Cloud service-account key with the "Vertex AI User" role, stored as the environment secret `VERTEX_SA_KEY` (the JSON), with `VERTEX_PROJECT` (project id) and `VERTEX_LOCATION` (e.g. `us-central1`). Never commit it.
