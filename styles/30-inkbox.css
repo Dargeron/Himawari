@@ -168,7 +168,7 @@ html:lang(zh-CN) .passage.is-map p {
 .memory-toggle {
   min-height: 30px;
   font-family: var(--font-hand);
-  font-size: 1.1em;
+  font-size: 1.25em;
   color: var(--paper-faint);
 }
 
@@ -267,7 +267,7 @@ html:lang(zh-CN) .passage.is-map p {
   min-height: 36px;
   padding: 0 4px;
   font-family: var(--font-hand);
-  font-size: 1.15em;
+  font-size: 1.3em;
   color: var(--paper-faint);
 }
 
@@ -372,7 +372,7 @@ html:lang(zh-CN) .passage.is-map p {
 .bar-toggle,
 .key-hint {
   font-family: var(--font-hand);
-  font-size: 1.15em;
+  font-size: 1.3em;
   white-space: nowrap;
 }
 

@@ -182,7 +182,7 @@ def fill(template, strings, extra):
 def edition_assets(code, data):
     """Every file the edition can request, as path -> {bytes, sha256}."""
     files = set(ROOT.glob('assets/art/original/*.webp')) | set(ROOT.glob('assets/art/scenes/*.webp'))
-    files |= set(ROOT.glob('assets/music/*.m4a')) | set(ROOT.glob('assets/fonts/*.woff2'))
+    files |= set(ROOT.glob('assets/music/*.m4a')) | set(edition_fonts(code))
     files |= set(ROOT.glob('assets/icons/*.png'))
     files |= {ROOT / clip['file'] for clip in data['narration'].values()}
     manifest = {}
@@ -258,6 +258,13 @@ def build(complete=False, output=ROOT / 'dist'):
     return summary
 
 
+def edition_fonts(code):
+    """English: EB Garamond and Caveat. Chinese: LXGW WenKai, plus EB Garamond
+    for the Latin wordmark, so the title reads the same in both editions."""
+    families = ('eb-garamond', 'caveat') if code == 'en' else ('eb-garamond', 'lxgw-wenkai')
+    return sorted(p for p in ROOT.glob('assets/fonts/*.woff2') if p.name.startswith(families))
+
+
 def critical_assets(code, data):
     """What the title screen and the first minute of play need."""
     opening = data['narration']['2464']['file']
@@ -267,7 +274,7 @@ def critical_assets(code, data):
              'assets/music/opening_6_opening.m4a', 'assets/music/click_3_click.m4a', opening]
     if first_scene:
         names.append(first_scene)
-    names += [str(p.relative_to(ROOT)) for p in sorted(ROOT.glob('assets/fonts/*.woff2'))]
+    names += [str(p.relative_to(ROOT)) for p in edition_fonts(code)]
     return [n for n in dict.fromkeys(names) if (ROOT / n).exists()]
 
 

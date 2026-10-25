@@ -86,7 +86,7 @@ button:disabled {
 
 .wordmark {
   margin: 0;
-  font-family: var(--font-story);
+  font-family: 'EB Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
   font-style: italic;
   font-weight: 400;
   letter-spacing: -0.02em;

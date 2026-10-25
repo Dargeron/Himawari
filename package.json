@@ -9,7 +9,7 @@
     "build:complete": "python3 tools/build.py --complete",
     "format": "prettier --write src tests/*.mjs tests/helpers",
     "test:logic": "for c in en zh-CN; do node tests/mechanics.mjs $c && node tests/walkthrough.mjs $c && node tests/guide.mjs $c && node tests/journal.mjs $c && node tests/audio.mjs $c && node tests/audio-transitions.mjs $c && node tests/scenes.mjs $c || exit 1; done && node tests/localization.mjs",
-    "test": "npm run test:logic && npm run test:ui && npm run test:assets",
+    "test": "npm run test:logic && node tests/loader.mjs && npm run test:ui && npm run test:assets",
     "test:ui": "python3 tools/build.py >/dev/null && node tests/ui.mjs en && node tests/ui.mjs zh-CN",
     "test:assets": "python3 tests/assets.py en && python3 tests/assets.py zh-CN"
   },
