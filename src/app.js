@@ -549,6 +549,7 @@ export function startGame(boot = {}) {
     applySettings(settings);
     storeSettings(settings);
     audio.update();
+    $('auto-button').setAttribute('aria-pressed', String(settings.autoContinue));
     if (key === 'narrationEnabled' && value && active) startNarration(current);
     if (key === 'reducedMotion' && value) inkbox.showAll();
   }
