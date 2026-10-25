@@ -1,0 +1,54 @@
+{
+  "version": "1.5.0",
+  "publishedDate": "2026-10-25",
+  "status": "Both existing Cloudflare Workers published successfully",
+  "editions": {
+    "english": {
+      "url": "https://himawari-english.bauldejuegos.workers.dev/",
+      "workerVersionId": "7d6fbdc3-38b3-436b-b4f0-d9a606809d09",
+      "narrator": "Harry",
+      "sceneIllustrations": 246,
+      "mediaFiles": 305
+    },
+    "chinese": {
+      "url": "https://himawari-chinese.bauldejuegos.workers.dev/",
+      "workerVersionId": "920098c4-3670-4461-a785-8c211e9c9171",
+      "narrator": "Julian",
+      "sceneIllustrations": 246,
+      "mediaFiles": 514
+    }
+  },
+  "currentValidation": {
+    "fullEnglishNpmTest": "passed",
+    "fullChineseNpmTest": "passed",
+    "originalMechanicsActionsPerEdition": 18000,
+    "legalWinningRouteActionsPerEdition": 261,
+    "allFiveEndings": "automated tests passed",
+    "assetHashesAgainstPublishedRelease": "all files passed",
+    "sourceBuildMatchesPublishedRuntime": "byte-identical in both editions",
+    "githubPagesBuild": "passed; 425577630 bytes staged",
+    "githubPagesDeployment": "not performed; destination repository to be chosen by owner or next AI"
+  },
+  "liveDesktopBrowserChecks": {
+    "bothFullPreloadsComplete": true,
+    "bothBeginWork": true,
+    "bothOriginalCityHotspotsWork": true,
+    "bothDistinctDayAndNightArtVisible": true,
+    "bothNarratorStatusesObserved": true,
+    "mandarinPauseResume": true,
+    "bothNarrationReplay": true,
+    "bothNightFullViewport": {
+      "width": 1363,
+      "height": 936
+    },
+    "englishUnicodeTypewriter": {
+      "letters": 198,
+      "visibleDuringReveal": 63
+    },
+    "chineseUnicodeTypewriterLetters": 58,
+    "bothShowAllText": true,
+    "bothSaveReloadResume": true
+  },
+  "limits": "No full mobile-browser audit or human listening review; automated audio-event and asset validation plus visible narrator statuses were checked.",
+  "handoffSourceMetadataFix": "Original compact Chinese source omitted provider generation JSON. Keep all released MP3s unchanged; tests now pin their original hashes and narrator configuration in content/released-narration-integrity.json, while validating provider voice metadata when present. No provider response was fabricated and no runtime/media file changed."
+}
