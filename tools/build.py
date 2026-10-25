@@ -151,14 +151,19 @@ def iife(code):
 
 
 # --------------------------------------------------------------------------
-# Styles: styles/index.css lists the stylesheets with @import lines.
+# Styles: every styles/NN-name.css, in numeric order. Numbering keeps the
+# cascade explicit: tokens, base, then screens, then overrides.
 
 def stylesheet():
-    index = (ROOT / 'styles/index.css').read_text()
     css = []
-    for name in re.findall(r"@import\s+['\"]([^'\"]+)['\"];", index):
-        css.append(f'/* {name} */\n' + (ROOT / 'styles' / name).read_text())
+    for path in sorted((ROOT / 'styles').glob('[0-9][0-9]-*.css')):
+        css.append(f'/* {path.name} */\n' + path.read_text())
     return '\n'.join(css)
+
+
+def include(template):
+    """Inline <!--#include name.html--> partials from src/ (one level deep)."""
+    return re.sub(r'<!--#include ([\w.-]+\.html)-->', lambda m: (SRC / m.group(1)).read_text() if (SRC / m.group(1)).exists() else '', template)
 
 
 def fill(template, strings, extra):
@@ -224,9 +229,8 @@ def build(complete=False, output=ROOT / 'dist'):
         sw = (SRC / 'sw.js').read_text().replace('__CACHE__', boot['cacheName'])
         (target / 'sw.js').write_text(sw)
         version = sha256((game + css + loader).encode())[:12]
-        html = fill((SRC / 'index.html').read_text(), data['strings'], {
+        html = fill(include((SRC / 'index.html').read_text()), data['strings'], {
             'lang': edition['lang'], 'version': version, 'mode': boot['mode'],
-            'narrator': L_narrator(code),
         })
         (target / 'index.html').write_text(html)
         webmanifest = fill((SRC / 'manifest.webmanifest').read_text(), data['strings'], {'lang': edition['lang']})
@@ -252,10 +256,6 @@ def build(complete=False, output=ROOT / 'dist'):
     summary['publishedBytes'] = total
     print(json.dumps(summary, indent=2))
     return summary
-
-
-def L_narrator(code):
-    return {'en': 'Harry', 'zh-CN': '朱利安'}[code]
 
 
 def critical_assets(code, data):

@@ -1,0 +1,90 @@
+/* Design tokens. Two materials share one game: dark ink over the pictures
+   (the original CUADRO_DE_TEXTO box and chalk Continue button) and warm
+   notebook paper for everything Harry keeps. */
+:root {
+  /* Ink: the story box, the HUD, the loader. */
+  --ink: #0d0906;
+  --ink-box: rgba(13, 9, 6, 0.8);
+  --ink-veil: rgba(13, 9, 6, 0.55);
+  --ink-line: rgba(243, 234, 214, 0.18);
+  --paper-on-ink: #f3ead6;
+  --paper-dim: #cfc3a8;
+  --paper-faint: rgba(243, 234, 214, 0.58);
+
+  /* Accents drawn from the sunflower: petals, stem, the red heart. */
+  --sun: #e9b949;
+  --sun-soft: rgba(233, 185, 73, 0.32);
+  --leaf: #7f9a62;
+  --heart: #b8452f;
+
+  /* Paper: the notebook, the language picker's cards, tags on the map. */
+  --page: #f1e7cf;
+  --page-shade: #e4d6b6;
+  --page-edge: #cdb991;
+  --page-ink: #2f261d;
+  --page-ink-dim: #6d5c47;
+  --page-rule: rgba(80, 60, 40, 0.16);
+  --page-accent: #9c4a32;
+
+  /* Type. Story text is a book serif; notes, numbers and tallies are a hand. */
+  --font-story: 'EB Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-hand: 'Caveat', 'Segoe Print', 'Bradley Hand', cursive;
+  --font-ui: var(--font-story);
+  --text-story: clamp(18px, 0.5vw + 13.5px, 22px);
+  --text-ui: clamp(15px, 0.25vw + 13px, 17px);
+  --text-small: 14px;
+  --leading: 1.55;
+
+  /* Space and shape. */
+  --edge-top: max(16px, env(safe-area-inset-top));
+  --edge-right: max(16px, env(safe-area-inset-right));
+  --edge-bottom: max(16px, env(safe-area-inset-bottom));
+  --edge-left: max(16px, env(safe-area-inset-left));
+  --gap: 16px;
+  --box-width: min(40rem, 44vw);
+  --box-pad: clamp(20px, 2.2vw, 34px);
+  --halo: 0 0 34px 20px rgba(13, 9, 6, 0.42);
+  --target: 44px;
+
+  /* Motion. */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --fade: 420ms;
+  --crossfade: 900ms;
+
+  /* Layers. */
+  --z-stage: 0;
+  --z-map: 1;
+  --z-title: 5;
+  --z-hud: 10;
+  --z-box: 11;
+  --z-card: 20;
+  --z-notebook: 30;
+  --z-toast: 40;
+  --z-loader: 50;
+
+  color-scheme: dark;
+}
+
+/* Chinese uses one Kai face for both story and hand: brush-written, warm. */
+html:lang(zh-CN) {
+  --font-story: 'LXGW WenKai', 'Kaiti SC', 'STKaiti', KaiTi, 'Noto Serif CJK SC', 'Songti SC', serif;
+  --font-hand: 'LXGW WenKai', 'Kaiti SC', 'STKaiti', KaiTi, cursive;
+  --leading: 1.75;
+}
+
+html.large-text {
+  --text-story: clamp(21px, 0.6vw + 16px, 26px);
+  --text-ui: clamp(17px, 0.3vw + 15px, 19px);
+  --text-small: 16px;
+}
+
+@media (max-width: 720px), (max-aspect-ratio: 1/1) {
+  :root {
+    --box-width: auto;
+    --box-pad: 20px;
+    --text-story: 18px;
+  }
+  html.large-text {
+    --text-story: 21px;
+  }
+}

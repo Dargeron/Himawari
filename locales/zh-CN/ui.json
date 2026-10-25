@@ -11,5 +11,9 @@
   "error.unknownAction": "未知操作。",
   "error.saveIncompatible": "这份存档不兼容。",
   "error.saveInvalid": "无效存档。",
-  "journal.finding": "发现 · 第{loop}次循环"
+  "journal.finding": "发现 · 第{loop}次循环",
+  "other.route": "en",
+  "other.code": "en",
+  "other.label": "English",
+  "meta.description": "Himawari——一株向日葵，一座小镇，又一天。"
 }

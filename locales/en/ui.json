@@ -11,5 +11,9 @@
   "error.unknownAction": "Unknown action.",
   "error.saveIncompatible": "This save is not compatible.",
   "error.saveInvalid": "Invalid save.",
-  "journal.finding": "Finding · Loop {loop}"
+  "journal.finding": "Finding · Loop {loop}",
+  "other.route": "zh-CN",
+  "other.code": "zh-CN",
+  "other.label": "简体中文",
+  "meta.description": "Himawari — a sunflower, a town, and another day."
 }
