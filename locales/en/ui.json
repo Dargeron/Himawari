@@ -1,0 +1,15 @@
+{
+  "error.memory": "Story memory is full. Save and reload to continue.",
+  "error.noContinue": "No continuation is available here.",
+  "error.chooseMap": "Choose a destination from the map.",
+  "error.unknownPlace": "Unknown destination.",
+  "error.noChoice": "No choice is available here.",
+  "error.unknownChoice": "Unknown choice.",
+  "error.unavailable": "This choice is unavailable.",
+  "error.choiceRequired": "A choice is required.",
+  "error.noAnswer": "No answer is requested here.",
+  "error.unknownAction": "Unknown action.",
+  "error.saveIncompatible": "This save is not compatible.",
+  "error.saveInvalid": "Invalid save.",
+  "journal.finding": "Finding · Loop {loop}"
+}

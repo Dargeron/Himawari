@@ -1,0 +1,15 @@
+{
+  "error.memory": "故事内存已满。请保存并重新读取，继续游戏。",
+  "error.noContinue": "这里无法继续。",
+  "error.chooseMap": "请从地图选择目的地。",
+  "error.unknownPlace": "未知目的地。",
+  "error.noChoice": "这里没有可选项。",
+  "error.unknownChoice": "未知选项。",
+  "error.unavailable": "这个选项无法选择。",
+  "error.choiceRequired": "需要作出选择。",
+  "error.noAnswer": "这里无需回答。",
+  "error.unknownAction": "未知操作。",
+  "error.saveIncompatible": "这份存档不兼容。",
+  "error.saveInvalid": "无效存档。",
+  "journal.finding": "发现 · 第{loop}次循环"
+}
