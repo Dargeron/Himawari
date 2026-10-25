@@ -44,7 +44,9 @@ export function createAudio(settings, onStatus = () => {}) {
     autoResume = false,
     loadedFile = '',
     blocked = false,
-    total = 0;
+    total = 0,
+    held = false,
+    ducked = false;
   function emit() {
     const clip = queue[index];
     const before = queue.slice(0, index).reduce((s, c) => s + c.end - c.start, 0);
@@ -66,7 +68,7 @@ export function createAudio(settings, onStatus = () => {}) {
     });
   }
   function targetVolume() {
-    return suspended || !settings.musicEnabled ? 0 : settings.musicVolume * (playing ? 0.34 : 1);
+    return suspended || !settings.musicEnabled ? 0 : settings.musicVolume * (playing || ducked ? 0.34 : 1);
   }
   function fade() {
     cancelAnimationFrame(fadeFrame);
@@ -373,6 +375,7 @@ export function createAudio(settings, onStatus = () => {}) {
   }
   function resume() {
     suspended = false;
+    if (held) return update();
     const restart = autoResume;
     autoResume = false;
     if (restart && settings.narrationEnabled && queue.length && !completed) {
@@ -386,6 +389,41 @@ export function createAudio(settings, onStatus = () => {}) {
       fade();
       emit();
     } else update();
+  }
+  // Pause only the voice (the notebook is open); the music keeps playing so
+  // volume changes can be heard. release() resumes the voice if it was speaking.
+  // Lower the music under another voice, such as the album's replay.
+  function duck(on) {
+    if (ducked === !!on) return;
+    ducked = !!on;
+    fade();
+  }
+  function hold() {
+    if (held) return;
+    held = true;
+    autoResume = playing;
+    playAttempt++;
+    voice.pause();
+    playing = false;
+    paused = queue.length > 0 && !completed;
+    fade();
+    emit();
+  }
+  function release() {
+    if (!held) return;
+    held = false;
+    const restart = autoResume;
+    autoResume = false;
+    if (restart && settings.narrationEnabled && queue.length && !completed && !suspended) {
+      playing = true;
+      paused = false;
+      if (prepared) {
+        requestPlay();
+        watchBoundary();
+      }
+      fade();
+      emit();
+    }
   }
   function sound(volume = 0.13) {
     if (!settings.musicEnabled || suspended) return;
@@ -408,6 +446,9 @@ export function createAudio(settings, onStatus = () => {}) {
     update,
     suspend,
     resume,
+    hold,
+    release,
+    duck,
     sound,
     hasVoice(parts) {
       return parts.some(p => clipFor(String(p.id)));

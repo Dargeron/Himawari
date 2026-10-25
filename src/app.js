@@ -82,6 +82,7 @@ export function startGame(boot = {}) {
     getHistory: () => history,
     isActive: () => active,
     hasSave: () => !!saved,
+    getSaved: () => saved,
     settings,
     onSetting: changeSetting,
     saveNotebook,
@@ -108,10 +109,11 @@ export function startGame(boot = {}) {
     language: {label: t('other.label'), href: '../' + t('other.route') + '/?choose=1', code: t('other.code')},
     onOpen: () => {
       clearTimeout(autoTimer);
-      audio.suspend(true);
+      audio.hold();
     },
     onClose: () => {
-      if (!document.hidden) audio.resume();
+      audio.duck(false);
+      if (!document.hidden) audio.release();
       hud.setBadge(journal.cover().unread);
       if (active) refreshResponses();
       else updateTitle();
@@ -660,9 +662,9 @@ export function startGame(boot = {}) {
     audio.suspend(true);
   }
   function resumeMedia() {
-    if (document.hidden || notebook.isOpen()) return;
+    if (document.hidden) return;
     audio.resume();
-    if (active && pendingNarration === current) startNarration(current);
+    if (!notebook.isOpen() && active && pendingNarration === current) startNarration(current);
   }
   window.addEventListener('pagehide', () => {
     if (active) save();
