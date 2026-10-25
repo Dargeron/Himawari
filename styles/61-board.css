@@ -1,0 +1,610 @@
+/* The conspiracy board: a sheet of heavier paper taped across the open
+   notebook, paper scraps pinned to it, red thread between the pins. */
+
+.nb-board-page {
+  position: relative;
+  padding-top: 38px;
+  padding-right: calc(var(--nb-pad-x) + 10px);
+}
+
+.nb-board-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 22px;
+  margin-bottom: 6px;
+  padding-right: 44px;
+}
+
+.nb-board-head .nb-h {
+  margin: 0;
+}
+
+.nb-board-count {
+  margin: 0 auto 0 0;
+  font-family: var(--font-hand);
+  font-size: 20px;
+  color: var(--page-ink-dim);
+}
+
+.nb-board-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 0 auto;
+}
+
+/* Tools look like slips waiting to be pulled out. */
+.nb-tool {
+  min-height: var(--target);
+  padding: 2px 16px 4px;
+  border: 1.5px dashed color-mix(in srgb, var(--page-ink) 45%, transparent);
+  border-radius: 4px 6px 3px 5px;
+  font-family: var(--font-hand);
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--page-ink);
+  transition:
+    background-color 160ms,
+    translate 180ms var(--ease);
+}
+
+.nb-tool::before {
+  content: '+ ';
+  color: var(--page-accent);
+}
+
+.nb-tool:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--sun) 22%, transparent);
+}
+
+.nb-tool[aria-expanded='true'] {
+  border-style: solid;
+  border-color: transparent;
+  background: var(--nb-scrap);
+  box-shadow: 2px 3px 0 var(--nb-shadow);
+  translate: 0 2px;
+}
+
+.nb-tool[aria-expanded='true']::before {
+  content: '– ';
+}
+
+.nb-panel {
+  max-width: 820px;
+  margin: 6px 0 10px;
+  padding: 18px 22px 16px;
+  background: var(--nb-scrap);
+  box-shadow: 2px 3px 0 var(--nb-shadow);
+}
+
+.nb-panel-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 18px;
+}
+
+.nb-panel-row > .nb-field {
+  flex: 1 1 180px;
+}
+
+.nb-panel-row > .nb-field.grow {
+  flex: 3 1 240px;
+}
+
+.nb-panel .nb-button {
+  margin-top: 4px;
+}
+
+.nb-sources-wrap {
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.nb-sources-wrap > legend {
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+.nb-sources {
+  max-height: 228px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border-top: 1px solid var(--page-rule);
+  border-bottom: 1px solid var(--page-rule);
+  scrollbar-width: thin;
+  scrollbar-color: var(--page-edge) transparent;
+}
+
+.nb-source {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 8px 6px;
+  border-bottom: 1px dashed var(--page-rule);
+  cursor: pointer;
+}
+
+.nb-source:last-child {
+  border-bottom: 0;
+}
+
+.nb-source:has(input:checked) {
+  background: color-mix(in srgb, var(--sun) 22%, transparent);
+}
+
+.nb-source input {
+  appearance: none;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin: 3px 0 0;
+  border: 1.5px solid var(--page-ink-dim);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nb-source input:checked {
+  border-color: var(--page-ink);
+  background: radial-gradient(circle, var(--page-accent) 0 4.5px, transparent 5px);
+}
+
+.nb-source-words {
+  display: grid;
+  min-width: 0;
+  gap: 1px;
+}
+
+.nb-source-kind {
+  font-family: var(--font-hand);
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--page-accent);
+}
+
+.nb-source-title {
+  font-size: var(--text-small);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.nb-source-text {
+  font-size: var(--text-small);
+  line-height: 1.4;
+  color: var(--page-ink-dim);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.nb-preview {
+  max-height: 150px;
+  overflow-y: auto;
+  margin: 4px 0 10px;
+  padding: 2px 0 2px 14px;
+  border-left: 2px solid color-mix(in srgb, var(--page-accent) 55%, transparent);
+  font-size: var(--text-small);
+  line-height: 1.55;
+}
+
+.nb-preview p {
+  margin: 0 0 0.5em;
+}
+
+.nb-board-status {
+  min-height: 1.4em;
+  margin: 2px 0 4px;
+  font-family: var(--font-hand);
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--page-accent);
+}
+
+/* --- The sheet -------------------------------------------------------------------- */
+
+.nb-board-viewport {
+  margin: 0 -14px;
+  padding: 16px 14px 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--page-edge) transparent;
+}
+
+.nb-board-viewport:focus-visible {
+  outline-offset: -2px;
+}
+
+.nb-board-canvas {
+  position: relative;
+  width: 100%;
+  min-width: 760px;
+  aspect-ratio: 1000 / 600;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .13 0 0 0 .12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(120% 120% at 50% 40%, transparent 55%, rgba(110, 80, 44, 0.16)),
+    color-mix(in srgb, var(--page-shade) 78%, var(--page-edge));
+  box-shadow:
+    3px 4px 0 var(--nb-shadow),
+    inset 0 0 0 1px rgba(110, 80, 44, 0.12);
+  rotate: 0.25deg;
+  touch-action: pan-x pan-y;
+}
+
+/* Tape at the sheet's top corners. */
+.nb-board-canvas::before,
+.nb-board-canvas::after {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  top: -12px;
+  width: 96px;
+  height: 26px;
+  background: color-mix(in srgb, var(--page) 62%, transparent);
+  box-shadow: 0 1px 2px rgba(47, 38, 29, 0.18);
+  pointer-events: none;
+}
+
+.nb-board-canvas::before {
+  left: -18px;
+  rotate: -24deg;
+}
+
+.nb-board-canvas::after {
+  right: -18px;
+  rotate: 22deg;
+}
+
+.nb-board-empty {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 12%;
+  font-family: var(--font-hand);
+  font-size: 28px;
+  text-align: center;
+  color: color-mix(in srgb, var(--page-ink) 55%, transparent);
+  pointer-events: none;
+}
+
+.nb-board-cards {
+  position: absolute;
+  inset: 0;
+}
+
+/* A card hangs from its pin, so it turns around the pin. */
+.nb-card {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  height: 27%;
+  padding: 10px 12px 2px;
+  background: var(--nb-scrap);
+  box-shadow: 2px 3px 0 var(--nb-shadow);
+  rotate: var(--tilt, 0deg);
+  transform-origin: 50% 5.9%;
+  transition:
+    box-shadow 160ms,
+    scale 160ms var(--ease);
+}
+
+.nb-card.is-theory {
+  background: color-mix(in srgb, var(--sun) 34%, var(--nb-scrap));
+}
+
+.nb-card::before {
+  content: '';
+  position: absolute;
+  z-index: 4;
+  top: calc(5.9% - 7px);
+  left: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 36% 34%, #f0a08a 0 2px, var(--heart) 4px, color-mix(in srgb, var(--heart) 55%, #000) 100%);
+  box-shadow: 1px 3px 2px rgba(30, 20, 10, 0.35);
+  pointer-events: none;
+}
+
+.nb-card.dragging {
+  z-index: 6;
+  scale: 1.03;
+  box-shadow: 5px 9px 6px rgba(47, 38, 29, 0.3);
+}
+
+.nb-card:focus-within {
+  z-index: 5;
+}
+
+.nb-card-handle {
+  display: grid;
+  gap: 0;
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 0 4px;
+  border-bottom: 1px solid var(--page-rule);
+  text-align: left;
+  cursor: grab;
+  touch-action: none;
+}
+
+.nb-card-handle:active {
+  cursor: grabbing;
+}
+
+.nb-card-kind {
+  font-family: var(--font-hand);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.05;
+  color: var(--page-accent);
+}
+
+.nb-card-title {
+  overflow: hidden;
+  font-size: 12.5px;
+  line-height: 1.3;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--page-ink-dim);
+}
+
+.nb-card-text {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 6px 0 0;
+  overflow: hidden;
+  font-size: 13.5px;
+  line-height: 1.38;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent);
+  mask-image: linear-gradient(to bottom, #000 72%, transparent);
+}
+
+.nb-card.is-theory .nb-card-text {
+  font-family: var(--font-hand);
+  font-size: 19px;
+  line-height: 1.15;
+}
+
+.nb-card.crossed .nb-card-text {
+  color: var(--page-ink-dim);
+  text-decoration: line-through;
+  text-decoration-color: var(--heart);
+  text-decoration-thickness: 2px;
+}
+
+.nb-card-actions {
+  display: flex;
+  justify-content: space-between;
+  flex: none;
+}
+
+.nb-card-action {
+  position: relative;
+  min-height: 30px;
+  padding: 0 2px;
+  font-family: var(--font-hand);
+  font-size: 17px;
+  color: var(--page-accent);
+}
+
+.nb-card-action::after {
+  content: '';
+  position: absolute;
+  inset: -6px -6px -4px;
+}
+
+.nb-card-action:hover {
+  text-decoration: underline;
+}
+
+/* Red thread. */
+.nb-strings {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.nb-thread,
+.nb-thread-shadow {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.nb-thread {
+  stroke: color-mix(in srgb, var(--heart) 88%, #000);
+  stroke-width: 1.9;
+}
+
+.nb-thread-shadow {
+  stroke: rgba(47, 38, 29, 0.22);
+  stroke-width: 2.2;
+  translate: 2px 4px;
+}
+
+.nb-thread-labels {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.nb-thread-label {
+  position: absolute;
+  max-width: 18%;
+  translate: -50% -50%;
+  rotate: -2deg;
+  padding: 0 8px 1px;
+  overflow: hidden;
+  background: var(--page);
+  box-shadow: 1px 2px 0 var(--nb-shadow);
+  font-family: var(--font-hand);
+  font-size: 17px;
+  line-height: 1.3;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--heart);
+}
+
+.nb-board-help {
+  margin-top: 2px;
+}
+
+.nb-slide {
+  display: none;
+}
+
+.nb-threads .nb-h3 {
+  margin-top: 0.9em;
+}
+
+.nb-thread-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nb-thread-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 0;
+  border-bottom: 1px dashed var(--page-rule);
+  font-size: var(--text-small);
+  overflow-wrap: anywhere;
+}
+
+.nb-thread-knot {
+  color: var(--heart);
+}
+
+.nb-thread-note {
+  font-family: var(--font-hand);
+  font-size: 18px;
+  font-style: normal;
+  color: var(--page-ink-dim);
+}
+
+/* --- A card in full --------------------------------------------------------------- */
+
+.nb-card-sheet {
+  position: absolute;
+  z-index: 8;
+  top: 50%;
+  left: 50%;
+  width: min(36rem, calc(100% - 40px));
+  max-height: calc(100% - 60px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 30px 34px 16px;
+  translate: -50% -50%;
+  rotate: -0.5deg;
+  background: var(--nb-scrap);
+  box-shadow:
+    0 0 0 100vmax color-mix(in srgb, var(--page) 62%, transparent),
+    4px 7px 0 var(--nb-shadow);
+  animation: nb-turn 220ms var(--ease);
+}
+
+.nb-card-sheet::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 36% 34%, #f0a08a 0 2px, var(--heart) 4px, color-mix(in srgb, var(--heart) 55%, #000) 100%);
+  box-shadow: 1px 3px 2px rgba(30, 20, 10, 0.35);
+}
+
+.nb-paper:has(.nb-card-sheet:not([hidden])) {
+  overflow: hidden;
+}
+
+.nb-card-kind,
+#nb-card-kind {
+  margin: 6px 0 0;
+}
+
+#nb-card-kind {
+  font-family: var(--font-hand);
+  font-size: 18px;
+  color: var(--page-ink-dim);
+}
+
+#nb-card-heading {
+  margin: 0 0 12px;
+  outline: none;
+}
+
+.nb-card-sheet-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 4px;
+  border-top: 1px dashed var(--page-rule);
+}
+
+@media (max-width: 720px), (max-aspect-ratio: 1/1) {
+  .nb-board-page {
+    padding-right: var(--edge-right);
+  }
+
+  .nb-board-tools {
+    width: 100%;
+    margin: 4px 0 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-right: calc(-1 * var(--edge-right));
+    padding: 0 var(--edge-right) 6px 0;
+    scrollbar-width: none;
+  }
+
+  .nb-tool {
+    flex: none;
+    font-size: 19px;
+  }
+
+  .nb-panel {
+    padding: 14px 14px 12px;
+  }
+
+  .nb-board-viewport {
+    margin: 0 calc(-1 * var(--edge-right)) 0 calc(-1 * (var(--edge-left) + 10px));
+    padding: 16px var(--edge-right) 18px calc(var(--edge-left) + 10px);
+  }
+
+  .nb-board-canvas {
+    rotate: 0deg;
+  }
+
+  .nb-slide {
+    display: inline;
+  }
+
+  .nb-card-sheet {
+    width: calc(100% - 24px);
+    max-height: calc(100% - 32px);
+    padding: 26px 20px 12px;
+  }
+}
+
+html:lang(zh-CN) .notebook :is(.nb-tool, .nb-card-kind) {
+  font-weight: 400;
+}

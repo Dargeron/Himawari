@@ -1,1 +1,302 @@
-<div id="notebook" class="notebook" hidden></div>
+<div id="notebook" class="notebook" hidden>
+ <div id="nb-backdrop" class="nb-backdrop"></div>
+ <section id="nb-book" class="nb-book" role="dialog" aria-modal="true" aria-labelledby="nb-title">
+  <div class="nb-cover" aria-hidden="true"></div>
+  <div id="nb-tabs" class="nb-tabs" role="tablist" aria-label="{{nb.sections}}">
+   <button id="nb-tab-pocket" class="nb-tab" role="tab" type="button" data-tab="pocket" aria-controls="nb-pocket" aria-selected="false" tabindex="-1"><span>{{nb.tab.pocket}}</span></button>
+   <button id="nb-tab-diary" class="nb-tab" role="tab" type="button" data-tab="diary" aria-controls="nb-diary" aria-selected="false" tabindex="-1"><span>{{nb.tab.diary}}</span><i id="nb-unread" class="nb-unread" hidden></i></button>
+   <button id="nb-tab-board" class="nb-tab" role="tab" type="button" data-tab="board" aria-controls="nb-board" aria-selected="false" tabindex="-1"><span>{{nb.tab.board}}</span></button>
+   <button id="nb-tab-pages" class="nb-tab" role="tab" type="button" data-tab="pages" aria-controls="nb-pages" aria-selected="false" tabindex="-1"><span>{{nb.tab.pages}}</span></button>
+   <button id="nb-tab-album" class="nb-tab" role="tab" type="button" data-tab="album" aria-controls="nb-album" aria-selected="false" tabindex="-1"><span>{{nb.tab.album}}</span></button>
+   <button id="nb-tab-settings" class="nb-tab" role="tab" type="button" data-tab="settings" aria-controls="nb-settings" aria-selected="false" tabindex="-1"><span>{{nb.tab.settings}}</span></button>
+  </div>
+  <div class="nb-paper">
+   <div class="nb-surface" aria-hidden="true"></div>
+   <div class="nb-rules" aria-hidden="true"></div>
+   <h2 id="nb-title" class="visually-hidden">{{title.notebook}}</h2>
+   <button id="nb-close" class="nb-close" type="button" aria-label="{{nb.close}}" title="{{nb.close}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 6.1c3.7 3.8 7.5 7.7 11.3 11.6"/><path d="M17.8 6.5c-4.1 3.5-7.7 7.3-11.4 11.1"/></svg></button>
+
+   <!-- Pocket -->
+   <div id="nb-pocket" class="nb-view nb-spread" role="tabpanel" aria-labelledby="nb-tab-pocket" data-view="pocket" hidden>
+    <div class="nb-page">
+     <h2 id="nb-h-pocket" class="nb-h">{{nb.tab.pocket}}</h2>
+     <p class="nb-from-save" hidden>{{nb.fromSave}}</p>
+     <p class="nb-lead">{{nb.pocket.lead}}</p>
+     <ul id="nb-pocket-items" class="nb-tags"></ul>
+     <p id="nb-pocket-empty" class="nb-empty" hidden>{{nb.pocket.empty}}</p>
+    </div>
+    <div class="nb-page">
+     <h3 class="nb-h3">{{nb.pocket.past}}</h3>
+     <p class="nb-small">{{nb.pocket.pastNote}}</p>
+     <ul id="nb-pocket-past" class="nb-tags is-past"></ul>
+     <p id="nb-pocket-past-empty" class="nb-empty" hidden>{{nb.pocket.pastEmpty}}</p>
+    </div>
+   </div>
+
+   <!-- Diary -->
+   <div id="nb-diary" class="nb-view nb-spread" role="tabpanel" aria-labelledby="nb-tab-diary" data-view="diary" hidden>
+    <div class="nb-page">
+     <h2 id="nb-h-diary" class="nb-h">{{nb.tab.diary}} <span id="nb-diary-day" class="nb-h-aside"></span></h2>
+     <p class="nb-from-save" hidden>{{nb.fromSave}}</p>
+     <p id="nb-diary-none" class="nb-empty" hidden>{{nb.noGame}}</p>
+     <div id="nb-diary-body">
+      <figure class="nb-forecast">
+       <figcaption>{{nb.diary.tonight}}</figcaption>
+       <p id="nb-forecast"></p>
+      </figure>
+      <section class="nb-clue" aria-labelledby="nb-clue-h">
+       <h3 id="nb-clue-h" class="nb-h3">{{nb.diary.clue}}</h3>
+       <p id="nb-clue-text" class="nb-clue-text" role="status"></p>
+       <button id="nb-clue-button" class="nb-button" type="button">{{nb.diary.clueUse}}</button>
+       <p id="nb-clue-note" class="nb-small"></p>
+      </section>
+      <section aria-labelledby="nb-prepared-h">
+       <h3 id="nb-prepared-h" class="nb-h3">{{nb.diary.prepared}}</h3>
+       <ul id="nb-prepared" class="nb-checks"></ul>
+       <p id="nb-prepared-empty" class="nb-empty small" hidden>{{nb.diary.preparedEmpty}}</p>
+      </section>
+     </div>
+    </div>
+    <div class="nb-page">
+     <h3 id="nb-findings-h" class="nb-h3">{{nb.diary.findings}}</h3>
+     <ol id="nb-findings" class="nb-findings" aria-labelledby="nb-findings-h"></ol>
+     <p id="nb-findings-empty" class="nb-empty" hidden>{{nb.diary.findingsEmpty}}</p>
+    </div>
+   </div>
+
+   <!-- Board -->
+   <div id="nb-board" class="nb-view nb-single" role="tabpanel" aria-labelledby="nb-tab-board" data-view="board" hidden>
+    <div class="nb-page nb-board-page">
+     <header class="nb-board-head">
+      <h2 id="nb-h-board" class="nb-h">{{nb.tab.board}}</h2>
+      <p id="nb-board-count" class="nb-board-count"></p>
+      <div class="nb-board-tools" role="group" aria-label="{{nb.tab.board}}">
+       <button id="nb-tool-pin" class="nb-tool" type="button" aria-expanded="false" aria-controls="nb-panel-pin">{{nb.board.toolPin}}</button>
+       <button id="nb-tool-theory" class="nb-tool" type="button" aria-expanded="false" aria-controls="nb-panel-theory">{{nb.board.toolTheory}}</button>
+       <button id="nb-tool-thread" class="nb-tool" type="button" aria-expanded="false" aria-controls="nb-panel-thread">{{nb.board.toolThread}}</button>
+      </div>
+     </header>
+     <p class="nb-from-save" hidden>{{nb.fromSave}}</p>
+     <p id="nb-board-none" class="nb-empty" hidden>{{nb.noGame}}</p>
+     <div id="nb-board-body">
+      <section id="nb-panel-pin" class="nb-panel" aria-labelledby="nb-tool-pin" hidden>
+       <div class="nb-panel-row">
+        <label class="nb-field"><span>{{nb.board.lookIn}}</span><select id="nb-board-category"><option value="">{{nb.board.everything}}</option></select></label>
+        <label class="nb-field grow"><span>{{nb.board.search}}</span><input id="nb-board-search" type="search" maxlength="120" placeholder="{{nb.board.searchHint}}" autocomplete="off"></label>
+       </div>
+       <fieldset class="nb-sources-wrap">
+        <legend>{{nb.board.sources}}</legend>
+        <div id="nb-board-sources" class="nb-sources"></div>
+       </fieldset>
+       <p id="nb-board-more" class="nb-small" hidden></p>
+       <div id="nb-board-preview" class="nb-preview"></div>
+       <button id="nb-board-pin" class="nb-button" type="button">{{nb.board.pin}}</button>
+      </section>
+      <section id="nb-panel-theory" class="nb-panel" aria-labelledby="nb-tool-theory" hidden>
+       <form id="nb-theory-form" class="nb-form">
+        <label class="nb-field"><span>{{nb.board.theory}}</span><textarea id="nb-theory-text" rows="3" maxlength="500" required placeholder="{{nb.board.theoryHint}}"></textarea></label>
+        <button class="nb-button" type="submit">{{nb.board.theoryPin}}</button>
+       </form>
+      </section>
+      <section id="nb-panel-thread" class="nb-panel" aria-labelledby="nb-tool-thread" hidden>
+       <form id="nb-thread-form" class="nb-form">
+        <div class="nb-panel-row">
+         <label class="nb-field grow"><span>{{nb.board.from}}</span><select id="nb-thread-from" required></select></label>
+         <label class="nb-field grow"><span>{{nb.board.to}}</span><select id="nb-thread-to" required></select></label>
+        </div>
+        <label class="nb-field"><span>{{nb.board.label}}</span><input id="nb-thread-label" maxlength="80" placeholder="{{nb.board.labelHint}}" autocomplete="off"></label>
+        <button id="nb-thread-submit" class="nb-button" type="submit">{{nb.board.tie}}</button>
+        <p id="nb-thread-need" class="nb-small" hidden>{{nb.board.needTwo}}</p>
+       </form>
+      </section>
+      <p id="nb-board-status" class="nb-board-status" role="status"></p>
+      <div id="nb-board-viewport" class="nb-board-viewport" tabindex="0" role="region" aria-label="{{nb.board.viewport}}" aria-describedby="nb-board-help">
+       <div id="nb-board-canvas" class="nb-board-canvas">
+        <svg id="nb-board-strings" class="nb-strings" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div id="nb-board-labels" class="nb-thread-labels" aria-hidden="true"></div>
+        <p id="nb-board-empty" class="nb-board-empty">{{nb.board.empty}}</p>
+        <div id="nb-board-cards" class="nb-board-cards"></div>
+       </div>
+      </div>
+      <p id="nb-board-help" class="nb-small nb-board-help">{{nb.board.help}} <span class="nb-slide">{{nb.board.slide}}</span></p>
+      <section class="nb-threads" aria-labelledby="nb-threads-h">
+       <h3 id="nb-threads-h" class="nb-h3">{{nb.board.threads}}</h3>
+       <ul id="nb-board-links" class="nb-thread-list"></ul>
+       <p id="nb-board-links-empty" class="nb-empty small">{{nb.board.threadsEmpty}}</p>
+      </section>
+     </div>
+    </div>
+   </div>
+
+   <!-- Pages -->
+   <div id="nb-pages" class="nb-view nb-spread nb-pages-view" role="tabpanel" aria-labelledby="nb-tab-pages" data-view="pages" hidden>
+    <div class="nb-page nb-pages-index">
+     <h2 id="nb-h-pages" class="nb-h">{{nb.tab.pages}}</h2>
+     <p class="nb-from-save" hidden>{{nb.fromSave}}</p>
+     <p class="nb-lead">{{nb.pages.lead}}</p>
+     <nav id="nb-pages-loops" class="nb-loops" aria-label="{{nb.pages.loops}}"></nav>
+    </div>
+    <div id="nb-pages-scroll" class="nb-page">
+     <div id="nb-pages-list" class="nb-entries"></div>
+     <p id="nb-pages-empty" class="nb-empty" hidden>{{nb.pages.empty}}</p>
+    </div>
+   </div>
+
+   <!-- Album -->
+   <div id="nb-album" class="nb-view nb-spread" role="tabpanel" aria-labelledby="nb-tab-album" data-view="album" hidden>
+    <div class="nb-page nb-album-left">
+     <h2 id="nb-h-album" class="nb-h">{{nb.tab.album}}</h2>
+     <p class="nb-lead">{{nb.album.lead}}</p>
+     <p id="nb-album-empty" class="nb-empty" hidden>{{nb.album.empty}}</p>
+     <figure id="nb-album-figure" class="nb-photo" hidden><img id="nb-album-art" alt=""></figure>
+    </div>
+    <div class="nb-page nb-album-right">
+     <div id="nb-album-strip" class="nb-album-strip" role="group" aria-label="{{nb.album.endings}}"></div>
+     <article id="nb-album-page" hidden>
+      <h3 id="nb-album-name" class="nb-h nb-album-name"></h3>
+      <p id="nb-album-loop" class="nb-small"></p>
+      <div class="nb-listen">
+       <button id="nb-album-play" class="nb-play" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+       <div class="nb-listen-caption"><span id="nb-album-status" class="nb-listen-status" role="status"></span><span class="nb-listen-line"><i id="nb-album-fill"></i></span></div>
+      </div>
+      <div id="nb-album-text" class="nb-prose"></div>
+     </article>
+    </div>
+   </div>
+
+   <!-- Settings -->
+   <div id="nb-settings" class="nb-view nb-spread" role="tabpanel" aria-labelledby="nb-tab-settings" data-view="settings" hidden>
+    <div class="nb-page">
+     <h2 id="nb-h-settings" class="nb-h">{{nb.tab.settings}}</h2>
+     <section class="nb-group" aria-labelledby="nb-set-voice">
+      <h3 id="nb-set-voice" class="nb-h3">{{nb.settings.voice}}</h3>
+      <div class="nb-row"><label for="nb-narration" id="nb-narration-label"></label><input id="nb-narration" class="nb-switch" type="checkbox" role="switch" data-setting="narrationEnabled"></div>
+      <div class="nb-row"><label for="nb-voice-volume">{{nb.settings.voiceVolume}}</label><input id="nb-voice-volume" class="nb-range" type="range" min="0" max="1" step="0.01" data-setting="voiceVolume"></div>
+      <div class="nb-row nb-row-choice" role="radiogroup" aria-labelledby="nb-voice-rate-label"><span id="nb-voice-rate-label" class="nb-row-label">{{nb.settings.voiceRate}}</span>
+       <span class="nb-choices">
+        <label class="nb-choice"><input type="radio" name="nb-voice-rate" value="0.85" data-setting="voiceRate"><span>0.85×</span></label>
+        <label class="nb-choice"><input type="radio" name="nb-voice-rate" value="1" data-setting="voiceRate"><span>1×</span></label>
+        <label class="nb-choice"><input type="radio" name="nb-voice-rate" value="1.15" data-setting="voiceRate"><span>1.15×</span></label>
+        <label class="nb-choice"><input type="radio" name="nb-voice-rate" value="1.3" data-setting="voiceRate"><span>1.3×</span></label>
+       </span>
+      </div>
+      <div class="nb-row"><label for="nb-music">{{nb.settings.music}}</label><input id="nb-music" class="nb-switch" type="checkbox" role="switch" data-setting="musicEnabled"></div>
+      <div class="nb-row"><label for="nb-music-volume">{{nb.settings.musicVolume}}</label><input id="nb-music-volume" class="nb-range" type="range" min="0" max="0.5" step="0.01" data-setting="musicVolume"></div>
+     </section>
+     <section class="nb-group" aria-labelledby="nb-set-reading">
+      <h3 id="nb-set-reading" class="nb-h3">{{nb.settings.reading}}</h3>
+      <div class="nb-row nb-row-choice" role="radiogroup" aria-labelledby="nb-text-speed-label"><span id="nb-text-speed-label" class="nb-row-label">{{nb.settings.textSpeed}}</span>
+       <span class="nb-choices">
+        <label class="nb-choice"><input type="radio" name="nb-text-speed" value="slow" data-setting="textSpeed"><span>{{nb.settings.speed.slow}}</span></label>
+        <label class="nb-choice"><input type="radio" name="nb-text-speed" value="normal" data-setting="textSpeed"><span>{{nb.settings.speed.normal}}</span></label>
+        <label class="nb-choice"><input type="radio" name="nb-text-speed" value="fast" data-setting="textSpeed"><span>{{nb.settings.speed.fast}}</span></label>
+        <label class="nb-choice"><input type="radio" name="nb-text-speed" value="instant" data-setting="textSpeed"><span>{{nb.settings.speed.instant}}</span></label>
+       </span>
+      </div>
+      <div class="nb-row"><label for="nb-narrate-read">{{nb.settings.narrateRead}}</label><input id="nb-narrate-read" class="nb-switch" type="checkbox" role="switch" data-setting="narrateRead"></div>
+      <div class="nb-row"><label for="nb-auto-continue">{{nb.settings.autoContinue}}</label><input id="nb-auto-continue" class="nb-switch" type="checkbox" role="switch" data-setting="autoContinue"></div>
+     </section>
+    </div>
+    <div class="nb-page">
+     <section class="nb-group nb-saves" aria-labelledby="nb-set-saves">
+      <h3 id="nb-set-saves" class="nb-h3">{{nb.settings.saves}}</h3>
+      <p class="nb-small">{{nb.settings.savesNote}}</p>
+      <div class="nb-actions">
+       <button id="nb-export" class="nb-button" type="button">{{nb.settings.export}}</button>
+       <button id="nb-import" class="nb-button" type="button">{{nb.settings.import}}</button>
+       <input id="nb-import-file" type="file" accept=".json,application/json" hidden>
+      </div>
+      <div class="nb-actions">
+       <button id="nb-to-title" class="nb-button" type="button" hidden>{{nb.toTitle}}</button>
+       <button id="nb-new-game" class="nb-link danger" type="button">{{nb.settings.newGame}}</button>
+      </div>
+     </section>
+     <section class="nb-group" aria-labelledby="nb-set-display">
+      <h3 id="nb-set-display" class="nb-h3">{{nb.settings.display}}</h3>
+      <div class="nb-row"><label for="nb-large-text">{{nb.settings.largeText}}</label><input id="nb-large-text" class="nb-switch" type="checkbox" role="switch" data-setting="largeText"></div>
+      <div class="nb-row"><label for="nb-reduced-motion">{{nb.settings.reducedMotion}}</label><input id="nb-reduced-motion" class="nb-switch" type="checkbox" role="switch" data-setting="reducedMotion"></div>
+      <div class="nb-actions">
+       <button id="nb-fullscreen" class="nb-link" type="button" hidden>{{title.fullscreen}}</button>
+       <button id="nb-install" class="nb-link" type="button" hidden>{{title.install}}</button>
+      </div>
+     </section>
+     <section class="nb-group" aria-labelledby="nb-set-language">
+      <h3 id="nb-set-language" class="nb-h3">{{nb.settings.language}}</h3>
+      <p><a id="nb-language" class="nb-link" href="../{{other.route}}/?choose=1" hreflang="{{other.code}}" lang="{{other.code}}">{{other.label}}</a></p>
+     </section>
+     <section class="nb-group" aria-labelledby="nb-set-keys">
+      <h3 id="nb-set-keys" class="nb-h3">{{nb.settings.keys}}</h3>
+      <dl class="nb-keys">
+       <div><dt><kbd>{{nb.key.space}}</kbd> <kbd>{{nb.key.enter}}</kbd></dt><dd>{{nb.keys.continue}}</dd></div>
+       <div><dt><kbd>1</kbd>–<kbd>4</kbd></dt><dd>{{nb.keys.choose}}</dd></div>
+       <div><dt><kbd>1</kbd>–<kbd>8</kbd></dt><dd>{{nb.keys.places}}</dd></div>
+       <div><dt><kbd>P</kbd></dt><dd>{{nb.keys.pause}}</dd></div>
+       <div><dt><kbd>R</kbd></dt><dd>{{nb.keys.replay}}</dd></div>
+       <div><dt><kbd>V</kbd></dt><dd>{{nb.keys.look}}</dd></div>
+       <div><dt><kbd>N</kbd></dt><dd>{{nb.keys.notebook}}</dd></div>
+       <div><dt><kbd>S</kbd></dt><dd>{{nb.keys.skip}}</dd></div>
+       <div><dt><kbd>{{nb.key.hold}}</kbd></dt><dd>{{nb.keys.holdSkip}}</dd></div>
+       <div><dt><kbd>A</kbd></dt><dd>{{nb.keys.auto}}</dd></div>
+       <div><dt><kbd>F</kbd></dt><dd>{{nb.keys.fullscreen}}</dd></div>
+       <div><dt><kbd>Esc</kbd></dt><dd>{{nb.keys.close}}</dd></div>
+      </dl>
+     </section>
+     <p class="nb-credits-link"><button id="nb-open-credits" class="nb-link" type="button">{{title.credits}}</button></p>
+    </div>
+   </div>
+
+   <!-- Credits (inside Settings) -->
+   <div id="nb-credits" class="nb-view nb-spread" role="tabpanel" aria-labelledby="nb-tab-settings" data-view="credits" hidden>
+    <div class="nb-page nb-credits-cover">
+     <button class="nb-back nb-link" type="button" data-back>{{nb.back}}</button>
+     <img id="nb-credits-flower" class="nb-credits-flower" alt="">
+     <h2 id="nb-h-credits" class="nb-wordmark">Himawari</h2>
+     <p class="nb-kana" lang="ja">ひまわり</p>
+     <p class="nb-byline">{{title.credit}}</p>
+    </div>
+    <div class="nb-page">
+     <dl class="nb-roles">
+      <div><dt>{{credits.story}}</dt><dd>{{credits.storyName}}</dd></div>
+      <div><dt>{{credits.design}}</dt><dd>{{credits.designName}}</dd></div>
+      <div><dt>{{credits.interface}}</dt><dd>{{credits.interfaceName}}</dd></div>
+      <div><dt>{{credits.narration}}</dt><dd>{{credits.narrationName}}</dd></div>
+      <div><dt>{{credits.music}}</dt><dd>{{credits.musicName}}</dd></div>
+     </dl>
+     <p class="nb-credits-note">{{credits.note}}</p>
+     <p><a class="nb-link" href="https://liammchara.itch.io/himawari" target="_blank" rel="noopener">{{credits.link}} <span aria-hidden="true">↗</span></a></p>
+    </div>
+   </div>
+
+   <!-- Restart (inside Settings) -->
+   <div id="nb-restart" class="nb-view nb-single" role="tabpanel" aria-labelledby="nb-tab-settings" data-view="restart" hidden>
+    <div class="nb-page nb-restart-page">
+     <div class="nb-slip">
+      <h2 id="nb-h-restart" class="nb-h">{{nb.restart.title}}</h2>
+      <p class="nb-restart-warning">{{nb.restart.warning}}</p>
+      <p class="nb-small">{{nb.restart.export}} <button id="nb-restart-export" class="nb-link inline" type="button">{{nb.settings.export}}</button></p>
+      <div class="nb-actions">
+       <button id="nb-restart-confirm" class="nb-button danger" type="button">{{nb.restart.confirm}}</button>
+       <button id="nb-restart-keep" class="nb-button" type="button">{{nb.restart.keep}}</button>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <!-- A card read in full, or a theory being edited, over the board -->
+   <div id="nb-card-sheet" class="nb-card-sheet" role="group" aria-labelledby="nb-card-heading" hidden>
+    <p id="nb-card-kind" class="nb-card-kind"></p>
+    <h3 id="nb-card-heading" class="nb-h3" tabindex="-1"></h3>
+    <div id="nb-card-text" class="nb-prose"></div>
+    <form id="nb-card-form" class="nb-form" hidden>
+     <label class="nb-field"><span class="visually-hidden">{{nb.board.theory}}</span><textarea id="nb-card-theory" rows="5" maxlength="500" required></textarea></label>
+     <label class="nb-check"><input id="nb-card-crossed" type="checkbox"><span>{{nb.board.crossOut}}</span></label>
+     <button class="nb-button" type="submit">{{nb.board.save}}</button>
+    </form>
+    <div class="nb-card-sheet-actions">
+     <button id="nb-card-unpin" class="nb-link" type="button">{{nb.board.unpin}}</button>
+     <button id="nb-card-close" class="nb-link" type="button">{{nb.board.closeCard}}</button>
+    </div>
+   </div>
+  </div>
+ </section>
+</div>
