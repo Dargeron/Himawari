@@ -224,6 +224,8 @@
   width: 100%;
   min-width: 760px;
   aspect-ratio: 1000 / 600;
+  /* On short screens the sheet gets a little shorter rather than spilling. */
+  max-height: max(380px, calc(min(740px, 100svh - 2 * var(--nb-gutter)) - 172px));
   background:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .13 0 0 0 .12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
     radial-gradient(120% 120% at 50% 40%, transparent 55%, rgba(110, 80, 44, 0.16)),
@@ -325,6 +327,7 @@
 }
 
 .nb-card-handle {
+  flex: none;
   display: grid;
   gap: 0;
   width: 100%;
@@ -592,6 +595,7 @@
 
   .nb-board-canvas {
     rotate: 0deg;
+    max-height: none;
   }
 
   .nb-slide {
