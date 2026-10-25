@@ -709,10 +709,10 @@
     "ids": [
       2049
     ],
-    "bytes": 157636,
+    "bytes": 111122,
     "width": 1024,
     "height": 768,
-    "sha256": "4254ab88f09dad39cf2835b0f4ae4f065d03edf3fe64ba1e773cb0b8a6d63a7a"
+    "sha256": "edb211b24ed75d9dd64232ee7da80d1286eba4c1671741833058272b7effd15e"
   },
   "2053": {
     "asset": "assets/art/scenes/2053.webp",
@@ -759,20 +759,20 @@
     "ids": [
       2062
     ],
-    "bytes": 134616,
+    "bytes": 137252,
     "width": 1024,
     "height": 768,
-    "sha256": "9888c3b07064b802b2b0befde29a957ebfd546f5021aeb312c854a00de297c8c"
+    "sha256": "7552da4f0a062115f17b665e1d41fe33e8af44554e9270a880f40db1bcc82c92"
   },
   "2063": {
     "asset": "assets/art/scenes/2063.webp",
     "ids": [
       2063
     ],
-    "bytes": 154244,
+    "bytes": 142696,
     "width": 1024,
     "height": 768,
-    "sha256": "5c09368159b2703d01d124804c0341c049596a036338df76245cee724847aee5"
+    "sha256": "1d8ab3596bfc44200d6b79be139fa49d4c76c8965e57add3b20938c334c2d68a"
   },
   "2064": {
     "asset": "assets/art/scenes/2064.webp",
@@ -2040,10 +2040,10 @@
     "ids": [
       2298
     ],
-    "bytes": 140500,
+    "bytes": 153740,
     "width": 1024,
     "height": 768,
-    "sha256": "339823ad09556763edc92903f5d1d992b1613432b710921790bc233a67498c9a"
+    "sha256": "8d9aa7c1458c7b014912e9360b79b2cf36616249cd4835cf429ff61da0c154af"
   },
   "2299": {
     "asset": "assets/art/scenes/2299.webp",
