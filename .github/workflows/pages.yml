@@ -20,8 +20,18 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - name: Build and verify both complete editions
-        run: python3 scripts/build_site.py
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install test dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Original rules, winning route and both language packs
+        run: npm run test:logic
+      - name: Build both editions
+        run: python3 tools/build.py
+      - name: Game screen in both languages
+        run: node tests/ui.mjs en && node tests/ui.mjs zh-CN
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
