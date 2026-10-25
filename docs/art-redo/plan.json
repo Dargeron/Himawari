@@ -12,7 +12,7 @@
   ],
   "shows": "A mixed group of adults and one girl chatting on a park bench by a pond, with a street sweeper standing beside them.",
   "should_show": "A group of young schoolchildren by the park playground, chatting and gossiping, with Harry on a nearby bench idly overhearing.",
-  "prompt": "A playground in the park: seven-year-old schoolchildren on the climbing frame chatting and pointing towards a friendly new girl sitting on a bench with her notebook open on her knees: Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. listens from a nearby bench, half hidden by a newspaper. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "prompt": "A playground in the park on a sunny afternoon: a cluster of seven-year-old schoolchildren on the climbing frame gossiping, one pointing off-frame towards the school; the new girl they talk about is not there (she is \"always busy\"). Only a forgotten sticker-covered notebook on the end of a bench, a tiny eclipse-shaped sticker on its cover. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. listens from a nearby bench, half hidden by a newspaper. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "Then they started talking about a new girl that had recently moved to town and was attending second grade.\nApparently, her mother was a new teacher at the school. They all seemed to like the new girl, but they complained that she always seemed to be busy for some reason, and they almost never got a chance to play with her.\nAfter a while I got tired of their talk and went home.  "
  },
  {
@@ -84,7 +84,7 @@
   ],
   "shows": "Harry sits at a lift-lid school desk reading a notebook full of diagrams and equations in a sunny empty classroom.",
   "should_show": "Harry discovering a hidden false-bottom compartment crammed with schematics and equations, in dimmer, dramatic late light.",
-  "prompt": "Close view of a lifted school desk lid in an empty classroom at dusk, the false bottom open: blueprints of a sun-devouring machine stamped with an eclipse emblem, orbital calculations, sunflower diagrams crossed out in red, a timetable of every minute of the day. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. stares at them in horror, lit by the window. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "prompt": "The same desk, the false bottom open, its contents spread out in the dusk light: blueprints of a sun-devouring brass machine stamped with an eclipse emblem (the same shape as the hair clip the friendly girl always wore), orbital equations in a child's round handwriting, sunflower diagrams crossed out in red, a minute-by-minute timetable of the day, and a class photo with one small smiling face circled. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. stares, pale, realising. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "It was her. It had always been her. Inside the false bottom of Valentine Summers’ desk I found all her secret plans and schematics, her musings and calculations. She had planned everything, accounted for every setback. What kind of twisted, brilliant mind lay hidden inside that innocent-looking eight year old girl? I couldn’t follow her entire lines of thought, as there were too many ramifications and leaps of logic for me, but on those childish notebook pages I saw equations of M-theory and quantum physics that many accomplished theoretical physicists would have killed to read. During the following hours I understood everything, including why she wanted to murder my sunflower. Perhaps the simplest explanation was found on this old entry of her diary:"
  },
  {
@@ -261,7 +261,7 @@
   ],
   "shows": "Harry sits at a classroom desk prying the drawer with a pen, watercolor drawings and a worksheet labelled 'Valentine Summers' on top.",
   "should_show": "Harry lifting the false bottom of the drawer to reveal a hidden stash of mad-genius schematics and calculations glowing with menace.",
-  "prompt": "Classroom 2B, empty. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. kneels at a small desk with neat papers signed in tidy handwriting and a sticker-covered notebook, prying open a false-bottomed drawer; inside, the edge of a blueprint and a brass gear glint. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "prompt": "Classroom 2B, empty, late afternoon. Close on Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man.'s hands at a small, perfectly tidy desk: neat papers signed in round child's handwriting, a watercolour of a smiling sun, a sticker-covered notebook. He has just lifted the false bottom of the drawer with a pen refill: only a dark gap and a single cold glint inside. We do not see what it is yet. Suspense. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "Followed straight until I reached classroom 2B. Miss Summers’ daughter’s class. \n I had to search desk by desk, as I had no idea which one was hers, but soon enough I found a desk with a pile of papers signed under the name “Valentine Summers”. She had a neat, regular handwriting, and the papers were all perfectly inconspicuous. Some watercolor drawings, a notebook page with substractions and additions for math class… I started to give up, thinking I was going mad, but my fingers kept prickling around the her desk, and then I felt it. A tiny hole under the table, almost too small to feel it with your own fingers. A false bottom. I took out the ink charge of one of her pens and used it to life the fake bottom of her desk drawer. And inside, I finally found what I had been looking for. The truth."
  },
  {
@@ -320,7 +320,7 @@
   ],
   "shows": "A cosy living room at night; a tall dark adult silhouette stands in the open doorway.",
   "should_show": "Room plunged into darkness, hiss of sleeping gas mist, a small child-sized silhouette with goggles in the doorway.",
-  "prompt": "Harry's living room at night, the lights just gone out, a faint hiss of sleeping gas curling from a vent. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. slumps, drowsy. In the doorway, small and backlit, the silhouette of an eight-year-old girl with a bob, an eclipse-shaped hair clip catching the light, goggles on her forehead, a lab coat too big for her. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "prompt": "Harry's living room, the lights just gone out, only moonlight. A faint hiss of sleeping gas curls from a vent; Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. slumps on the sofa, drowsy, eyes half closed. In the doorway: the small black silhouette of a child, perfectly still. No face, no colour. Only two points of light where her eyes are, and the tiny golden ring of an eclipse-shaped hair clip catching the moon. Sinister. We must not be able to tell who she is. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "Suddenly, the lights go out. I look around, confused. I hear a spraying sound, and I start feeling sleepy. So sleepy. \nThen I hear the voice. It’s a female voice. Cheerful, soft. I know it’s her. She’s the one I’ve been fighting all along. The Destroyer of Suns. And I’m sure I’ve heard her before… somewhere."
  },
  {
@@ -336,7 +336,7 @@
   ],
   "shows": "A dark room with a sunflower in the foreground and an adult silhouette in a lit doorway with sound-wave marks.",
   "should_show": "Harry's blurred, drowsy point of view as Valentine leans close to whisper, mist around, her cool genius look.",
-  "prompt": "Close and dark. Valentine revealed as the Destroyer of Suns: the same eight-year-old with the same bob, red dress and eclipse hair clip, now in an oversized white lab coat with rolled-up sleeves and brass goggles pushed up on her forehead, utterly calm, the sweetness gone from her smile, lit by the cold blue glow of a hand-built brass machine stamped with the same eclipse emblem. Small but frightening: the most composed person in the room. She kneels beside drowsy Harry and whispers to him gently, her goggles reflecting the sunflower; behind her, through the window, the sun is going out like an ember. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "prompt": "Closer and darker. The silhouetted child kneels beside drowsy Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man.; her face is still in shadow except a soft, kind smile and the glint of her eyes, and at the edge of the light a little red sleeve with a white cuff and the eclipse hair clip: details the player has seen before. Behind her, through the window, the sun is going out like an ember. A first \"wait... no\". Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "''It’s all right'', she whispers. ''Why do you resist it so much? A world without time won’t be so bad, you know. According to my calculations, we will all be young forever. Don’t you want to live forever...?''\n… The world ends."
  },
  {
@@ -351,7 +351,7 @@
   ],
   "shows": "A moonlit bedroom with mist near the sunflower and a tall dark silhouette in the doorway.",
   "should_show": "Harry calm and all-knowing facing Valentine as she enters, faint lines of causality/trajectories visible around her.",
-  "prompt": "Harry's bedroom by moonlight, gas mist near the sunflower pot. In the doorway: Valentine revealed as the Destroyer of Suns: the same eight-year-old with the same bob, red dress and eclipse hair clip, now in an oversized white lab coat with rolled-up sleeves and brass goggles pushed up on her forehead, utterly calm, the sweetness gone from her smile, lit by the cold blue glow of a hand-built brass machine stamped with the same eclipse emblem. Small but frightening: the most composed person in the room. She steps in, confident she has won; Harry, awake and ready, watches from the shadows. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "prompt": "Harry's bedroom by moonlight, gas mist near the sunflower pot. She steps through the doorway, half lit now: a lab coat far too big for her, brass goggles on her forehead, the red dress beneath, the eclipse clip; the upper half of her face still in the door's shadow. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man., wide awake, calm, has been waiting for her in the dark corner. The roles have turned. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "And then she comes, like she has to. Believing she has won, like always. But not this time. She may be brilliant beyond comprehension, but she’s still a slave of causality. I can see through her every feint, her every plan and counterplan."
  },
  {
@@ -367,7 +367,7 @@
   ],
   "shows": "On a moonlit rooftop, Harry seen from behind (body merging into the roof) faces a small girl in a red dress sitting hugging her knees.",
   "should_show": "Harry and Valentine standing face to face on a rooftop under the full moon, she small but formidable with her genius gear, both knowing.",
-  "prompt": "A town rooftop by full moonlight. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. stands, feet firmly on the roof, facing Valentine revealed as the Destroyer of Suns: the same eight-year-old with the same bob, red dress and eclipse hair clip, now in an oversized white lab coat with rolled-up sleeves and brass goggles pushed up on her forehead, utterly calm, the sweetness gone from her smile, lit by the cold blue glow of a hand-built brass machine stamped with the same eclipse emblem. Small but frightening: the most composed person in the room. She stands perfectly calm, the town lights below, her machine humming beside her. Two geniuses meeting. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "prompt": "The full reveal. A town rooftop by full moonlight. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. stands, feet firmly on the roof, facing Valentine revealed as the Destroyer of Suns: the same eight-year-old with the same bob, red dress and eclipse hair clip, now in an oversized white lab coat with rolled-up sleeves and brass goggles pushed up on her forehead, utterly calm, the sweetness gone from her smile, lit by the cold blue glow of a hand-built brass machine stamped with the same eclipse emblem. Small but frightening: the most composed person in the room. Her face is finally in the light: it is the friendly girl from the main avenue, the same face, the same smile, and no sweetness left in it. Her brass machine hums beside her. Two geniuses meeting, quiet and still. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "We meet on the roof, by moonlight. She looks at me. A little girl, just eight years old. I know how long until she blinks again. I know how long she will exhale for. She looks at me, and she knows I know.\n''It seems my calculations were wrong, after all. Destroying the Guiding Sunflower doesn’t stop time… just resets it. But not for you. How long have you been trapped in here?'', she wonders.\n''Eons''."
  },
  {
@@ -804,7 +804,7 @@
  },
  {
   "key": "2125",
-  "group": "wrong",
+  "group": "valentine",
   "place": "School",
   "verdict": "wrong",
   "defect": null,
@@ -814,7 +814,7 @@
   ],
   "shows": "Harry walks toward the open school gates on a sunny afternoon.",
   "should_show": "Harry slumped at Valentine's desk in the dark classroom, diary and schematics spread out, staring in dread as moonlight/dusk pours in.",
-  "prompt": "Harry, an adult man in his early thirties with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark trousers, slumped at a small child's school desk in an empty classroom at dusk turning to night, surrounded by open notebooks of equations, sunflower diagrams and schematics pulled from a false-bottom compartment, staring into space in horrified realisation; long blue shadows, a single last ray of orange light, a wall clock; heavy, doomed, contemplative mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "prompt": "Night in the empty classroom 2B. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. sits on the floor against the wall among the spread-out blueprints, diary in his lap, staring at the small empty chair at Valentine's desk; the moonlight through the window throws the chair's long shadow across him. The weight of \"we are doomed\". Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "And now, finally, I realize. She didn’t expect any of this. She is trapped on this time loop just like I am, except she doesn’t know about it. Her plans to destroy the Guiding Sunflower, my sunflower, keep succeeding every time, and that resets the Time flux once again. Somehow I have to find the way to thwart the perfect plans of the evil genius who has managed to stop the flux of the universe’s space-time continuum, or we will all be trapped in here forever. We are doomed."
  },
  {
@@ -1371,7 +1371,7 @@
  },
  {
   "key": "2123",
-  "group": "minor",
+  "group": "valentine",
   "place": "School",
   "verdict": "minor",
   "defect": null,
@@ -1381,7 +1381,7 @@
   ],
   "shows": "Close-up of Harry's hands holding a notebook with sun, planets, moon phases and graphs on a classroom desk.",
   "should_show": "Diary pages with childish handwriting mixing sunflower drawings, Sun-tracking diagrams and complex equations.",
-  "prompt": null,
+  "prompt": "A child's diary open on the small desk, lit by a desk lamp in the dark classroom: rainbow gel-pen handwriting (not legible) beside immaculate astronomical diagrams, a sunflower drawn with the Sun orbiting it, doodles of candy and a calendar where every square is Saturday. Innocent and terrifying at once. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "Dear Diary,\nMy calculations have proven that the Iroquois legend is indeed real. There is a day, a single day every one hundred years, when a single sunflower on Earth becomes the Guiding Sunflower for an entire Earth rotation. Throughout these 24 hours, the Guiding Sunflower stops following the Sun’s trajectory, and instead it is the Sun that starts following the Sunflower. Of course, that sunflower is indistinguishable from any other by any conventional means. But if someone were to locate and destroy the Guiding Sunflower during the time of its awakening, then I have proven that not only would the Sun’s motion stop, but also the flow of Time itself. This would mean that I could live and play forever. I could eat candy forever. And what’s more: the date of awakening of the next Guiding Sunflower falls on a Saturday. That means that if I manage to destroy the Guiding Sunflower, I will never ever have to go back to school. Ever."
  },
  {
@@ -1818,7 +1818,7 @@
  },
  {
   "key": "2476",
-  "group": "minor",
+  "group": "valentine",
   "place": "Loop & endings",
   "verdict": "minor",
   "defect": null,
@@ -1827,12 +1827,12 @@
   ],
   "shows": "Harry seen from behind sitting calmly on a red sofa in a sunlit living room.",
   "should_show": null,
-  "prompt": null,
+  "prompt": "Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. sits utterly calm on his sofa in a dim room, seen from the front, eyes unfocused; around him faint golden lines trace the trajectory of every fly and every speck of dust, like threads of causality he holds. The sunflower stands upright and glowing on the windowsill. Godlike and lonely. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "First, it was the neighbour. Then the sniper. Then poison. Then, her. \nI sit calmly on my sofa. I look, but I no longer see the world. I only see causality. The universe is under my spell. I own the trajectory of every fly, of every speck of dust. Of everything that lives and moves.\nI am millenary."
  },
  {
   "key": "2479",
-  "group": "minor",
+  "group": "valentine",
   "place": "Loop & endings",
   "verdict": "minor",
   "defect": null,
@@ -1841,7 +1841,7 @@
   ],
   "shows": "An empty bedroom at sunset with a sunflower on the sill and a dramatic cloudy sky over the town.",
   "should_show": null,
-  "prompt": null,
+  "prompt": "Dawn after the loop. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. on the rooftop alone, seen small against a vast sky of new clouds lit pink and gold, the sunflower in its pot beside him turned towards the rising sun. Wonder and loss. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
   "text": "I look at the clouds and I realize that, suddenly, I am no longer God. This is all new time, out of the loop, beyond my kingdom. I look at the world and it all seems alien, unfathomable. What was it like to live without knowing everything? Who was I before this began? I no longer remember. But who cares. "
  }
 ]
