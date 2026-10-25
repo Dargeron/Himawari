@@ -92,8 +92,8 @@ def bundle(entry, locale, virtual):
         spec = spec.replace('__LOCALE__', locale)
         if spec in virtual:
             return spec
-        target = (base.parent / spec).resolve()
-        return str(target.relative_to(ROOT))
+        target = str((base.parent / spec).resolve().relative_to(ROOT))
+        return target[4:] if target.startswith('src/') and target[4:] in virtual else target
 
     def visit(key):
         if key in seen:
