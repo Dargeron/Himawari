@@ -1,0 +1,491 @@
+{
+  "storyTextUnchangedFromPriorRelease": true,
+  "recoveredRulesUnchangedFromPriorRelease": true,
+  "recordingsUnchangedFromPriorRelease": true,
+  "soundtrackUnchangedFromPriorRelease": true,
+  "originalArtworkUnchangedFromPriorRelease": true,
+  "protectedFilesByteIdentical": 120,
+  "baselineVersion": "1.2.0",
+  "files": [
+    {
+      "path": "assets/art/original/Abocador.png",
+      "sha256": "677ac4ff46ece21feb715ebf92c2672e1b1f46f82176b1e5625235a84c3c8d13"
+    },
+    {
+      "path": "assets/art/original/Abocador.webp",
+      "sha256": "f378e32d8f341d10a25eeff77240ef6b010007c7a331de52be2933b542407bf4"
+    },
+    {
+      "path": "assets/art/original/Aigua.png",
+      "sha256": "5a0d1b310f06ebf9d27d765925c9d45873147b850bd7b6ee9e0160031489e051"
+    },
+    {
+      "path": "assets/art/original/Aigua.webp",
+      "sha256": "1aa5e24096da23aecff16d1294018a653d01c8d1440c92b3f10969b3da2edd21"
+    },
+    {
+      "path": "assets/art/original/CUADRO_DE_TEXTO.png",
+      "sha256": "aa1c87c686b2c57a6e8cb2c81325686066246e14d9285367711bf53e53ac8d67"
+    },
+    {
+      "path": "assets/art/original/CUADRO_DE_TEXTO.webp",
+      "sha256": "4c58539d39aaecaed1038e675f047dd7ad8efc7bc14e2a9e525baf2bb8296001"
+    },
+    {
+      "path": "assets/art/original/Casa.png",
+      "sha256": "78d28c4a1b8a2ed45befb0b18cfa6efdfe452edef52b992e07934489e4753963"
+    },
+    {
+      "path": "assets/art/original/Casa.webp",
+      "sha256": "f182e05c865b12a98873b8fdbe432dbb697439430c5cdfe1be2d52b310224c15"
+    },
+    {
+      "path": "assets/art/original/Ending_1b.png",
+      "sha256": "7e1a3eb6169f31a3024944f3bcfed2efad04c219cff3a3916215052c7aea774a"
+    },
+    {
+      "path": "assets/art/original/Ending_1b.webp",
+      "sha256": "93893f5777a1015a1d610bd764f0e7c86e1c4fc6c905c42046fa8b4dac980e7a"
+    },
+    {
+      "path": "assets/art/original/Ending_2b.png",
+      "sha256": "a2a1fcfcfbfdf7ae57293680778ce2979e9f4e5356da0cc5b5227d892a50bd51"
+    },
+    {
+      "path": "assets/art/original/Ending_2b.webp",
+      "sha256": "ae962c45a18b3b4a279c57525f694a7746029e167b1be03a53ccf5bb2b69651a"
+    },
+    {
+      "path": "assets/art/original/Ending_3b.png",
+      "sha256": "182305013984e17f32a24f91936776fe185b38cbde603bea844ddc32437394ca"
+    },
+    {
+      "path": "assets/art/original/Ending_3b.webp",
+      "sha256": "0ffbf013a434a59c66e8b8c2fb02e26850f3369dbddc8f27c46d76f9637a571d"
+    },
+    {
+      "path": "assets/art/original/Ending_5b.png",
+      "sha256": "20031c84559df9d3e4646f2c82e0bed4c1a314294a9d9cfcc306465ecbf899f0"
+    },
+    {
+      "path": "assets/art/original/Ending_5b.webp",
+      "sha256": "3003a5b38284f42f955a37889ce15ced157987256cd38bf9c2160e00bc278798"
+    },
+    {
+      "path": "assets/art/original/Escola.png",
+      "sha256": "04905c992caeafbc8fc11623bb012a8965b7e94192face88286e85dac6d5e6ab"
+    },
+    {
+      "path": "assets/art/original/Escola.webp",
+      "sha256": "544e9d463326c295e4011adf5c6bc81dbaa60d412edfd9ba0367528b7fead256"
+    },
+    {
+      "path": "assets/art/original/InputFieldBackground.png",
+      "sha256": "96a25261c2cf0a23ca9defa652ecabcfa6209f54441d224aa06090b0c5b8c67e"
+    },
+    {
+      "path": "assets/art/original/InputFieldBackground.webp",
+      "sha256": "e7876d5ee911a33b4a85d6e91135d284e692010809176000fa54e01cdcc30fd2"
+    },
+    {
+      "path": "assets/art/original/Magatzem.png",
+      "sha256": "93a4cf61955fe83bf95c8d13a4c741cbded7c8f488969c8e58bf425a8ca18714"
+    },
+    {
+      "path": "assets/art/original/Magatzem.webp",
+      "sha256": "e55efc79dfb1052cfced2443885ed35b0eb7f98de8ccc00a53ba2017f8fbe0a1"
+    },
+    {
+      "path": "assets/art/original/Parc.png",
+      "sha256": "80d745427c9a719a5c63a6d9701e6ae6c0baac2784519b8d73b3e0f17cb24e93"
+    },
+    {
+      "path": "assets/art/original/Parc.webp",
+      "sha256": "aa3e86befaefad9fa0e21b8eb22186def39794b6a4184c0a01a7339d06d62dd0"
+    },
+    {
+      "path": "assets/art/original/Passeig.png",
+      "sha256": "f39ef7a1563d35435a5a6c221324699522b2f3548ca13382d42f084d92bfd37d"
+    },
+    {
+      "path": "assets/art/original/Passeig.webp",
+      "sha256": "b88a97fd07bed17d8ed67d024a881e3561962804fd27f723ff5fc283214bc35e"
+    },
+    {
+      "path": "assets/art/original/Pizza.png",
+      "sha256": "7f98fe17ac428e5103725352621b47d233b060db7de5b08b468a2daf075a1038"
+    },
+    {
+      "path": "assets/art/original/Pizza.webp",
+      "sha256": "bb7a91e56b5ead49a462f52d451f81c8a3dbf3ebc399ed47f88b525c80c76e20"
+    },
+    {
+      "path": "assets/art/original/UISprite.png",
+      "sha256": "27401592b2a13e32a4fac98db94097a0e949c15df5d26e2ba5440291c2e5f43f"
+    },
+    {
+      "path": "assets/art/original/UISprite.webp",
+      "sha256": "18fb835e386eda72ddd25316bd5e68c78cf4b7a0f309b777697e27f7d8dc4f88"
+    },
+    {
+      "path": "assets/art/original/blanco.png",
+      "sha256": "07b3d0e2f54b1a4ceb41d294ba62a6c528ec2884732fc29576db1cc7c211667c"
+    },
+    {
+      "path": "assets/art/original/blanco.webp",
+      "sha256": "b5e5d2fd2ef388695152856e3dd94adc14467d989f14b3ac4fba56a646b48a90"
+    },
+    {
+      "path": "assets/art/original/continueBtn.png",
+      "sha256": "5a8b55b2049c2b833301514021641cdbbdb64e3c145f2636704dd8fce3e47386"
+    },
+    {
+      "path": "assets/art/original/continueBtn.webp",
+      "sha256": "644e7dc4db6bbfcdd85f31909cfd7771911ebc5a4e9fbf983aa82c857480dd65"
+    },
+    {
+      "path": "assets/art/original/ending_4b.png",
+      "sha256": "22093ca7eaf093e650d486258ac031b23777a097a216ea842a964b35f61219e6"
+    },
+    {
+      "path": "assets/art/original/ending_4b.webp",
+      "sha256": "4a43dde06cda889af13b363bd01ccc92fe48df31f516f4a0be5b9751e64bb07c"
+    },
+    {
+      "path": "assets/art/original/hima1.png",
+      "sha256": "f58fa12822e049c86a9981eb31f51247fb35844b639928f08dc0a4bcd2d1a11a"
+    },
+    {
+      "path": "assets/art/original/hima1.webp",
+      "sha256": "c8973e77123fa87f76443d830716dff6dc52ea0d77b3f72e5c45750191e67015"
+    },
+    {
+      "path": "assets/art/original/hima2.png",
+      "sha256": "56b193e30c77a090b7741126856e34c74b9894915cea52c1eebead50ed65fbbb"
+    },
+    {
+      "path": "assets/art/original/hima2.webp",
+      "sha256": "f6a7da18813e3ceb9007173bef6c67e9a26631e9bc6069a4cde2b44720d96ea2"
+    },
+    {
+      "path": "assets/art/original/hima3.png",
+      "sha256": "a71f7ca1d09c324190c53f23e0e6013f5c1229ebc37c3eecaa0443625556f65a"
+    },
+    {
+      "path": "assets/art/original/hima3.webp",
+      "sha256": "df40076a30c9a1b7eb55c1c5b109b5e40c0d99a7455d9507adcdf8839987b1b8"
+    },
+    {
+      "path": "assets/art/original/hima4.png",
+      "sha256": "9789413e41e7345d83ba7c515813f671d56205fc07ba8740303f32a39e60bd71"
+    },
+    {
+      "path": "assets/art/original/hima4.webp",
+      "sha256": "e6a95d3d6759a114248470f320e3fb6d9d29b0a7d6671ce1810be887b6d151d8"
+    },
+    {
+      "path": "assets/art/original/hima5.png",
+      "sha256": "5ab74ccfb0b4e32c3261ffef012a8261d6abb95db31ee949412015ceeab13845"
+    },
+    {
+      "path": "assets/art/original/hima5.webp",
+      "sha256": "5fd8905ca05e33c852c98bc717bfbb50039695b58d90540733699b967c8e8f9f"
+    },
+    {
+      "path": "assets/art/original/mapa_joc.png",
+      "sha256": "12d01336a500950c7b878be5407d3bb807e16f4ebb6bb6e9e8fdfa50d7fa3f4d"
+    },
+    {
+      "path": "assets/art/original/mapa_joc.webp",
+      "sha256": "6509b24fe5126eb34f5d6403ab8dfdf701b70ab1dafe087708d74e40475a5711"
+    },
+    {
+      "path": "assets/art/original/negro.png",
+      "sha256": "05b726ed82226a1990d29cf2cd1b839190bb9b7fbd0439f47a0a656cd34e065f"
+    },
+    {
+      "path": "assets/art/original/negro.webp",
+      "sha256": "3447f0dfb87763aa35e1b7ac5d2bcd9652611ebce8cac135c0a31dea8cd3bfef"
+    },
+    {
+      "path": "assets/music/avenue_11_avenue.m4a",
+      "sha256": "d530db07ebd7bf842d3b7d1d92e4d582fd1017b69ca43717acd3f1814dc6aae4"
+    },
+    {
+      "path": "assets/music/click_3_click.m4a",
+      "sha256": "faf80d2c59fa9824f35438b619facfa2c319ef0179fe629e5ba0b4d7b9795407"
+    },
+    {
+      "path": "assets/music/dumpster_7_dumpster.m4a",
+      "sha256": "3cf4214ffc1a797c9dc8930e32e1e3e66f1d223bf318558f5c79b7b0303304ab"
+    },
+    {
+      "path": "assets/music/ending_9_ending.m4a",
+      "sha256": "45aa9281cd2ae70c944fc28eb8d64a2ca62d198f1a659f8815be44f259d688a3"
+    },
+    {
+      "path": "assets/music/home_1_home.m4a",
+      "sha256": "481fc55d7c3a3e4033f611bb0cff29718b9b70a1a0452448bd6c9363f91f4785"
+    },
+    {
+      "path": "assets/music/mapa_13_mapa.m4a",
+      "sha256": "0113ef91a39df117a56ac77ac6894849c1f9ab4688460b078a288223e2de24f4"
+    },
+    {
+      "path": "assets/music/opening_6_opening.m4a",
+      "sha256": "1c66ba4acc4e62f5f465cfaecf863fa6581616585794060edfe23fdaced100aa"
+    },
+    {
+      "path": "assets/music/park_8_park.m4a",
+      "sha256": "e2dd955cb5b5277761c98f5977d2117c43ac6d19a0e0222e173d64855ce4d7a2"
+    },
+    {
+      "path": "assets/music/pizza_12_pizza.m4a",
+      "sha256": "be83beca621490e16665ebab93da24d27518c8b02b99f40990641373abc63c1a"
+    },
+    {
+      "path": "assets/music/school_2_school.m4a",
+      "sha256": "d0714211fff0835569f21b4f0fb02b56aee2fbb717734482dbb194c97e641749"
+    },
+    {
+      "path": "assets/music/victory_10_victory.m4a",
+      "sha256": "5326eb582986b89e87092a58d59d478c67155c52d4250e4db95654fb4dafc92c"
+    },
+    {
+      "path": "assets/music/waterplant_4_waterplant.m4a",
+      "sha256": "d6905e97be8ceddf20eb6dc7a627991a1ba1eaf59a4ef3dc0d79c59efdc629c0"
+    },
+    {
+      "path": "assets/music/wharehouse_5_wharehouse.m4a",
+      "sha256": "239a37de2ad78b9d780baaec8a9b661be34ce00b63b2fab5267b63c2034d8f31"
+    },
+    {
+      "path": "assets/narration/Harry-opening.mp3",
+      "sha256": "4c0b423783ac8d5046cbcfd03bbadbd597a5a0450c0cea7ca7375e1bd258aa19"
+    },
+    {
+      "path": "assets/narration/harry-041a6f65730cbe0a.json",
+      "sha256": "c6119b33c165a74ea7c6e8bca18ec98a18f99a6d50953e017b95c0a478dee5bb"
+    },
+    {
+      "path": "assets/narration/harry-041a6f65730cbe0a.mp3",
+      "sha256": "759a629ac7a5f3bf57a9dc4d3bfe43afda6e5f010b908168ee310feab9874852"
+    },
+    {
+      "path": "assets/narration/harry-10e25fe5396014f7.json",
+      "sha256": "2ce0b821a1d46e362490b52589b3225b2e370d85ba3ffad48751d475da74e508"
+    },
+    {
+      "path": "assets/narration/harry-10e25fe5396014f7.mp3",
+      "sha256": "72e6927ffd6242eee90ba13ea751bdb3279ef9872dbcc21e0cf8c0f16d4c9248"
+    },
+    {
+      "path": "assets/narration/harry-1414ce8d57c41d90.json",
+      "sha256": "d5fe8ff921f83f427857c7e69ffd8457a35466c3cfb624265a101628c1f5b8b4"
+    },
+    {
+      "path": "assets/narration/harry-1414ce8d57c41d90.mp3",
+      "sha256": "2f849ee3cbd1d21da05b3291193dab864b3d92f7dfb07595277f92e2f463c823"
+    },
+    {
+      "path": "assets/narration/harry-1a3c3a3f1778e4c1.json",
+      "sha256": "f5f24374c3300dc24eae6ba662e6c962a719759532542cd98215ca2258e165d1"
+    },
+    {
+      "path": "assets/narration/harry-1a3c3a3f1778e4c1.mp3",
+      "sha256": "c76572266d4c2b753923a4323b2641c7ffa7c61923d7100e8ac647872b50cbeb"
+    },
+    {
+      "path": "assets/narration/harry-1e6e21a2c3cb2260.json",
+      "sha256": "0134e3ea352369b6bd93b166398420048d9339a3342290eabba5dd428550be11"
+    },
+    {
+      "path": "assets/narration/harry-1e6e21a2c3cb2260.mp3",
+      "sha256": "97386f0d012ab30e8ae58baf661a87882fc527cc8fd8d0c62233aa538d1488c2"
+    },
+    {
+      "path": "assets/narration/harry-1f3761e1ae53abd9.json",
+      "sha256": "d4cd9c3c55f26da652236762ac7178d7117bfdd2f8f3275767eea04014809aa7"
+    },
+    {
+      "path": "assets/narration/harry-1f3761e1ae53abd9.mp3",
+      "sha256": "1ac00b9a7ba34ba7e9a0ddade1c3c6ed01e7a6835dfc01bf0c45b89b564c7a77"
+    },
+    {
+      "path": "assets/narration/harry-423c395c9d4d9ec8.json",
+      "sha256": "85bc5dff9c7d4e4cf448d35539a2ab27752814e9487849bc8ef63a738e3fff07"
+    },
+    {
+      "path": "assets/narration/harry-423c395c9d4d9ec8.mp3",
+      "sha256": "e8f461fbec36c92cb6cd6f4986c1f5b7432ae03a373aa3e51f606d76bbe6f410"
+    },
+    {
+      "path": "assets/narration/harry-5370593f823a905f.json",
+      "sha256": "5f332cf19be1ff2b78a786db9ddd39d7be60721b137a816edff198eaf4570042"
+    },
+    {
+      "path": "assets/narration/harry-5370593f823a905f.mp3",
+      "sha256": "38aa0b63e3ce6cf8dd8be94007779ef6c06e84551d35910bc38b2e925c99012c"
+    },
+    {
+      "path": "assets/narration/harry-86880928b49980b7.json",
+      "sha256": "43a0a1afba868894c43b24b5608cb013db39879bf22d3ff69e4a37493f8c4754"
+    },
+    {
+      "path": "assets/narration/harry-86880928b49980b7.mp3",
+      "sha256": "41726a47426130642bb73949863e9e872d9c26417de32d8c28f6fdfc223a4e11"
+    },
+    {
+      "path": "assets/narration/harry-8c8683684ac1ac1a.json",
+      "sha256": "3e0455f2ad22d9f8b2011655f5105afc860a83d64d6e0f3d7fb7010540512459"
+    },
+    {
+      "path": "assets/narration/harry-8c8683684ac1ac1a.mp3",
+      "sha256": "fa6909d94aa89ab36159b6d89ab63b46970d739bfb9f37cbd13e33fac8e88418"
+    },
+    {
+      "path": "assets/narration/harry-8cfd2475595bd3a3.json",
+      "sha256": "7d71db25e16186d4ce7b69aff2027c67e28f93d4fbcbc23f524bcbf7a37db8e9"
+    },
+    {
+      "path": "assets/narration/harry-8cfd2475595bd3a3.mp3",
+      "sha256": "cbd9556bb17f246742c9d10a09440d63c7e38da53e5dfe5701bb19d75c4b6500"
+    },
+    {
+      "path": "assets/narration/harry-91cb67cf5a8342c0.json",
+      "sha256": "762ffe4dcf47e8f786be0c9aa01e5721de7d97f0c895fa6c7ebdbca7b878022b"
+    },
+    {
+      "path": "assets/narration/harry-91cb67cf5a8342c0.mp3",
+      "sha256": "32c050493b548d6798d9de55f592fae3f8ab66e0cfabda6be134c13c44b3bcfa"
+    },
+    {
+      "path": "assets/narration/harry-97d44151f2c29640.json",
+      "sha256": "8faafb62894c019c91d18c7d707d0ab9777f852822215172843654682a221f66"
+    },
+    {
+      "path": "assets/narration/harry-97d44151f2c29640.mp3",
+      "sha256": "9d3c4a6e54494c78dba5d3779412e4f440bd883b07b8723da4e2f056510889d9"
+    },
+    {
+      "path": "assets/narration/harry-9fb057ed9cc6c598.json",
+      "sha256": "c162ca8903bb32b1ea0c80598d3ecd3c550922fae08659d384a0f4a42d83967e"
+    },
+    {
+      "path": "assets/narration/harry-9fb057ed9cc6c598.mp3",
+      "sha256": "a7a219790bc007a13ffa145f987cc4d2900144897fa5cc3eaff3b2c23a2288a9"
+    },
+    {
+      "path": "assets/narration/harry-a4be6e5812cefacc.json",
+      "sha256": "72a22ccfbaa33dac723e39383f10e7868228ba9182a108da3f1d867cf35f02ed"
+    },
+    {
+      "path": "assets/narration/harry-a4be6e5812cefacc.mp3",
+      "sha256": "52a780d29950cc0ec000ea7aebd7db6f6c3d115b3e9353fe577d3910bda149ec"
+    },
+    {
+      "path": "assets/narration/harry-b21e9b71c9a29366.json",
+      "sha256": "36bae2d58b799b64b933cc79c7cbd2e85a81e0dae31d6c2aae3efec03e1085b7"
+    },
+    {
+      "path": "assets/narration/harry-b21e9b71c9a29366.mp3",
+      "sha256": "c6538400ed518a7d74a9f7aa5588afded43eb8db00a4ef8891c489c7949b8931"
+    },
+    {
+      "path": "assets/narration/harry-b85e37d255f2e7cd.json",
+      "sha256": "d75293bce99949211d220c47bc6183d9aa0fa27298acaff07512208f8eecd487"
+    },
+    {
+      "path": "assets/narration/harry-b85e37d255f2e7cd.mp3",
+      "sha256": "830ce572b9bb7d4fc5ce6ae14da694882d0de4b1df35ef50281e73482b39c5ad"
+    },
+    {
+      "path": "assets/narration/harry-ba9d8a090fdc3a40.json",
+      "sha256": "e3f13e8dbf4238895a7b14dc0186819c33adf94f6d95ef52c24f957570862fe6"
+    },
+    {
+      "path": "assets/narration/harry-ba9d8a090fdc3a40.mp3",
+      "sha256": "a590c3ee7d29b9cdeeb1a024f61952756df965cba01d25cfe92016a1cfcc7fe0"
+    },
+    {
+      "path": "assets/narration/harry-c316ce98a6c4f1ba.json",
+      "sha256": "bcb4b1e7a3f3b4822841342e11b92ffb086b6a7d89cd24d4e53b899cdc9858f7"
+    },
+    {
+      "path": "assets/narration/harry-c316ce98a6c4f1ba.mp3",
+      "sha256": "b100c0d8039ebda642e187ed0fee4395d6eea7e648f2d1914597dc6d479f19ae"
+    },
+    {
+      "path": "assets/narration/harry-e809dd742feb8ebe.json",
+      "sha256": "0b969bbb19057bd07596b7b5945c720a4f279ebed0bc0d80d030a7258224c55e"
+    },
+    {
+      "path": "assets/narration/harry-e809dd742feb8ebe.mp3",
+      "sha256": "63623cc988d96327e548ef0e4ec72157b7375a73d2475f8b4532ec993ace2daf"
+    },
+    {
+      "path": "content/literals.json",
+      "sha256": "a07a2802ed18c4719c44055b05c136ebdc01ecfc00c534d035f67f2748c6cb58"
+    },
+    {
+      "path": "content/narration.json",
+      "sha256": "6a56c10bd4f99d7892ec9023bfdc26f67e976f05196c6f7cd116e61eb683d63b"
+    },
+    {
+      "path": "content/narrator.json",
+      "sha256": "6cd1e0a0c77814c43995d186bf1dc87784e00c8d9a9aefc6d3f93bcb98052c32"
+    },
+    {
+      "path": "content/string-caches.json",
+      "sha256": "ca8f03da395095ce8af4e9ec56e61e42e4d110b7c17e4c99caf601b72db4548c"
+    },
+    {
+      "path": "content/text-corrections.json",
+      "sha256": "0d5882db8bc092bd43a0a0d5fb5c7e760ba7d15133e0d42f8ce08f2867dd7cc2"
+    },
+    {
+      "path": "recovery/core-imports.json",
+      "sha256": "7119fe37c05423dc75f6d66f267250dfe84352647eb8501d0d7d1e86996b1207"
+    },
+    {
+      "path": "recovery/game-metadata.json",
+      "sha256": "492ce6af33f81dc90c5d094fdd8c61ef12d3e528dfec5943ad764552eb033a4d"
+    },
+    {
+      "path": "recovery/original-scene.json",
+      "sha256": "594dc7a5ee09bc7136042746a3fb6c0349ec42a76f21aff2b2d730c5b041be15"
+    },
+    {
+      "path": "recovery/recovered-core.wasm",
+      "sha256": "1ea853425662dbcc0c18dfb15372edc3f897129301d5af37a551bde4c95d78be"
+    },
+    {
+      "path": "recovery/recovered-core.wat",
+      "sha256": "7b5cb07907b3a07f6567d745281b306e0ca226d7f73a5b7332e1475e3d842625"
+    },
+    {
+      "path": "src/content.js",
+      "sha256": "46c29dc1835fb857bce2c2c52396441fb831ec86dcd552e28bc877f5c95ab7d2"
+    },
+    {
+      "path": "src/engine.js",
+      "sha256": "ad35912a0884d3b4a77319a42221f065d54d91cc1a72af1fea15fc0af2304307"
+    },
+    {
+      "path": "src/graphics.js",
+      "sha256": "3283b0dd2fb8abaf41bd3f1fbb577fd73961b0260021636df5e556146cd1d842"
+    },
+    {
+      "path": "src/guide.js",
+      "sha256": "cf435c600c8e389b1ffb4b04189bcadf52fdc5a06ac35e461e3a415570454325"
+    },
+    {
+      "path": "src/narration-manifest.js",
+      "sha256": "ceaaf4817d359e0a63ef25cc7140bc1cb1241b46302e9135f5d3f361b9fa7237"
+    },
+    {
+      "path": "src/recovered-core.js",
+      "sha256": "31c0d30fe45cb4b5c50cd523f32c85af12d0ea1c18d190ed94cf59afaacfcad2"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> himawari-remake@1.3.0 test
+> node tests/mechanics.mjs && node tests/walkthrough.mjs && node tests/ui.mjs && node tests/audio.mjs && node tests/audio-transitions.mjs && node tests/guide.mjs && node tests/journal.mjs && node tests/notebook-ui.mjs && python3 tests/assets.py
+
+{
+  "oracle": "original recovered WASM",
+  "actions": 18000,
+  "visitedStates": 283,
+  "phases": [
+    2,
+    3,
+    4,
+    5,
+    1
+  ],
+  "freeTextActions": 330,
+  "endings": [
+    [
+      "endIntro1",
+      "noLove",
+      "noLove2",
+      "introN",
+      "introN"
+    ],
+    [
+      "endIntro1",
+      "noGun",
+      "introN",
+      "introN"
+    ],
+    [
+      "endIntro1",
+      "noPoison",
+      "noPoison2",
+      "noPoison2"
+    ],
+    [
+      "endIntro1",
+      "noEvil",
+      "noEvil2",
+      "noEvil3",
+      "introN",
+      "introN"
+    ],
+    [
+      "endIntro1",
+      "victory",
+      "victory2",
+      "victory3",
+      "victory4",
+      "victory4"
+    ]
+  ],
+  "saveRoundTrip": true
+}
+{
+  "legalWinningRoute": true,
+  "actions": 261,
+  "loops": 10,
+  "endingsSeen": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "originalOracle": true,
+  "resumeAfterEveryAction": true
+}
+{
+  "UI": "DOM integration",
+  "title": true,
+  "map": 8,
+  "originalCityHotspots": true,
+  "originalArtwork": true,
+  "diary": true,
+  "clueSaveResume": true,
+  "inventory": true,
+  "settings": true,
+  "saveResume": true,
+  "isolatedStorageRecovery": true,
+  "history": true,
+  "numberedChoiceNarration": true,
+  "accessibleChoiceLabels": true,
+  "accessibleStateLabels": true,
+  "visibleTimeOfDay": true,
+  "allSixDayPhases": true,
+  "originalContinueArtwork": true,
+  "accessibleMapFocus": true,
+  "accessibleVoiceTouchTargets": true,
+  "temporarySuspensionResume": true,
+  "endingInterfaces": 5,
+  "winningRoute": true,
+  "invalidImport": true,
+  "protectedStoryMemory": true,
+  "visualBrowserQA": "Cloud browser blocks local previews; not claimed"
+}
+{
+  "audio": "cached Harry",
+  "opening": true,
+  "pauseResume": true,
+  "temporarySuspensionResume": true,
+  "clipBoundaries": true,
+  "longLoopCounts": true,
+  "typedNames": true,
+  "staleNarrationStopped": true,
+  "staleEndedEvents": true,
+  "staleErrorEvents": true,
+  "autoplayRecovery": true,
+  "delayedPlaybackRejections": true,
+  "metadataClipSeeking": true
+}
+{"delayedMetadata":true,"delayedSeek":true,"backwardSeek":true,"rapidChoices":true,"staleMediaEvents":true,"pauseDuringSeek":true,"suspendDuringSeek":true,"replayFromBeginning":true}
+{
+  "assistance": true,
+  "spoilerGating": true,
+  "allFiveEndings": true,
+  "oneCluePerGameDay": true,
+  "midnightBoundary": true,
+  "saveReloadEveryAction": true,
+  "legalActions": 261,
+  "clueDays": 9,
+  "diaryFacts": 19,
+  "gameStateUnchanged": true
+}
+{
+  "journal": true,
+  "observedMaterialOnly": true,
+  "allFiveEndingAlbums": true,
+  "partialLegacyHistory": true,
+  "boardPersistence": true,
+  "ritualHasNoGameEffect": true,
+  "originalTimeRulesForAllEightDestinations": true,
+  "departurePhaseMarks": true,
+  "pinsSurviveLoops": true,
+  "choiceContextAndOutcome": true,
+  "saveReloadEveryAction": 261,
+  "newFindings": 19,
+  "gameStateUnchanged": true
+}
+{
+  "notebookUI": "DOM and simulated media integration",
+  "boardPinAndTheory": true,
+  "keyboardAndPointerMovement": true,
+  "connectionsAndCrossouts": true,
+  "titleEditingPreservesSave": true,
+  "ritualPreservesClockAndVoice": true,
+  "mapPinsAndVisitMarks": true,
+  "echoDoesNotChoose": true,
+  "endingSpoilerGate": true,
+  "albumSeparateNarrator": true,
+  "albumRestoresPositionAndPause": true,
+  "titleAlbumDoesNotResumeGame": true,
+  "resetSkipAndAutomatic": true,
+  "resetWhileHidden": true,
+  "reducedMotion": true,
+  "firstDiscoveryOnly": true,
+  "diaryDoesNotUseClue": true,
+  "legalWinningRoute": 261,
+  "visualBrowserQA": false
+}
+{
+  "narratedAuthoredLiterals": 458,
+  "dynamicNumbers": 301,
+  "HarryRecordings": 21,
+  "musicTracks": 13,
+  "restoredOriginalSprites": 25,
+  "originalPixelsUnchanged": true,
+  "minorTextCorrections": 24,
+  "narrationMinutes": 86.8,
+  "allAssetReferencesValid": true,
+  "originalHarryOpeningUnchanged": true,
+  "credentialsExcluded": true
+}
