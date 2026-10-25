@@ -1,0 +1,252 @@
+{
+  "UISprite": {
+    "asset": "assets/art/original/UISprite.webp",
+    "sourceSpriteID": 27,
+    "dimensions": [
+      32,
+      32
+    ],
+    "pixelsSHA256": "29f0c540b7f621683dfa49976b569cfebb4531b59b86ed455314361ff74fb958",
+    "pngSHA256": "27401592b2a13e32a4fac98db94097a0e949c15df5d26e2ba5440291c2e5f43f"
+  },
+  "InputFieldBackground": {
+    "asset": "assets/art/original/InputFieldBackground.webp",
+    "sourceSpriteID": 28,
+    "dimensions": [
+      32,
+      32
+    ],
+    "pixelsSHA256": "f65a7668c9413724ee152e4f2aa86e6ca953f2ecc9c444f7eca3fca8dcd16013",
+    "pngSHA256": "96a25261c2cf0a23ca9defa652ecabcfa6209f54441d224aa06090b0c5b8c67e"
+  },
+  "Escola": {
+    "asset": "assets/art/original/Escola.webp",
+    "sourceSpriteID": 29,
+    "dimensions": [
+      395,
+      258
+    ],
+    "pixelsSHA256": "6e5c1b7be4903b9b0076dccf40949e5f50e83bff80c3708c22f83b0dc4ff2403",
+    "pngSHA256": "04905c992caeafbc8fc11623bb012a8965b7e94192face88286e85dac6d5e6ab"
+  },
+  "Ending_3b": {
+    "asset": "assets/art/original/Ending_3b.webp",
+    "sourceSpriteID": 30,
+    "dimensions": [
+      755,
+      835
+    ],
+    "pixelsSHA256": "cbe62f0770c335862dbd589688092ee58635a463737f51eb4d97e44101806162",
+    "pngSHA256": "182305013984e17f32a24f91936776fe185b38cbde603bea844ddc32437394ca"
+  },
+  "Pizza": {
+    "asset": "assets/art/original/Pizza.webp",
+    "sourceSpriteID": 31,
+    "dimensions": [
+      228,
+      255
+    ],
+    "pixelsSHA256": "d6c77de70e2436d5c74458a8dcc4f1080eac3caad1609c828a32cc4ff92be83a",
+    "pngSHA256": "7f98fe17ac428e5103725352621b47d233b060db7de5b08b468a2daf075a1038"
+  },
+  "ending_4b": {
+    "asset": "assets/art/original/ending_4b.webp",
+    "sourceSpriteID": 32,
+    "dimensions": [
+      973,
+      1103
+    ],
+    "pixelsSHA256": "4b8a3862f6ffd172acee4cdc77ad3751dfa1297f919a16925844d4225be1f518",
+    "pngSHA256": "22093ca7eaf093e650d486258ac031b23777a097a216ea842a964b35f61219e6"
+  },
+  "mapa_joc": {
+    "asset": "assets/art/original/mapa_joc.webp",
+    "sourceSpriteID": 33,
+    "dimensions": [
+      1280,
+      974
+    ],
+    "pixelsSHA256": "497a48a8b9b166af2680ff7cb7f0b5029f533087b502069c019c03fc249ebd71",
+    "pngSHA256": "12d01336a500950c7b878be5407d3bb807e16f4ebb6bb6e9e8fdfa50d7fa3f4d"
+  },
+  "Ending_2b": {
+    "asset": "assets/art/original/Ending_2b.webp",
+    "sourceSpriteID": 34,
+    "dimensions": [
+      937,
+      924
+    ],
+    "pixelsSHA256": "44d4e1daa35eca52b0391c3e68f18c318d12ddb8018e5ff32b76adb912e7e8c1",
+    "pngSHA256": "a2a1fcfcfbfdf7ae57293680778ce2979e9f4e5356da0cc5b5227d892a50bd51"
+  },
+  "hima1": {
+    "asset": "assets/art/original/hima1.webp",
+    "sourceSpriteID": 35,
+    "dimensions": [
+      1340,
+      1374
+    ],
+    "pixelsSHA256": "b6e1d748b57cb346851163d886a44bf99d421c6bb3d8fa02d453c1bf0cf5b366",
+    "pngSHA256": "f58fa12822e049c86a9981eb31f51247fb35844b639928f08dc0a4bcd2d1a11a"
+  },
+  "blanco": {
+    "asset": "assets/art/original/blanco.webp",
+    "sourceSpriteID": 36,
+    "dimensions": [
+      1023,
+      606
+    ],
+    "pixelsSHA256": "80136bdb18ac296512130d06bbd87c91c887a281ba3107870fa09cb8ffa9025d",
+    "pngSHA256": "07b3d0e2f54b1a4ceb41d294ba62a6c528ec2884732fc29576db1cc7c211667c"
+  },
+  "Abocador": {
+    "asset": "assets/art/original/Abocador.webp",
+    "sourceSpriteID": 37,
+    "dimensions": [
+      322,
+      280
+    ],
+    "pixelsSHA256": "987cba6d8f84387658510351a05a84403b576892c39ab07c608d46dd38086d6a",
+    "pngSHA256": "677ac4ff46ece21feb715ebf92c2672e1b1f46f82176b1e5625235a84c3c8d13"
+  },
+  "hima5": {
+    "asset": "assets/art/original/hima5.webp",
+    "sourceSpriteID": 38,
+    "dimensions": [
+      1003,
+      1288
+    ],
+    "pixelsSHA256": "636c126e7e2a459093a108d44325fe70a9a3b1f719b0a6a7431778db37aba853",
+    "pngSHA256": "5ab74ccfb0b4e32c3261ffef012a8261d6abb95db31ee949412015ceeab13845"
+  },
+  "CUADRO_DE_TEXTO": {
+    "asset": "assets/art/original/CUADRO_DE_TEXTO.webp",
+    "sourceSpriteID": 39,
+    "dimensions": [
+      1109,
+      623
+    ],
+    "pixelsSHA256": "40f3bd682a21234293fac1f2d2f382f626f96e2bbf9e50d16d97deb5c973afb1",
+    "pngSHA256": "aa1c87c686b2c57a6e8cb2c81325686066246e14d9285367711bf53e53ac8d67"
+  },
+  "Passeig": {
+    "asset": "assets/art/original/Passeig.webp",
+    "sourceSpriteID": 40,
+    "dimensions": [
+      412,
+      220
+    ],
+    "pixelsSHA256": "6bdb0a247e75a7fd6a6d1bb8be120ab503551d6c84604cd17d1c6359fd13fae6",
+    "pngSHA256": "f39ef7a1563d35435a5a6c221324699522b2f3548ca13382d42f084d92bfd37d"
+  },
+  "negro": {
+    "asset": "assets/art/original/negro.webp",
+    "sourceSpriteID": 41,
+    "dimensions": [
+      1023,
+      606
+    ],
+    "pixelsSHA256": "87b5908d66c1ad2475a38c126afce0944f2c3f189b23941cdf88bd1bb7aa9cd7",
+    "pngSHA256": "05b726ed82226a1990d29cf2cd1b839190bb9b7fbd0439f47a0a656cd34e065f"
+  },
+  "hima4": {
+    "asset": "assets/art/original/hima4.webp",
+    "sourceSpriteID": 42,
+    "dimensions": [
+      1005,
+      1791
+    ],
+    "pixelsSHA256": "88544a1f7ec6abe009ed7109ce1f6b811cb35d8070d789164a4698bfc69698de",
+    "pngSHA256": "9789413e41e7345d83ba7c515813f671d56205fc07ba8740303f32a39e60bd71"
+  },
+  "Casa": {
+    "asset": "assets/art/original/Casa.webp",
+    "sourceSpriteID": 43,
+    "dimensions": [
+      235,
+      282
+    ],
+    "pixelsSHA256": "b1fdb89e7a791379f9e2a8a428d68405531c23d7bc1a076537b00a51bab00f07",
+    "pngSHA256": "78d28c4a1b8a2ed45befb0b18cfa6efdfe452edef52b992e07934489e4753963"
+  },
+  "Parc": {
+    "asset": "assets/art/original/Parc.webp",
+    "sourceSpriteID": 44,
+    "dimensions": [
+      596,
+      318
+    ],
+    "pixelsSHA256": "0dfd8760b6d0eb8b01a253908c3aecf737e35fb9527251214924d3f46b57d108",
+    "pngSHA256": "80d745427c9a719a5c63a6d9701e6ae6c0baac2784519b8d73b3e0f17cb24e93"
+  },
+  "Ending_5b": {
+    "asset": "assets/art/original/Ending_5b.webp",
+    "sourceSpriteID": 45,
+    "dimensions": [
+      1280,
+      995
+    ],
+    "pixelsSHA256": "f52dfbb0da91e95e0dc767fabcb6bc664d1f8d80b78ec9e6929a7ba6597a52b6",
+    "pngSHA256": "20031c84559df9d3e4646f2c82e0bed4c1a314294a9d9cfcc306465ecbf899f0"
+  },
+  "hima2": {
+    "asset": "assets/art/original/hima2.webp",
+    "sourceSpriteID": 46,
+    "dimensions": [
+      1079,
+      1794
+    ],
+    "pixelsSHA256": "e200da2d7a64c1efddc003af6a7f8a3e862c5eff553d22a0507e2a491dcd3bed",
+    "pngSHA256": "56b193e30c77a090b7741126856e34c74b9894915cea52c1eebead50ed65fbbb"
+  },
+  "continueBtn": {
+    "asset": "assets/art/original/continueBtn.webp",
+    "sourceSpriteID": 47,
+    "dimensions": [
+      414,
+      122
+    ],
+    "pixelsSHA256": "dbcaaa90d7b9cc163430670c32fdf3d583da9dae85b5568eb7bf7f535a3c3735",
+    "pngSHA256": "5a8b55b2049c2b833301514021641cdbbdb64e3c145f2636704dd8fce3e47386"
+  },
+  "hima3": {
+    "asset": "assets/art/original/hima3.webp",
+    "sourceSpriteID": 48,
+    "dimensions": [
+      1212,
+      1742
+    ],
+    "pixelsSHA256": "d02bf934be796c81b7c4386732eb1519b8d0aacb10d6f75638447537fe0b4fd8",
+    "pngSHA256": "a71f7ca1d09c324190c53f23e0e6013f5c1229ebc37c3eecaa0443625556f65a"
+  },
+  "Aigua": {
+    "asset": "assets/art/original/Aigua.webp",
+    "sourceSpriteID": 49,
+    "dimensions": [
+      463,
+      220
+    ],
+    "pixelsSHA256": "d9a8d26896b3fe7edb2ff73329f4677243f7ef2dc5253a27cae2e805b8fbbc6e",
+    "pngSHA256": "5a0d1b310f06ebf9d27d765925c9d45873147b850bd7b6ee9e0160031489e051"
+  },
+  "Magatzem": {
+    "asset": "assets/art/original/Magatzem.webp",
+    "sourceSpriteID": 50,
+    "dimensions": [
+      417,
+      212
+    ],
+    "pixelsSHA256": "d01f7b53963a42fec6e14ca77b578448dc019e7edb95b7c8f16df5f0ae179187",
+    "pngSHA256": "93a4cf61955fe83bf95c8d13a4c741cbded7c8f488969c8e58bf425a8ca18714"
+  },
+  "Ending_1b": {
+    "asset": "assets/art/original/Ending_1b.webp",
+    "sourceSpriteID": 51,
+    "dimensions": [
+      708,
+      727
+    ],
+    "pixelsSHA256": "8e716c955c360b6e16b023b534a2da0225c5f5100297d9ea0ad0d78026bb53ac",
+    "pngSHA256": "7e1a3eb6169f31a3024944f3bcfed2efad04c219cff3a3916215052c7aea774a"
+  }
+}

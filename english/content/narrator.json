@@ -1,0 +1,16 @@
+{
+  "voice": "Harry",
+  "voice_id": "SOYHLrjzK2X1ezoPC6cr",
+  "model_id": "eleven_v3_conversational",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "direction": "Use the original first Harry audition: tense, self-serious, worried and firm. Do not use the more frantic refinement.",
+  "opening_source": "First Harry audition, unchanged",
+  "opening_sha256": "4c0b423783ac8d5046cbcfd03bbadbd597a5a0450c0cea7ca7375e1bd258aa19",
+  "casting_status": "Approved for the complete game",
+  "sample_prompt": "[quietly] Last night I had that nightmare again. My precious sunflower, withered, dead. Murdered.\n[tense] I don’t know what to do anymore. I know it’s going to happen tonight, I just know. So I have to find the murderer first.\nOh, my sunflower, the light of my days. My loyal companion... Even in my darkest hour I kept nurturing it, and that’s all that kept me sane.\n[worried] I don’t want it to die... I don’t want to be alone...\n[firmly] I have to keep it alive."
+}

@@ -1,0 +1,12 @@
+{
+  "version": "1.5.0",
+  "language": "english",
+  "illustratedScenes": 246,
+  "distinctPictures": 246,
+  "artworkBytes": 59220732,
+  "originalCityPreserved": true,
+  "allStoryTextAndOriginalAudioPreserved": true,
+  "fullScreenNightSequences": true,
+  "unicodeTypewriterText": true,
+  "upfrontLoadingIncludesEveryIllustration": true
+}

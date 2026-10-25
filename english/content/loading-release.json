@@ -1,0 +1,6 @@
+{
+  "release": "1.4.0",
+  "englishURL": "https://himawari-english.bauldejuegos.workers.dev/",
+  "chineseURL": "https://himawari-chinese.bauldejuegos.workers.dev/",
+  "note": "Only asset preparation, caching, image encoding and release version changed. New illustration prototypes are not installed."
+}
