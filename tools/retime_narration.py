@@ -132,6 +132,22 @@ def speech_edges(env, t0, t1):
     return ((i + loud[0]) * HOP, (i + loud[-1] + 1) * HOP) if len(loud) else (t0, t1)
 
 
+def settle(env, t, direction, quiet=0.02, need=0.08, limit=0.8):
+    """If a cut lands in speech (the recogniser's timestamps lag), slide it back (or forward)
+    to the nearest stretch of silence, so a clip never starts or ends mid-word."""
+    k, run, step = int(t / HOP), 0, int(need / HOP)
+    if env[max(0, k - 2):k + 3].max() <= quiet:
+        return t
+    for n in range(int(limit / HOP)):
+        i = k + direction * n
+        if not 0 <= i < len(env):
+            break
+        run = run + 1 if env[i] <= quiet else 0
+        if run >= step:
+            return round((i - direction * (step // 2)) * HOP, 3)  # inside the silence, near the speech
+    return t
+
+
 def best_window(want, heard, candidates, near=None):
     """Best-matching transcript window starting near the candidates; among equally good
     windows (a line said twice) the one nearest the old timing."""
@@ -204,17 +220,47 @@ def retime_file(ed, f, words, out, gaps):
                 gaps[it['id']] = 'not found in the recording'
                 continue
             m = list(range(span[0], span[1] + 1))
-        first, last = heard[m[0]], heard[m[-1]]
-        lo = heard[m[0] - 1][2] - 0.05 if m[0] > 0 else max(0, first[1] - 1.5)
-        start, quiet_before = quiet_cut(env, min(lo, first[1] + 0.1), first[1] + 0.15)
-        hi = heard[m[-1] + 1][1] + 0.05 if m[-1] + 1 < len(heard) else min(dur, last[2] + 1.5)
-        end, quiet_after = quiet_cut(env, last[2] - 0.15, max(hi, last[2] - 0.1))
-        if not ed.en and len(want) < 6 and q < 0.95 and min(quiet_before, quiet_after) < 0.08:
-            gaps[it['id']] = 'only found inside another sentence'
-            continue
-        s2, e2 = speech_edges(env, start, end)
-        start, end = max(start, s2 - 0.08), min(end, e2 + 0.12)
-        out[it['id']] = {'file': f, 'start': round(max(0, start), 3), 'end': round(min(dur, end), 3)}
+        clip = cut(ed, f, env, dur, heard, m, q, want)
+        if isinstance(clip, str):
+            gaps[it['id']] = clip
+        else:
+            out[it['id']] = clip
+
+
+def cut(ed, f, env, dur, heard, m, q, want):
+    """The clip for transcript words m: from the quiet before the first to the quiet after the last."""
+    first, last = heard[m[0]], heard[m[-1]]
+    lo = heard[m[0] - 1][2] - 0.05 if m[0] > 0 else max(0, first[1] - 1.5)
+    start, quiet_before = quiet_cut(env, min(lo, first[1] + 0.1), first[1] + 0.15)
+    hi = heard[m[-1] + 1][1] + 0.05 if m[-1] + 1 < len(heard) else min(dur, last[2] + 1.5)
+    end, quiet_after = quiet_cut(env, last[2] - 0.15, max(hi, last[2] - 0.1))
+    if not ed.en and len(want) < 6 and q < 0.95 and min(quiet_before, quiet_after) < 0.08:
+        return 'only found inside another sentence'
+    s2, e2 = speech_edges(env, start, end)
+    start, end = settle(env, max(start, s2 - 0.08), -1), settle(env, min(end, e2 + 0.12), 1)
+    return {'file': f, 'start': round(max(0, start), 3), 'end': round(min(dur, end), 3)}
+
+
+def search_elsewhere(ed, key, transcripts, out):
+    """Chinese repairs re-recorded some passages in other files: look for a missing
+    passage in every transcribed recording."""
+    want = [t for t, _, _ in ed.tokens(ed.literals[key]['text'])]
+    if not want:
+        return False
+    best = (0, None, None)
+    for f, heard in transcripts.items():
+        q, span = locate(want, heard, None)
+        if span and q > best[0]:
+            best = (q, f, span)
+    q, f, span = best
+    if not span or q < (0.75 if len(want) >= 6 else 0.9):
+        return False
+    env, dur = envelope(ROOT / f)
+    clip = cut(ed, f, env, dur, transcripts[f], list(range(span[0], span[1] + 1)), q, want)
+    if isinstance(clip, str):
+        return False
+    out[key] = clip
+    return True
 
 
 def retime_list(ed, f, out):
@@ -262,6 +308,15 @@ def main():
         words = json.loads((cache / (Path(f).stem + '.json')).read_text())
         retime_file(ed, f, words, out, gaps)
         retime_list(ed, f, out)
+    if not ed.en:
+        transcripts = {}
+        for path in sorted(cache.glob('*.json')):
+            f = f'assets/narration/{args.code}/{path.stem}.mp3'
+            if (ROOT / f).exists():
+                transcripts[f] = ed.heard(json.loads(path.read_text()))
+        for key in list(gaps):
+            if search_elsewhere(ed, key, transcripts, out):
+                del gaps[key]
     for key in gaps:
         out.pop(key, None)
     if args.code == 'en' and not gaps_doc.get('numbers', True):
