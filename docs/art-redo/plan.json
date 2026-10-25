@@ -1,0 +1,1847 @@
+[
+ {
+  "key": "1926",
+  "group": "valentine",
+  "place": "Park",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The text is Harry overhearing a group of CHILDREN at the playground; the image instead shows adults (a mother, a man in a firefighter-like jacket, an old man in a flat cap and a street sweeper) with only one little girl",
+   "The single schoolgirl in a red pinafore could be mistaken for the 'new girl' (Valentine), which is misleading",
+   "The park layout (brick bridge, iron fences) matches n=10 but not the other park images"
+  ],
+  "shows": "A mixed group of adults and one girl chatting on a park bench by a pond, with a street sweeper standing beside them.",
+  "should_show": "A group of young schoolchildren by the park playground, chatting and gossiping, with Harry on a nearby bench idly overhearing.",
+  "prompt": "A playground in the park: seven-year-old schoolchildren on the climbing frame chatting and pointing towards a friendly new girl sitting on a bench with her notebook open on her knees: Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. listens from a nearby bench, half hidden by a newspaper. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "Then they started talking about a new girl that had recently moved to town and was attending second grade.\nApparently, her mother was a new teacher at the school. They all seemed to like the new girl, but they complained that she always seemed to be busy for some reason, and they almost never got a chance to play with her.\nAfter a while I got tired of their talk and went home.  "
+ },
+ {
+  "key": "2083",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Valentine Summers (the antagonist; text reveals her mom is the teacher and dad the water-plant guard) is drawn as a generic sweet small girl with no mad-genius flair, younger than eight",
+   "No jump rope visible although she is the rope-jumping girl"
+  ],
+  "shows": "Harry, hand on neck, talks on a sunny cobbled street to a beaming little girl in a red dress outside a shop.",
+  "should_show": "Harry talking with Valentine on the main-avenue sidewalk, her jump rope in hand, she cheerful on the surface but with subtle tell-tale genius details.",
+  "prompt": "Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. rubbing his neck, a bit lost, on the sunny main avenue sidewalk, shopfronts and awnings behind. Facing him, Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She beams, eager to help, a jump rope over one shoulder. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": " “No... I’m just looking for someone, although I don’t really know who,” I answered feeling a bit down.\n“Oh, that seems tricky,” she said, and then her face lit up. “You know what? Maybe I can help you find this person!” she said brightly."
+ },
+ {
+  "key": "2086",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Valentine Summers (the antagonist; text reveals her mom is the teacher and dad the water-plant guard) is drawn as a generic sweet small girl with no mad-genius flair, younger than eight"
+  ],
+  "shows": "Harry watches a happy little girl in a red dress jumping rope on a sunny stone street at sunset.",
+  "should_show": "Valentine jumping rope on the avenue sidewalk while Harry watches, with her genius details visible.",
+  "prompt": "Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She happily jumps rope on the sunny main avenue sidewalk, shopfronts and awnings behind while Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. walks away; her eyes follow him over her shoulder. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“No, you wouldn’t know someone like that. But thanks anyway for asking”. \nShe smiled at me again, and then began jumping the rope again."
+ },
+ {
+  "key": "2087",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Valentine Summers (the antagonist; text reveals her mom is the teacher and dad the water-plant guard) is drawn as a generic sweet small girl with no mad-genius flair, younger than eight; this is the key scene where she 'stares frankly into his eyes' and should feel quietly unsettling"
+  ],
+  "shows": "Harry crouches, seen from behind, talking to a smiling little girl in a red dress on a sunny street.",
+  "should_show": "Harry, suspicious, faces Valentine, who looks straight into his eyes with an unsettlingly knowing stare.",
+  "prompt": "Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. crouching, eyeing her suspiciously, on the sunny main avenue sidewalk, shopfronts and awnings behind. Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She smiles innocently and looks frankly straight into his eyes, a little too steadily for a child; the notebook pokes out of her dress pocket. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“Why are they so busy, if I may ask? Does it have anything to do with sunflowers?”, I asked, eyeing her suspiciously. She smiled at me innocently, not seeming to notice my tension. \n“Oh, you know. My mom’s a teacher at the local school, so she’s always busy with homework, and my dad works double shifts as a security guard at the water processing plant.” \nShe raised her head and stared frankly into my eyes. “Being an adult isn’t too fun, is it?”\nI didn’t really know what to answer to that."
+ },
+ {
+  "key": "2088",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Valentine Summers (the antagonist; text reveals her mom is the teacher and dad the water-plant guard) is drawn as a generic sweet small girl with no mad-genius flair, younger than eight"
+  ],
+  "shows": "Harry crouches and gestures kindly to a disappointed little girl in a red dress looking down.",
+  "should_show": "Harry apologising to a crestfallen Valentine, her genius design visible.",
+  "prompt": "Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. crouching, apologetic, on the sunny main avenue sidewalk, shopfronts and awnings behind. Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She looks down, disappointed, clutching her notebook to her chest. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“No, it was just a thought,” I said, feeling sorry for her face of disappointment."
+ },
+ {
+  "key": "2121",
+  "group": "valentine",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Bright cheerful light undersells the dark revelation; the 'false bottom' is not evident (it is just an open lift-lid desk)",
+   "Notebook doodles generic, but acceptable"
+  ],
+  "shows": "Harry sits at a lift-lid school desk reading a notebook full of diagrams and equations in a sunny empty classroom.",
+  "should_show": "Harry discovering a hidden false-bottom compartment crammed with schematics and equations, in dimmer, dramatic late light.",
+  "prompt": "Close view of a lifted school desk lid in an empty classroom at dusk, the false bottom open: blueprints of a sun-devouring machine stamped with an eclipse emblem, orbital calculations, sunflower diagrams crossed out in red, a timetable of every minute of the day. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. stares at them in horror, lit by the window. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "It was her. It had always been her. Inside the false bottom of Valentine Summers’ desk I found all her secret plans and schematics, her musings and calculations. She had planned everything, accounted for every setback. What kind of twisted, brilliant mind lay hidden inside that innocent-looking eight year old girl? I couldn’t follow her entire lines of thought, as there were too many ramifications and leaps of logic for me, but on those childish notebook pages I saw equations of M-theory and quantum physics that many accomplished theoretical physicists would have killed to read. During the following hours I understood everything, including why she wanted to murder my sunflower. Perhaps the simplest explanation was found on this old entry of her diary:"
+ },
+ {
+  "key": "2132",
+  "group": "valentine",
+  "place": "School",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Valentine Summers (the antagonist; text reveals her mom is the teacher and dad the water-plant guard) is drawn as a generic sweet small girl with no mad-genius flair, younger than eight",
+   "Miss Summers indistinct from concierge/neighbour"
+  ],
+  "shows": "At the school gate Harry panics while Miss Summers calmly rests a hand on her little daughter in a red dress.",
+  "should_show": "Harry panicking at the gate; cool, calm Miss Summers presenting Valentine, who looks innocent yet subtly sly.",
+  "prompt": "The school gate. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. shouting in panic, pointing. Miss Summers, the new teacher and Valentine's mother: about forty, dark hair in a tight bun, thin glasses, grey-blue blouse, navy skirt, a stack of folders, serenely unbothered. Beside her, Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She holds her mother's hand and looks up at Harry, puzzled and polite. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“You don’t understand! Your own daughter is talking to the murderer!'', I screamed in panic. Surprisingly, Miss Summers stayed as calm as a cool breeze. “My daughter, you say? Well, you will find she’s quite mature for her age. Why don’t we call her and ask her about it?”. And that’s just what she did. Five minutes later her daughter was at the gate, wearing the same dress as the other day… which actually made sense, of course, considering we were reliving the same twenty-four hours over and over. “Dear, this man here says he saw you talking with a strange person a few minutes ago. Is that true?” said Miss Summers to her daughter."
+ },
+ {
+  "key": "2133",
+  "group": "valentine",
+  "place": "School",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Valentine Summers (the antagonist; text reveals her mom is the teacher and dad the water-plant guard) is drawn as a generic sweet small girl with no mad-genius flair, younger than eight (here she is chattering excitedly; should show her bright 'know-it-all' genius flair)"
+  ],
+  "shows": "Valentine excitedly talks to Harry at the school gate while Miss Summers waves dismissively.",
+  "should_show": "Valentine eagerly explaining about the fire woman, with genius design; Miss Summers waving Harry off.",
+  "prompt": "The school gate. Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She talks brightly to Harry, delighted to help; Miss Summers, the new teacher and Valentine's mother: about forty, dark hair in a tight bun, thin glasses, grey-blue blouse, navy skirt, a stack of folders, serenely unbothered. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. looks unsure. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "Her daughter’s face lit up, delighted to know the answer to the question. “Strange? It was just Miss Montreau, the fire woman who’s been coming this week to prepare us for the fire emergency drills. She was telling me stories of the people she has saved, mom!” she yelled with wide eyes. \nMiss Summers made a dismissive gesture with her hand. “See? No reason to get so worked out. And now, if you’ll excuse me, I have quite a busy day ahead”."
+ },
+ {
+  "key": "2134",
+  "group": "valentine",
+  "place": "School",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Valentine Summers (the antagonist; text reveals her mom is the teacher and dad the water-plant guard) is drawn as a generic sweet small girl with no mad-genius flair, younger than eight"
+  ],
+  "shows": "Harry addresses calm Miss Summers at the school gate, her daughter in a red dress standing beside her.",
+  "should_show": "Same composition with Valentine redesigned and Miss Summers distinct.",
+  "prompt": "The school gate. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. speaks gravely to Miss Summers, the new teacher and Valentine's mother: about forty, dark hair in a tight bun, thin glasses, grey-blue blouse, navy skirt, a stack of folders, serenely unbothered. She stays perfectly calm. At her side, Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She is the only one quietly watching Harry. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“Your daughter is in danger, Miss Summers”, I said. I was expecting her to panic at such an announcement, or at least get alarmed, but she stayed as calm as a cool breeze. “My daughter, you say? Well, you will find she’s quite mature for her age. Why don’t we call her and ask her about it?”. And that’s just what she did. Five minutes later her daughter was at the gate, wearing the same dress as the other day… which actually made sense, of course, considering we were reliving the same twenty-four hours over and over. “Dear, this man here says he saw you talking with a strange person a few minutes ago. Is that true?” said Miss Summers to her daughter."
+ },
+ {
+  "key": "2227",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Setting is a quiet residential Mediterranean lane, not a main avenue with shops.",
+   "If this girl is Valentine, nothing hints at her genius (text says 'innocent looking' so sweetness is intended, but a subtle sly glint/detail would help)."
+  ],
+  "shows": "A smiling girl in a red dress jumps rope on a stone-paved lane while Harry approaches at sunset.",
+  "should_show": null,
+  "prompt": "Evening on the sunny main avenue sidewalk, shopfronts and awnings behind. Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. Jumping rope; as Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. approaches she flashes a charming, wide-eyed smile. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "... an innocent looking girl, about eight or nine years old. She was jumping rope on the sidewalk, but as soon as I approached her she flashed me a charming smile. “Good evening, sir! Did you get lost?”, she asked with wide eyes."
+ },
+ {
+  "key": "2228",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Same residential-lane setting rather than the main avenue; no jump rope here.",
+   "No hint of the mad genius."
+  ],
+  "shows": "The same girl in red, with a small shoulder bag, greets Harry cheerfully on a cobbled lane.",
+  "should_show": null,
+  "prompt": "Evening on the sunny main avenue sidewalk, shopfronts and awnings behind. Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She stops jumping rope and greets Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. cheerfully. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "... an innocent looking girl. ”Hey, it’s you again!” she said, “Are you still lost?”"
+ },
+ {
+  "key": "2236",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Harry carries a backpack here instead of his usual messenger bag (consistency).",
+   "Residential lane rather than main avenue; no Valentine hint."
+  ],
+  "shows": "The girl in red with a small backpack points down the lane while talking to Harry.",
+  "should_show": null,
+  "prompt": "on the sunny main avenue sidewalk, shopfronts and awnings behind. Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She waves vaguely to the right, pouting about her busy parents; Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. listens. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“All my life. How about you?” I asked back.\n“Oh, I live right over there,” she said, waving vaguely to the right. “But I get bored at home. My dad and my mom are always so busy... “ she said, pouting. "
+ },
+ {
+  "key": "2240",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "ok",
+  "defect": null,
+  "issues": [
+   "Pondering pose fits the text; setting again a residential lane rather than the avenue."
+  ],
+  "shows": "Harry gestures earnestly while the girl in red ponders with a finger to her chin on the stone lane.",
+  "should_show": null,
+  "prompt": "on the sunny main avenue sidewalk, shopfronts and awnings behind. Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She ponders seriously with a finger on her chin, forehead wrinkled; Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. gestures earnestly. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": " “Sure, why not. Do you know someone with a murderous hatred for sunflowers?”, I asked, glad to finally find someone willing to help. \nShe pondered at this quite seriously for a few seconds, wrinkling her forehead. “You mean... those cute yellow flowers that are always facing the sun? Why would anyone hate that?”.\n“My thoughts exactly,” I agreed quite passionately. “It’s okay, forget about it”."
+ },
+ {
+  "key": "2241",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Valentine (the jump-rope girl, later revealed as the antagonist) is drawn as a generic sweet little girl with no hint of the cool mad-genius the user requires",
+   "Setting reads as a quiet Mediterranean hillside lane rather than a town main avenue with shops (acceptable)"
+  ],
+  "shows": "Harry crouches on a sunny cobbled lane talking to a smiling little girl in a red dress who is jumping rope.",
+  "should_show": "Same scene, but Valentine should carry subtle mad-genius cues (knowing smirk, sharp eyes, schematic notebook) while seemingly innocent, on a shop-lined main avenue.",
+  "prompt": "on the sunny main avenue sidewalk, shopfronts and awnings behind. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. crouching, offering advice. Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She listens curiously, jump rope paused, and her bright eyes flick for a moment to the sunflower pin on a passer-by. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“Why don’t you get a plant? That’s what I did”, I offered helpfully. \n“A plant? What kind of plant?”\n“A sunflower” I replied automatically. \nShe eyed me curiously. “I will think about it. Maybe mom would get me one if I ask”, she finally said before resuming her rope jumping. "
+ },
+ {
+  "key": "2242",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Valentine again depicted as a plain sweet child, no mad-genius cues",
+   "Sky is a sunset with low sun although the scene happens during the day before school (minor)"
+  ],
+  "shows": "Harry, standing outside a sweet shop at sunset, hands a chocolate bar to the little girl in a red dress.",
+  "should_show": "Harry handing the chocolate bar to Valentine in daylight on the main avenue, with Valentine showing a cool, calculating mad-genius edge under the cute exterior.",
+  "prompt": "Outside a little chocolate shop on the sunny main avenue sidewalk, shopfronts and awnings behind. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. hands a chocolate bar to Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. She takes it with a happy smile. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“Sure, here you are,” I said, handing her the chocolate bar I had bought before."
+ },
+ {
+  "key": "2244",
+  "group": "valentine",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Harry is shown chatting with a woman and girl who look exactly like Miss Summers and Valentine, although in this branch he learns nothing and does not meet them; mildly pre-empts the next scene",
+   "Valentine (if that is her) again shown as plain sweet child"
+  ],
+  "shows": "Harry speaks to a woman in a mustard cardigan with a little girl in a red dress and backpack at a brick school gate among other parents and children.",
+  "should_show": null,
+  "prompt": "The busy school gate in the morning, parents dropping children off. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. asking around. In the background, Miss Summers, the new teacher and Valentine's mother: about forty, dark hair in a tight bun, thin glasses, grey-blue blouse, navy skirt, a stack of folders, serenely unbothered. with Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. carrying a red backpack. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "talked with some adults at the gate. Most of them were parents delivering or waiting to pick up their children, too busy to pay me any attention. I asked around, but no one had seen anyone suspicious, and although I managed to eavesdrop some conversations here and there, I learned nothing useful in relation to my sunflower."
+ },
+ {
+  "key": "2245",
+  "group": "valentine",
+  "place": "School",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "This is Valentine's first appearance at school next to her mother, and she is a generic cute child holding mum's hand with no mad-genius cue the user demands",
+   "Otherwise composition fits: Harry notices Miss Summers resembling the girl"
+  ],
+  "shows": "Over-the-shoulder view of Harry watching a woman in a mustard cardigan and a smiling little girl in a red dress at the school gate among parents.",
+  "should_show": "Harry noticing Miss Summers and Valentine at the gate, with Valentine visibly the cool little mastermind (sly glance, schematic notebook) next to her prim mother.",
+  "prompt": "The school gate. Over Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man.'s shoulder: Miss Summers, the new teacher and Valentine's mother: about forty, dark hair in a tight bun, thin glasses, grey-blue blouse, navy skirt, a stack of folders, serenely unbothered. arriving with Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. carrying a red backpack; the girl glances back over her shoulder at Harry. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "talked with some adults at the gate. Most of them were parents delivering or waiting to pick up their children, too busy to pay me any attention. I was looking for a way to get inside the school and save the innocent girl from the main avenue when, suddenly, my attention was caught by a grown woman who looked just like the little girl. It had to be her mother!"
+ },
+ {
+  "key": "2257",
+  "group": "valentine",
+  "place": "School",
+  "verdict": "minor",
+  "defect": "The drawer opens on the camera-facing side of the desk while the man sits at its left side, so he reaches sideways into it. The worksheet on the desk shows garbled pseudo-fractions under the 'Valentine Summers' heading.",
+  "issues": [
+   "Key reveal moment ('The truth') is not shown: the drawer contains only a tied bundle, no hint of Valentine's secret plans/schematics",
+   "Worksheet shows fractions rather than additions/subtractions (trivial); the legible 'Valentine Summers' text on the paper is fine but it is text in the image"
+  ],
+  "shows": "Harry sits at a classroom desk prying the drawer with a pen, watercolor drawings and a worksheet labelled 'Valentine Summers' on top.",
+  "should_show": "Harry lifting the false bottom of the drawer to reveal a hidden stash of mad-genius schematics and calculations glowing with menace.",
+  "prompt": "Classroom 2B, empty. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. kneels at a small desk with neat papers signed in tidy handwriting and a sticker-covered notebook, prying open a false-bottomed drawer; inside, the edge of a blueprint and a brass gear glint. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "Followed straight until I reached classroom 2B. Miss Summers’ daughter’s class. \n I had to search desk by desk, as I had no idea which one was hers, but soon enough I found a desk with a pile of papers signed under the name “Valentine Summers”. She had a neat, regular handwriting, and the papers were all perfectly inconspicuous. Some watercolor drawings, a notebook page with substractions and additions for math class… I started to give up, thinking I was going mad, but my fingers kept prickling around the her desk, and then I felt it. A tiny hole under the table, almost too small to feel it with your own fingers. A false bottom. I took out the ink charge of one of her pens and used it to life the fake bottom of her desk drawer. And inside, I finally found what I had been looking for. The truth."
+ },
+ {
+  "key": "2306",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Valentine (the avenue girl) is drawn as a generic sweet little girl with no hint of the mad genius the user wants",
+   "No jump rope; main avenue rendered as a quiet hilly Mediterranean village lane with no shops"
+  ],
+  "shows": "Harry, hands in pockets, smiles at a delighted little girl in a red dress on a sunny cobbled village street.",
+  "should_show": "Harry offering chocolate to the girl on a shop-lined main avenue; she looks delighted but with a subtle knowing, clever glint (jump rope in hand, a notebook of diagrams peeking from her pocket).",
+  "prompt": "on the sunny main avenue sidewalk, shopfronts and awnings behind. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. asks a question; Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. brightens instantly at the word chocolate, delighted. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“Do you like chocolate?” I asked, ignoring her question. Her face brightened up immediately. \n“Of course!” she yelled in delight. “Why, do you have some?”"
+ },
+ {
+  "key": "2310",
+  "group": "valentine",
+  "place": "Main avenue",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Content and melancholy mood fit well",
+   "Valentine again drawn as an ordinary sweet child; no clever/mad-genius cues the user asked for"
+  ],
+  "shows": "Harry and the little girl sit together on stone steps of a village street at sunset, she smiles at him sympathetically.",
+  "should_show": "Same scene but with Valentine given subtle genius cues (notebook of schematics, sharp eyes) while keeping the gentle mood.",
+  "prompt": "Sunset, stone steps on the main avenue. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. and Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. sit side by side; for once she looks genuinely sad and lonely, her notebook closed on her knees. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“I get lonely too”, I said. I had never told anyone anything like that before, but I was feeling a strange kind of connection with this little girl. Perhaps it was because somehow, under her cheerful appearance, she seemed as sad as I was. “To be honest, sometimes I feel like my only reason for going through the day is taking care of my sunflower”.\nShe gave me a sympathetic smile and said nothing else. "
+ },
+ {
+  "key": "2313",
+  "group": "valentine",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Fits the text; Valentine is tiny and drawn as an ordinary sweet schoolgirl, no mad-genius cues"
+  ],
+  "shows": "Harry peeks from behind a brick gatepost at his neighbour (a woman in a cardigan and skirt) talking with a small schoolgirl with a red backpack in front of a brick school.",
+  "should_show": null,
+  "prompt": "Schoolyard fence. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. peeks from behind a brick gatepost. In the yard, Harry's neighbour, the fire woman Miss Montreau: about thirty-five, athletic, brown hair in a ponytail, orange firefighter trousers with braces over a dark T-shirt. crouches to listen to Valentine Summers, eight years old, who looks like a genuinely sweet, kind, ordinary little girl: dark-brown bob with a fringe, rosy cheeks, a warm open smile, a red dress with a white collar, white socks, scuffed Mary Janes. Only three quiet clues, never emphasised: a small hair clip shaped like an eclipsed sun (a black disc with a thin golden ring) holding back her fringe; unusually bright, attentive amber eyes that are always looking at the one thing that matters; and a child's sticker-covered notebook from which, if you look closely, a page of precise technical schematics (orbits, gears, sunflower diagrams) peeks out. who is explaining something while the woman nods. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "saw my neighbour talking with a young schoolgirl! How was this even possible? What was a cold-blooded murderer doing here? I leaned against the fence, and I realized the schoolgirl was the young girl I had seen playing at the main avenue. That was so strange… what was actually happening here? Was my evil neighbour somehow using this poor child for the purposes of her evil plans? I would have to find a way to get inside the school and unveil the truth."
+ },
+ {
+  "key": "2474",
+  "group": "valentine",
+  "place": "Loop & endings",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The Destroyer of Suns is Valentine, an eight-year-old girl, but the doorway silhouette is a tall bulky adult",
+   "Text: lights go out and sleeping gas sprays - room is still lit, no gas"
+  ],
+  "shows": "A cosy living room at night; a tall dark adult silhouette stands in the open doorway.",
+  "should_show": "Room plunged into darkness, hiss of sleeping gas mist, a small child-sized silhouette with goggles in the doorway.",
+  "prompt": "Harry's living room at night, the lights just gone out, a faint hiss of sleeping gas curling from a vent. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. slumps, drowsy. In the doorway, small and backlit, the silhouette of an eight-year-old girl with a bob, an eclipse-shaped hair clip catching the light, goggles on her forehead, a lab coat too big for her. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "Suddenly, the lights go out. I look around, confused. I hear a spraying sound, and I start feeling sleepy. So sleepy. \nThen I hear the voice. It’s a female voice. Cheerful, soft. I know it’s her. She’s the one I’ve been fighting all along. The Destroyer of Suns. And I’m sure I’ve heard her before… somewhere."
+ },
+ {
+  "key": "2475",
+  "group": "valentine",
+  "place": "Loop & endings",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Whispering figure is again an adult-sized silhouette, contradicting Valentine (eight-year-old)",
+   "Cartoon sound-wave arcs floating in the air look like an artefact",
+   "No sense of the girl's sweet sinister whisper / sleep"
+  ],
+  "shows": "A dark room with a sunflower in the foreground and an adult silhouette in a lit doorway with sound-wave marks.",
+  "should_show": "Harry's blurred, drowsy point of view as Valentine leans close to whisper, mist around, her cool genius look.",
+  "prompt": "Close and dark. Valentine revealed as the Destroyer of Suns: the same eight-year-old with the same bob, red dress and eclipse hair clip, now in an oversized white lab coat with rolled-up sleeves and brass goggles pushed up on her forehead, utterly calm, the sweetness gone from her smile, lit by the cold blue glow of a hand-built brass machine stamped with the same eclipse emblem. Small but frightening: the most composed person in the room. She kneels beside drowsy Harry and whispers to him gently, her goggles reflecting the sunflower; behind her, through the window, the sun is going out like an ember. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''It’s all right'', she whispers. ''Why do you resist it so much? A world without time won’t be so bad, you know. According to my calculations, we will all be young forever. Don’t you want to live forever...?''\n… The world ends."
+ },
+ {
+  "key": "2477",
+  "group": "valentine",
+  "place": "Loop & endings",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "'She' (Valentine, eight) is again shown as an adult-sized silhouette in the doorway",
+   "Harry, who sees through her every plan, is absent"
+  ],
+  "shows": "A moonlit bedroom with mist near the sunflower and a tall dark silhouette in the doorway.",
+  "should_show": "Harry calm and all-knowing facing Valentine as she enters, faint lines of causality/trajectories visible around her.",
+  "prompt": "Harry's bedroom by moonlight, gas mist near the sunflower pot. In the doorway: Valentine revealed as the Destroyer of Suns: the same eight-year-old with the same bob, red dress and eclipse hair clip, now in an oversized white lab coat with rolled-up sleeves and brass goggles pushed up on her forehead, utterly calm, the sweetness gone from her smile, lit by the cold blue glow of a hand-built brass machine stamped with the same eclipse emblem. Small but frightening: the most composed person in the room. She steps in, confident she has won; Harry, awake and ready, watches from the shadows. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "And then she comes, like she has to. Believing she has won, like always. But not this time. She may be brilliant beyond comprehension, but she’s still a slave of causality. I can see through her every feint, her every plan and counterplan."
+ },
+ {
+  "key": "2478",
+  "group": "valentine",
+  "place": "Loop & endings",
+  "verdict": "broken",
+  "defect": "Foreground man (lower-left/center) is cut off at the waist by the rooftop surface: a lighter slab of the same concrete runs across the bottom of the frame and covers his hips and legs, so he looks sunk into the floor up to his waist, with only one knee poking out. He does not sit on the roof in any believable way.",
+  "issues": [
+   "Harry's lower body sinks into / is cut off by the roof surface - looks like he is sitting in a hole (clipping)",
+   "Valentine is drawn as a cute ordinary girl in a red dress sitting on the ground - no mad-genius presence for the final confrontation",
+   "Setting (roof, moon) correct"
+  ],
+  "shows": "On a moonlit rooftop, Harry seen from behind (body merging into the roof) faces a small girl in a red dress sitting hugging her knees.",
+  "should_show": "Harry and Valentine standing face to face on a rooftop under the full moon, she small but formidable with her genius gear, both knowing.",
+  "prompt": "A town rooftop by full moonlight. Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. stands, feet firmly on the roof, facing Valentine revealed as the Destroyer of Suns: the same eight-year-old with the same bob, red dress and eclipse hair clip, now in an oversized white lab coat with rolled-up sleeves and brass goggles pushed up on her forehead, utterly calm, the sweetness gone from her smile, lit by the cold blue glow of a hand-built brass machine stamped with the same eclipse emblem. Small but frightening: the most composed person in the room. She stands perfectly calm, the town lights below, her machine humming beside her. Two geniuses meeting. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "We meet on the roof, by moonlight. She looks at me. A little girl, just eight years old. I know how long until she blinks again. I know how long she will exhale for. She looks at me, and she knows I know.\n''It seems my calculations were wrong, after all. Destroying the Guiding Sunflower doesn’t stop time… just resets it. But not for you. How long have you been trapped in here?'', she wonders.\n''Eons''."
+ },
+ {
+  "key": "2080",
+  "group": "voice",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The Voice is shown as a visible old bearded man with straw hat, apron and broom; the Voice must be unseen, speaking from under a sewer door",
+   "Setting is a bright open cobbled street, not the dark alley",
+   "Harry looks like a teenager here (smooth young face)"
+  ],
+  "shows": "Harry, looking youthful, chats on a sunny cobbled street with an old bearded man in straw hat and apron holding a broom.",
+  "should_show": "Harry alone in the dim alley, bent toward a rusty sewer grate/door in the ground from which the unseen Voice speaks; no other person.",
+  "prompt": "Harry, an adult man in his early thirties with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark trousers, crouching warily in a narrow, shadowy back alley at dusk, leaning toward a rusty iron sewer door set in the ground with a faint glow and steam rising from its slats, as if listening to a hidden voice; broken bottles, a trash can, a scruffy dog watching from the shadows; mysterious, slightly comic atmosphere; no other people visible. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The Voice is never shown. Only a rusty sewer door / grate low in the wall of a narrow, dark, litter-strewn alley, perhaps two faint glints in the dark behind the bars. The Voice is never shown. Only a rusty sewer door / grate low in the wall of a narrow, dark, litter-strewn alley, perhaps two faint glints in the dark behind the bars. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“Well, I am quite worried about my sunflower”, I admitted. \n“Ah, and as well you should”, assured the Voice, seriously. “Remember you are not alone in your endeavor, noble Guardian. There are others like you, others who oppose the tyranny of the Destroyer of Suns. By their love of sunflowers you shall recognize them. And now go in peace, young Guardian.”"
+ },
+ {
+  "key": "2081",
+  "group": "voice",
+  "place": "Main avenue",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Setting is a wide, sunny open street rather than the alleyway; otherwise conveys being left alone (manhole present)"
+  ],
+  "shows": "Harry stands alone, arms spread in bafflement, on an empty sunlit cobbled street with a manhole cover in the foreground.",
+  "should_show": "Harry alone and puzzled in the dim alley beside the now-silent sewer door.",
+  "prompt": "Harry stands alone, arms spread in bafflement, on an empty sunlit cobbled street with a manhole cover in the foreground. Same composition, redrawn so every figure sits or stands believably: hips on the seat, legs in front of the furniture, feet on the ground, nothing passing through anything. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "After that came only silence, and I was left alone feeling quite unsure of what exactly had happened."
+ },
+ {
+  "key": "2082",
+  "group": "voice",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The Voice is again shown as a visible old man (cap, beard, broom, cart) instead of an unseen voice under a sewer door",
+   "Harry 'losing his temper' at a sewer door is not depicted; open sunny street not the alley"
+  ],
+  "shows": "Harry argues with an old bearded street sweeper holding a broom on a sunny cobbled street.",
+  "should_show": "Harry, exasperated, shouting down at a sewer door in the dark alley; nobody visible.",
+  "prompt": "Harry, an adult man in his early thirties with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark trousers, standing in a gloomy narrow alley at dusk, red-faced and exasperated, pointing and shouting down at a rusty iron sewer door in the ground; thin wisps of steam curl up through its slats as if someone serene is answering from below; broken bottles and a scruffy dog nearby; comic-frustrated mood; no other people visible. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The Voice is never shown. Only a rusty sewer door / grate low in the wall of a narrow, dark, litter-strewn alley, perhaps two faint glints in the dark behind the bars. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“I’d say you’re just an idiot hiding under a sewer door...” I replied, losing my temper. \n“Brother, you’re not really angry with me, but with yourself. Sunflowers, grant patience to this lost lamb. He’ll be back once he’s ready to hear the Truth”."
+ },
+ {
+  "key": "2232",
+  "group": "voice",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The Voice speaks from a sewer door in a small, dark, suspicious alleyway; this is a wide open sunny avenue with no alley.",
+   "Cheerful mood contradicts Harry being startled by an invisible stranger.",
+   "Sunflowers growing on the street undercut the story (sunflowers are rare; Harry's is precious)."
+  ],
+  "shows": "A sunny, cheerful shopping street with a manhole cover in the foreground, sunflowers by a bench and a red postbox.",
+  "should_show": "A narrow, shadowy alley off the main avenue with a rusty sewer door/grate, Harry startled, no visible speaker.",
+  "prompt": "Harry, an adult man with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark trousers and brown boots, stands startled and wary in a narrow, shadowy alleyway between old brick buildings just off a town's main shopping street. At his feet, set low in the wall, a rusty iron sewer door with a grated vent, faint darkness behind it; nobody else is visible. Puddles, drainpipes, overflowing bins, a sliver of warm evening light at the alley mouth behind him. Eerie, mysterious but slightly comic mood. No people other than Harry, no sunflowers. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The Voice is never shown. Only a rusty sewer door / grate low in the wall of a narrow, dark, litter-strewn alley, perhaps two faint glints in the dark behind the bars. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“And who the hell are you?”, I asked quite briskly. I admit I don’t take too kindly to invisible strangers startling me in small alleways. \n“Worry not, sunflower Brother. As I said, I am the Mysterious Voice™, Protector of the Poor and Helpless, Saver of Worlds, and Professional Adventure Advisor.”"
+ },
+ {
+  "key": "2235",
+  "group": "voice",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "No alley and no sewer door - the Voice's location is missing entirely; idyllic setting instead of a dingy alley.",
+   "Mood too pleasant for the hesitant, absurd exchange."
+  ],
+  "shows": "Harry stands alone on a bright, picturesque cobbled street of a hill town.",
+  "should_show": "Harry hesitating in the dim alley, looking down at the sewer grate from which the confident Voice speaks.",
+  "prompt": "Harry, an adult man with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark trousers and brown boots, stands hesitantly in a dim, narrow alleyway, scratching his head and looking down doubtfully at a rusty sewer door/grate low in the brick wall, as if listening to someone inside. No one else visible. Dripping drainpipe, damp cobbles, scattered litter, a bright strip of the main avenue visible at the alley entrance. Mysterious, gently comic mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The Voice is never shown. Only a rusty sewer door / grate low in the wall of a narrow, dark, litter-strewn alley, perhaps two faint glints in the dark behind the bars. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“If you say so...”, I said, hesitating. \n“Of course I say so”, replied the Voice with unwavering confidence. “Now go save a space-time continuum or two. And remember me when you find yourself in need of a friendly, mysterious Voice.”"
+ },
+ {
+  "key": "2305",
+  "group": "voice",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "This speech is the unseen Voice from under the sewer door in the dark alley; the image shows a smiling street sweeper with a broom on a sunny street, i.e. the Voice depicted as a person",
+   "Mood too cheerful; should be mysterious"
+  ],
+  "shows": "Harry chats with a smiling elderly street sweeper holding a broom on a sunlit cobbled street.",
+  "should_show": "Harry alone in a dim alleyway off the main avenue, crouching by a sewer grate/door from which the mysterious Voice speaks, no person visible.",
+  "prompt": "A narrow, shadowy alleyway off a small-town main avenue, damp walls and trash bins, a shaft of daylight from the street behind. Harry, an adult man with messy dark-brown hair and stubble, olive-green shirt with rolled sleeves, dark trousers, brown boots, crouches listening intently beside an old iron sewer door set in the ground, from which a faint warm glow and wisps of vapour rise, suggesting an unseen speaker below. No other person visible. Mysterious, conspiratorial mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The Voice is never shown. Only a rusty sewer door / grate low in the wall of a narrow, dark, litter-strewn alley, perhaps two faint glints in the dark behind the bars. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“My, my. I’m glad to see the Guiding Sunflower has such a perceptive guardian. Keep in mind that not everyone follows the exact same patterns every loop. Something to do with quantum decoherence in the brain microtubules, I’m told. Anyway, make good use of the gift the Guiding Sunflower has bestowed upon you to save It, and to save us all. Go in peace, young guardian.”"
+ },
+ {
+  "key": "2343",
+  "group": "voice",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The Voice is shown as a person: an old bearded man in an apron at a shop door (the chocolate-shop keeper) - the Voice must never be shown",
+   "Should be a dark suspicious alleyway with a sewer door; image is a sunny shop front"
+  ],
+  "shows": "Harry chats with an old white-bearded shopkeeper standing in the doorway of a bakery/chocolate shop on a sunny village street.",
+  "should_show": "Harry alone in a dark, narrow alley, looking down at a sewer grate from which a voice chuckles; no speaker visible.",
+  "prompt": "Harry, an adult man in his thirties with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark charcoal trousers, brown boots, alone in a narrow, shadowy back alley off a small-town main avenue, bins and damp brick walls, looking down warily at a round iron sewer cover at his feet from which a faint eerie greenish glow and wisps of steam rise; no other person visible; dusk, mysterious, slightly comic-eerie mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The Voice is never shown. Only a rusty sewer door / grate low in the wall of a narrow, dark, litter-strewn alley, perhaps two faint glints in the dark behind the bars. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "The voice chuckled to itself. “Indeed, brother. Indeed. Anyway,"
+ },
+ {
+  "key": "2344-2345-2346",
+  "group": "voice",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Voice correctly unseen (good), but setting is a wide sunny open village street at sunset, not the suspicious dark alleyway",
+   "Mood cheerful rather than eerie; inconsistent with how 2343 should be redrawn"
+  ],
+  "shows": "Harry crouches on a sunlit cobbled street staring at a manhole cover.",
+  "should_show": "Harry in a dark suspicious alley, startled, looking at the sewer door under his feet where the voice comes from.",
+  "prompt": "Harry, an adult man in his thirties with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark charcoal trousers, brown boots, crouching in a dim, narrow alleyway between brick buildings, startled, staring at the iron sewer door directly under his feet, as if hearing a voice from below; faint light leaking from the grate, puddles, shadows; no other person visible; eerie yet whimsical mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The Voice is never shown. Only a rusty sewer door / grate low in the wall of a narrow, dark, litter-strewn alley, perhaps two faint glints in the dark behind the bars. The Voice is never shown. Only a rusty sewer door / grate low in the wall of a narrow, dark, litter-strewn alley, perhaps two faint glints in the dark behind the bars. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“Oh, dear, so innocent. It rose \n\n times already. Anyway,\n\n... you look kind of down. Seems like you might need some advice from your friendly next door mysterious voice, amirite?”\nAt first I thought I was imagining voices again, but this one seemed too real to be a figment. In fact, as I listened I realized the sound seemed to be coming from the sewer door directly under my feet. "
+ },
+ {
+  "key": "1948",
+  "group": "defects",
+  "place": "Park",
+  "verdict": "ok",
+  "defect": "The man on the park bench (left foreground) clips through the bench. His hips sit at the right armrest instead of on the seat, his thighs pass through/over the iron armrest and his feet land beyond the end of the bench. Same body-in-furniture problem as 1982.",
+  "issues": [],
+  "shows": "Harry sits on a bench as the street sweeper walks away along the path with his broom.",
+  "should_show": null,
+  "prompt": "Harry sits on a bench as the street sweeper walks away along the path with his broom. Same composition, redrawn so every figure sits or stands believably: hips on the seat, legs in front of the furniture, feet on the ground, nothing passing through anything. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The street sweeper (member of the secret Order of the Sunflower): middle-aged, black moustache, blue-grey coveralls and cap, twig broom and bin cart; a small sunflower pin. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“Sure you can,” I said, not really knowing what I was talking about. All of my love has and shall always be for my sunflower. \n“Yeah, but what would happen then?”, he countered. “The world would be ruined. Everything would be lost. No, I just cannot do it. I can’t. It hurts and it’s unfair, but I have to suck it up and do what’s right”.\n”Uh...  okay”, I answered, not really knowing what else to say. And he left. What am I supposed to make of that that? This case needs someone who actually understands people..."
+ },
+ {
+  "key": "1981",
+  "group": "defects",
+  "place": "Warehouses",
+  "verdict": "ok",
+  "defect": "The man on the red sofa (left) sits too high. His hips are level with the top of the near armrest and his torso comes out from behind the armrest instead of sinking into the seat. His crossed legs float over the seat cushion. Same composition and same defect as 1982.",
+  "issues": [],
+  "shows": "Harry lounges on a worn red sofa in a warehouse at night, moon visible through the high windows.",
+  "should_show": null,
+  "prompt": "Harry lounges on a worn red sofa in a warehouse at night, moon visible through the high windows. Same composition, redrawn so every figure sits or stands believably: hips on the seat, legs in front of the furniture, feet on the ground, nothing passing through anything. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "... sat on a dusty old sofa and did nothing till the moon peeked through the clouds.\nThe world seemed to be turning just fine."
+ },
+ {
+  "key": "1982",
+  "group": "defects",
+  "place": "Warehouses",
+  "verdict": "ok",
+  "defect": "The man on the sofa (left) sits at backrest height and his legs pass through the armrest/seat, so the body and sofa don't share believable space (the calibration case reported by the user).",
+  "issues": [],
+  "shows": "Harry sits on the same worn red sofa in the warehouse in late-afternoon light, big doors open onto sunset.",
+  "should_show": null,
+  "prompt": "Harry sits on the same worn red sofa in the warehouse in late-afternoon light, big doors open onto sunset. Same composition, redrawn so every figure sits or stands believably: hips on the seat, legs in front of the furniture, feet on the ground, nothing passing through anything. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "... sat on this dusty old sofa and did nothing for a while til the shadows moved.\nThe world seemed to be turning just fine."
+ },
+ {
+  "key": "2159",
+  "group": "defects",
+  "place": "Park",
+  "verdict": "ok",
+  "defect": "Bench geometry/sitting position broken (bottom-left to center): the backrest stops at a metal end bracket roughly mid-bench, but the seat planks keep going to the right well past it. The man sits at or beyond that end, and his legs lie across the overhanging seat outside the bench frame, so he and the bench don't fill believable space.",
+  "issues": [],
+  "shows": "Harry, seen from behind, eats a sandwich on a park bench facing the pond and red bridge.",
+  "should_show": null,
+  "prompt": "Harry, seen from behind, eats a sandwich on a park bench facing the pond and red bridge. Same composition, redrawn so every figure sits or stands believably: hips on the seat, legs in front of the furniture, feet on the ground, nothing passing through anything. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "I took the sandwich. What can I say? I was hungry, and it was a really good looking sandwich."
+ },
+ {
+  "key": "2160",
+  "group": "defects",
+  "place": "Park",
+  "verdict": "minor",
+  "defect": "Man on bench seen from behind (left-center): he sits at the far right end, and the bench's front iron leg passes in front of his hip. His knees and feet stick out past the bench's end support, onto a seat that overhangs the leg far more than is plausible. He reads as half off or clipping the bench end.",
+  "issues": [
+   "Text is about deciding to leave the street sweeper (on the phone) alone; the sweeper is not shown at all, so the image reads as generic. Acceptable."
+  ],
+  "shows": "Harry sits alone on a park bench looking at the pond.",
+  "should_show": "Harry turning away while the street sweeper talks agitatedly on a phone in the background of the park avenue.",
+  "prompt": "Harry sits alone on a park bench looking at the pond. Same composition, redrawn so every figure sits or stands believably: hips on the seat, legs in front of the furniture, feet on the ground, nothing passing through anything. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "Leave him alone. We all need our privacy from time to time. Perhaps later would be a better time."
+ },
+ {
+  "key": "2148-2151",
+  "group": "defects",
+  "place": "Home",
+  "verdict": "broken",
+  "defect": "Keyhole impossibly large (center-right): it is a physical hole cut in the door, bigger than the man's head, right under the doorknob plate, with the room seen through it. The man's eye is not at the hole; his head is beside it. The scale and placement are physically impossible.",
+  "issues": [
+   "The 'keyhole' is a giant head-sized oval hole in the door next to the knob (impossible scale/geometry)",
+   "Content otherwise correct (coiled rope, red cylinders with fuses)"
+  ],
+  "shows": "Harry peers through an enormous oval hole in a door at a coiled rope and three red dynamite-like cylinders on the floor.",
+  "should_show": "Keyhole-framed view of the coiled rope and red cylinders with strings on the floor.",
+  "prompt": "View through an old-fashioned keyhole (dark keyhole-shaped vignette framing the scene) into a dim storage room in an apartment: a long coiled rope lies on the floor next to several red cylinders with strings sticking out of them like fuses; dusty light from a small window; ominous, suspicious mood. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "... peeked through the keyhole. \n\nThere was a long rope coiled on the ground and some red cylinders with a string sticking out of them next to it."
+ },
+ {
+  "key": "2111",
+  "group": "defects",
+  "place": "School",
+  "verdict": "ok",
+  "defect": "Contradictory stair geometry (bottom half): the railing and steps on the left go down to the left, but a full-width step and riser in front of the corridor floor go down toward the viewer. The man stands on that lower step, so his legs drop below the landing edge as he holds a railing for stairs that run another way. Where he stands and how the stairs run don't add up.",
+  "issues": [],
+  "shows": "Harry climbs the last stairs onto a sunlit second-floor corridor.",
+  "should_show": null,
+  "prompt": "Harry climbs the last stairs onto a sunlit second-floor corridor. Same composition, redrawn so every figure sits or stands believably: hips on the seat, legs in front of the furniture, feet on the ground, nothing passing through anything. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "Went upstairs to the second floor. Then I…"
+ },
+ {
+  "key": "2290",
+  "group": "defects",
+  "place": "Pizzeria",
+  "verdict": "minor",
+  "defect": "Standing young man (left) intersects the table: the table's near-left corner/top edge is drawn over his right thigh, so the table seems to cut into his leg while his torso stands in front of it. The seated homeless man (center-right) has no visible chair under him: the chair back is beside his shoulder, not behind him, and his lower body dissolves into a dark mass under the table.",
+  "issues": [
+   "Hobo is sitting inside the pizzeria at a table, but he is on the sidewalk next door",
+   "Harry still holds the sandwich while the hobo is already biting it (awkward)"
+  ],
+  "shows": "Harry hands a sandwich to the hobo seated at a table inside the pizzeria, beer bottle on table.",
+  "should_show": null,
+  "prompt": "Harry hands a sandwich to the hobo seated at a table inside the pizzeria, beer bottle on table. Same composition, redrawn so every figure sits or stands believably: hips on the seat, legs in front of the furniture, feet on the ground, nothing passing through anything. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The hobo: wild grey hair and beard, knitted beanie, tattered brown coat, red scarf, sits on the pavement beside the pizzeria with cardboard covered in his pictograms. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''Hey dude! fancy a sandwich?'' I handed him the sandwich. He ate it without a comment. After finishing it he took a sip of beer, eructed, and kept on mumbling. I decided to go home."
+ },
+ {
+  "key": "2035",
+  "group": "hobo",
+  "place": "Pizzeria",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Wrong location: inside the pizzeria at a table, text is on the sidewalk next door",
+   "Wrong character: the man wears an apron and headscarf like a cook (Fermat), not the ragged hobo",
+   "No hint of the eerie stillness / voices"
+  ],
+  "shows": "Harry sits at a pizzeria table opposite a sad old man in an apron and white headscarf with a pizza between them.",
+  "should_show": "Harry sitting on the pavement beside the hobo outside the pizzeria, the hobo silent with eyes fixed, the street eerily still as if time had paused.",
+  "prompt": "Harry, an adult man around thirty with messy dark-brown hair and light stubble, olive-green work shirt with rolled sleeves, dark trousers, brown boots sits on the sidewalk outside a small rustic pizzeria beside a scruffy old homeless man with a long grey beard, a knitted brown beanie and a ragged brown coat. The hobo has stopped mid-mumble and stares ahead, motionless, chalk scribbles on the pavement. The whole street feels frozen and silent: a pigeon hangs mid-flight, a passer-by is caught mid-step, the light slightly desaturated and dreamlike, an uneasy eerie mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The hobo: wild grey hair and beard, knitted beanie, tattered brown coat, red scarf, sits on the pavement beside the pizzeria with cardboard covered in his pictograms. The hobo: wild grey hair and beard, knitted beanie, tattered brown coat, red scarf, sits on the pavement beside the pizzeria with cardboard covered in his pictograms. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''Hey, hold on! What did you say about sunflowers?'' I asked without much hope. Surprisingly, he stopped his nonsense and kept silent for much longer than I thought possible. Not only he was silent. Everything was still.\n Suddenly, I started hearing the voices once again. ''Am I going crazy?'' I thought. \n\n''...''\n\n ''I must be dreaming all of this.''\n\n''...''\n\nMuch to my relief, I came back to reality when he suddenly spat out:\n''Sunflower.''\n''One of a hundred.''"
+ },
+ {
+  "key": "2036",
+  "group": "hobo",
+  "place": "Pizzeria",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Wrong character and location: a cook in a pizza-stained apron raging inside the pizzeria; text is the hobo ranting on the sidewalk",
+   "Inconsistent with the hobo shown in 2033 and 2038"
+  ],
+  "shows": "Inside the pizzeria, a wild-haired man in an apron shouts and waves his arms across a table at Harry.",
+  "should_show": "The hobo on the sidewalk outside the pizzeria, shouting and flailing his arms, while Harry sits beside him listening.",
+  "prompt": "On the sidewalk outside a rustic pizzeria, a scruffy old homeless man with a long grey beard, a knitted brown beanie and a ragged brown coat rants wildly, shouting, eyes wide, arms flung in the air, chalk drawings scattered on the pavement around him. Harry, an adult man around thirty with messy dark-brown hair and light stubble, olive-green work shirt with rolled sleeves, dark trousers, brown boots sits on the curb beside him, leaning back in bewildered surprise. Passers-by glance over. Afternoon light, chaotic comic-yet-unsettling mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The hobo: wild grey hair and beard, knitted beanie, tattered brown coat, red scarf, sits on the pavement beside the pizzeria with cardboard covered in his pictograms. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "I kept listening, and he started vomiting words all over, shouting and moving his arms around. \n''will come the time and surely this time has come and past and come AGAIN till it passes away if only no one would PASS AWAY, y’know??\nplay would stop reap shot poison bomb the one we could keep doin keep gofin, keep moving forward! y'know? save it if you can save it yourself and don't waste my time, hey dude don’t waste my time, yesterday is gone tomorrow won't come just shut up SHUT UP and bend low bend down!!''"
+ },
+ {
+  "key": "2042",
+  "group": "hobo",
+  "place": "Pizzeria",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Wrong character and location: Harry drinks with Fermat (red bandana, apron) inside the pizzeria; the text is the hobo sharing his bottle on the sidewalk"
+  ],
+  "shows": "Harry drinks a bottle at a pizzeria table while a smiling cook in a red bandana chats across from him.",
+  "should_show": "Harry sitting on the sidewalk with the hobo, taking a long gulp from the hobo's bottle while the hobo chats lazily.",
+  "prompt": "Harry, an adult man around thirty with messy dark-brown hair and light stubble, olive-green work shirt with rolled sleeves, dark trousers, brown boots sits on the curb outside a rustic pizzeria and takes a long gulp from a glass bottle, beside a scruffy old homeless man with a long grey beard, a knitted brown beanie and a ragged brown coat, who leans back against the wall smiling lazily and gesturing in a relaxed way. Golden late-afternoon light, a quiet, oddly peaceful moment. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The hobo: wild grey hair and beard, knitted beanie, tattered brown coat, red scarf, sits on the pavement beside the pizzeria with cardboard covered in his pictograms. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''Sure'' I said, accepting the booze and taking a long gulp. ''Y’now'' He said eventually ''I wouldn't like to be in your position, much responsibility. Anyway, no hurry eh, me I just chillin man, just take it easy. Take your time. It is not like we are going anywhere.'' He told me. For once I forgot about it all."
+ },
+ {
+  "key": "2044",
+  "group": "hobo",
+  "place": "Pizzeria",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Wrong character and location: a pizza cook asleep at a table inside the restaurant; text is the hobo falling asleep on the pavement he calls his bed, near the pictograms"
+  ],
+  "shows": "Harry sits at a pizzeria table while an old bearded cook in a red bandana dozes opposite him.",
+  "should_show": "The hobo curled up asleep on the pavement next to the chalk pictograms, Harry standing up beside him to go home.",
+  "prompt": "Evening on the sidewalk outside a rustic pizzeria: a scruffy old homeless man with a long grey beard, a knitted brown beanie and a ragged brown coat has fallen soundly asleep curled up on the paving stones beside a cardboard mat and chalk pictograms scratched on the ground. Harry, an adult man around thirty with messy dark-brown hair and light stubble, olive-green work shirt with rolled sleeves, dark trousers, brown boots stands nearby, turning to walk home. Warm dusk light, gentle melancholy humour. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The hobo: wild grey hair and beard, knitted beanie, tattered brown coat, red scarf, sits on the pavement beside the pizzeria with cardboard covered in his pictograms. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''Isn’t that your bed?'' I asked.\n''Yes indeed! The pictograms appeared in my bed this morning. A time traveler must have made them,'' he replied before falling soundly asleep. I went home."
+ },
+ {
+  "key": "2218",
+  "group": "hobo",
+  "place": "Pizzeria",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The person sunk in 'nonsense talk' here is the hobo on the sidewalk next door, not an aproned pizzeria cook; wrong character and location."
+  ],
+  "shows": "Harry walks away from a white-haired, bearded man in an apron chatting at a pizzeria table.",
+  "should_show": "Harry excusing himself and walking away from the ragged hobo who keeps mumbling and gesturing on the sidewalk outside Fermat's pizzeria.",
+  "prompt": "Harry, an adult man with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark trousers and brown boots, politely backs away along a sunny town sidewalk outside a small shabby pizzeria with checkered curtains. A ragged hobo with wild grey hair, bushy beard and a tattered brown coat sits on the pavement against the wall, eyes unfocused, waving his hands and mumbling to himself, a cardboard box with marker scribbles and a bottle beside him. Comic, slightly awkward mood, warm late-afternoon light. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The hobo: wild grey hair and beard, knitted beanie, tattered brown coat, red scarf, sits on the pavement beside the pizzeria with cardboard covered in his pictograms. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''I’ll pass this one'' I replied, excusing myself. I don’t think he even heard me. He had sunk into his nonsense talk again."
+ },
+ {
+  "key": "2219",
+  "group": "hobo",
+  "place": "Pizzeria",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The man who falls asleep is the hobo on the sidewalk, not an aproned pizzeria worker inside; wrong character/location."
+  ],
+  "shows": "Harry, holding a marker, sits across from an aproned bearded man asleep on a pizzeria table.",
+  "should_show": "Harry holding up a marker beside the hobo, who has fallen asleep sitting on the sidewalk next to his cardboard pictograms.",
+  "prompt": "Harry, an adult man with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark trousers and brown boots, crouches on a town sidewalk outside a shabby pizzeria, holding up a black marker with a raised eyebrow. Next to him a ragged hobo with wild grey hair, bushy beard and tattered brown coat has fallen soundly asleep sitting against the wall, mouth open, beside a cardboard box covered in crude marker drawings (spirals, infinity loop, triangles). Dry comic mood, warm late-afternoon light. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The hobo: wild grey hair and beard, knitted beanie, tattered brown coat, red scarf, sits on the pavement beside the pizzeria with cardboard covered in his pictograms. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''Isn’t that your marker?'' I asked\n''Well, that’s a really common marker,'' he replied before falling soundly asleep. I went home."
+ },
+ {
+  "key": "2292",
+  "group": "hobo",
+  "place": "Pizzeria",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Wrong character: the one who claims a 'conventional handwriting' and falls asleep is the hobo who draws on the pavement, but the image shows Fermat the pizza chef dozing at a table",
+   "Wrong location: inside the pizzeria instead of the sidewalk"
+  ],
+  "shows": "Harry sits at a pizzeria table opposite Fermat, who dozes with his head on his hand after a meal.",
+  "should_show": "Harry next to the hobo on the sidewalk outside the pizzeria, pointing at the strange chalk drawings, while the hobo falls asleep.",
+  "prompt": "On the sidewalk next to a small pizzeria with a striped awning, Harry, an adult man with messy dark-brown hair and stubble, olive-green shirt with rolled sleeves, dark trousers, brown boots, crouches pointing at strange chalk pictograms and equations scrawled on the paving stones, while a ragged bearded hobo in a dark knit hat and tattered brown coat slumps against the wall, already falling soundly asleep. A cat naps nearby. Afternoon light, dry comic tone. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The hobo: wild grey hair and beard, knitted beanie, tattered brown coat, red scarf, sits on the pavement beside the pizzeria with cardboard covered in his pictograms. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''Isn’t that your handwritting?'' I asked\n''I have a very conventional handwritting,'' he replied before falling soundly asleep. I went home."
+ },
+ {
+  "key": "2049",
+  "group": "guard",
+  "place": "Water plant",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Guard drawn as a young slim man; text (2059) says he is past his fifties and overweight, and he is a father of an eight-year-old - inconsistent with the older guard in 2059/2060/2064",
+   "Harry looks youthful"
+  ],
+  "shows": "A young security guard behind a striped barrier holds up his hand and a clipboard as Harry approaches the water plant gate.",
+  "should_show": "The heavyset guard in his fifties stopping Harry at the water plant barrier.",
+  "prompt": "At the public gate of a concrete water processing plant with round settling tanks behind a spiked fence and security cameras, a heavyset security guard in his late fifties with grey hair, a navy security uniform with badge and peaked cap steps out of his booth, palm raised, holding a clipboard, ordering a visitor to stop at the red-and-white barrier. Harry, an adult man around thirty with messy dark-brown hair and light stubble, olive-green work shirt with rolled sleeves, dark trousers, brown boots stands before him, caught mid-stride, hands half raised, awkward. Bright afternoon light, comic tension. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The water-plant security guard (Valentine's father): past fifty, overweight, grey hair, navy uniform with peaked cap and tie, tired kind eyes. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "infiltrate the plant through the public entrance! Full of bravery and determination, I nonchalantly strolled towards the gate of the public gate. My plan consisted on passing the barrier with casual confidence, as if I knew exactly what I was doing and it was the most natural thing on this world. \nMy plan failed miserably.\nAs soon as I reached the gate, a security guard yelled for me to stop. ''Sir, I will need a valid ID, government entry authorization, and reason of your visit!''. \n''I, err...'' I... "
+ },
+ {
+  "key": "2062",
+  "group": "guard",
+  "place": "Water plant",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Guard depicted as a worker in coveralls with a towel round his neck (looks like a cleaner), not the uniformed security guard",
+   "Inconsistent with the guard in 2059/2060/2064",
+   "Set inside the plant by the tanks rather than at the gate"
+  ],
+  "shows": "A round-faced man in blue coveralls, cap and neck towel clutches his chest emotionally while Harry stands by a railing at the tanks.",
+  "should_show": "The uniformed older guard at the gate, eyes watering, moved and flustered, talking to Harry.",
+  "prompt": "At the water plant entrance by the red-and-white barrier and guard booth, a heavyset security guard in his late fifties with grey hair, a navy security uniform with badge and peaked cap stands with his hands pressed to his chest, eyes glistening with tears, touched and flustered, looking at Harry, an adult man around thirty with messy dark-brown hair and light stubble, olive-green work shirt with rolled sleeves, dark trousers, brown boots, who stands calmly with his hands in his pockets. Warm sunset light, bittersweet and slightly comic. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The water-plant security guard (Valentine's father): past fifty, overweight, grey hair, navy uniform with peaked cap and tie, tired kind eyes. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''Really?'' he asked stupidly, and I could see the corners of his eyes beginning to water. ''I try to be a good father, of course, but I have to work so much... I never knew she valued... I never thought she... well, this is quite a surprise, sir'' he babbled a while before stopping, speechless."
+ },
+ {
+  "key": "2063",
+  "group": "guard",
+  "place": "Water plant",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Guard depicted as a janitor with a broom and rubber boots in coveralls, not the uniformed security guard",
+   "Inconsistent with 2059/2060/2064; location inside the plant instead of the gate"
+  ],
+  "shows": "An elderly worker in coveralls with towel and broom gestures to Harry inside the plant beside the tanks.",
+  "should_show": "Harry reassuring the uniformed guard at the barrier and edging toward the entrance.",
+  "prompt": "At the water plant gate, Harry, an adult man around thirty with messy dark-brown hair and light stubble, olive-green work shirt with rolled sleeves, dark trousers, brown boots smiles and pats the shoulder of a heavyset security guard in his late fifties with grey hair, a navy security uniform with badge and peaked cap, who wipes his eyes, while Harry casually edges toward the red-and-white barrier. Guard booth beside them, water tanks in the background, warm sunset light, sly comic mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The water-plant security guard (Valentine's father): past fifty, overweight, grey hair, navy uniform with peaked cap and tie, tired kind eyes. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''Yes, yes, she loves you dearly. Now, if I may...''"
+ },
+ {
+  "key": "2298",
+  "group": "guard",
+  "place": "Water plant",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The security guard is drawn as a worker in coveralls holding a broom, looking like the street sweeper, inconsistent with the uniformed guard of 2294"
+  ],
+  "shows": "Harry talks to a cap-wearing worker in blue-grey coveralls holding a broom outside a water plant building.",
+  "should_show": "Harry talking to the uniformed security guard (navy uniform, tie, peaked cap) whose stern face softens in surprise at mention of his daughter.",
+  "prompt": "At the gatehouse of a water treatment plant, Harry, an adult man with messy dark-brown hair and stubble, olive-green shirt with rolled sleeves, dark trousers, brown boots, talks earnestly to a middle-aged security guard in a navy uniform with tie, peaked cap and holstered radio; the guard's stern face is softening into wary surprise and emotion as Harry speaks of his eight-year-old daughter. Settling tanks behind them, warm daylight. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The water-plant security guard (Valentine's father): past fifty, overweight, grey hair, navy uniform with peaked cap and tie, tired kind eyes. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "''Wouldn’t you happen to have an eight year old daughter?''\nThe guard looked at me with disbelief. ''You know my daughter?'' he asked, cautiously. \n''Well, of course! I’m a volunteer at the public school, and she’s always talking of you, and all the wonderful things you do together! She loves you very, very much''. "
+ },
+ {
+  "key": "1840-1841-1842",
+  "group": "wrong",
+  "place": "Scrapyard",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The text's key new element, the drunk hobo leaning against a broken car, is missing; the scene is empty",
+   "Near-duplicate of image n=1"
+  ],
+  "shows": "An empty junkyard with stacked rusty cars, tyres and pallets at sunset.",
+  "should_show": "The same junkyard with the town's scruffy, drunk hobo slumped against a wrecked car, seen from a distance by Harry.",
+  "prompt": "A sprawling old town junkyard full of rusty wrecked cars, piles of car wheels, dented metal doors and plastic trash, late afternoon light; in the middle distance a scruffy bearded hobo in a tattered brown coat and red scarf leans drunkenly against a broken car holding a beer bottle; in the foreground, seen from behind, an adult man with messy brown hair in an olive-green shirt and dark trousers hesitates, Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The hobo: wild grey hair and beard, knitted beanie, tattered brown coat, red scarf, sits on the pavement beside the pizzeria with cardboard covered in his pictograms. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "This town has always had this old dumpster full of junk. Piles of trash, car wheels, metal doors, and plastic. You can find almost anything in here if you search long enough, but almost no one comes here. That’s precisely why I figured this could be the perfect hiding place for the murderer.\n\n\nI thought I’d be alone, but apparently I’ve got some company. I spot the town’s hobo leaning against a broken car, probably drunk. I wondered if it wouldn’t be best to just ignore him.\n\n\nI decided to..."
+ },
+ {
+  "key": "1933",
+  "group": "wrong",
+  "place": "Park",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The figure walking off towards the water plant wears Harry's outfit (olive shirt, dark trousers); in the text it's the gardener who leaves muttering, while Harry stays behind",
+   "The forgotten flowers and sandwich on the bench are correct"
+  ],
+  "shows": "Harry walks along a park path towards a water plant while a bouquet and a sandwich lie on a bench in the foreground.",
+  "should_show": "The old gardener in his straw hat and overalls stomping off angrily towards the distant water plant, with his forgotten flowers and sandwich left on a bench.",
+  "prompt": "A park path at golden hour; in the middle distance an elderly gardener in a straw hat, cream shirt and green overalls stomps away angrily towards a distant water treatment plant, fists clenched, muttering; in the foreground a wooden park bench holds a freshly cut bouquet of flowers wrapped in paper and a sandwich left behind; a pond and a red wooden arched bridge to one side, Character reference: The park gardener: elderly, white beard, straw hat, olive apron. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“He kept on muttering to himself as he stood up and left in direction to the water plant, but all I heard were some isolated words like “fire”, “massacre” and “thermonuclear punishment”. \nAfter he left, I noticed he had forgotten some recently cut flowers and a sandwich. "
+ },
+ {
+  "key": "1956",
+  "group": "wrong",
+  "place": "Park",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The man Harry gives the flowers to is the street sweeper (the earlier 'secret holy order' man, who 'left' in n=34), but the image shows a different character: an old long-haired, bearded man in monk-like robes",
+   "The robed old man also resembles the scrapyard hobo, which adds confusion"
+  ],
+  "shows": "Harry offers a bouquet to a joyful old bearded man in dark robes and a red shawl by the pond.",
+  "should_show": "Harry awkwardly offering the bouquet to the street sweeper (grey cap, blue-grey coveralls, broom), who is unexpectedly moved.",
+  "prompt": "A park pond path at golden hour with a red wooden arched bridge; an adult man with messy brown hair, an olive-green shirt and dark trousers awkwardly holds out a small paper-wrapped bouquet of freshly cut flowers to a middle-aged street sweeper in a grey flat cap and blue-grey work coveralls, his twig broom leaning on his shoulder; the sweeper is surprised and deeply moved, hand on his chest, eyes glistening, Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The street sweeper (member of the secret Order of the Sunflower): middle-aged, black moustache, blue-grey coveralls and cap, twig broom and bin cart; a small sunflower pin. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“This... might help?”, I tried.\n“You really think so?”\n“Yes?” No.\n“Well, that’s beautiful. No one had ever given me flowers before. I... really, thanks. Maybe I should actually give love a try, you know. All my life I did what was expected of me as a member of a secret holy order, and what did I really get out of that? Yeah, saved the world a couple times, stopped one or two apocalypses. Well, that’s not the kind of thing that will warm me at night when I’m old, you know what I mean? No, I’ve had enough. I deserve this. I’ve got to think about myself, at least once in my life. Thank you, my friend, for showing me the way. I shall not forget this.”"
+ },
+ {
+  "key": "2125",
+  "group": "wrong",
+  "place": "School",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Shows Harry calmly arriving at the open school gates in sunny daylight; the text is his grim realisation after hours with the diary that both are trapped in the loop ('We are doomed')",
+   "Mood far too light"
+  ],
+  "shows": "Harry walks toward the open school gates on a sunny afternoon.",
+  "should_show": "Harry slumped at Valentine's desk in the dark classroom, diary and schematics spread out, staring in dread as moonlight/dusk pours in.",
+  "prompt": "Harry, an adult man in his early thirties with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark trousers, slumped at a small child's school desk in an empty classroom at dusk turning to night, surrounded by open notebooks of equations, sunflower diagrams and schematics pulled from a false-bottom compartment, staring into space in horrified realisation; long blue shadows, a single last ray of orange light, a wall clock; heavy, doomed, contemplative mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "And now, finally, I realize. She didn’t expect any of this. She is trapped on this time loop just like I am, except she doesn’t know about it. Her plans to destroy the Guiding Sunflower, my sunflower, keep succeeding every time, and that resets the Time flux once again. Somehow I have to find the way to thwart the perfect plans of the evil genius who has managed to stop the flux of the universe’s space-time continuum, or we will all be trapped in here forever. We are doomed."
+ },
+ {
+  "key": "2148-2152",
+  "group": "wrong",
+  "place": "Home",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The person writing is a little girl in a red dress (looks like Valentine), not the adult neighbour",
+   "View is an open doorway next to the keyhole rather than through it"
+  ],
+  "shows": "Harry at a door; through an adjacent gap a little girl in a red dress writes at a table in a bedroom.",
+  "should_show": "Keyhole-framed view of the adult female neighbour writing a note.",
+  "prompt": "View through an old-fashioned keyhole (dark keyhole-shaped vignette framing the scene) into a cosy apartment: Harry's neighbour, a woman in her fifties with grey-streaked auburn hair tied back, reading glasses, floral house dress, sits at a wooden table secretly writing a note on a piece of paper, glancing over her shoulder; lamp light, potted plants; suspenseful, voyeuristic mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Harry's neighbour, the fire woman Miss Montreau: about thirty-five, athletic, brown hair in a ponytail, orange firefighter trousers with braces over a dark T-shirt. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "... peeked through the keyhole. \n\nShe was writing a note on a piece of paper."
+ },
+ {
+  "key": "2202",
+  "group": "wrong",
+  "place": "Warehouses",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "No body, no Harry, and none of the pocket items (wallet, rusty nails, oily fish, coins, matchsticks, Order of the Sunflower emblem) - the key clue, the emblem, is missing.",
+   "Reads as an unrelated still life."
+  ],
+  "shows": "An empty warehouse floor with a blue cap and a folded paper lying among crates.",
+  "should_show": "Harry kneeling by the fallen sweeper (non-graphic) laying out the pocket contents, especially the Order of the Sunflower emblem.",
+  "prompt": "Harry, an adult man with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark trousers and brown boots, kneels on the dusty floor of a big empty warehouse beside the motionless legs and outstretched gloved hand of a fallen street sweeper in a blue-grey coverall (body mostly out of frame, no gore). In front of Harry, laid out on the floor: a worn wallet, two rusty nails, a piece of oily fish, a few coins, matchsticks, a folded oil-stained paper, and a round bronze emblem engraved with a sunflower. Harry looks guilty but curious. Dusty shafts of evening light through broken windows, scattered feathers, tense melancholy mood. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The street sweeper (member of the secret Order of the Sunflower): middle-aged, black moustache, blue-grey coveralls and cap, twig broom and bin cart; a small sunflower pin. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "... went to check him up. He was dead. I felt guilty for a second, at least until I realized that he would probably be fine by tomorrow if the time loop reset itself, so I decided to pick his pockets. I found a wallet, two rusty nails, some oily fish, a few coins, some matchsticks, a folded piece of paper, and an emblem of the order of the Sunflower with the following inscription carved ''The Sun follows, the Flower guides''\n"
+ },
+ {
+  "key": "2250",
+  "group": "wrong",
+  "place": "School",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The 'kin tribe' in the text are the school's small children (the boy of five or six and his peers) in an absurdist fantasy; the image shows bearded adult tribespeople, losing the joke",
+   "Harry should have lost most of his clothes and his left ear; he is fully clothed with a slightly torn shirt (head bandage is a nice touch)"
+  ],
+  "shows": "Harry sits at a campfire in a jungle with a waterfall beside an overgrown building, among adult long-haired tribespeople clapping, roasting books.",
+  "should_show": "Harry, half-undressed with a bandaged ear, by a campfire in an overgrown 'rainforest' school wing with a waterfall, surrounded by small schoolchildren in face paint clapping their shoulders, roasting leatherbound books.",
+  "prompt": "Absurd comic fantasy: inside the overgrown eastern wing of a school turned into a lush rainforest, with a waterfall cascading down past classroom windows, Harry, an adult man with messy dark-brown hair and stubble, olive-green shirt with rolled sleeves, dark trousers, brown boots, his shirt in tatters and a bandage over his left ear, sits contentedly by a campfire among a 'tribe' of small schoolchildren aged five to seven with leaf crowns and crayon face paint, clapping their hands against their shoulders, roasting old leatherbound books on sticks. Warm firelight, joyful and silly. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "tried to locate my kin tribe again. I had a hunch they might have set camp in one of the rainforests on the eastern wings of the School.\nI lost most of my clothes and my left ear during a particularly violent attack by wildlings, but I managed to reach the eastern wings with my life intact. And, just as I had predicted, my tribe was camped right there in the rainforests, close to a huge waterfall. They made fluttering sounds and clapped their hands against their shoulders as a signal of welcome, and offered me some roasted leather, probably from the covers of wild books scavenged on the northern libraries. And I must say that sitting there in the campfire, roasting leatherbound volumes and listening to their wordless atonal songs, I felt home at last. Tomorrow I would wake up in my home and I would continue the quest to save my sunflower, but, at least today, I would stay here and sing battlesongs with my newfound family."
+ },
+ {
+  "key": "2270",
+  "group": "wrong",
+  "place": "Home",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Harry's 'favourite underwear' is shown as women's lace floral panties held front and centre, wrong for a male narrator and the focal object",
+   "He is rummaging a drawer rather than searching the house for cameras/traps (acceptable)"
+  ],
+  "shows": "First-person view of hands pulling floral women's panties from a drawer with donuts, lighter and TV remote, a mouse in the cupboard, sunflower on the desk.",
+  "should_show": "Harry searching his home, finding old donuts, his favourite (men's) boxer shorts, a lighter, the TV remote and a plump pregnant mouse.",
+  "prompt": "First-person view of a man's hands rummaging through a cluttered bedroom while searching for hidden cameras: an open drawer reveals a box of stale donuts, a pair of well-worn striped men's boxer shorts, a lighter and a TV remote, while a round-bellied pregnant mouse peers out from a cupboard. A potted sunflower sits on the desk by the window. Warm afternoon light, comic tone. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "... search for cameras or traps around the house. All I found were some old donnuts, my favorite underwear, a lighter, the tv remote and a pregnant mouse."
+ },
+ {
+  "key": "2275",
+  "group": "wrong",
+  "place": "Park",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "The man Harry hands the flowers to is the street sweeper (the flowers came from the gardener), but the image shows the straw-hatted gardener himself receiving them"
+  ],
+  "shows": "Harry holds out a wildflower bouquet to the old straw-hatted gardener in an apron in the park.",
+  "should_show": "Harry nervously handing the gardener's flowers to the street sweeper (blue-grey coveralls, cap, moustache, broom) who looks at him perplexed.",
+  "prompt": "In a park beside a pond with a red wooden bridge, Harry, an adult man with messy dark-brown hair and stubble, olive-green shirt with rolled sleeves, dark trousers, brown boots, awkwardly holds out a bouquet of white gardenias to a middle-aged street sweeper with a moustache, wearing blue-grey coveralls and a cap with a small sunflower emblem, leaning on his broom and staring at him perplexed, expecting him to say something. Daytime, comic awkwardness. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The street sweeper (member of the secret Order of the Sunflower): middle-aged, black moustache, blue-grey coveralls and cap, twig broom and bin cart; a small sunflower pin. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "“Flowers”, I said. \n “What?”, he asked, perplexed.\nTo be honest, I had never really intended to say anything. I just randomly mutter the word “flowers” from time to time, especially when I get nervous, ever since I can remember, just like other people get a hiccup. Well, me, I never get a hiccup. I just say “flowers”. \nBut since I was actually engaged on a mission of deception, I handed him the flowers I had obtained a while back from the gardener. Trouble was, he still looked at me as if expecting me to say something."
+ },
+ {
+  "key": "2312",
+  "group": "wrong",
+  "place": "Main avenue",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Shop is a toy shop (teddy bears, toy houses, wrapped gift), but the text is at a chocolate store (key 2301)",
+   "Shopkeeper smiles warmly whereas text says he just stared blankly",
+   "Note: this smiling old bearded shopkeeper is the same figure wrongly reused as the Voice in 2343"
+  ],
+  "shows": "Harry pays an old white-bearded shopkeeper in overalls across the counter of a cluttered toy shop.",
+  "should_show": "Harry paying cash in a small chocolate shop full of chocolate bars and bonbons, a bushy-bearded old shopkeeper staring at him blankly.",
+  "prompt": "Harry, an adult man in his thirties with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark charcoal trousers, brown boots, at the counter of a cosy small-town chocolate shop with shelves of chocolate bars, jars of bonbons and boxes of pralines, handing cash to an old shopkeeper with a bushy white beard who stares at him blankly and uncomprehendingly; daylight through the shop window. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "... whatever a child might like, thinking of the little girl I had seen playing outside. \nI paid in cash and asked the shopkeeper if he had seen anyone who looked like they might hate sunflowers, but he just stared blankly at me, so I left."
+ },
+ {
+  "key": "2331",
+  "group": "wrong",
+  "place": "Warehouses",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Wrong character: the man Harry talks to at the Roller Street warehouse is the street sweeper (sunflower sign, blue coveralls); here he is a young dark-haired man in a jacket with a backpack",
+   "Otherwise setting fits"
+  ],
+  "shows": "Harry talks to a smiling young man with a backpack outside the open warehouse.",
+  "should_show": "Harry outside/inside the warehouse talking to the street sweeper in blue coveralls and cap with sunflower badge, who smiles calmly.",
+  "prompt": "Harry, an adult man in his thirties with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark charcoal trousers, brown boots, standing at the open doors of a dilapidated blue warehouse at sunset, speaking seriously to a calm smiling middle-aged street sweeper in blue-grey coveralls and a blue cap with a small yellow sunflower badge, who reassures him with a serene expression. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. The street sweeper (member of the secret Order of the Sunflower): middle-aged, black moustache, blue-grey coveralls and cap, twig broom and bin cart; a small sunflower pin. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "I trust you won't do anything stupid.'' I told him.\n He smiled. ''I won’t. I must destroy this instrument of evil for the sake of everyone... It’ll all be alright. You should go home and take it easy'' He replied calmly. "
+ },
+ {
+  "key": "2342",
+  "group": "wrong",
+  "place": "Water plant",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Text: the PIN defeated Harry (he failed to get in), but the image shows him already inside the water plant leaning on a railing",
+   "Mock-heroic vow of revenge not conveyed; reads as gentle melancholy"
+  ],
+  "shows": "Harry leans dejectedly on a railing overlooking the water treatment basins at sunset, inside the plant.",
+  "should_show": "Harry outside the closed water-plant gate glaring defiantly at a keypad with a red light, vowing revenge.",
+  "prompt": "Harry, an adult man in his thirties with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark charcoal trousers, brown boots, standing outside the locked metal gate of a small-town water treatment plant at sunset, glaring with mock-heroic defiance at a wall-mounted keypad glowing red, one fist clenched, the plant's tanks visible beyond the bars. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "You fought well, brave PIN, and you might have defeated me this time, but we shall see each other again. On this day I swear revenge on you. You may have won this battle, but I shall be the one to win the war."
+ },
+ {
+  "key": "2469",
+  "group": "wrong",
+  "place": "Loop & endings",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Text: the neighbour smiles in triumph and immolates herself and the sunflower; image shows only a knocked-over pot, no neighbour, no fire",
+   "Climax reads as a minor accident rather than 'the world ends'"
+  ],
+  "shows": "A moonlit bedroom with torn curtains, broken window and a smashed sunflower pot on the floor.",
+  "should_show": "The neighbour standing next to the sunflower with a final triumphant smile as a burst of fire flares from her suit, engulfing the flower, in a frozen-time moment.",
+  "prompt": "Night, a small flat's living room with a shattered balcony window and dangling abseiling ropes; a woman in climbing gear with a brown ponytail stands beside a potted sunflower, giving a final smile of triumph as she pulls a cord on her suit and a brilliant burst of orange fire erupts, engulfing her silhouette and the sunflower; time seems frozen, shards of glass hanging in the air; dramatic, apocalyptic, not gory. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "Time seems to freeze as she throws a final smile of triumph. She’s too close to the sunflower, and suddenly I know there’s nothing I can do to stop her. Not anymore. \nThen she pulls a string from her suit, and she immolates herself and the sunflower.\n… The world ends."
+ },
+ {
+  "key": "2471",
+  "group": "wrong",
+  "place": "Loop & endings",
+  "verdict": "wrong",
+  "defect": null,
+  "issues": [
+   "Protagonist seen from behind has a long bob haircut and soft sweater - reads as a woman or child, not adult male Harry",
+   "Text is night-time vigil after preparations; image is a peaceful sunset"
+  ],
+  "shows": "A figure with chin-length bob hair in a green sweater sits at a table watching a sunset over the town.",
+  "should_show": "Adult male Harry sitting watchfully at night in his barricaded flat beside the sunflower, confident but tense.",
+  "prompt": "Harry, an adult man in his thirties with messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, dark charcoal trousers, brown boots, sitting at his desk at night in his small flat, boarded-up window behind, a potted sunflower and a lamp beside him, coffee mug, looking around warily but confidently; moonlight and warm lamplight. Character reference: Harry, the narrator: an adult man of about thirty, messy dark-brown hair, light stubble, olive-green shirt with rolled sleeves, charcoal trousers, brown boots, a worn brown satchel. Always clearly an adult man. Painterly storybook illustration in the style of the existing Himawari scenes: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines, a small Mediterranean hill town. Landscape 4:3, 1024x768. No text, letters or signage anywhere in the image.",
+  "text": "This time it will work, I tell myself. I made so many preparations. I’m even starting to forget what the world was like before the loop. This time I got rid of my neighbour, and I destroyed the sniper’s weapon. There’s nothing that should go wrong now…"
+ },
+ {
+  "key": "1851-1852",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Too cosy for 'ragged quiet': a furnished interior with a sofa, carpentry bench and two lounging cats",
+   "Blooming sunflowers growing outside the warehouse undercut the premise that sunflowers are rare in town (the park has none)"
+  ],
+  "shows": "A single blue warehouse with broken windows at sunrise, its doors open on a cosy furnished interior, with cats and sunflowers outside.",
+  "should_show": null,
+  "prompt": null,
+  "text": "I went to the abandoned warehouses on the lonely side of town looking for clues, and \n\nsaw the sunrise on metal, rust and broken glass, wild dusty bushes, ragged quiet. Then I..."
+ },
+ {
+  "key": "1873",
+  "group": "minor",
+  "place": "Park",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "The park's bridge is red brick with iron railings here, but every other park image in the batch shows a red Japanese-style wooden bridge with a gazebo (inconsistent park design)"
+  ],
+  "shows": "An empty park with a pond, an arched brick bridge, iron fences and benches at sunset.",
+  "should_show": null,
+  "prompt": null,
+  "text": "I decided to take a stroll through the town’s park, thinking that perhaps it would help me clear my thoughts. It was almost silent there, except for the refreshing sound of the wind through the leaves. I liked the park even though it had no sunflowers - I had looked.\nAs I was walking around, I spotted..."
+ },
+ {
+  "key": "1880",
+  "group": "minor",
+  "place": "Main avenue",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Potted sunflowers displayed in front of a flower shop on the avenue conflict with the story's point that sunflowers are scarce ('not many left these days', the park has none)"
+  ],
+  "shows": "A sunny cobbled avenue with a flower shop, a red postbox, a lamp post, a sleeping cat and a church tower.",
+  "should_show": null,
+  "prompt": null,
+  "text": "My search for new clues led me to the main avenue of the town. Everyone passes through here at some point, so I figured that, logically, the assassin would do so too. As soon as I came to the avenue, my attention was caught by..."
+ },
+ {
+  "key": "1887",
+  "group": "minor",
+  "place": "Pizzeria",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Fermat is drawn differently from n=13 (white chef's cap and uniform, seen from behind) – a consistency issue"
+  ],
+  "shows": "Harry from behind entering the hot pizzeria; a cook in a chef's cap works at the blazing oven.",
+  "should_show": null,
+  "prompt": null,
+  "text": "I went back to the pizza place. It was hot in there."
+ },
+ {
+  "key": "diary",
+  "group": "minor",
+  "place": "Home",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "The handwriting is illegible pseudo-script (acceptable as texture)",
+   "The neighbour sketch shows a woman holding a pole on a balcony rather than abseiling with dynamite; Fermat is sketched as a young slim man"
+  ],
+  "shows": "First-person view of hands writing in a diary with sketches of a sunflower cap, a little girl, a man, a woman on a balcony and a looping clock.",
+  "should_show": null,
+  "prompt": null,
+  "text": "... write down all the clues I had found so far, to get a clearer picture of my progress.\n\n\n - I found a cap on some bushes next to the warehouses. It had a sign resembling a sunflower.\n\n\n - I saw a little girl playing around the main avenue in the afternoon and evening.\n\n\n - I saw Fermat looking away as I said ''sunflower''. He is hiding something!\n\n\n - I found out my neighbour is part of the complot. She will abseil down and immolate herself and the sunflower at midnight unless I stop her!\n\n\n - Crazy as it sounds, I think I’m trapped in a time loop, reliving the same 24 hours over and over.\n"
+ },
+ {
+  "key": "1909-1910",
+  "group": "minor",
+  "place": "Home",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "The neighbour's door is the exterior door of a house on a terrace, while n=19 and the text ('my flat') suggest a door in an indoor stairwell, so the setting is inconsistent"
+  ],
+  "shows": "Harry knocking on a green front door on an outdoor terrace with potted plants at sunset.",
+  "should_show": null,
+  "prompt": null,
+  "text": "... knocked on her door. \n\nShe didn’t answer. I guess she wasn’t at home? I should try again later."
+ },
+ {
+  "key": "1909-1912",
+  "group": "minor",
+  "place": "Home",
+  "verdict": "minor",
+  "defect": "Right panel: the man stepping into the room has an awkward leg pose. One leg is thrown far back with the shoe sole facing the viewer and the other leg is barely visible, so it reads like a lunge or a missing leg at the bottom centre-right.",
+  "issues": [
+   "A two-panel diptych that shows Harry twice (on her doorstep, then rushing to his sunflower); legible but unlike the single-scene style",
+   "Yet another different door/entrance for the neighbour (outdoor steps)"
+  ],
+  "shows": "Left: the neighbour, smiling in full turnout gear with a helmet, while Harry scratches his head; right: Harry rushing into his room towards the potted sunflower.",
+  "should_show": null,
+  "prompt": null,
+  "text": "... knocked on her door. \n\nShe opened it.\n''Hey, it’s you!'' She said.\n''Err...um... Hello!'' I replied, not really knowing what to say ''Soo, what is that you do with your life?'' To which she answered \n''I’m a firefighter''\n That was more that I could handle and rushed back home to the solace of my sunflower."
+ },
+ {
+  "key": "1938",
+  "group": "minor",
+  "place": "Park",
+  "verdict": "minor",
+  "defect": "The sweeper sits right on the back edge of the left stone block (centre-right) and his lower legs drop into the gap between the two blocks, so the body only roughly fits the seat.",
+  "issues": [
+   "The text says he was talking (on the phone, per the clue list) when he stopped abruptly; he is shown holding a cigarette, with no phone",
+   "The guilty sideways glance is well done"
+  ],
+  "shows": "The street sweeper sits on a stone block with a broom and cart, glancing guiltily back at Harry.",
+  "should_show": null,
+  "prompt": null,
+  "text": "Approach him, but as soon as he noticed me he stopped talking abruptly and shot me a guilty glance. All I could overhear was ”my love”, “destroy” and “warehouse”, but that was enough. Why else would he be looking at me with such a look of guilt painted all over his face?"
+ },
+ {
+  "key": "1942",
+  "group": "minor",
+  "place": "Park",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Lighthearted: Harry lunges but there's no contact or tackle and no blood on his shirt; the softer tone may be intentional"
+  ],
+  "shows": "Harry leaps at the startled street sweeper, who flees with his broom along the pond.",
+  "should_show": null,
+  "prompt": null,
+  "text": "“You’re the sunflower murderer!”, I screamed in a fit of rage, and then I tackled him. I don’t recall the exact details of what happened next. There might have been a moment when I bit his finger off? I hope it was a finger and not an ear, but, to be honest, it’s hard to tell. All I’m certain of is that he managed to escape at some point, and that by the time I regained my wits I had an awful lot of blood on my t-shirt. Most of which was probably not mine. \nPerhaps I should hone my diplomacy skills a bit."
+ },
+ {
+  "key": "1967",
+  "group": "minor",
+  "place": "Scrapyard",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "The hobo wears a knit beanie here but is bareheaded in every other image (consistency)",
+   "The uncanny 'everything was still' quality is only weakly conveyed"
+  ],
+  "shows": "Harry stands facing the silent hobo seated on a crate in the scrapyard.",
+  "should_show": null,
+  "prompt": null,
+  "text": "“Hey, hold on! What did you say about sunflowers?” I asked without much hope. Surprisingly, he stopped his nonsense and kept silent for much longer than I thought possible. Not only he was silent. Everything was still."
+ },
+ {
+  "key": "1975",
+  "group": "minor",
+  "place": "Scrapyard",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Text mentions pavement with cars and pedestrians passing; image is set in the scrapyard (consistent with place 3 tag, but no traffic/pedestrians)",
+   "Carved message rendered as pictograms (sun, waves, X, bowl, heart, cup) rather than letters - acceptable given no-text rule",
+   "Harry drawn very youthful, almost teenage"
+  ],
+  "shows": "Harry sits on cracked concrete in a junkyard at sunset beside a grinning hobo offering a bottle, pictograms scratched into the ground.",
+  "should_show": "Same scene is fine; ideally Harry looks clearly adult.",
+  "prompt": null,
+  "text": "He sat silent, eyes closed. I bent down and closed my eyes as well. Completely alienated from the world of cars and  pedestrians passing by, I thought of my sunflower. That pacified my mind. Pacified my mind. Pacified my mind. When I opened my eyes again I found some ugly letters carved in the pavement. They read:\nTo save the sunflower you must\nControl the water\nStop war\nSteal the food\nMake love stay\nDrink the poison\nThe hobo looked at me with sparkly eyes. “I made up the last one, so don’t take it so seriously haha” He explained proudly, grinning his rotten teeth at me. “Want some?” And he offered me a glass bottle reeking of alcohol."
+ },
+ {
+  "key": "1983",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Text says the room was big and empty; image shows it cluttered with lumber, workbench and a sofa",
+   "Gun held lowered, scene reads mild rather than alarming"
+  ],
+  "shows": "Harry steps through a warehouse door and sees a moustached man in blue coveralls holding a shotgun in a sunlit storeroom.",
+  "should_show": null,
+  "prompt": null,
+  "text": "I walked in and stumbled upon the street sweeper.  The room was big and empty, and he was holding a gun!\n"
+ },
+ {
+  "key": "1987",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Set outside the warehouse doors although the encounter happens inside",
+   "Two random cats lying in the foreground"
+  ],
+  "shows": "Harry recoils with raised hands outside the warehouse while the moustached sweeper raises a palm, shotgun in his other hand.",
+  "should_show": null,
+  "prompt": null,
+  "text": "“Holly sunflowers, I hope you are not going to kill me with that!” I cried. He cried back.\n“Will you just chill down a second? I'm not killing anyone”\n"
+ },
+ {
+  "key": "1992",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Very relaxed seated chat right after a gun scare; mood a bit too calm but acceptable"
+  ],
+  "shows": "Harry and the sweeper sit across a workbench talking, rifle leaning by the sweeper.",
+  "should_show": null,
+  "prompt": null,
+  "text": "“What are you doing here?” I asked the guy."
+ },
+ {
+  "key": "1997",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Sweeper now has a full beard, unlike the moustache-only sweeper in surrounding images",
+   "Harry drawn younger than in neighbouring images"
+  ],
+  "shows": "Seen over Harry's shoulder, the sweeper laughs with tears in his eyes, hand on chest, across a workbench.",
+  "should_show": null,
+  "prompt": null,
+  "text": "''Are you dealing with weapons?'' I guessed stupidly. His face relaxed and he giggled in relief.\n''Of course I'm not. I don’t like weapons myself. I’m here to destroy it and fulfill my sacred duty within the Order and the Sunflower. There’s no need to worry, my brother. The sunflower is safe, now. You should go home and be with who you love most.'' He said, tears in his eyes. "
+ },
+ {
+  "key": "2017",
+  "group": "minor",
+  "place": "Pizzeria",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Fermat is standing and neutral, text says he was sitting behind the counter looking gloomy"
+  ],
+  "shows": "Harry stands at the pizza display counter facing Fermat in front of a brick oven.",
+  "should_show": null,
+  "prompt": null,
+  "text": "... went to get some pizza. I approached Fermat, who was sitting behind the counter, looking gloomy. ''I’d like some pizza'' I said. \n''Sure thing! What would you like in your pizza?'' he replied, fast and professional."
+ },
+ {
+  "key": "2038",
+  "group": "minor",
+  "place": "Pizzeria",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Contains rendered text on the pavement (legible, matches the text, but breaks the no-text rule and may clash with on-screen text)",
+   "Harry drawn youthful"
+  ],
+  "shows": "Harry crouches by the grinning hobo, who offers a bottle, with the message carved into the paving stones outside the pizzeria at sunset.",
+  "should_show": null,
+  "prompt": null,
+  "text": "He sat silent, eyes closed. I bent down and closed my eyes as well. Completely alienated from the world of cars and  pedestrians passing by, I thought of my sunflower. That pacified my mind. Pacified my mind. Pacified my mind. When I opened my eyes again I found some ugly letters carved in the pavement. They read:\nTo save the sunflower you must\nControl the water\nStop war\nSteal the food\nMake love stay\nDrink the poison\nThe hobo looked at me with sparkly eyes. ''I made up the last one, so don’t take it so seriously haha'' He explained proudly, grinning his rotten teeth at me. ''Want some?'' And he offered me a glass bottle reeking of alcohol."
+ },
+ {
+  "key": "2045",
+  "group": "minor",
+  "place": "Pizzeria",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Ambiguous text (about the suspicious bottle); image shows Harry in an apron wiping tables, which may not match - better to show Harry looking at the suspicious bottle"
+  ],
+  "shows": "Harry in an apron wipes a table in the empty pizzeria.",
+  "should_show": null,
+  "prompt": null,
+  "text": "cleaning it, but instead I..."
+ },
+ {
+  "key": "2048",
+  "group": "minor",
+  "place": "Pizzeria",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Shows a hand next to the bottle rather than drinking; mood is cosy rather than 'tasted like death'"
+  ],
+  "shows": "First-person view of Harry's hand reaching for a dark bottle on the pizzeria counter.",
+  "should_show": null,
+  "prompt": null,
+  "text": "drank it. \nIt tasted like death."
+ },
+ {
+  "key": "2059",
+  "group": "minor",
+  "place": "Water plant",
+  "verdict": "ok",
+  "defect": "The guard's and young man's arms tangle ambiguously at the centre-left. A hand holding handcuffs at the man's waist has no clearly attached arm, and the two torsos partly merge.",
+  "issues": [],
+  "shows": "The heavyset older guard tackles and handcuffs Harry as he sprints for the barrier.",
+  "should_show": null,
+  "prompt": null,
+  "text": "... fought. What else was I going to do? If I had to go, I would go out it with a bang.\nUpon hearing his words, I dashed towards the barrier in an impressive sprint, expecting to be torn to pieces by heavy artillery at any moment. \nFortunately, reality wasn’t so dazzling. Rather than being shot down on sight, the security guard - who was a bit past his fifties, and packed a few extra pounds - managed to run me down and handcuff me. I received a sizable fine for resistance to authority, but was left otherwise unscathed at the door of my home."
+ },
+ {
+  "key": "2064",
+  "group": "minor",
+  "place": "Water plant",
+  "verdict": "ok",
+  "defect": "The tip of the boom barrier ends exactly at the man's hip/hand (centre-left), so it looks as if the barrier pokes into his body. This is an awkward tangency rather than a clear separation.",
+  "issues": [],
+  "shows": "The older uniformed guard raises a hand behind the barrier, stopping Harry.",
+  "should_show": null,
+  "prompt": null,
+  "text": "''Yes, yes, she loves you dearly. Now, if I may go in for a minute...'' I said as I casually strolled towards the barrier.\n''Ah, no. I’m afraid that’s impossible. I understand you’re a good friend of my daughter, but I have strict orders to stop anyone trying to enter the facility without proper authorization. I’m so sorry, but there’s nothing I can do.''\nI decided not to tempt my luck any longer. Seems like I would have to find a more... impactful way to get rid of the girl’s father..."
+ },
+ {
+  "key": "2069",
+  "group": "minor",
+  "place": "Water plant",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Harry wears his green shirt, not the worker clothes he just put on as disguise"
+  ],
+  "shows": "Harry in a storeroom of shelves takes a crowbar from a shelf.",
+  "should_show": null,
+  "prompt": null,
+  "text": "The repository was a huge storage room full with all the tools and materials needed for the proper functioning of the water processing plant. It was kind of boring, but at least I took the chance to pick up a crowbar I saw lying around. You never know when one of those will come in handy.\nAfterwards, I headed to..."
+ },
+ {
+  "key": "2071",
+  "group": "minor",
+  "place": "Water plant",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Harry in green shirt instead of worker disguise",
+   "Button label rendered as legible text in the image (matches the text, but against the no-text rule)"
+  ],
+  "shows": "Harry reaches for a big red button labelled emergency stop in a control room with staff at monitors.",
+  "should_show": null,
+  "prompt": null,
+  "text": "The control room was a big cubicle at the end of a long corridor, full of screens and beeping sounds and serious looking people doing serious looking things and bustling about. It didn’t really look like the kind of place where one could find a sunflower murderer, but what I did find was a big red button with the label “EMERGENCY STOP OF ALL WATER OPERATIONS”. I..."
+ },
+ {
+  "key": "2074",
+  "group": "minor",
+  "place": "Water plant",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Harry in green shirt instead of worker disguise",
+   "Button is now on a different wall cabinet, not the control-room console"
+  ],
+  "shows": "Harry slaps a button as red alarm lights flash and hard-hatted workers run about the treatment hall.",
+  "should_show": null,
+  "prompt": null,
+  "text": "... pushed it. The moment I did, a loud emergency alarm got activated, red lights started flashing all over the water treatment plant, and the serious looking people started looking less serious and more panicky. It didn’t seem like they would be too happy about me pushing their button, so I took the chaos and confusion as my cue to disappear from the water treatment plant before they checked their video feed recordings."
+ },
+ {
+  "key": "2092",
+  "group": "minor",
+  "place": "School",
+  "verdict": "ok",
+  "defect": "Crowd of schoolchildren uses cloned faces: the laughing boy at far left and the boy at center-right have the same face and expression, and so do the two laughing girls (center and right). Background kids blur into each other near the doorway.",
+  "issues": [
+   "children's faces somewhat repetitive, acceptable"
+  ],
+  "shows": "Harry is swept along by a crowd of laughing uniformed schoolchildren pouring out of the school gates.",
+  "should_show": null,
+  "prompt": null,
+  "text": "walked up to the main entrance. There was a strong flow of kids running, yelling, jumping, fighting and rejoicing in their freedom as they went out the door. I tried to oppose the current but I was swept by it."
+ },
+ {
+  "key": "2093",
+  "group": "minor",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "The welcoming woman is drawn identically to Miss Summers (and later the neighbour), which may confuse who is who"
+  ],
+  "shows": "At the school gate a smiling woman in mustard cardigan with lanyard and clipboard greets Harry.",
+  "should_show": "Same scene but the concierge with a distinct look from Miss Summers.",
+  "prompt": null,
+  "text": "walked up to the main entrance.\nAs I went in, a woman welcomed me.  ''Good morning, sir. May I help you?'' It was obvious she expected some kind of comment about my visit."
+ },
+ {
+  "key": "2097-2099",
+  "group": "minor",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Warm sunny mood rather than 'ominous'",
+   "Harry wears a backpack instead of his usual satchel"
+  ],
+  "shows": "Harry, keys in hand, pushes open the iron school gates toward the empty school at sunset.",
+  "should_show": "Same, with a more ominous, empty, late-light mood.",
+  "prompt": null,
+  "text": "walked up to the main entrance, but it was closed. A timetable said the school was open every weekday from dawn till noon.\n\nI fished the school keys I had stolen that morning out of my pocket, and slowly opened the iron gates of the school. They made an ominous metal sound, and, just like that, I was inside. \nI finally had all the time in the world to uncover the secrets of the school - and Miss Summers. As soon as I was inside, I…"
+ },
+ {
+  "key": "2105",
+  "group": "minor",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Barricade/loose plank only hinted (boards on door); fine otherwise"
+  ],
+  "shows": "Harry squeezes into an empty, book-filled teacher's room past boarded planks on the door.",
+  "should_show": "Teacher's room more clearly barricaded, Harry slipping through a loose plank.",
+  "prompt": null,
+  "text": "headed back to the teacher’s room. I believed this time, with no reason to hurry up, I might be able to find some clues related to Miss Summers. \nThe teacher’s room was barricaded against nocturnal children and beasts, but I managed to squeeze in through a loose plank.\nMiss Summer’s documents seemed perfectly normal. She looked like a regular teacher - stern and devoted to her work, yes, but not insane. Why did I still have this hunch, then, that I was getting closer and closer to the truth?"
+ },
+ {
+  "key": "2123",
+  "group": "minor",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Diary pages show the solar system/moon phases but no sunflowers or 'Guiding Sunflower' sketches, which are central to the entry",
+   "Scribbled pseudo-text (acceptable as handwriting)"
+  ],
+  "shows": "Close-up of Harry's hands holding a notebook with sun, planets, moon phases and graphs on a classroom desk.",
+  "should_show": "Diary pages with childish handwriting mixing sunflower drawings, Sun-tracking diagrams and complex equations.",
+  "prompt": null,
+  "text": "Dear Diary,\nMy calculations have proven that the Iroquois legend is indeed real. There is a day, a single day every one hundred years, when a single sunflower on Earth becomes the Guiding Sunflower for an entire Earth rotation. Throughout these 24 hours, the Guiding Sunflower stops following the Sun’s trajectory, and instead it is the Sun that starts following the Sunflower. Of course, that sunflower is indistinguishable from any other by any conventional means. But if someone were to locate and destroy the Guiding Sunflower during the time of its awakening, then I have proven that not only would the Sun’s motion stop, but also the flow of Time itself. This would mean that I could live and play forever. I could eat candy forever. And what’s more: the date of awakening of the next Guiding Sunflower falls on a Saturday. That means that if I manage to destroy the Guiding Sunflower, I will never ever have to go back to school. Ever."
+ },
+ {
+  "key": "2129",
+  "group": "minor",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Miss Summers uses the same design as the concierge and neighbour; she should look distinct and 'stern'"
+  ],
+  "shows": "Harry gestures frantically at a startled woman in mustard cardigan holding a folder in the school entrance hall.",
+  "should_show": "Same, with Miss Summers given her own distinctive stern design.",
+  "prompt": null,
+  "text": "I rushed towards her, unwilling to leave her daughter alone with that monster for a minute longer than necessary. \n ''Miss! Miss!'' I screamed. She turned towards me, obviously startled by my tone of voice. ''There’s a dangerous individual inside the school. We have to find her and kick her out, no matter what''. \nShe looked alarmed by my words, ''Sir, I think you need to calm down. There is no danger, and all the staff of the school are qualified professionals. Is your child inside the school?''"
+ },
+ {
+  "key": "2140",
+  "group": "minor",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Pose is ambiguous: Harry seems to be sitting outside the window looking back in rather than clearly escaping"
+  ],
+  "shows": "Harry perches on an open ground-floor school window sill, half outside, looking back in.",
+  "should_show": "Harry clambering out through the window to freedom.",
+  "prompt": null,
+  "text": "ran away from him, afraid he would give me away to a teacher. In the end, though, I ended up getting so lost I wasn’t sure I would be able to get out of the school even if I wanted, so by the time I heard the lunch time bell and found a window that connecting to the outside, I gave a silent prayer of gratitude and escaped through through it, swearing never to set a foot on that accursed place again."
+ },
+ {
+  "key": "2145",
+  "group": "minor",
+  "place": "Home",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Harry spies from the courtyard at a window rather than going up two floors to her door; slippers correctly shown"
+  ],
+  "shows": "Harry in slippers peeks around a wall at an apartment building where a woman is visible in an upper window at sunset.",
+  "should_show": "Harry in slippers creeping up an apartment stairwell toward the neighbour's door two floors up.",
+  "prompt": null,
+  "text": "... spy on my neighbour. She lives two floors up. I went out in my sleepers and..."
+ },
+ {
+  "key": "2148-2150",
+  "group": "minor",
+  "place": "Home",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "View is drawn as an open doorway beside the keyhole, not a keyhole view (geometry doesn't make sense)",
+   "Neighbour drawn with the same mustard cardigan / brown bun as Miss Summers and the concierge"
+  ],
+  "shows": "Harry by a door with a keyhole; through an adjacent open gap a woman in a mustard cardigan writes at a table.",
+  "should_show": "Keyhole-shaped framed view of the neighbour writing a note.",
+  "prompt": null,
+  "text": "... peeked through the keyhole. \n\nI saw my neighbour. She was writing a note on a piece of paper."
+ },
+ {
+  "key": "2148-2149",
+  "group": "minor",
+  "place": "Home",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Harry looks like a teenage boy here (round boyish face, no stubble)"
+  ],
+  "shows": "Harry crouches and peers through the keyhole of a weathered door.",
+  "should_show": "Same with Harry clearly an adult.",
+  "prompt": null,
+  "text": "... peeked through the keyhole. \n\nIt was just dark."
+ },
+ {
+  "key": "2148-2153",
+  "group": "minor",
+  "place": "Home",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Neighbour looks flushed but not clearly fighting to breathe (mood too calm)",
+   "Neighbour again identical to Miss Summers design"
+  ],
+  "shows": "Keyhole view of a flushed woman sitting on the floor while a street sweeper in blue uniform and cap holds a phone and a bouquet.",
+  "should_show": "Same with the neighbour visibly struggling for breath (allergic reaction) and a distinct neighbour design.",
+  "prompt": null,
+  "text": "... peeked through the keyhole. \n\nI saw my neighbour on the ground with a red face fighting to breathe. The street sweeper was holding a phone in one hand and the bouquet of flowers in the other. Poor guy."
+ },
+ {
+  "key": "2168-2171-2169-2172-2170",
+  "group": "minor",
+  "place": "Park",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Gesture reversed: text says the sweeper squeezes Harry's shoulder, image shows Harry touching the sweeper's shoulder.",
+   "Sweeper's face here is smoother/less bearded than in 2161/2164."
+  ],
+  "shows": "Harry, smiling, puts a hand on the sweeper's shoulder as they stand by the pond.",
+  "should_show": null,
+  "prompt": null,
+  "text": "“That’s right. You have a duty”, I said. He nodded to himself, seemingly absorbed in his own thoughts.\n\n”Look at my case. Sometimes I don’t like being trapped in an endless time loop either, searching for a way to save my sunflower, you know? But it is what it is.\n\n\n”Yeah”, he said at last\n\n, although I wasn’t sure if he had really heard me\n\n. “Yeah. You’re right. Thanks bro. I needed that”. He gave a small squeeze on my shoulder, and then he left."
+ },
+ {
+  "key": "2185",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Scene takes place outside; text has Harry walk into a big empty room to find him.",
+   "Sweeper's face (black moustache, no beard) does not match the bearded park sweeper."
+  ],
+  "shows": "Outside an open warehouse, a moustached sweeper with tears in his eyes clutches a double-barrelled shotgun while Harry raises a hand.",
+  "should_show": null,
+  "prompt": null,
+  "text": "''Are you planning to kill my neighbour?'' I guessed. \n''Of course not! Why would I? I still love her!'' He yelled back, shaking and holding the shotgun tightly. ''I want to be alone. This is none of your bussiness. Your plant is safe now and that is all you need to know. Just go and forget you ever saw me.''"
+ },
+ {
+  "key": "2186",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Outside rather than inside the empty room.",
+   "Sweeper inconsistent with park version.",
+   "Cartoon 'shake lines' beside his head - stylistic, ok."
+  ],
+  "shows": "Harry holds out his hand for the shotgun; the sweeper raises a palm in refusal; cats lounge outside the warehouse.",
+  "should_show": null,
+  "prompt": null,
+  "text": "''Why don’t you give me that weapon?'' I asked reasonably.\n''No way, I have to destroyt it'' he said.\n"
+ },
+ {
+  "key": "2187",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "In this branch he should be holding the gun (he was found with a gun in the room); here he has a broom.",
+   "Harry's raised hand oddly touches the sweeper's elbow."
+  ],
+  "shows": "The moustached sweeper, hand on hip and holding a broom, glares at Harry outside the warehouse.",
+  "should_show": null,
+  "prompt": null,
+  "text": "''Um... I was just casually passing by'' I told him innocently. \n''Don't lie to me.''\n"
+ },
+ {
+  "key": "2190",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Spatial logic reversed: Harry should be peeking in through the door at the sweeper inside the warehouse room."
+  ],
+  "shows": "Harry peeks around a warehouse door; outside in a sunny yard the sweeper with a cart and broom looks at a small object.",
+  "should_show": null,
+  "prompt": null,
+  "text": "I peeked through the door. The street sweeper was holding something, but I couldn’t see it clearly. "
+ },
+ {
+  "key": "2193",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Again outside rather than inside; object looks like a wallet/box rather than something gun-like (acceptable since Harry can't see it clearly).",
+   "Mood fairly calm for a held-breath moment."
+  ],
+  "shows": "From behind a corner, Harry watches the sweeper in a warehouse yard turning a small brown object in his hands; cart and broom nearby.",
+  "should_show": null,
+  "prompt": null,
+  "text": "I held my breath and kept my eyes open. The street sweeper was manipulating the object awkwardly. Breathing heavily he was turning it around and examining it, looking at it from all sides. \n"
+ },
+ {
+  "key": "2196",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Literal interpretation: the fishy smell in the story comes from the cats/the sweeper feeding them, not a fish store; acceptable but slightly off."
+  ],
+  "shows": "Harry holds his nose before an open warehouse full of crates of fish on a wet floor.",
+  "should_show": null,
+  "prompt": null,
+  "text": "I smelled it. It smelled almost unbearably fishy.\n"
+ },
+ {
+  "key": "2199",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "The climax (gunshot, sweeper lying face-down) is omitted; text has Harry outside the door and a pigeon bumping his back, not perched on his shoulder. Softening is defensible but the key event is missing."
+  ],
+  "shows": "Inside a dusty warehouse Harry recoils as pigeons burst into flight around him, one on his shoulder.",
+  "should_show": null,
+  "prompt": null,
+  "text": " I yelled out of panic when a pigeon bumped against my back. Some other birds came out flying from their nests because of my scream, and then I heard a really loud ''BANG!'' echoing loudly. The street sweeper laid facing the ground in a pool of blood. The object he had been holding turned out to be a gun, and he had shoot himself by accident because of my noise. I..."
+ },
+ {
+  "key": "2214",
+  "group": "minor",
+  "place": "Pizzeria",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "At the pizzeria the hobo sits on the sidewalk next door, not at a table inside the restaurant."
+  ],
+  "shows": "A wild-haired bearded hobo sits at a pizzeria table pointing at marker drawings on cardboard while Harry listens.",
+  "should_show": null,
+  "prompt": null,
+  "text": "''Hey, hold on! What was that loophole thing about?'', I asked. \n''In a temporal loop let’s say you, particles cannot go back, the arrow of time won’t completely stop for them, follow me? if we think we are subatomic particles and because the quantum entanglement and the fractal nature of existence we can think that ‘kay? some things won’t reset every loop y‘know? as it is shown and revealed in these pictograms made by a sage.'' \nA shaky finger and a broken nail pointed towards some ugly drawings made with a marker in a cardboard box."
+ },
+ {
+  "key": "2225",
+  "group": "minor",
+  "place": "Water plant",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Text is comic (swimming in the anoxic tank, making sandcastles on sand filters, getting dizzy); image is a calm POV with no swimming or sand. Mood flatter than the text."
+  ],
+  "shows": "First-person hands gripping the rim of an algae-covered treatment tank at sunset.",
+  "should_show": null,
+  "prompt": null,
+  "text": "The treatment plant was where all the fun really happened. Less than five minutes after arriving I was already swimming with all the algae and bacteria of the anoxic tank, and making sand castles on the sand filters. Had it not been for the toxic smells of all those chemicals making me kind of dizzy, I would have certainly stayed there way longer, and I might never have reached..."
+ },
+ {
+  "key": "2251",
+  "group": "minor",
+  "place": "School",
+  "verdict": "ok",
+  "defect": "The stairwell through the doorway on the right has railing geometry that doesn't resolve cleanly: the rail bends and drops behind the door frame in an unclear way.",
+  "issues": [],
+  "shows": "Harry walks down a sunlit school corridor past a red fire cabinet and a stairwell.",
+  "should_show": null,
+  "prompt": null,
+  "text": "Turn left before the fire exit. Then I…"
+ },
+ {
+  "key": "2264",
+  "group": "minor",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Miss Summers looks different here (curly loose hair, rounder face, seated at a reception desk) from her other depictions",
+   "Scene moved indoors to an office desk although the conversation continues from the gate"
+  ],
+  "shows": "Harry stands before a reception desk where a curly-haired woman in a mustard cardigan looks up at him appraisingly.",
+  "should_show": null,
+  "prompt": null,
+  "text": "“I’m the new substitute teacher,” I said confidently. Miss Summers shot me a look of appraisal, and then she nodded. \n“About time, I would say. And what was your name again, Mr…?”"
+ },
+ {
+  "key": "2273",
+  "group": "minor",
+  "place": "Park",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Gardener looks noticeably different from 2272/2275 (thin, little beard, overalls, kneeling)",
+   "Ambiguous who is handing the flowers; reads fine"
+  ],
+  "shows": "A startled kneeling gardener in a straw hat holds out a small bouquet to Harry beside a flowerbed in the park.",
+  "should_show": null,
+  "prompt": null,
+  "text": "“I like flowers”, I said. \nHe looked up at me, his eyes still unfocused, and slowly he came back to his senses. \n“Yes... yes, me too. Here, you can have some, if you want”, he muttered. \nI thanked him and left, as he seemed ill-disposed at the moment."
+ },
+ {
+  "key": "2278",
+  "group": "minor",
+  "place": "Scrapyard",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "The pictograms that 'appeared in his bed' are not visible on the bedding",
+   "Hobo's look differs from 2276 (no hat, greenish coat)"
+  ],
+  "shows": "Harry stands over the hobo sleeping on a mattress on pallets in the scrapyard.",
+  "should_show": null,
+  "prompt": null,
+  "text": "”Isn’t that your bed?” I asked.\n“Yes indeed! The pictograms appeared in my bed this morning. A time traveler must have made them,” he replied before falling soundly asleep. I went home."
+ },
+ {
+  "key": "2281",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": "The rifle held by the seated guard (center-left) runs across the young man's thigh and ends on his lap. The young man's arms are ambiguous: one forearm crosses his body to his far knee, and the other arm comes down at the right with no visible hand.",
+  "issues": [
+   "Mood too relaxed: the accused sniper and Harry sit side by side calmly on a crate; no tears visible",
+   "Weapon is a shotgun-like gun rather than a sniper rifle (consistent with other scenes, though)"
+  ],
+  "shows": "The moustached street sweeper sits on a crate outside the warehouse looking sadly at a long gun while Harry sits beside him.",
+  "should_show": null,
+  "prompt": null,
+  "text": "''Are you planning to kill my plant?'' I asked full of accusation. \n''No, that’s not what I wanted! I was so confused.. I was deeply in love, you see. But luckily I’ve come to my senses in time! Now I will destroy this firearm and save your sunflower from all danger. You should go home and be with who you love the most'' He said with tears in his eyes. What a sad story... but if his words were true, my sunflower was now safe."
+ },
+ {
+  "key": "2311",
+  "group": "minor",
+  "place": "Main avenue",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Van appears simply parked with no crash damage; only the knocked-over mailbox suggests the crash",
+   "Girl (sensibly) not shown; otherwise fits"
+  ],
+  "shows": "A white van stopped at the kerb next to a toppled red mailbox with letters spilling out and a chocolate wrapper on the road.",
+  "should_show": "Aftermath of a van having slammed into a red mailbox, dented bumper, scattered letters, no people.",
+  "prompt": null,
+  "text": "“Sure, but I need your help”, I said slowly. “Do you see that red mailbox over there? I need you to put that letter in for me, and then I’ll give you the chocolate.”\nJust as she was leaning against the mailbox to throw in the letter, the van crashed against both of them, just as I had predicted. I heard someone calling for an ambulance, but I was already far away by then. \nI can’t say I’m proud of what I did, but desperate circumstances call for desperate measures.  And, in my defense, I knew she was going to be fine as soon as the loop reset. "
+ },
+ {
+  "key": "2315",
+  "group": "minor",
+  "place": "School",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Mood too cosy: warm hanging lamps and golden light, while text is a creepy night-time ambush by inhuman creatures",
+   "Floor is glossy tile; text mentions a wooden floor"
+  ],
+  "shows": "An empty school corridor at dusk with lit pendant lamps, open classroom door and a staircase.",
+  "should_show": "A dark, abandoned-feeling school corridor at night, moonlight only, deep shadows, wooden floor, faint hints of many unseen things lurking at the far end.",
+  "prompt": null,
+  "text": "started walking randomly through the wastelands of a public School at night. What could ever go wrong, right?\nAt first I didn’t hear the noise, but after a while I became certain I was being followed. Far ahead I could hear a faint scraping of metal or bone against the wooden floor. Now that I paid attention, I became certain that the pack hunting me consisted of at least a dozen individuals, probably no longer human. It was an ambush. \nPerhaps a braver explorer would have stayed to find out what kind of abominable beasts were going to devour them, out of scientific curiosity if nothing else, but not me. I slit my wrists right there and then, the way I had been taught during my training, knowing I could always come back next loop."
+ },
+ {
+  "key": "2318",
+  "group": "minor",
+  "place": "Home",
+  "verdict": "ok",
+  "defect": "Bed geometry is confusing: the tall headboard the man pushes runs along the bed's back long side, while the footboard post and frame end are at the right and the pillows are also at the right. The bed reads as part daybed, part normal bed, and it sits right in front of a door.",
+  "issues": [],
+  "shows": "Harry pushes his bed against his flat's door, wooden planks propped around it as a barricade.",
+  "should_show": null,
+  "prompt": null,
+  "text": " build a barricade to block the door with my bed and a few wooden planches I found in the dumpster.. The door was locked, so I had to stay inside for the rest of the day."
+ },
+ {
+  "key": "2332",
+  "group": "minor",
+  "place": "Warehouses",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Harry is outside the already-open main doors; the door he wants to open (an inner locked room) is not shown",
+   "Sweeper correctly depicted and looks confused - fits"
+  ],
+  "shows": "Harry ponders outside the open warehouse while the broom-holding street sweeper looks at him puzzled.",
+  "should_show": "Harry inside the warehouse in front of a locked inner door, thinking aloud, the puzzled sweeper behind him.",
+  "prompt": null,
+  "text": "There must be a way I could open this door before this guy gets here'' I thought out loud.\n''Excuse me?'' He said, confused.\n"
+ },
+ {
+  "key": "2461",
+  "group": "minor",
+  "place": "Loop & endings",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "A sunny, idyllic room with a healthy sunflower; for a GAME OVER screen it could be ironic, but conveys no failure"
+  ],
+  "shows": "A warm sunrise bedroom with a potted sunflower on a desk by an open window, open book and mug.",
+  "should_show": "Something signalling game over, e.g. a wilted sunflower or the same room darkened.",
+  "prompt": null,
+  "text": "GAME OVER :)"
+ },
+ {
+  "key": "2464",
+  "group": "minor",
+  "place": "Loop & endings",
+  "verdict": "minor",
+  "defect": "The sunflower's large shadow on the wall (upper left) shows a drooping, wilted flower with different leaves, which does not match the upright plant on the desk. Its size and position also don't follow the moonlight from the window. This may be intentional foreshadowing, but it reads as a lighting inconsistency.",
+  "issues": [
+   "Text is about the nightmare of a withered dead sunflower; the flower itself is healthy, though its drooping shadow on the wall is a nice eerie hint"
+  ],
+  "shows": "A moonlit bedroom with a healthy potted sunflower casting a wilted-looking shadow on the wall.",
+  "should_show": null,
+  "prompt": null,
+  "text": "Last night I had that nightmare again. My precious sunflower, withered, dead. Murdered.\nI don’t know what to do anymore. I know it’s going to happen tonight, I just know. So I have to find the murderer first.\nOh, my sunflower, the light of my days. My loyal companion... Even in my darkest hour I kept nurturing it, and that’s all that kept me sane.\nI don’t want it to die...\nI don’t want to be alone...\nI have to keep it alive."
+ },
+ {
+  "key": "2465",
+  "group": "minor",
+  "place": "Loop & endings",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Calm, pleasant sunrise mood vs despair in text; diary present (good); Harry absent"
+  ],
+  "shows": "A desk at sunrise with an open diary, pen, piles of papers, coffee and a healthy sunflower.",
+  "should_show": null,
+  "prompt": null,
+  "text": "Once again, it happened. They managed to kill the sunflower. Am I trapped here for all eternity? Is this ever going to end? How many times will I have to go back and watch my beloved sunflower die? Why is this happening to me?! \nShush… I have to be strong, now. I have to quiet the voices. This diary is all that’s keeping me sane. I will relive the loop as many times as I must, until I find a way to stop it. A way to get out of here.\nA way to save my sunflower."
+ },
+ {
+  "key": "2466",
+  "group": "minor",
+  "place": "Loop & endings",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Text: 'I'm sitting here, at home, all alone' - Harry not shown, sofa empty; mood otherwise fits"
+  ],
+  "shows": "A moonlit living room with an empty red sofa and a sunflower on the desk by the window.",
+  "should_show": null,
+  "prompt": null,
+  "text": "It’s night time and I’m sitting here, at home, all alone. Waiting for them. I knew they were coming, but I can’t help but wonder. Have my preparations been enough? Have I been able to outsmart them?\n"
+ },
+ {
+  "key": "2468",
+  "group": "minor",
+  "place": "Loop & endings",
+  "verdict": "minor",
+  "defect": "The intruder climbing in the window has a near-blank face (dot eyes, no nose) that is much more simplified than other characters' faces in the series. Only one leg/boot is clearly readable in her crouch.",
+  "issues": [
+   "Neighbour's face very under-rendered (dot eyes, blank expression), stylistically off",
+   "Window broken inward with shards on floor and ropes from above - content fits"
+  ],
+  "shows": "The neighbour in abseiling harness and gloves climbs in through a shattered window at dusk; glass on the floor.",
+  "should_show": null,
+  "prompt": null,
+  "text": "Suddenly, I hear a noise. The balcony window implodes, and my neighbour appears in my living room, fully geared with abseiling equipment. I didn’t anticipate that. She climbed down all the way from her own flat, two floors up."
+ },
+ {
+  "key": "2476",
+  "group": "minor",
+  "place": "Loop & endings",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Mundane sunny living room; misses the godlike 'I only see causality' mood (could show trajectories/threads of causality)"
+  ],
+  "shows": "Harry seen from behind sitting calmly on a red sofa in a sunlit living room.",
+  "should_show": null,
+  "prompt": null,
+  "text": "First, it was the neighbour. Then the sniper. Then poison. Then, her. \nI sit calmly on my sofa. I look, but I no longer see the world. I only see causality. The universe is under my spell. I own the trajectory of every fly, of every speck of dust. Of everything that lives and moves.\nI am millenary."
+ },
+ {
+  "key": "2479",
+  "group": "minor",
+  "place": "Loop & endings",
+  "verdict": "minor",
+  "defect": null,
+  "issues": [
+   "Harry absent; text has him looking at the clouds in new time - an empty bedroom at sunset only partly conveys this"
+  ],
+  "shows": "An empty bedroom at sunset with a sunflower on the sill and a dramatic cloudy sky over the town.",
+  "should_show": null,
+  "prompt": null,
+  "text": "I look at the clouds and I realize that, suddenly, I am no longer God. This is all new time, out of the loop, beyond my kingdom. I look at the world and it all seems alien, unfathomable. What was it like to live without knowing everything? Who was I before this began? I no longer remember. But who cares. "
+ }
+]
