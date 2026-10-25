@@ -1,14 +1,35 @@
 name: Android app
 
-# Pushing a version tag (v2.0.0, …) builds the APK and publishes it as a
-# GitHub release. Running the workflow by hand builds the APK as an artifact.
+# Every push that touches the game builds the APK as a downloadable artifact.
+# Publishing a release on GitHub (or pushing a v* tag) builds it and attaches
+# it to that release, with notes if the release has none.
 on:
   push:
     tags: ['v*']
+    branches: ['**']
+    paths:
+      - 'android/**'
+      - 'src/**'
+      - 'styles/**'
+      - 'locales/**'
+      - 'assets/**'
+      - 'content/**'
+      - 'web/**'
+      - 'tools/build.py'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'capacitor.config.json'
+      - '.github/workflows/android.yml'
+  release:
+    types: [published]
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   apk:
@@ -99,14 +120,21 @@ jobs:
             ${{ env.APK }}.sha256
           retention-days: 30
 
-      - name: Publish the release
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Attach the APK to the release
+        if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'release'
         env:
           GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name || github.ref_name }}
         run: |
           notes="$RUNNER_TEMP/notes.md"
           sed -e "s/{{VERSION}}/$VERSION/g" -e "s/{{APK}}/$APK/g" -e "s/{{SHA256}}/$APK_SHA256/g" -e "s/{{MB}}/$APK_MB/g" \
             .github/release-notes.md > "$notes"
           if [ "$SIGNING" = temporary ]; then cat .github/release-notes-temporary-key.md >> "$notes"; fi
-          gh release create "$GITHUB_REF_NAME" "$APK" "$APK.sha256" \
-            --title "Himawari $VERSION" --notes-file "$notes" --verify-tag
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            gh release upload "$TAG" "$APK" "$APK.sha256" --clobber
+            if [ -z "$(gh release view "$TAG" --json body --jq .body)" ]; then
+              gh release edit "$TAG" --title "Himawari $VERSION" --notes-file "$notes"
+            fi
+          else
+            gh release create "$TAG" "$APK" "$APK.sha256" --title "Himawari $VERSION" --notes-file "$notes" --verify-tag
+          fi

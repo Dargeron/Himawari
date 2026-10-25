@@ -45,7 +45,7 @@ Open <http://localhost:8000/> and choose a language. On the website the game sta
 
 ## Android
 
-Each version tag (`v2.0.0`, …) builds the Android app and publishes it on the [Releases](https://github.com/Dargeron/Himawari/releases) page (`.github/workflows/android.yml`). The APK holds both editions and every picture, voice and piece of music, so it plays fully offline; it needs Android 7 or newer.
+`.github/workflows/android.yml` builds the Android app on every push (as a downloadable workflow artifact) and attaches it to every release published on the [Releases](https://github.com/Dargeron/Himawari/releases) page, or created by pushing a version tag (`v2.0.0`, …). The APK holds both editions and every picture, voice and piece of music, so it plays fully offline; it needs Android 7 or newer.
 
 To build it yourself you need the Android SDK (platform 36), JDK 21 and Node 22:
 
