@@ -7,7 +7,7 @@ import {illustrationKey, sceneArtPath} from './scenes.js';
 import {applySettings, loadSettings, storeSettings, textSpeeds} from './settings.js';
 import {createStage} from './stage.js';
 import {createTypewriter} from './typewriter.js';
-import {createInkbox, answerForm, choiceList, continueButton, quietButton, el} from './inkbox.js';
+import {createInkbox, answerForm, choiceList, continueButton} from './inkbox.js';
 import {createHud, tally} from './hud.js';
 import {createMap} from './map.js';
 import {createTitle} from './title.js';
@@ -295,12 +295,6 @@ export function startGame(boot = {}) {
       );
     } else {
       nodes.push(choiceList(visibleOptions(screen), {onChoose: choose, echo: option => memoryOf(s, option)}));
-      const spoken = spokenChoices(screen);
-      if (audio.hasVoice(spoken)) {
-        const row = el('div', 'ink-row');
-        row.append(quietButton(t('ink.readChoices'), () => audio.read(spoken, {force: true})));
-        nodes.push(row);
-      }
     }
     inkbox.respond(nodes);
     $('skip-button').hidden = !(read && advanceAction(s));
@@ -327,10 +321,6 @@ export function startGame(boot = {}) {
     $('skip-button').hidden = true;
     $('key-hint').textContent = t('hint.places');
     $('sr-story').textContent = t('map.prompt');
-  }
-
-  function spokenChoices(screen) {
-    return visibleOptions(screen).flatMap(o => [{text: String(o.choice)}, ...o.parts]);
   }
 
   function memoryOf(s, option) {

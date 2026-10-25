@@ -43,7 +43,6 @@
   "ink.answer": "Your answer",
   "ink.answerPlaceholder": "write here…",
   "ink.confirm": "Confirm",
-  "ink.readChoices": "read the choices aloud",
   "ink.backToMap": "Back to the town map.",
   "ink.received": "Received: {items}.",
   "ink.lost": "No longer carried: {items}.",

@@ -224,10 +224,3 @@ export function answerForm(onSubmit) {
   form.append(label, input, submit);
   return form;
 }
-
-export function quietButton(text, onClick, className = 'ink-quiet') {
-  const button = el('button', className, text);
-  button.type = 'button';
-  button.addEventListener('click', onClick);
-  return button;
-}

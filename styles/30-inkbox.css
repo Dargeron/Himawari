@@ -263,25 +263,6 @@ html:lang(zh-CN) .passage.is-map p {
   color: var(--sun);
 }
 
-.ink-quiet {
-  min-height: 36px;
-  padding: 0 4px;
-  font-family: var(--font-hand);
-  font-size: 1.3em;
-  color: var(--paper-faint);
-}
-
-.ink-quiet:hover {
-  color: var(--paper-on-ink);
-}
-
-.ink-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 16px;
-}
-
 /* The bar: narration and reading controls, quiet until needed. */
 .ink-bar {
   display: flex;

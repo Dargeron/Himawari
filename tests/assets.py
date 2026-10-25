@@ -17,6 +17,7 @@ read = lambda path: json.loads(path.read_text())
 sha = lambda data: hashlib.sha256(data).hexdigest()
 
 manifest = read(PACK / 'narration.json')
+gaps = read(PACK / 'narration-gaps.json') if (PACK / 'narration-gaps.json').exists() else {'unspoken': {}, 'numbers': True}
 literals = read(PACK / 'literals.json')
 
 # Every authored passage and choice is narrated.
@@ -28,7 +29,7 @@ if CODE == 'en':
             continue
         if re.match(r'^(Going to |Option [1-4] - |Default case|Resetting |Text answer:|intro\d*$)', text) or text == '< Continue >':
             continue
-        if key not in manifest:
+        if key not in manifest and key not in gaps['unspoken']:
             missing.append(key)
     assert not missing, ('Missing narration', missing)
 else:
@@ -39,7 +40,8 @@ else:
         assert key in manifest, ('Missing Mandarin narration', key)
         assert re.search('[一-鿿]', literals[key]['text']), ('Untranslated story', key)
 for i in range(301):
-    assert f'number:{i}' in manifest, i
+    assert (f'number:{i}' in manifest) == gaps['numbers'], i
+assert not set(gaps['unspoken']) & set(manifest), 'An unspoken passage still has a clip'
 prefix = f'assets/narration/{CODE}/'
 assert all(v['file'].startswith(prefix) for v in manifest.values()), 'Another edition’s voice is referenced'
 
@@ -112,7 +114,7 @@ for path in ROOT.rglob('*'):
 print(json.dumps({
     'language': CODE,
     'narratedAuthoredLiterals': len([k for k in manifest if k.isdigit()]),
-    'dynamicNumbers': 301,
+    'dynamicNumbers': sum(k.startswith('number:') for k in manifest),
     'recordings': len({v['file'] for v in manifest.values()}),
     'narrationMinutes': round(sum(v for k, v in durations.items() if '/narration/' in k) / 60, 1),
     'musicTracks': 13,

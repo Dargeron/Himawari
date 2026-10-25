@@ -123,10 +123,8 @@ const clean = text => text.replace(/\s+/g, ' ').trim();
   const buttons = g.d.querySelectorAll('button.choice');
   assert.equal(buttons.length, visible.length);
   assert.equal(buttons[0].getAttribute('aria-label'), L.strings['ink.choiceLabel'].replace('{n}', visible[0].choice).replace('{text}', visible[0].text));
-  // Read the choices aloud, each with the number that selects it.
-  const voiceBefore = voice.plays.length;
-  click(g, [...g.d.querySelectorAll('.ink-quiet')].find(b => b.textContent === L.strings['ink.readChoices']));
-  assert.match(voice.plays[voiceBefore].file, new RegExp(L.narration['number:' + visible[0].choice].file.replace(/[.]/g, '\\.')));
+  // The choices are never read aloud, and there is no control to read them.
+  assert.ok(![...g.d.querySelectorAll('#inkbox button')].some(b => /read the choices|朗读选项/.test(b.textContent)));
   // Choosing keeps the passage and the choice in the rolling log.
   g.key(String(visible[3].choice));
   now = g.snapshot();

@@ -450,8 +450,5 @@ export function createAudio(settings, onStatus = () => {}) {
     release,
     duck,
     sound,
-    hasVoice(parts) {
-      return parts.some(p => clipFor(String(p.id)));
-    },
   };
 }
