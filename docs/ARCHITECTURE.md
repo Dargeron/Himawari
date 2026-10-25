@@ -39,6 +39,7 @@ assets/              art (shared), music (shared), narration/<code>/, fonts, ico
 web/index.html       the language picker at the site root
 tests/               logic per language, game screen and notebook DOM, loader, media
 tools/build.py       the dependency-free bundler and site builder
+tools/retime_narration.py  re-times narration clips against the recordings
 docs/history/        notes and reports from the earlier releases
 android/             the Capacitor Android project (src/native.js is its bridge)
 ```
@@ -56,6 +57,10 @@ Full-screen cards mark the turn of the day, nightfall and the loop reset. The no
 ## Language packs
 
 A pack is `src/locales/<code>.js` (behaviour) plus data assembled by `tools/build.py` (`pack_data`) and mirrored for Node tests by `tests/helpers/locale.mjs`: literals, string caches, narration manifest, scene illustrations and focal points, interface strings (`locales/<code>/ui*.json`, merged; duplicate keys fail the build), and for Chinese the name pronunciations and English history used to migrate old saves. Each edition keeps its own save and settings keys, so existing saves keep working.
+
+## Narration
+
+Each recording holds many passages back to back, and `locales/<code>/narration.json` gives every passage's file, start and end. The timings are measured from the audio itself (`tools/retime_narration.py`: speech-recognition word timestamps, cut at the quietest moment between lines), so a passage starts at its first word and stops before the next line. Choices are never read aloud. Passages whose recording does not say their text are left silent and listed in `locales/<code>/narration-gaps.json`.
 
 ## Build
 
