@@ -10,3 +10,6 @@ dist/
 .wrangler/
 **/.wrangler/
 **/.DS_Store
+
+# Local agent worktrees and tooling
+.claude/

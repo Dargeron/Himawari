@@ -1,6 +1,10 @@
+import {L} from './i18n.js';
+
 // Translate lettering as a separate SVG layer. The recovered image pixels,
 // outlines, buildings and hotspot geometry remain exactly the author's.
+// Only the Chinese edition re-letters the signs.
 export function translatedSigns(name) {
+  if (L.code !== 'zh-CN') return null;
   const specs = {
     Escola: {
       size: [395, 258],

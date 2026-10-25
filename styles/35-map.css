@@ -1,0 +1,247 @@
+/* The town map: the author's drawing, whole, beside the ink box. */
+.map {
+  --map-box: min(23rem, 30vw);
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-map);
+  display: grid;
+  place-items: center;
+  padding: calc(var(--edge-top) + 78px) calc(var(--map-box) + var(--edge-right) + 4vw) calc(var(--edge-bottom) + 8px)
+    calc(var(--edge-left) + 1vw);
+}
+
+.map-sheet {
+  position: relative;
+  aspect-ratio: 1280 / 974;
+  width: min(100%, calc((100svh - var(--edge-top) - var(--edge-bottom) - 86px) * 1280 / 974));
+  box-shadow:
+    0 22px 60px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(0, 0, 0, 0.25);
+  rotate: -0.6deg;
+}
+
+.map-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.map-sheet .translated-signs {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font-family: var(--font-hand);
+}
+
+/* The light changes through the day. */
+.map-tint {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  transition: background 1.2s var(--ease);
+}
+
+.map[data-phase='dawn'] .map-tint {
+  background: linear-gradient(160deg, rgba(255, 196, 170, 0.32), rgba(190, 170, 220, 0.22));
+}
+.map[data-phase='morning'] .map-tint {
+  background: rgba(255, 246, 225, 0.06);
+}
+.map[data-phase='noon'] .map-tint {
+  background: transparent;
+}
+.map[data-phase='afternoon'] .map-tint {
+  background: linear-gradient(200deg, rgba(255, 210, 140, 0.26), rgba(255, 190, 120, 0.14));
+}
+.map[data-phase='dusk'] .map-tint {
+  background: linear-gradient(180deg, rgba(255, 140, 70, 0.34), rgba(120, 50, 90, 0.36));
+}
+
+.map-spots {
+  position: absolute;
+  inset: 0;
+}
+
+.map-spot {
+  position: absolute;
+  border-radius: 14px;
+  transition:
+    box-shadow 200ms var(--ease),
+    background-color 200ms;
+}
+
+.map-spot.lit,
+.map-spot:focus-visible {
+  outline: none;
+  background: rgba(233, 185, 73, 0.12);
+  box-shadow:
+    0 0 0 2px var(--sun),
+    0 0 36px 4px rgba(233, 185, 73, 0.4);
+}
+
+/* A paper tag with the place's name, and pencil marks for today's visits. */
+.spot-tag {
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  translate: -50% 0;
+  rotate: -2deg;
+  padding: 2px 12px 1px;
+  background: var(--page);
+  color: var(--page-ink);
+  font-family: var(--font-hand);
+  font-size: clamp(15px, 1.35vw, 22px);
+  line-height: 1.15;
+  white-space: nowrap;
+  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.32);
+  opacity: 0;
+  transition: opacity 180ms;
+  pointer-events: none;
+}
+
+.spot-visits {
+  display: block;
+  font-size: 0.72em;
+  color: var(--page-ink-dim);
+}
+
+.spot-visits:empty {
+  display: none;
+}
+
+.map-spot.lit .spot-tag,
+.map-spot:focus-visible .spot-tag,
+.map-spot.visited .spot-tag {
+  opacity: 1;
+}
+
+.map-spot.visited:not(.lit) .spot-tag {
+  opacity: 0.8;
+  scale: 0.86;
+}
+
+.spot-pin {
+  position: absolute;
+  top: 4%;
+  right: 6%;
+  color: var(--heart);
+  font-size: clamp(18px, 1.8vw, 28px);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+
+.map-spot.pinned .spot-pin {
+  opacity: 1;
+}
+
+/* The place list in the ink box. */
+.story-box[data-mode='map'] {
+  left: auto;
+  right: calc(var(--edge-right) + 1.5vw);
+  width: min(23rem, 30vw);
+}
+
+.ink-places {
+  list-style: none;
+  margin: 0.3em 0 0.2em;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.ink-place {
+  display: flex;
+  align-items: center;
+}
+
+.place {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  align-items: baseline;
+  gap: 0 0.7em;
+  min-height: 42px;
+  padding: 0.3em 0.55em;
+  border-radius: 3px;
+  text-align: left;
+  font-family: var(--font-story);
+  font-size: calc(var(--text-story) * 0.92);
+  line-height: 1.25;
+}
+
+.place.lit,
+.place:focus-visible {
+  background: rgba(243, 234, 214, 0.08);
+}
+
+.place.lit .place-name,
+.place:focus-visible .place-name {
+  text-decoration: underline;
+  text-decoration-color: var(--sun);
+  text-underline-offset: 0.22em;
+}
+
+.place-visits {
+  flex-basis: 100%;
+  padding-left: 1.55em;
+  font-family: var(--font-hand);
+  font-size: 0.95em;
+  color: var(--paper-faint);
+}
+
+.place-pin {
+  width: 40px;
+  min-height: 40px;
+  color: var(--paper-faint);
+  opacity: 0.35;
+  font-size: 1.05em;
+}
+
+.place-pin:hover {
+  opacity: 0.8;
+}
+
+.place-pin[aria-pressed='true'] {
+  color: var(--heart);
+  opacity: 1;
+}
+
+@media (max-width: 720px), (max-aspect-ratio: 1/1) {
+  .map {
+    place-items: start center;
+    padding: calc(var(--edge-top) + 72px) var(--edge-right) 0 var(--edge-left);
+  }
+
+  .map-sheet {
+    width: min(100%, calc(42svh * 1280 / 974));
+    rotate: 0deg;
+  }
+
+  .story-box[data-mode='map'] {
+    left: var(--edge-left);
+    right: var(--edge-right);
+    width: auto;
+    max-height: 46svh;
+  }
+
+  .ink-places {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .place-visits {
+    padding-left: 0;
+    font-size: 0.85em;
+  }
+
+  .place-pin {
+    display: none;
+  }
+
+  .spot-tag {
+    font-size: 13px;
+  }
+}

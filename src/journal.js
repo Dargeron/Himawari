@@ -168,6 +168,11 @@ export function createJournal(saved) {
       if (Object.values(endingPages).some(ids => ids.includes(p.id)) && !data.endingSeen.includes(p.id))
         data.endingSeen.push(p.id);
   }
+  // Whether this exact passage has been read before, in any loop.
+  function seen(parts) {
+    const key = JSON.stringify(cleanParts(parts));
+    return key !== '[]' && data.passages.some(p => JSON.stringify(p.parts) === key);
+  }
   function observe(s) {
     data.day = guideDay(s);
     const phase = s.screen.kind === 'intro' && data.day < s.state.loop ? 'Night' : s.state.phase;
@@ -381,6 +386,7 @@ export function createJournal(saved) {
   }
   return {
     observe,
+    seen,
     recoverHistory,
     catalog,
     board,

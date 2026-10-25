@@ -213,7 +213,7 @@ export function createAudio(settings, onStatus = () => {}) {
     fade();
     emit();
   });
-  function read(parts, {force = false} = {}) {
+  function read(parts, {force = false, autoplay = true} = {}) {
     token++;
     playAttempt++;
     clearSeek();
@@ -234,7 +234,7 @@ export function createAudio(settings, onStatus = () => {}) {
       } else queue.push(...dynamicClips((part.text || '').trim()));
     }
     total = queue.reduce((s, c) => s + c.end - c.start, 0);
-    if (queue.length && (settings.narrationEnabled || force) && !suspended) playClip();
+    if (queue.length && autoplay && (settings.narrationEnabled || force) && !suspended) playClip();
     else {
       fade();
       emit();

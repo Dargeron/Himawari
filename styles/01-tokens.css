@@ -4,7 +4,7 @@
 :root {
   /* Ink: the story box, the HUD, the loader. */
   --ink: #0d0906;
-  --ink-box: rgba(13, 9, 6, 0.8);
+  --ink-box: rgba(13, 9, 6, 0.84);
   --ink-veil: rgba(13, 9, 6, 0.55);
   --ink-line: rgba(243, 234, 214, 0.18);
   --paper-on-ink: #f3ead6;

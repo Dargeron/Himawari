@@ -88,10 +88,10 @@ EXPORT_DEFAULT = re.compile(r"^export\s+default\s+", re.M)
 def bundle(entry, locale, virtual):
     order, seen, active, modules = [], set(), set(), {}
 
+    virtual = {'src/' + key: value for key, value in virtual.items()}
+
     def resolve(spec, base):
         spec = spec.replace('__LOCALE__', locale)
-        if spec in virtual:
-            return spec
         target = (base.parent / spec).resolve()
         return str(target.relative_to(ROOT))
 
@@ -102,7 +102,7 @@ def bundle(entry, locale, virtual):
             raise ValueError('Import cycle at ' + key)
         active.add(key)
         source = virtual[key] if key in virtual else (ROOT / key).read_text()
-        base = ROOT / ('src/generated/x' if key in virtual else key)
+        base = ROOT / key
         imports = []
         for match in IMPORT.finditer(source):
             dep = resolve(match['path'], base)

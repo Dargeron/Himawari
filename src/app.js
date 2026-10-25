@@ -1,110 +1,682 @@
-import {sceneArtPath} from './scenes.js';
-import {createCinematicUI} from './cinematic.js';
-import {createEngine,destinations} from './engine.js';
-import {createAudio,assetURL} from './audio.js';
-import {originalScene,cityRegions} from './graphics.js';
-import {createGuide,guideDay} from './guide.js';
-import {createJournal} from './journal.js';
-import {createNotebookUI} from './notebook-ui.js';
-const $=id=>document.getElementById(id),SAVE_KEY='himawari-2026-save',SETTINGS_KEY='himawari-2026-settings';
-const defaults={narrationEnabled:true,voiceVolume:.95,voiceRate:1,musicEnabled:true,musicVolume:.15,largeText:false,reducedMotion:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches||false};
-let settings={...defaults},engine=createEngine(),guide=createGuide(),active=false,current=engine.snapshot(),history=[],lastSignature='',toastTimer,saved=null,journal=createJournal(),pendingNarration=false;
-// Settings and progress recover independently: a damaged preference entry must
-// never hide a healthy autosave or make starting over bypass its confirmation.
-try{settings={...defaults,...JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}')};}catch{}
-try{saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');}catch{}
-journal=createJournal(saved?.journal);journal.recoverHistory(saved?.history);
-for(const key of ['voiceVolume','musicVolume','voiceRate'])if(!Number.isFinite(settings[key]))settings[key]=defaults[key];
-settings.voiceVolume=Math.max(0,Math.min(1,settings.voiceVolume));settings.musicVolume=Math.max(0,Math.min(.5,settings.musicVolume));settings.voiceRate=Math.max(.75,Math.min(1.5,settings.voiceRate));
-let cinematic=null;
-const audio=createAudio(settings,status=>{
- cinematic?.status(status);
- $('voice-toggle').disabled=!status.available;$('voice-replay').disabled=!status.available;
- $('voice-toggle').setAttribute('aria-label',status.playing?'Pause narration':status.completed?'Play narration':'Resume narration');$('voice-toggle').title=$('voice-toggle').getAttribute('aria-label');
- $('voice-toggle').querySelector('path').setAttribute('d',status.playing?'M8 5h3v14H8zm5 0h3v14h-3z':'M8 5v14l11-7z');
- $('voice-status').textContent=status.blocked?'Tap play to hear Harry':status.loading?'Harry · Loading…':status.playing?'Harry · Narrating':!status.enabled?'Narration off':status.paused?'Harry · Paused':'Harry · Narrator';
- $('voice-progress-fill').style.width=(status.completed&&status.available?100:status.progress*100)+'%';
-});
-const notebook=createNotebookUI({getJournal:()=>journal,getFacts:()=>active?guide.summary(current).facts:createGuide(saved?.guide).summary(current).facts,getCurrent:()=>current,isActive:()=>active,hasSave:()=>!!saved,save:saveNotebook,open:openDialog,close:closeDialogs,toast,sound:volume=>audio.sound(volume),settings,mainAudio:audio,onDiary:openDiary});
-cinematic=createCinematicUI({document,settings});
-function toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,4500);}
-function save(){const payload={edition:1,engine:engine.exportSave(),guide:guide.exportSave(),journal:journal.exportSave(),history:history.slice(-120),savedAt:new Date().toISOString()};saved=payload;try{localStorage.setItem(SAVE_KEY,JSON.stringify(payload));$('save-status').textContent='Saved';}catch{$('save-status').textContent='Export to save';}updateTitle();return payload;}
-function saveNotebook(){if(active)return save();if(saved){saved={...saved,journal:journal.exportSave()};try{localStorage.setItem(SAVE_KEY,JSON.stringify(saved));}catch{toast('Export your save to keep these notes.');}}updateTitle();return saved;}
-function updateTitle(){$('diary-button').disabled=!active;$('resume-game').hidden=!saved;$('begin-game').textContent=saved?'New game':'Begin';$('begin-game').className=saved?'secondary':'primary';notebook.chrome();}
-function syncSettings(){for(const [id,key] of [['narration-enabled','narrationEnabled'],['music-enabled','musicEnabled'],['large-text','largeText'],['reduced-motion','reducedMotion']])$(id).checked=!!settings[key];for(const [id,key] of [['voice-volume','voiceVolume'],['music-volume','musicVolume'],['voice-rate','voiceRate']])$(id).value=settings[key];document.documentElement.classList.toggle('large-text',!!settings.largeText);document.documentElement.classList.toggle('reduced-motion',!!settings.reducedMotion);}
-function setParagraphs(container,text){container.replaceChildren();for(const line of text.trim().split(/\n+/)){const p=document.createElement('p');p.textContent=line;container.append(p);}}
-function isNight(s){return s.screen.kind==='intro'&&!s.screen.finished&&/^(endIntro[12]|noLove2?|noGun|noPoison2?|noEvil[23]?|victory[234]?)$/.test(s.state.introNode);}
-function sceneInfo(s){const d=destinations.find(d=>d.id===s.state.place);if(s.screen.finished)return{key:'victory',name:'Himawari',kicker:'The next day'};if(s.screen.kind==='map')return{key:'town',name:'The town',kicker:s.state.phase};if(s.screen.kind==='intro')return{key:s.state.introNode.startsWith('victory')?'victory':s.screen.ending?'ending':'home',name:'Home',kicker:isNight(s)?'Night':s.state.loop===1?'Dawn':'Another day'};return{key:d?.key||'home',name:d?.name||'Home',kicker:s.state.phase};}
-function continuation(screen){const options=screen.options.filter(o=>o.raw.trim());return options.length===1&&/^(?:>|<\s*Continue\s*>)$/i.test(options[0].raw.trim())?options[0]:null;}
-function spokenChoices(screen){return screen.options.filter(o=>o.raw.trim()).flatMap(o=>[{text:String(o.choice)},...o.parts]);}
-function render(s,{narrate=true,record=true,discoveries=true}={}){
- const priorFacts=new Set(guide.summary(s).facts.map(f=>f.id));current=s;guide.observe(s);journal.observe(s);notebook.ritualView(s);if(discoveries)notebook.discover(guide.summary(s).facts.filter(f=>!priorFacts.has(f.id)).map(f=>f.id));$('tonight-forecast').textContent=guide.forecast(s).text;const {screen,state}=s;const info=sceneInfo(s),isMap=screen.kind==='map',night=isNight(s),displayLoop=night?state.loop-1:state.loop;
- $('loop-label').textContent='Loop '+displayLoop;$('phase-label').textContent=night?'Night':state.phase;document.querySelector('.clock').setAttribute('aria-label','Loop '+displayLoop+'. Time of day: '+(night?'Night':state.phase)+'.');$('game').dataset.phase=night?'night':state.phase.toLowerCase();
- $('scene-art').style.backgroundImage='url("'+assetURL(sceneArtPath(s))+'")';$('scene').classList.toggle('ending-scene',screen.kind==='intro'&&!!screen.ending||screen.finished);$('phase-flower').src=assetURL('assets/art/original/hima'+Math.max(1,Math.min(5,state.t))+'.webp');
- $('scene-name').textContent=info.name;$('scene-kicker').textContent=info.kicker;$('passage-label').textContent=isMap?'Choose a destination':screen.finished?'The end':night?'Nightfall':screen.kind==='intro'?'Himawari':info.name;
- $('phase-dots').replaceChildren();for(let i=1;i<=5;i++){const dot=document.createElement('i');dot.className=(night?5:state.t)>=i?'active':'';$('phase-dots').append(dot);}
- $('play-layout').classList.toggle('map-mode',isMap);$('inventory-count').textContent=s.inventory.length;$('inventory-button').setAttribute('aria-label',s.inventory.length?'Inventory, '+s.inventory.length+' '+(s.inventory.length===1?'item':'items'):'Inventory, empty');
- const signature=JSON.stringify([screen.kind,screen.text,state.loop,state.t,screen.options.map(o=>o.text)]);
- if(record&&screen.text.trim()&&signature!==lastSignature){history.push({text:screen.text,location:info.name,loop:displayLoop,phase:night?'Night':state.phase});history=history.slice(-120);}
- lastSignature=signature;setParagraphs($('story-text'),isMap?'':screen.finished?'GAME OVER :)':screen.text);
- cinematic.start(s,night||screen.finished);
- $('story-text').classList.remove('entering');void $('story-text').offsetWidth;$('story-text').classList.add('entering');
- $('choices').replaceChildren();$('map-destinations').hidden=!isMap;$('answer-form').hidden=!screen.input;$('answer').value='';
- if(isMap){
-  const group=$('map-destinations');group.replaceChildren();const map=document.createElement('div');map.className='city-map';const image=document.createElement('img');image.src=assetURL('assets/art/original/mapa_joc.webp');image.alt='The original hand-drawn town';image.width=1280;image.height=974;map.append(image);
-  const links=document.createElement('details');links.className='city-links';const summary=document.createElement('summary');summary.textContent='Destinations as a list';links.append(summary);const list=document.createElement('div');list.className='city-link-buttons';links.append(list);
-  for(const d of destinations){const b=document.createElement('button');b.className='destination city-hotspot';b.dataset.destination=d.id;b.setAttribute('aria-label',d.name);b.title=d.name;const [x,y,width,height]=cityRegions[d.id];Object.assign(b.style,{left:x+'%',top:y+'%',width:width+'%',height:height+'%'});const name=document.createElement('span');name.className='destination-name';name.textContent=d.name;b.append(name);b.addEventListener('click',()=>act('go',d.id));map.append(b);const link=document.createElement('button');link.className='secondary';link.textContent=d.name;link.addEventListener('click',()=>act('go',d.id));list.append(link);}
-  const note=document.createElement('p');note.className='map-note';note.textContent='Choose a building on the map.';group.append(note,map,notebook.mapMemory(map,list,s),links);
- }
- else if(screen.finished){addContinue('Return to title',showTitle);}
- else if(screen.kind==='intro'){addContinue('Continue',()=>act('next'));}
- else if(screen.needsContinue){addContinue('Continue',()=>act('continue'));}
- else if(!screen.input&&continuation(screen)){const option=continuation(screen);addContinue('Continue',()=>act('choice',option.choice));$('choices').lastElementChild.dataset.choice=option.choice;}
- else if(!screen.input){for(const option of screen.options.filter(o=>o.raw.trim())){const b=document.createElement('button');b.className='choice';b.dataset.choice=option.choice;b.setAttribute('aria-label','Choice '+option.choice+': '+option.text);const number=document.createElement('span');number.className='choice-number';number.textContent=option.choice;number.setAttribute('aria-hidden','true');const label=document.createElement('span');label.className='choice-label';label.textContent=option.text;const arrow=document.createElement('span');arrow.className='choice-arrow';arrow.textContent='→';arrow.setAttribute('aria-hidden','true');b.append(number,label,arrow);b.addEventListener('click',()=>act('choice',option.choice));const row=document.createElement('div');row.className='choice-row';row.append(b);const echo=notebook.echoButton(s,option.choice);if(echo)row.append(echo);$('choices').append(row);}}
- $('reader-scroll').scrollTop=0;if(window.innerWidth<=700)window.scrollTo({top:0,behavior:'instant'});
- $('read-choices').hidden=isMap||screen.kind==='intro'||screen.input||!audio.hasVoice(spokenChoices(screen));
- $('key-hint').textContent=screen.finished?'':screen.input?'Type an answer':screen.kind==='intro'||screen.needsContinue||continuation(screen)?'Enter to continue':isMap?'Choose a place':'1–4 to choose';
- audio.music(screen.finished||state.introNode.startsWith('victory')&&screen.kind==='intro'?2:night&&!state.introNode.startsWith('endIntro')?1:screen.music);if(narrate&&!document.hidden)audio.read(screen.parts);else{audio.stop();pendingNarration=narrate;}
- if(active){save();if(screen.input)$('answer').focus({preventScroll:true});else (isMap?$('map-destinations'):$('story-text')).focus({preventScroll:true});}
+import {L, t} from './i18n.js';
+import {createEngine} from './engine.js';
+import {createAudio} from './audio.js';
+import {createGuide, guideDay} from './guide.js';
+import {createJournal, journalText, endingArt} from './journal.js';
+import {illustrationKey, sceneArtPath} from './scenes.js';
+import {applySettings, loadSettings, storeSettings, textSpeeds} from './settings.js';
+import {createStage} from './stage.js';
+import {createTypewriter} from './typewriter.js';
+import {createInkbox, answerForm, choiceList, continueButton, quietButton, el} from './inkbox.js';
+import {createHud, tally} from './hud.js';
+import {createMap} from './map.js';
+import {createTitle} from './title.js';
+import {createNotebook} from './notebook/index.js';
+import {createPrefetch} from './prefetch.js';
+import {
+  advanceAction,
+  continuation,
+  displayLoop,
+  flowerFor,
+  isNight,
+  musicFor,
+  passageKey,
+  phaseName,
+  visibleOptions,
+} from './screens.js';
+
+const $ = id => document.getElementById(id);
+const COVER_ART = 'assets/art/scenes/2464.webp';
+
+// The game: one stage, one ink box, one notebook. Everything here only
+// presents snapshots and forwards the player's actions to the recovered rules.
+export function startGame(boot = {}) {
+  const settings = loadSettings();
+  applySettings(settings);
+
+  let engine = createEngine(),
+    guide = createGuide(),
+    journal = null,
+    history = [],
+    saved = null,
+    active = false,
+    current = engine.snapshot(),
+    previous = null,
+    freshStart = true,
+    lastSignature = '',
+    lastSave = null,
+    read = false,
+    pendingNarration = null,
+    narrating = false,
+    skipping = false,
+    holdingSkip = false,
+    looking = false,
+    autoTimer = 0,
+    skipTimer = 0,
+    toastTimer = 0;
+
+  try {
+    saved = JSON.parse(localStorage.getItem(L.saveKey) || 'null');
+  } catch {}
+  journal = createJournal(saved?.journal);
+  journal.recoverHistory(saved?.history);
+
+  const typewriter = createTypewriter({settings});
+  const audio = createAudio(settings, onVoice);
+  const stage = createStage($('stage'), {whenReady: (path, ms) => boot.whenReady?.(path, ms) ?? Promise.resolve(true)});
+  const inkbox = createInkbox($('inkbox'), {typewriter, settings});
+  const hud = createHud($('hud'), {card: $('card'), settings});
+  const prefetch = createPrefetch(boot);
+  const map = createMap($('map'), {
+    onGo: id => act('go', id),
+    onPin: id => {
+      journal.togglePin(id);
+      saveNotebook();
+      showMapScreen(current);
+    },
+  });
+  const notebook = createNotebook($('notebook'), {
+    getCurrent: () => current,
+    getJournal: () => journal,
+    getGuide: () => (active ? guide : createGuide(saved?.guide)),
+    getHistory: () => history,
+    isActive: () => active,
+    hasSave: () => !!saved,
+    settings,
+    onSetting: changeSetting,
+    saveNotebook,
+    exportSave,
+    importSave,
+    restart: begin,
+    requestClue: () => {
+      guide.requestClue(current);
+      save();
+    },
+    clearUnread: () => {
+      journal.clearUnread();
+      hud.setBadge(0);
+      saveNotebook();
+    },
+    mainAudio: audio,
+    createAudio,
+    fullscreen: {available: !!document.fullscreenEnabled, toggle: toggleFullscreen},
+    install: boot.install,
+    language: {label: t('other.label'), href: '../' + t('other.route') + '/?choose=1', code: t('other.code')},
+    onOpen: () => {
+      clearTimeout(autoTimer);
+      audio.suspend(true);
+    },
+    onClose: () => {
+      if (!document.hidden) audio.resume();
+      hud.setBadge(journal.cover().unread);
+      if (active) refreshResponses();
+      else updateTitle();
+    },
+  });
+  const title = createTitle($('title'), {
+    onContinue: resume,
+    onBegin: () => (saved ? confirmRestart() : begin()),
+    onNotebook: (tab, arg) => notebook.open(tab || 'diary', arg),
+    onFullscreen: toggleFullscreen,
+    onLanguage: rememberLanguage,
+    install: boot.install,
+  });
+
+  // --- Voice ----------------------------------------------------------------
+
+  function onVoice(status) {
+    typewriter.status(status);
+    const toggle = $('voice-toggle'),
+      label = status.playing ? t('voice.pause') : status.completed ? t('voice.play') : t('voice.resume');
+    toggle.disabled = !status.available;
+    $('voice-replay').disabled = !status.available;
+    toggle.setAttribute('aria-label', label);
+    toggle.title = label;
+    toggle.querySelector('path').setAttribute('d', status.playing ? 'M8 5h3v14H8zm5 0h3v14h-3z' : 'M8 5v14l11-7z');
+    $('voice-status').textContent = status.blocked
+      ? t('voice.blocked', {name: L.narrator})
+      : status.loading
+        ? t('voice.loading', {name: L.narrator})
+        : status.playing
+          ? t('voice.narrating', {name: L.narrator})
+          : !status.enabled
+            ? t('voice.off')
+            : status.paused
+              ? t('voice.paused', {name: L.narrator})
+              : L.narrator;
+    $('voice-fill').style.width = (status.completed && status.available ? 100 : status.progress * 100) + '%';
+    if (narrating && status.completed && !status.playing) {
+      narrating = false;
+      scheduleAuto(900);
+    }
+  }
+
+  function startNarration(s) {
+    pendingNarration = null;
+    if (!active || s !== current) return;
+    const speak = settings.narrationEnabled && (!read || settings.narrateRead) && !skipping;
+    narrating = speak;
+    audio.read(s.screen.parts, {autoplay: speak});
+    if (!speak) inkbox.whenWritten(() => scheduleAuto(readingTime(s.screen.text)));
+  }
+
+  function readingTime(text) {
+    const perChar = L.code === 'zh-CN' ? 160 : 55;
+    return Math.min(14000, 1400 + Array.from(text || '').length * perChar);
+  }
+
+  // --- Rendering --------------------------------------------------------------
+
+  function render(s, {narrate = true, record = true, discoveries = true, transition = null} = {}) {
+    clearTimeout(autoTimer);
+    clearTimeout(skipTimer);
+    narrating = false;
+    audio.stop();
+    const priorFacts = new Set(guide.summary(s).facts.map(f => f.id));
+    read = s.screen.kind !== 'map' && !s.screen.finished && journal.seen(s.screen.parts);
+    previous = freshStart ? null : current;
+    freshStart = false;
+    current = s;
+    guide.observe(s);
+    journal.observe(s);
+    if (discoveries) {
+      const fresh = guide.summary(s).facts.filter(f => !priorFacts.has(f.id)).map(f => f.id);
+      if (fresh.length) {
+        journal.markDiscoveries(fresh);
+        hud.notice(t(fresh.length === 1 ? 'notice.finding' : 'notice.findings'), () => notebook.open('diary'));
+      }
+    }
+    hud.setBadge(journal.cover().unread);
+    hud.update(s);
+    const signature = passageKey(s);
+    if (record && s.screen.text.trim() && signature !== lastSignature) {
+      history.push({
+        text: s.screen.text,
+        location: s.screen.kind === 'intro' ? L.destinations[1].name : placeName(s),
+        loop: displayLoop(s),
+        phase: isNight(s) ? 'Night' : s.state.phase,
+      });
+      history = history.slice(-120);
+    }
+    lastSignature = signature;
+    const freshSegment = !previous || previous.screen.kind === 'map' || isNight(previous) !== isNight(s) || transition === 'loop';
+    if (s.screen.kind === 'map') showMapScreen(s);
+    else showStoryScreen(s, freshSegment);
+    audio.music(musicFor(s));
+    if (active) {
+      save();
+      prefetch.current(s);
+      if (lastSave) prefetch.ahead(s, lastSave.engine);
+    }
+    const playCard = transition && !skipping && !settings.reducedMotion;
+    const proceed = () => {
+      if (!narrate) return;
+      if (document.hidden) pendingNarration = s;
+      else startNarration(s);
+      maybeSkip();
+    };
+    if (playCard) hud.showCard(cardFor(s, transition)).then(proceed);
+    else proceed();
+  }
+
+  function placeName(s) {
+    return L.destinations[s.state.place]?.name || L.destinations[1].name;
+  }
+
+  function cardFor(s, transition) {
+    if (transition === 'loop')
+      return {flowerPath: 'assets/art/original/hima1.webp', title: t('card.loop', {n: displayLoop(s)}), sub: tally(displayLoop(s)), rewind: true, duration: 2400};
+    if (transition === 'night') return {flowerPath: 'assets/art/original/hima5.webp', title: L.phases.Night};
+    return {flowerPath: flowerFor(s), title: phaseName(s)};
+  }
+
+  function showStoryScreen(s, freshSegment) {
+    const {screen} = s;
+    map.hide();
+    const box = $('inkbox');
+    box.dataset.mode = 'story';
+    const key = illustrationKey(s),
+      focus = L.focus?.[key],
+      art = sceneArtPath(s);
+    box.dataset.side = focus?.box === 'right' ? 'right' : 'left';
+    stage.show(art, {focus, fit: art.startsWith('assets/art/original/') ? 'contain' : 'cover'});
+    if (freshSegment) inkbox.clear();
+    const text = screen.finished ? t('ink.gameOver') : screen.text;
+    const speaks = settings.narrationEnabled && (!read || settings.narrateRead) && !skipping;
+    inkbox.passage(text, {
+      parts: screen.parts,
+      instant: skipping || (read && !speaks) || settings.textSpeed === 'instant',
+      speed: textSpeeds[settings.textSpeed],
+      kind: isNight(s) ? 'night' : screen.kind,
+      read,
+    });
+    $('sr-story').textContent = text;
+    refreshResponses();
+    $('read-mark').hidden = !read;
+    $('ink-scroll').focus({preventScroll: true});
+  }
+
+  function refreshResponses() {
+    const s = current,
+      {screen} = s;
+    if (screen.kind === 'map') return showMapScreen(s);
+    const nodes = [];
+    if (screen.finished) nodes.push(continueButton(showTitle, t('ink.toTitle')));
+    else if (screen.kind === 'intro') nodes.push(continueButton(() => act('next')));
+    else if (screen.needsContinue) nodes.push(continueButton(() => act('continue')));
+    else if (!screen.input && continuation(screen)) {
+      const option = continuation(screen);
+      nodes.push(continueButton(() => act('choice', option.choice)));
+    } else if (screen.input) {
+      nodes.push(
+        answerForm(value => {
+          if (!String(value).trim()) return;
+          inkbox.note(value);
+          act('input', value);
+        }),
+      );
+    } else {
+      nodes.push(choiceList(visibleOptions(screen), {onChoose: choose, echo: option => memoryOf(s, option)}));
+      const spoken = spokenChoices(screen);
+      if (audio.hasVoice(spoken)) {
+        const row = el('div', 'ink-row');
+        row.append(quietButton(t('ink.readChoices'), () => audio.read(spoken, {force: true})));
+        nodes.push(row);
+      }
+    }
+    inkbox.respond(nodes);
+    $('skip-button').hidden = !(read && advanceAction(s));
+    $('key-hint').textContent = screen.finished
+      ? ''
+      : screen.input
+        ? t('hint.type')
+        : advanceAction(s)
+          ? t('hint.continue')
+          : t('hint.choose');
+  }
+
+  function showMapScreen(s) {
+    const box = $('inkbox');
+    box.dataset.mode = 'map';
+    box.dataset.side = 'right';
+    stage.show('assets/art/original/mapa_joc.webp', {fit: 'fill'});
+    map.show(s, journal.map(guideDay(s)));
+    inkbox.clear();
+    inkbox.passage(t('map.prompt'), {instant: true, kind: 'map'});
+    inkbox.respond(map.placeList());
+    $('read-mark').hidden = true;
+    $('skip-button').hidden = true;
+    $('key-hint').textContent = t('hint.places');
+    $('sr-story').textContent = t('map.prompt');
+  }
+
+  function spokenChoices(screen) {
+    return visibleOptions(screen).flatMap(o => [{text: String(o.choice)}, ...o.parts]);
+  }
+
+  function memoryOf(s, option) {
+    const memory = journal.echo(s, option.choice);
+    if (!memory) return null;
+    let outcome = journalText(memory.outcome).trim() || (memory.map ? t('ink.backToMap') : '');
+    if (Array.from(outcome).length > 220) outcome = Array.from(outcome).slice(0, 210).join('').trimEnd() + '…';
+    const items = [
+      memory.gained.length ? t('ink.received', {items: memory.gained.map(i => L.items[i]).join(', ')}) : '',
+      memory.lost.length ? t('ink.lost', {items: memory.lost.map(i => L.items[i]).join(', ')}) : '',
+    ]
+      .filter(Boolean)
+      .join(' ');
+    return {loop: memory.loop, outcome, items};
+  }
+
+  // --- Actions ----------------------------------------------------------------
+
+  function choose(option) {
+    inkbox.note(option.text);
+    act('choice', option.choice);
+  }
+
+  function act(kind, value) {
+    if (!active || hud.carding) return;
+    try {
+      const before = current,
+        after = engine.action(kind, value);
+      journal.recordAction(before, kind, value, after);
+      audio.sound();
+      const reset = isNight(before) && !isNight(after) && guideDay(after) > guideDay(before) && !after.screen.finished;
+      const nightfall = !isNight(before) && isNight(after);
+      const turn = !reset && !nightfall && after.state.t !== before.state.t && after.screen.kind === 'map';
+      render(after, {transition: reset ? 'loop' : nightfall ? 'night' : turn ? 'phase' : null});
+      for (const item of after.inventory.filter(i => !before.inventory.includes(i)))
+        hud.notice(t('notice.item', {item: L.items[item]}), () => notebook.open('pocket'));
+    } catch (error) {
+      toast(error.message);
+    }
+  }
+
+  // One gesture moves the story on: finish the writing, then continue.
+  function advance() {
+    if (hud.carding) return hud.finishCard();
+    if (inkbox.writing) return inkbox.showAll();
+    if (current.screen.finished) return showTitle();
+    const action = advanceAction(current);
+    if (action) act(...action);
+  }
+
+  function scheduleAuto(delay) {
+    clearTimeout(autoTimer);
+    if (!settings.autoContinue || skipping || !active) return;
+    const s = current;
+    if (!advanceAction(s)) return;
+    autoTimer = setTimeout(() => {
+      if (s !== current || notebook.isOpen() || looking || inkbox.writing || hud.carding) return;
+      const action = advanceAction(s);
+      if (action) act(...action);
+    }, delay);
+  }
+
+  // Skipping races through passages already read, stopping at anything new,
+  // any decision, the map and typed answers. It never chooses for the player.
+  function maybeSkip() {
+    clearTimeout(skipTimer);
+    if (!skipping && !holdingSkip) return;
+    const action = advanceAction(current);
+    if (!read || !action) return setSkipping(false);
+    skipTimer = setTimeout(() => {
+      if ((skipping || holdingSkip) && !notebook.isOpen()) act(...action);
+    }, 140);
+  }
+
+  function setSkipping(on) {
+    skipping = on;
+    if (!on) holdingSkip = false;
+    $('skip-button').setAttribute('aria-pressed', String(on));
+    if (on) {
+      if (inkbox.writing) inkbox.showAll();
+      audio.stop();
+      maybeSkip();
+    }
+  }
+
+  function setLooking(on) {
+    looking = on;
+    $('game').classList.toggle('looking', on);
+    stage.look(on);
+    $('look-button').setAttribute('aria-pressed', String(on));
+  }
+
+  // --- Sessions ---------------------------------------------------------------
+
+  function save() {
+    const payload = {
+      edition: 1,
+      engine: engine.exportSave(),
+      guide: guide.exportSave(),
+      journal: journal.exportSave(),
+      history: history.slice(-120),
+      savedAt: new Date().toISOString(),
+    };
+    saved = lastSave = payload;
+    try {
+      localStorage.setItem(L.saveKey, JSON.stringify(payload));
+    } catch {
+      toast(t('save.full'));
+    }
+    return payload;
+  }
+
+  function saveNotebook() {
+    if (active) return save();
+    if (saved) {
+      saved = {...saved, journal: journal.exportSave()};
+      try {
+        localStorage.setItem(L.saveKey, JSON.stringify(saved));
+      } catch {
+        toast(t('save.notes'));
+      }
+    }
+    updateTitle();
+    return saved;
+  }
+
+  function enterGame() {
+    active = true;
+    freshStart = true;
+    lastSignature = '';
+    setSkipping(false);
+    setLooking(false);
+    notebook.close();
+    title.hide();
+    $('game').hidden = false;
+    audio.resume();
+  }
+
+  function begin() {
+    pendingNarration = null;
+    engine = createEngine();
+    guide = createGuide();
+    journal = createJournal();
+    history = [];
+    enterGame();
+    render(engine.snapshot(), {discoveries: false});
+  }
+
+  function confirmRestart() {
+    notebook.open('restart');
+  }
+
+  function resume() {
+    if (!saved) return;
+    try {
+      const next = createEngine();
+      next.importSave(saved.engine);
+      engine = next;
+      history = Array.isArray(saved.history)
+        ? saved.history
+            .filter(h => typeof h?.text === 'string' && typeof h?.location === 'string' && typeof h?.phase === 'string' && Number.isInteger(h?.loop))
+            .slice(-120)
+        : [];
+      guide = createGuide(saved.guide);
+      if (saved.guide?.version !== 1) guide.recoverHistory(history);
+      journal = createJournal(saved.journal);
+      journal.recoverHistory(history);
+      enterGame();
+      render(engine.snapshot(), {record: false, discoveries: false});
+    } catch {
+      toast(t('save.unreadable'));
+    }
+  }
+
+  function showTitle() {
+    clearTimeout(autoTimer);
+    clearTimeout(skipTimer);
+    hud.finishCard();
+    pendingNarration = null;
+    if (active) save();
+    active = false;
+    setSkipping(false);
+    setLooking(false);
+    typewriter.stop();
+    audio.stop();
+    audio.music(0);
+    map.hide();
+    $('game').hidden = true;
+    stage.show(COVER_ART, {focus: L.focus?.['2464']});
+    updateTitle();
+    title.show();
+  }
+
+  function updateTitle() {
+    const photos = journal.album().map(e => ({number: e.number, name: e.name, art: endingArt[e.number]}));
+    title.update({hasSave: !!saved, hasNotebook: !!saved, photos});
+  }
+
+  function exportSave() {
+    if (!saved && !active) return toast(t('save.beginFirst'));
+    const data = JSON.stringify(active ? save() : saved);
+    const url = URL.createObjectURL(new Blob([data], {type: 'application/json'})),
+      a = document.createElement('a');
+    a.href = url;
+    a.download = L.code === 'en' ? 'Himawari-save.json' : 'Himawari-' + L.code + '-save.json';
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    toast(t('save.exported'));
+  }
+
+  async function importSave(file) {
+    try {
+      if (!file || file.size > 8000000) throw new Error('Invalid save');
+      const payload = JSON.parse(await file.text());
+      createEngine().importSave(payload.engine);
+      saved = payload;
+      try {
+        localStorage.setItem(L.saveKey, JSON.stringify(saved));
+      } catch {}
+      resume();
+      toast(t('save.imported'));
+    } catch {
+      toast(t('save.invalid'));
+    }
+  }
+
+  function changeSetting(key, value) {
+    settings[key] = value;
+    applySettings(settings);
+    storeSettings(settings);
+    audio.update();
+    if (key === 'narrationEnabled' && value && active) startNarration(current);
+    if (key === 'reducedMotion' && value) inkbox.showAll();
+  }
+
+  function rememberLanguage() {
+    try {
+      localStorage.setItem('himawari-language', t('other.code'));
+    } catch {}
+  }
+
+  function toggleFullscreen() {
+    if (document.fullscreenElement) document.exitFullscreen?.();
+    else document.documentElement.requestFullscreen?.({navigationUI: 'hide'}).catch(() => {});
+  }
+
+  function toast(message) {
+    const node = $('toast');
+    node.textContent = message;
+    node.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => (node.hidden = true), 4500);
+  }
+
+  // --- Input ------------------------------------------------------------------
+
+  $('voice-toggle').addEventListener('click', () => {
+    narrating = true;
+    audio.toggle();
+  });
+  $('voice-replay').addEventListener('click', () => {
+    narrating = true;
+    audio.replay();
+  });
+  $('skip-button').addEventListener('click', () => setSkipping(!skipping));
+  const auto = $('auto-button');
+  auto.setAttribute('aria-pressed', String(settings.autoContinue));
+  auto.addEventListener('click', () => {
+    changeSetting('autoContinue', !settings.autoContinue);
+    auto.setAttribute('aria-pressed', String(settings.autoContinue));
+    if (settings.autoContinue) scheduleAuto(600);
+  });
+  $('look-button').addEventListener('click', event => {
+    event.stopPropagation();
+    setLooking(!looking);
+  });
+  $('notebook-button').addEventListener('click', () => notebook.open(journal.cover().unread ? 'diary' : undefined));
+
+  // Tapping the picture or the text moves the story on; controls keep their
+  // own meaning. In look mode any tap returns to the story.
+  const interactive = 'button, a, input, textarea, select, label, form, .ink-responses, #notebook, #hud';
+  $('app').addEventListener('click', event => {
+    if (!active || notebook.isOpen()) return;
+    if (looking) return setLooking(false);
+    if (event.target.closest(interactive)) return;
+    if (getSelection?.().toString()) return;
+    advance();
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.defaultPrevented || event.metaKey || event.altKey) return;
+    if (notebook.isOpen() || !active) return;
+    if (event.key === 'Control') {
+      if (!event.repeat && read) {
+        holdingSkip = true;
+        maybeSkip();
+      }
+      return;
+    }
+    if (event.ctrlKey || /INPUT|TEXTAREA|SELECT/.test(event.target.tagName)) return;
+    if (looking) {
+      event.preventDefault();
+      return setLooking(false);
+    }
+    const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
+    const {screen} = current;
+    if (key === ' ' || key === 'Enter') {
+      if (event.target.closest?.('button, a')) return;
+      event.preventDefault();
+      advance();
+    } else if (/^[1-8]$/.test(key)) {
+      const n = Number(key);
+      if (screen.kind === 'map') act('go', n);
+      else if (screen.kind === 'story' && !screen.input && !inkbox.writing) {
+        const option = visibleOptions(screen).find(o => o.choice === n);
+        if (option && !continuation(screen)) choose(option);
+      }
+    } else if (key === 'p') {
+      narrating = true;
+      audio.toggle();
+    } else if (key === 'r') {
+      narrating = true;
+      audio.replay();
+    } else if (key === 'v' || key === 'h') setLooking(true);
+    else if (key === 'n' || key === 'Escape') notebook.open(key === 'Escape' ? 'settings' : undefined);
+    else if (key === 's' && read) setSkipping(!skipping);
+    else if (key === 'a') auto.click();
+    else if (key === 'f') toggleFullscreen();
+    else return;
+  });
+  document.addEventListener('keyup', event => {
+    if (event.key === 'Control' && holdingSkip) {
+      holdingSkip = false;
+      if (!skipping) clearTimeout(skipTimer);
+    }
+  });
+
+  function suspendMedia() {
+    audio.suspend(true);
+  }
+  function resumeMedia() {
+    if (document.hidden || notebook.isOpen()) return;
+    audio.resume();
+    if (active && pendingNarration === current) startNarration(current);
+  }
+  window.addEventListener('pagehide', () => {
+    if (active) save();
+    suspendMedia();
+  });
+  window.addEventListener('pageshow', resumeMedia);
+  document.addEventListener('visibilitychange', () => (document.hidden ? suspendMedia() : resumeMedia()));
+
+  // --- Start ------------------------------------------------------------------
+
+  stage.show(COVER_ART, {focus: L.focus?.['2464'], instant: true});
+  updateTitle();
+  boot.reveal?.();
+  $('app').hidden = false;
+  $('app').inert = false;
+  title.show();
+  audio.music(0);
+  window.Himawari = Object.freeze({
+    version: L.version,
+    language: L.code,
+    narrator: L.narrator,
+    snapshot: () => engine.snapshot(),
+  });
 }
-function addContinue(text,handler){const b=document.createElement('button');b.className='continue-button';if(text==='Continue'){b.classList.add('drawn-continue');b.setAttribute('aria-label',text);const image=document.createElement('img');image.src=assetURL('assets/art/original/continueBtn.webp');image.alt='';image.width=413;image.height=122;b.append(image);}else b.textContent=text+'  →';b.addEventListener('click',handler);$('choices').append(b);}
-function act(kind,value){if(notebook.isResetting())return;try{const before=current,after=engine.action(kind,value);journal.recordAction(before,kind,value,after);audio.sound();const reset=isNight(before)&&!isNight(after)&&guideDay(after)>guideDay(before)&&!after.screen.finished;render(after,{narrate:!reset});if(reset){audio.suspend(false);notebook.startReset(after,()=>{if(!active)return;if(document.hidden)pendingNarration=true;else{audio.resume();audio.read(current.screen.parts);}});}}catch(error){toast(error.message);}}
-function begin(){notebook.cancelReset();notebook.clearDiscovery();pendingNarration=false;engine=createEngine();guide=createGuide();journal=createJournal();history=[];lastSignature='';active=true;closeDialogs();$('title-screen').hidden=true;$('game').hidden=false;audio.resume();render(engine.snapshot(),{discoveries:false});}
-function resume(){if(!saved)return;try{notebook.cancelReset();notebook.clearDiscovery();pendingNarration=false;const next=createEngine();next.importSave(saved.engine);engine=next;history=Array.isArray(saved.history)?saved.history.filter(h=>typeof h?.text==='string'&&typeof h?.location==='string'&&typeof h?.phase==='string'&&Number.isInteger(h?.loop)).slice(-120):[];guide=createGuide(saved.guide);if(saved.guide?.version!==1)guide.recoverHistory(history);journal=createJournal(saved.journal);journal.recoverHistory(history);lastSignature='';active=true;closeDialogs();$('title-screen').hidden=true;$('game').hidden=false;audio.resume();render(engine.snapshot(),{record:false,discoveries:false});}catch{toast('This save could not be loaded. Import another save or begin a new game.');}}
-function showTitle(){cinematic.stop();notebook.cancelReset();notebook.clearDiscovery();pendingNarration=false;if(active)save();active=false;audio.suspend(false);$('game').hidden=true;$('title-screen').hidden=false;updateTitle();$('resume-game').hidden?$('begin-game').focus():$('resume-game').focus();}
-function closeDialogs(){document.querySelectorAll('dialog[open]').forEach(d=>d.close());}
-function openDialog(id){$(id).showModal();}
-$('begin-game').addEventListener('click',()=>saved?openDialog('restart-dialog'):begin());$('resume-game').addEventListener('click',resume);$('confirm-restart').addEventListener('click',begin);$('home-button').addEventListener('click',showTitle);
-for(const id of ['title-settings','menu-button'])$(id).addEventListener('click',()=>openDialog('settings-dialog'));
-for(const id of ['title-credits','credits-button'])$(id).addEventListener('click',()=>openDialog('credits-dialog'));
-$('restart-game').addEventListener('click',()=>openDialog('restart-dialog'));
-document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>b.closest('dialog').close()));
-document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',event=>{if(event.target===d){const r=d.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)d.close();}}));
-$('inventory-button').addEventListener('click',()=>{$('inventory-items').replaceChildren();if(!current.inventory.length){const p=document.createElement('p');p.className='dialog-note';p.textContent='Your inventory is empty.';$('inventory-items').append(p);}for(const [i,name] of current.inventory.entries()){const row=document.createElement('div');row.className='inventory-item';const mark=document.createElement('span');mark.textContent=['◇','▥','▦','⌁','✿','⌐','♜','▱','⚿'][['Strange artifact','Barricade','Chocolate','Crowbar','Flowers','Gun','Poison','Sandwich','School key'].indexOf(name)]||'◇';row.append(mark,document.createTextNode(name));$('inventory-items').append(row);}openDialog('inventory-dialog');});
-$('history-button').addEventListener('click',()=>{$('history-items').replaceChildren();for(const entry of [...history].reverse()){const row=document.createElement('article');row.className='history-entry';const meta=document.createElement('p');meta.className='eyebrow';meta.textContent='Loop '+entry.loop+' · '+entry.phase+' · '+entry.location;const text=document.createElement('div');text.className='story-text';setParagraphs(text,entry.text);row.append(meta,text);$('history-items').append(row);}openDialog('history-dialog');});
-function refreshDiary(){
- const view=guide.summary(current);$('diary-forecast').textContent=view.forecast.text;$('diary-day').textContent='Loop '+view.day;
- const facts=$('diary-facts');facts.replaceChildren();if(!view.facts.length){const p=document.createElement('p');p.className='dialog-note';p.textContent='No findings recorded yet. Discoveries will stay here across loops.';facts.append(p);}else for(const fact of view.facts){const row=document.createElement('article');row.className='diary-entry';const meta=document.createElement('p');meta.className='eyebrow';meta.textContent='First recorded · Loop '+fact.loop;const text=document.createElement('p');text.textContent=fact.text;row.append(meta,text);facts.append(row);}
- const preparations=$('diary-preparations');preparations.replaceChildren();for(const text of view.preparations){const li=document.createElement('li');li.textContent=text;preparations.append(li);}$('diary-preparation-note').hidden=!!view.preparations.length;
- $('daily-clue-text').textContent=view.clue.used?view.clue.text:current.screen.finished?'The next day is here.':view.clue.available?'One gentle clue is available for this day. Opening the diary does not use it.':'A new clue is available when the next day begins.';
- $('daily-clue-button').disabled=!view.clue.available;$('daily-clue-button').textContent=view.clue.used?'Clue used for this day':'Use today’s clue';$('daily-clue-note').textContent=view.clue.used?'You can reread this clue. Another becomes available next morning.':'One clue per in-game day. Progress and save/reload do not grant extra clues.';
-}
-function openDiary(){if(!active)return;closeDialogs();journal.clearUnread();notebook.clearDiscovery();save();refreshDiary();openDialog('diary-dialog');}
-$('diary-button').addEventListener('click',openDiary);
-$('daily-clue-button').addEventListener('click',()=>{guide.requestClue(current);save();refreshDiary();});
-$('answer-form').addEventListener('submit',event=>{event.preventDefault();act('input',$('answer').value);});
-$('voice-toggle').addEventListener('click',()=>audio.toggle());$('voice-replay').addEventListener('click',()=>audio.replay());$('read-choices').addEventListener('click',()=>audio.read(spokenChoices(current.screen),{force:true}));
-for(const [id,key,numeric] of [['narration-enabled','narrationEnabled'],['voice-volume','voiceVolume',true],['voice-rate','voiceRate',true],['music-enabled','musicEnabled'],['music-volume','musicVolume',true],['large-text','largeText'],['reduced-motion','reducedMotion']]){
- $(id).addEventListener(numeric?'input':'change',()=>{settings[key]=numeric?Number($(id).value):$(id).checked;syncSettings();audio.update();notebook.refreshSettings();cinematic.refreshSettings();if(key==='narrationEnabled'&&settings[key]&&active)audio.read(current.screen.parts);try{localStorage.setItem(SETTINGS_KEY,JSON.stringify(settings));}catch{}});
-}
-function download(name,data){const url=URL.createObjectURL(new Blob([data],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-$('export-save').addEventListener('click',()=>{if(!saved&&!active){toast('Begin the game before exporting a save.');return;}download('Himawari-save.json',JSON.stringify(active?save():saved));toast('Save exported.');});
-$('import-save').addEventListener('click',()=>$('import-file').click());$('import-file').addEventListener('change',async()=>{const file=$('import-file').files[0];if(!file)return;try{if(file.size>8000000)throw new Error('Invalid save');const payload=JSON.parse(await file.text());const probe=createEngine();probe.importSave(payload.engine);saved=payload;try{localStorage.setItem(SAVE_KEY,JSON.stringify(saved));}catch{}resume();toast('Save imported.');}catch{toast('This file is not a valid Himawari save.');}$('import-file').value='';});
-document.addEventListener('keydown',event=>{if(event.defaultPrevented||event.repeat||event.ctrlKey||event.metaKey||event.altKey||document.querySelector('dialog[open]')||!active||/INPUT|TEXTAREA|SELECT/.test(event.target.tagName))return;const screen=current.screen;if(event.code==='Space'&&event.target.tagName==='BUTTON')return;if(event.code==='Space'){event.preventDefault();audio.toggle();}else if(event.key==='Enter'&&event.target.tagName!=='BUTTON'){if(screen.kind==='intro'&&!screen.finished){event.preventDefault();act('next');}else if(screen.needsContinue){event.preventDefault();act('continue');}else if(continuation(screen)){event.preventDefault();act('choice',continuation(screen).choice);}}else if(/^[1-4]$/.test(event.key)&&screen.kind==='story'&&!screen.input){const choice=Number(event.key);if(screen.options.some(o=>o.choice===choice&&o.raw.trim())){event.preventDefault();act('choice',choice);}}});
-function suspendMedia(){audio.suspend(true);notebook.suspend();}
-function resumeMedia(){if(document.hidden)return;if(notebook.isAlbumOpen()){notebook.resumeMedia();return;}if(active&&!notebook.isResetting()){audio.resume();if(pendingNarration){pendingNarration=false;audio.read(current.screen.parts);}}}
-window.addEventListener('pagehide',()=>{if(active)save();suspendMedia();});window.addEventListener('pageshow',resumeMedia);document.addEventListener('visibilitychange',()=>document.hidden?suspendMedia():resumeMedia());
-syncSettings();updateTitle();$('cover-flower').src=assetURL('assets/art/original/hima3.webp');document.querySelector('.cover-art').style.backgroundImage='url("'+assetURL('assets/art/original/mapa_joc.webp')+'")';
-// A read-only release diagnostic helps verify the browser without exposing or
-// mutating gameplay. The controller remains private to the application.
-window.Himawari=Object.freeze({version:'1.5.0',snapshot:()=>engine.snapshot(),narrator:'Harry'});

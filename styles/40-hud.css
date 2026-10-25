@@ -1,0 +1,254 @@
+/* The HUD: time of day at the top left, two quiet buttons at the top right. */
+.hud {
+  position: fixed;
+  z-index: var(--z-hud);
+  inset: 0 0 auto 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--edge-top) var(--edge-right) 0 var(--edge-left);
+  pointer-events: none;
+  transition:
+    opacity var(--fade) var(--ease),
+    translate var(--fade) var(--ease);
+}
+
+.hud > * {
+  pointer-events: auto;
+}
+
+.hud-time {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+}
+
+.hud-time::before {
+  content: '';
+  position: absolute;
+  inset: -36px -70px -36px -40px;
+  z-index: -1;
+  background: radial-gradient(closest-side, rgba(13, 9, 6, 0.55), transparent);
+  pointer-events: none;
+}
+
+.hud-flower {
+  width: auto;
+  height: 62px;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.55));
+}
+
+.hud-reading {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hud-phase {
+  font-family: var(--font-story);
+  font-size: 27px;
+  font-style: italic;
+  line-height: 1;
+}
+
+html:lang(zh-CN) .hud-phase {
+  font-style: normal;
+  letter-spacing: 0.08em;
+}
+
+.hud-loop {
+  display: block;
+  height: 24px;
+}
+
+.tally {
+  display: block;
+  overflow: visible;
+}
+
+.tally path {
+  fill: none;
+  stroke: var(--paper-dim);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.tally path.newest {
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+  animation: draw-tally 700ms var(--ease) 200ms forwards;
+}
+
+.tally text {
+  fill: var(--paper-dim);
+  font-family: var(--font-hand);
+  font-size: 17px;
+}
+
+@keyframes draw-tally {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hud-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.hud-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--ink-box);
+  box-shadow: 0 0 18px 6px rgba(13, 9, 6, 0.35);
+  color: var(--paper-on-ink);
+  transition: background-color 160ms;
+}
+
+.hud-button:hover {
+  background: rgba(13, 9, 6, 0.95);
+}
+
+.hud-button svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hud-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  background: var(--heart);
+  color: var(--paper-on-ink);
+  font-family: var(--font-hand);
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* A pencilled note pinned under the notebook button. */
+.hud-note {
+  position: absolute;
+  top: calc(var(--edge-top) + 56px);
+  right: var(--edge-right);
+  max-width: min(70vw, 20rem);
+  padding: 6px 14px 4px;
+  background: var(--page);
+  color: var(--page-ink);
+  font-family: var(--font-hand);
+  font-size: 1.25em;
+  text-align: left;
+  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.35);
+  rotate: 1.5deg;
+}
+
+.hud-note.arrive {
+  animation: note-in 420ms var(--ease);
+}
+
+@keyframes note-in {
+  from {
+    opacity: 0;
+    translate: 0 -8px;
+    rotate: -3deg;
+  }
+}
+
+/* Phase card: a full-screen beat as the day turns. */
+.phase-card {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: radial-gradient(80% 70% at 50% 45%, rgba(13, 9, 6, 0.82), rgba(13, 9, 6, 0.96));
+  animation: card-in 420ms var(--ease);
+  cursor: pointer;
+}
+
+.phase-card.leaving {
+  opacity: 0;
+  transition: opacity 360ms var(--ease);
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.card-flower {
+  width: auto;
+  height: min(34svh, 260px);
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.6));
+  animation: card-flower 1.6s var(--ease);
+}
+
+.phase-card.rewind .card-flower {
+  animation: none;
+}
+
+@keyframes card-flower {
+  from {
+    opacity: 0;
+    transform: translateY(10px) rotate(-3deg);
+  }
+}
+
+.card-title {
+  margin: 0;
+  font-family: var(--font-story);
+  font-size: clamp(38px, 6vw, 64px);
+  font-style: italic;
+  line-height: 1;
+}
+
+html:lang(zh-CN) .card-title {
+  font-style: normal;
+  letter-spacing: 0.12em;
+}
+
+.card-sub {
+  margin: 0;
+  min-height: 24px;
+  color: var(--paper-dim);
+  font-family: var(--font-hand);
+  font-size: 1.4em;
+}
+
+.card-sub .tally {
+  margin: 4px auto 0;
+  height: 28px;
+  width: auto;
+}
+
+@media (max-width: 720px) {
+  .hud-flower {
+    height: 48px;
+  }
+  .hud-phase {
+    font-size: 22px;
+  }
+  .hud-button {
+    width: 44px;
+    height: 44px;
+  }
+}

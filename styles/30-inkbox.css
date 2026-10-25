@@ -1,0 +1,433 @@
+/* The story box: dark ink over the picture, text written into it. */
+.story-box {
+  position: fixed;
+  z-index: var(--z-box);
+  left: calc(var(--edge-left) + 2.5vw);
+  bottom: calc(var(--edge-bottom) + 1vh);
+  width: var(--box-width);
+  max-height: min(66svh, calc(100svh - 7.5rem));
+  display: flex;
+  flex-direction: column;
+  padding: var(--box-pad) var(--box-pad) 10px;
+  transition:
+    opacity var(--fade) var(--ease),
+    translate var(--fade) var(--ease);
+}
+
+.story-box[data-side='right'] {
+  left: auto;
+  right: calc(var(--edge-right) + 2.5vw);
+}
+
+.ink-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ink-line) transparent;
+  padding-right: 8px;
+  margin-right: -8px;
+  outline: none;
+}
+
+/* Earlier lines fall behind the top edge as the text rolls forward. */
+.story-box.scrolled .ink-scroll {
+  mask-image: linear-gradient(to bottom, transparent 0, #000 2.8em);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 2.8em);
+}
+
+.passage p {
+  margin: 0 0 0.62em;
+  font-family: var(--font-story);
+  font-size: var(--text-story);
+  line-height: var(--leading);
+  text-wrap: pretty;
+  hanging-punctuation: first;
+}
+
+.passage p:last-child {
+  margin-bottom: 0.5em;
+}
+
+.passage .l {
+  opacity: 0;
+  transition: opacity 140ms linear;
+}
+
+.passage .l.on {
+  opacity: 1;
+}
+
+.passage.past {
+  color: var(--paper-faint);
+  transition: color 600ms;
+}
+
+.passage.past + .passage:not(.past) {
+  margin-top: 0.9em;
+}
+
+.passage.is-map p {
+  font-style: italic;
+}
+
+html:lang(zh-CN) .passage.is-map p {
+  font-style: normal;
+}
+
+/* Paragraphs not yet reached stay folded, so the box grows as it is written. */
+.passage p.unwritten {
+  display: none;
+}
+
+.story-box[data-mode='map'] .ink-bar > :not(.key-hint) {
+  display: none;
+}
+
+.story-box[data-mode='map'] .key-hint {
+  margin-left: auto;
+  display: inline;
+}
+
+.chosen {
+  margin: 0.1em 0 0.9em;
+  font-family: var(--font-hand);
+  font-size: calc(var(--text-story) * 1.12);
+  line-height: 1.2;
+  color: var(--sun);
+  opacity: 0.85;
+}
+
+.chosen::before {
+  content: '→ ';
+}
+
+/* Responses wait, invisible but in place, until the text is written. */
+.ink-responses {
+  transition: opacity 320ms var(--ease);
+}
+
+.ink-responses.waiting {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.ink-responses:empty {
+  display: none;
+}
+
+.ink-choices {
+  list-style: none;
+  margin: 0.35em 0 0.25em;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.choice {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75em;
+  width: 100%;
+  min-height: var(--target);
+  padding: 0.42em 0.6em;
+  border-radius: 3px;
+  text-align: left;
+  font-family: var(--font-story);
+  font-size: calc(var(--text-story) * 0.97);
+  line-height: 1.35;
+  transition: background-color 140ms;
+}
+
+.choice:hover,
+.choice:focus-visible {
+  background: rgba(243, 234, 214, 0.08);
+}
+
+.choice:hover .choice-text,
+.choice:focus-visible .choice-text {
+  text-decoration: underline;
+  text-decoration-color: var(--sun);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.22em;
+}
+
+.choice-n {
+  min-width: 0.8em;
+  font-family: var(--font-hand);
+  font-size: 1.25em;
+  line-height: 1;
+  color: var(--sun);
+}
+
+.choice-memory {
+  padding: 0 0 0.2em 2.3em;
+}
+
+.memory-toggle {
+  min-height: 30px;
+  font-family: var(--font-hand);
+  font-size: 1.1em;
+  color: var(--paper-faint);
+}
+
+.memory-toggle::before {
+  content: '✓ ';
+}
+
+.memory-toggle:hover {
+  color: var(--paper-on-ink);
+}
+
+.memory-detail {
+  margin: 0.1em 0 0.4em;
+  padding-left: 0.8em;
+  border-left: 1px solid var(--ink-line);
+  font-size: var(--text-small);
+  font-style: italic;
+  color: var(--paper-dim);
+}
+
+.memory-detail p {
+  margin: 0.3em 0;
+}
+
+.ink-continue {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.2em 0 0.15em;
+  transition: transform 160ms var(--ease);
+}
+
+.ink-continue img {
+  display: block;
+  width: auto;
+  height: 46px;
+}
+
+.ink-continue:hover {
+  transform: rotate(-1deg) scale(1.03);
+}
+
+/* Lettered in the same chalk-on-slate style as the original button. */
+.ink-continue.chalk {
+  gap: 0.6em;
+  min-height: 46px;
+  padding: 2px 20px 4px;
+  background: #000;
+  border: 2px solid var(--paper-on-ink);
+  box-shadow:
+    inset 0 0 0 3px #000,
+    inset 0 0 0 4.5px rgba(243, 234, 214, 0.75);
+  font-family: var(--font-hand);
+  font-size: 1.55em;
+  color: var(--paper-on-ink);
+}
+
+.chalk-arrow {
+  font-size: 1.1em;
+}
+
+.ink-answer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0.4em 0 0.3em;
+  border-bottom: 1.5px solid var(--paper-dim);
+}
+
+.ink-answer input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 2px 8px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-family: var(--font-hand);
+  font-size: calc(var(--text-story) * 1.3);
+  color: var(--paper-on-ink);
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.ink-answer input::placeholder {
+  color: var(--paper-faint);
+  opacity: 0.6;
+}
+
+.answer-submit {
+  min-width: var(--target);
+  min-height: var(--target);
+  font-size: 1.6em;
+  color: var(--sun);
+}
+
+.ink-quiet {
+  min-height: 36px;
+  padding: 0 4px;
+  font-family: var(--font-hand);
+  font-size: 1.15em;
+  color: var(--paper-faint);
+}
+
+.ink-quiet:hover {
+  color: var(--paper-on-ink);
+}
+
+.ink-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
+}
+
+/* The bar: narration and reading controls, quiet until needed. */
+.ink-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--ink-line);
+  color: var(--paper-faint);
+  font-size: var(--text-small);
+}
+
+.voice-button,
+.bar-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: var(--paper-dim);
+}
+
+.voice-button {
+  border: 1px solid var(--paper-faint);
+}
+
+.voice-button::after,
+.bar-button::after {
+  content: '';
+  position: absolute;
+  inset: -5px;
+}
+
+.voice-button svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.bar-button svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.voice-button:hover,
+.bar-button:hover {
+  color: var(--paper-on-ink);
+}
+
+.voice-caption {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.voice-status {
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.voice-line {
+  display: block;
+  width: 110px;
+  height: 2px;
+  background: var(--ink-line);
+}
+
+.voice-line i {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--sun);
+  transition: width 200ms linear;
+}
+
+.read-mark,
+.bar-toggle,
+.key-hint {
+  font-family: var(--font-hand);
+  font-size: 1.15em;
+  white-space: nowrap;
+}
+
+
+.bar-toggle {
+  min-height: 34px;
+  padding: 0 8px;
+  border-radius: 3px;
+  color: var(--paper-faint);
+}
+
+.bar-toggle:hover {
+  color: var(--paper-on-ink);
+}
+
+.bar-toggle[aria-pressed='true'] {
+  color: var(--sun);
+}
+
+.bar-toggle[aria-pressed='true']::before {
+  content: '● ';
+  font-size: 0.6em;
+  vertical-align: 0.2em;
+}
+
+.key-hint {
+  opacity: 0.7;
+}
+
+@media (hover: none), (max-width: 720px) {
+  .key-hint {
+    display: none;
+  }
+}
+
+/* Portrait and narrow screens: the box spans the bottom of the screen. */
+@media (max-width: 720px), (max-aspect-ratio: 1/1) {
+  .story-box,
+  .story-box[data-side='right'] {
+    left: var(--edge-left);
+    right: var(--edge-right);
+    bottom: var(--edge-bottom);
+    width: auto;
+    max-height: 56svh;
+  }
+
+  .voice-line {
+    width: 64px;
+  }
+}
+
+/* Look mode and phase cards clear the picture. */
+.game.looking .story-box,
+.game.looking .hud {
+  opacity: 0;
+  pointer-events: none;
+  translate: 0 12px;
+}
