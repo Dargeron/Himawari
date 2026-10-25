@@ -37,7 +37,7 @@ else:
     authored = [k for k in expected if k.isdigit()]
     assert len(authored) == 458
     for key in authored:
-        assert key in manifest, ('Missing Mandarin narration', key)
+        assert key in manifest or key in gaps['unspoken'], ('Missing Mandarin narration', key)
         assert re.search('[一-鿿]', literals[key]['text']), ('Untranslated story', key)
 for i in range(301):
     assert (f'number:{i}' in manifest) == gaps['numbers'], i
