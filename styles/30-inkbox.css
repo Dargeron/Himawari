@@ -416,6 +416,8 @@ html:lang(zh-CN) .passage.is-map p {
     right: var(--edge-right);
     bottom: var(--edge-bottom);
     width: auto;
+    max-width: 46rem;
+    margin: 0 auto;
     max-height: 56svh;
   }
 

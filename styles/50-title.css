@@ -177,7 +177,11 @@ html:lang(zh-CN) .title-option.primary {
     align-items: start;
     gap: 16px;
     padding: calc(var(--edge-top) + 6vh) var(--edge-right) var(--edge-bottom) var(--edge-left);
-    background: linear-gradient(180deg, rgba(13, 9, 6, 0.55), transparent 45%, rgba(13, 9, 6, 0.6));
+    background: linear-gradient(180deg, rgba(13, 9, 6, 0.78), rgba(13, 9, 6, 0.25) 42%, transparent 55%, rgba(13, 9, 6, 0.65));
+  }
+
+  .title-flower {
+    display: none;
   }
 
   .title-brand {
@@ -186,13 +190,10 @@ html:lang(zh-CN) .title-option.primary {
     margin: 0 auto;
   }
 
-  .title-flower {
-    margin: 0 auto 6px;
-  }
-
   .title-box {
     grid-row: 3;
-    justify-self: stretch;
+    justify-self: center;
+    width: min(100%, 26rem);
     align-items: stretch;
     text-align: center;
   }
