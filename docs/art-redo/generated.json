@@ -155,6 +155,12 @@
   "notes": "Harry stands by the sewer door scratching his head, doubtful and half turned to leave; same alley and framing as 2344, voice unseen.",
   "stamp": 1792966008.7278693
  },
+ "2250": {
+  "model": null,
+  "prompt": null,
+  "notes": "Harry, with his head bandaged over the left ear and his trousers ripped, sits contentedly by a campfire in the jungle-overgrown red-brick school wing by a waterfall, among small face-painted, leaf-crowned children who clap their shoulders and roast books on sticks; flaw: his shirt is only lightly frayed rather than mostly gone.",
+  "stamp": 1792965686.6598501
+ },
  "2270": {
   "model": "gemini-3-pro-image",
   "prompt": "Image 1 is the character sheet for Harry and others; Harry's hands and olive sleeves should match him. Image 2 is an existing scene in Harry's flat; match its painterly style, palette and interior (wooden furniture, rag rug, potted sunflower, window over the town), but not its content.\n\nScene, first-person view through Harry's eyes as he searches his bedroom for hidden cameras or traps: his two man's hands (olive-green rolled sleeves, a little hairy, clearly an adult man's hands) lift a pair of baggy, well-worn men's boxer shorts with a silly pattern of little red hearts, holding them up with comic pride. In the pulled-out drawer below: a crumpled paper bag with two stale old donuts, a plastic lighter and a TV remote. On the floor nearby, a plump round-bellied pregnant mouse sits looking up curiously. In the background, a desk by the window with the potted sunflower. Composition: hands and boxers centre-right, the left third calmer (bed and wall), for a text box. Warm afternoon light, comic mood.\n\nPainterly storybook illustration matching the reference style: warm textured gouache and watercolour, soft grainy paper, hand-drawn ink lines. Landscape 4:3. No text, letters or signage anywhere.\n",

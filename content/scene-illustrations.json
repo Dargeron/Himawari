@@ -1730,10 +1730,10 @@
     "ids": [
       2250
     ],
-    "bytes": 188396,
+    "bytes": 177326,
     "width": 1024,
     "height": 768,
-    "sha256": "d4db421fe38ad761e2d553c7b7693a3e94e46afa727a04196ac99761694d2be0"
+    "sha256": "03f81387696d2ea42080eed23cc96ef4cc7b590e74185f1ff75642aacf21409d"
   },
   "2251": {
     "asset": "assets/art/scenes/2251.webp",
