@@ -1,0 +1,18 @@
+{
+  "name": "himawari-zh-cn",
+  "version": "1.5.0-zh-CN",
+  "private": true,
+  "type": "module",
+  "description": "Himawari \u7b80\u4f53\u4e2d\u6587\u7248\uff1a\u4fdd\u7559\u539f\u7248\u753b\u9762\u3001\u97f3\u4e50\u4e0e\u89c4\u5219\u3002",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "portable": "python3 tools/build.py --portable",
+    "test": "node tests/mechanics.mjs && node tests/walkthrough.mjs && node tests/ui.mjs && node tests/audio.mjs && node tests/audio-transitions.mjs && node tests/guide.mjs && node tests/journal.mjs && node tests/notebook-ui.mjs && python3 tests/assets.py && node tests/localization.mjs && node tests/preload.mjs && node tests/scenes.mjs && node tests/cinematic.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "30.1.1"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

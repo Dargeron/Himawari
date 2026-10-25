@@ -1,0 +1,3 @@
+This source archive includes all code, recovery data, original drawing PNGs and every media file used by the Chinese edition. Redundant English recordings and unused audio prototypes are preserved in the English source archive.
+
+The prior compact archive also omitted provider generation JSON sidecars for the Mandarin MP3s. Runtime clip timings and all used MP3s are present. The handoff validates unchanged released audio and narrator configuration with content/released-narration-integrity.json; it does not invent missing provider metadata. Regeneration utilities that expect those historical sidecars are archival tools, not part of the runtime/build pipeline.
