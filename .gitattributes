@@ -1,0 +1,7 @@
+* text=auto
+*.mp3 -text
+*.m4a -text
+*.wav -text
+*.webp -text
+*.png -text
+*.wasm -text

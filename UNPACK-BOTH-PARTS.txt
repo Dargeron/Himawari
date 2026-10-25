@@ -1,0 +1,1 @@
+Complete Himawari GitHub handoff: download both Himawari-GitHub-part-1.zip and Himawari-GitHub-part-2.zip. Extract BOTH into the SAME parent directory, merging Himawari-GitHub-complete/. Then read README.md and AI-START-HERE.md. Python extraction commands are in README.md. All media is local; no API keys are included or required.

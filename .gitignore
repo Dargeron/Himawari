@@ -1,0 +1,12 @@
+**/node_modules/
+**/__pycache__/
+dist/
+*.zip
+*.tar.gz
+.env
+.env.*
+*.key
+*.pem
+.wrangler/
+**/.wrangler/
+**/.DS_Store
