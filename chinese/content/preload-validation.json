@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "completePreload": true,
+  "actualByteProgress": true,
+  "boundedConcurrency": 3,
+  "persistentCache": true,
+  "noRepeatDownloadsOnReturn": true,
+  "retryKeepsCompletedFiles": true,
+  "interruptedDownloadRecovery": true,
+  "hashValidation": true,
+  "versionSpecificCache": true,
+  "quotaFallback": true,
+  "stalledRequestRecovery": true,
+  "gameStartsOnlyAfterComplete": true,
+  "existingSavesUntouched": true,
+  "localFolderCompatibility": true,
+  "language": "zh-CN",
+  "assetFiles": 516
+}

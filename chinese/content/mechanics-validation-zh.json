@@ -1,0 +1,51 @@
+{
+  "oracle": "original recovered WASM",
+  "actions": 18000,
+  "visitedStates": 283,
+  "phases": [
+    2,
+    3,
+    4,
+    5,
+    1
+  ],
+  "freeTextActions": 330,
+  "endings": [
+    [
+      "endIntro1",
+      "noLove",
+      "noLove2",
+      "introN",
+      "introN"
+    ],
+    [
+      "endIntro1",
+      "noGun",
+      "introN",
+      "introN"
+    ],
+    [
+      "endIntro1",
+      "noPoison",
+      "noPoison2",
+      "noPoison2"
+    ],
+    [
+      "endIntro1",
+      "noEvil",
+      "noEvil2",
+      "noEvil3",
+      "introN",
+      "introN"
+    ],
+    [
+      "endIntro1",
+      "victory",
+      "victory2",
+      "victory3",
+      "victory4",
+      "victory4"
+    ]
+  ],
+  "saveRoundTrip": true
+}

@@ -1,0 +1,359 @@
+{
+  "sourceBytes": 7423858,
+  "compressedBytes": 2523312,
+  "fullResolution": true,
+  "transparencyUnchanged": true,
+  "authorPNGsUnchanged": true,
+  "assets": {
+    "assets/art/original/Abocador.webp": {
+      "sourceBytes": 95292,
+      "compressedBytes": 34010,
+      "sha256": "a2e65aa0f21a98b158abd0c7cde212700e7793aa9d35a0db7c63e772c2bb05c5",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 42.77,
+      "dimensions": [
+        322,
+        280
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Aigua.webp": {
+      "sourceBytes": 80966,
+      "compressedBytes": 35808,
+      "sha256": "d1adf2b0d9418ced165827021afbee36e92936013dd1dd12742ae4ee26ddc540",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 44.11,
+      "dimensions": [
+        463,
+        220
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/CUADRO_DE_TEXTO.webp": {
+      "sourceBytes": 160576,
+      "compressedBytes": 160576,
+      "sha256": "4c58539d39aaecaed1038e675f047dd7ad8efc7bc14e2a9e525baf2bb8296001",
+      "lossless": true,
+      "quality": null,
+      "minimumRenderedPSNR": 99.0,
+      "dimensions": [
+        1109,
+        623
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Casa.webp": {
+      "sourceBytes": 75654,
+      "compressedBytes": 30364,
+      "sha256": "d4917513751e12a792e0ff06f38c822dfadd3339617a63586b9b47777c6cecdb",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 42.06,
+      "dimensions": [
+        235,
+        282
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Ending_1b.webp": {
+      "sourceBytes": 431032,
+      "compressedBytes": 134026,
+      "sha256": "e949eec894d997305f72421c58017fab95e65ec6934084314252569252524ea9",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 43.78,
+      "dimensions": [
+        708,
+        727
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Ending_2b.webp": {
+      "sourceBytes": 399882,
+      "compressedBytes": 123830,
+      "sha256": "5af581df12caa169ec8b395ec3dc92e307e0d5f7494d74b0ae77916fcfccd0b1",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 46.38,
+      "dimensions": [
+        937,
+        924
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Ending_3b.webp": {
+      "sourceBytes": 365612,
+      "compressedBytes": 111654,
+      "sha256": "0df1bd4d0059bf58d5ec56371e55525d91a901ab5352fd362d15611fa38b0417",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 45.68,
+      "dimensions": [
+        755,
+        835
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Ending_5b.webp": {
+      "sourceBytes": 626434,
+      "compressedBytes": 223110,
+      "sha256": "bf2339e1ee84312cb9528cb8b8ac8d05195a39bf13442f6312aba949e143f5d0",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 46.34,
+      "dimensions": [
+        1280,
+        995
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Escola.webp": {
+      "sourceBytes": 93276,
+      "compressedBytes": 38940,
+      "sha256": "4512ca9dd880ddc8b2da96f08e95c124fc2d59855f9cc3f47076189ce304945d",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 43.25,
+      "dimensions": [
+        395,
+        258
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/InputFieldBackground.webp": {
+      "sourceBytes": 348,
+      "compressedBytes": 348,
+      "sha256": "e7876d5ee911a33b4a85d6e91135d284e692010809176000fa54e01cdcc30fd2",
+      "lossless": true,
+      "quality": null,
+      "minimumRenderedPSNR": 99.0,
+      "dimensions": [
+        32,
+        32
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Magatzem.webp": {
+      "sourceBytes": 84846,
+      "compressedBytes": 38188,
+      "sha256": "3ee5fdd4a61d88f34760175b98b589e931f455b16bc5981bd5466dbf86854e6e",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 43.71,
+      "dimensions": [
+        417,
+        212
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Parc.webp": {
+      "sourceBytes": 204738,
+      "compressedBytes": 76720,
+      "sha256": "30fc7220f9382b631b382e25c0b0fb4c10b3fadd3e5549c9422a06428bbe9a5b",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 41.65,
+      "dimensions": [
+        596,
+        318
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Passeig.webp": {
+      "sourceBytes": 83210,
+      "compressedBytes": 32894,
+      "sha256": "383c48aa2b857ea04a726f0969277024c1d7f4eb8697a741be0dfc81aa73dfc4",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 43.06,
+      "dimensions": [
+        412,
+        220
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/Pizza.webp": {
+      "sourceBytes": 62226,
+      "compressedBytes": 26962,
+      "sha256": "ccf0a4fc64036d625197f6e6cb2cee3e985f822133e6e93d692fc6678f681eaf",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 42.28,
+      "dimensions": [
+        228,
+        255
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/UISprite.webp": {
+      "sourceBytes": 288,
+      "compressedBytes": 288,
+      "sha256": "18fb835e386eda72ddd25316bd5e68c78cf4b7a0f309b777697e27f7d8dc4f88",
+      "lossless": true,
+      "quality": null,
+      "minimumRenderedPSNR": 99.0,
+      "dimensions": [
+        32,
+        32
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/blanco.webp": {
+      "sourceBytes": 68,
+      "compressedBytes": 68,
+      "sha256": "b5e5d2fd2ef388695152856e3dd94adc14467d989f14b3ac4fba56a646b48a90",
+      "lossless": true,
+      "quality": null,
+      "minimumRenderedPSNR": 99.0,
+      "dimensions": [
+        1023,
+        606
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/continueBtn.webp": {
+      "sourceBytes": 15966,
+      "compressedBytes": 15216,
+      "sha256": "55a63ec4c686e7605d6d7bbb16ed49abe6295f822c6814efbb2afdb18e6ff5e3",
+      "lossless": true,
+      "quality": null,
+      "minimumRenderedPSNR": 99.0,
+      "dimensions": [
+        414,
+        122
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/ending_4b.webp": {
+      "sourceBytes": 663850,
+      "compressedBytes": 242050,
+      "sha256": "e288c95a1a1053c8a448e37a0ba553953d58bbcb80fce99ad45f1d6c2847b869",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 45.52,
+      "dimensions": [
+        973,
+        1103
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/hima1.webp": {
+      "sourceBytes": 497776,
+      "compressedBytes": 142606,
+      "sha256": "992768a2916efeaae181343e2a65f4f347f1cd19290ed27acb67e5cb695a47c5",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 50.32,
+      "dimensions": [
+        1340,
+        1374
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/hima2.webp": {
+      "sourceBytes": 575098,
+      "compressedBytes": 160456,
+      "sha256": "cd401df9f48bf3237c3117a02341f478c8c7406c18694f4cf7634705e4edb3b1",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 49.96,
+      "dimensions": [
+        1079,
+        1794
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/hima3.webp": {
+      "sourceBytes": 728968,
+      "compressedBytes": 165530,
+      "sha256": "47adc5f903ea93d70464d2731f05f4f03273d44345871bb37fa79abc643849ad",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 48.94,
+      "dimensions": [
+        1212,
+        1742
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/hima4.webp": {
+      "sourceBytes": 821216,
+      "compressedBytes": 223442,
+      "sha256": "b89acb6f9364a128c978fbab206343ac545bd2cd7de06c95102dee93d6af0a64",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 47.9,
+      "dimensions": [
+        1005,
+        1791
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/hima5.webp": {
+      "sourceBytes": 529252,
+      "compressedBytes": 151450,
+      "sha256": "df39806b653e4426f2d37ad3f272fcf422f9b8032df674260d8967a3ef41155f",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 48.35,
+      "dimensions": [
+        1003,
+        1288
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/mapa_joc.webp": {
+      "sourceBytes": 827206,
+      "compressedBytes": 354698,
+      "sha256": "b5fad8941b81b1866252f0503de8a548198bc8003338d742892608607b139d6c",
+      "lossless": false,
+      "quality": 95,
+      "minimumRenderedPSNR": 44.38,
+      "dimensions": [
+        1280,
+        974
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    },
+    "assets/art/original/negro.webp": {
+      "sourceBytes": 78,
+      "compressedBytes": 78,
+      "sha256": "3447f0dfb87763aa35e1b7ac5d2bcd9652611ebce8cac135c0a31dea8cd3bfef",
+      "lossless": true,
+      "quality": null,
+      "minimumRenderedPSNR": 99.0,
+      "dimensions": [
+        1023,
+        606
+      ],
+      "alphaUnchanged": true,
+      "authorPNGUnchanged": true
+    }
+  }
+}

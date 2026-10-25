@@ -1,0 +1,10 @@
+{
+  "delayedMetadata": true,
+  "delayedSeek": true,
+  "backwardSeek": true,
+  "rapidChoices": true,
+  "staleMediaEvents": true,
+  "pauseDuringSeek": true,
+  "suspendDuringSeek": true,
+  "replayFromBeginning": true
+}

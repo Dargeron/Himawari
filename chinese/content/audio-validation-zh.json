@@ -1,0 +1,15 @@
+{
+  "audio": "cached Mandarin",
+  "opening": true,
+  "pauseResume": true,
+  "temporarySuspensionResume": true,
+  "clipBoundaries": true,
+  "longLoopCounts": true,
+  "typedNames": true,
+  "staleNarrationStopped": true,
+  "staleEndedEvents": true,
+  "staleErrorEvents": true,
+  "autoplayRecovery": true,
+  "delayedPlaybackRejections": true,
+  "metadataClipSeeking": true
+}

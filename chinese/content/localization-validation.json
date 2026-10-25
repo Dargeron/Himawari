@@ -1,0 +1,13 @@
+{
+  "language": "zh-CN",
+  "authoredTranslatedPassages": 458,
+  "rawStringsUnchanged": true,
+  "ChineseNameAnswer": true,
+  "fullWidthPIN": true,
+  "incorrectAnswersRemainIncorrect": true,
+  "EnglishSaveMigrationAfterEveryAction": 261,
+  "originalStateAndInventory": true,
+  "translatedWinningRoute": true,
+  "legacyDiaryAndAlbum": true,
+  "ChinesePeopleDetection": true
+}

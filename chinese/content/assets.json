@@ -1,0 +1,2058 @@
+{
+  "assets/art/original/Abocador.webp": {
+    "bytes": 34010,
+    "sha256": "a2e65aa0f21a98b158abd0c7cde212700e7793aa9d35a0db7c63e772c2bb05c5"
+  },
+  "assets/art/original/Aigua.webp": {
+    "bytes": 35808,
+    "sha256": "d1adf2b0d9418ced165827021afbee36e92936013dd1dd12742ae4ee26ddc540"
+  },
+  "assets/art/original/CUADRO_DE_TEXTO.webp": {
+    "bytes": 160576,
+    "sha256": "4c58539d39aaecaed1038e675f047dd7ad8efc7bc14e2a9e525baf2bb8296001"
+  },
+  "assets/art/original/Casa.webp": {
+    "bytes": 30364,
+    "sha256": "d4917513751e12a792e0ff06f38c822dfadd3339617a63586b9b47777c6cecdb"
+  },
+  "assets/art/original/Ending_1b.webp": {
+    "bytes": 134026,
+    "sha256": "e949eec894d997305f72421c58017fab95e65ec6934084314252569252524ea9"
+  },
+  "assets/art/original/Ending_2b.webp": {
+    "bytes": 123830,
+    "sha256": "5af581df12caa169ec8b395ec3dc92e307e0d5f7494d74b0ae77916fcfccd0b1"
+  },
+  "assets/art/original/Ending_3b.webp": {
+    "bytes": 111654,
+    "sha256": "0df1bd4d0059bf58d5ec56371e55525d91a901ab5352fd362d15611fa38b0417"
+  },
+  "assets/art/original/Ending_5b.webp": {
+    "bytes": 223110,
+    "sha256": "bf2339e1ee84312cb9528cb8b8ac8d05195a39bf13442f6312aba949e143f5d0"
+  },
+  "assets/art/original/Escola.webp": {
+    "bytes": 38940,
+    "sha256": "4512ca9dd880ddc8b2da96f08e95c124fc2d59855f9cc3f47076189ce304945d"
+  },
+  "assets/art/original/InputFieldBackground.webp": {
+    "bytes": 348,
+    "sha256": "e7876d5ee911a33b4a85d6e91135d284e692010809176000fa54e01cdcc30fd2"
+  },
+  "assets/art/original/Magatzem.webp": {
+    "bytes": 38188,
+    "sha256": "3ee5fdd4a61d88f34760175b98b589e931f455b16bc5981bd5466dbf86854e6e"
+  },
+  "assets/art/original/Parc.webp": {
+    "bytes": 76720,
+    "sha256": "30fc7220f9382b631b382e25c0b0fb4c10b3fadd3e5549c9422a06428bbe9a5b"
+  },
+  "assets/art/original/Passeig.webp": {
+    "bytes": 32894,
+    "sha256": "383c48aa2b857ea04a726f0969277024c1d7f4eb8697a741be0dfc81aa73dfc4"
+  },
+  "assets/art/original/Pizza.webp": {
+    "bytes": 26962,
+    "sha256": "ccf0a4fc64036d625197f6e6cb2cee3e985f822133e6e93d692fc6678f681eaf"
+  },
+  "assets/art/original/UISprite.webp": {
+    "bytes": 288,
+    "sha256": "18fb835e386eda72ddd25316bd5e68c78cf4b7a0f309b777697e27f7d8dc4f88"
+  },
+  "assets/art/original/blanco.webp": {
+    "bytes": 68,
+    "sha256": "b5e5d2fd2ef388695152856e3dd94adc14467d989f14b3ac4fba56a646b48a90"
+  },
+  "assets/art/original/continueBtn.webp": {
+    "bytes": 15216,
+    "sha256": "55a63ec4c686e7605d6d7bbb16ed49abe6295f822c6814efbb2afdb18e6ff5e3"
+  },
+  "assets/art/original/ending_4b.webp": {
+    "bytes": 242050,
+    "sha256": "e288c95a1a1053c8a448e37a0ba553953d58bbcb80fce99ad45f1d6c2847b869"
+  },
+  "assets/art/original/hima1.webp": {
+    "bytes": 142606,
+    "sha256": "992768a2916efeaae181343e2a65f4f347f1cd19290ed27acb67e5cb695a47c5"
+  },
+  "assets/art/original/hima2.webp": {
+    "bytes": 160456,
+    "sha256": "cd401df9f48bf3237c3117a02341f478c8c7406c18694f4cf7634705e4edb3b1"
+  },
+  "assets/art/original/hima3.webp": {
+    "bytes": 165530,
+    "sha256": "47adc5f903ea93d70464d2731f05f4f03273d44345871bb37fa79abc643849ad"
+  },
+  "assets/art/original/hima4.webp": {
+    "bytes": 223442,
+    "sha256": "b89acb6f9364a128c978fbab206343ac545bd2cd7de06c95102dee93d6af0a64"
+  },
+  "assets/art/original/hima5.webp": {
+    "bytes": 151450,
+    "sha256": "df39806b653e4426f2d37ad3f272fcf422f9b8032df674260d8967a3ef41155f"
+  },
+  "assets/art/original/mapa_joc.webp": {
+    "bytes": 354698,
+    "sha256": "b5fad8941b81b1866252f0503de8a548198bc8003338d742892608607b139d6c"
+  },
+  "assets/art/original/negro.webp": {
+    "bytes": 78,
+    "sha256": "3447f0dfb87763aa35e1b7ac5d2bcd9652611ebce8cac135c0a31dea8cd3bfef"
+  },
+  "assets/art/scenes/1840-1841-1842.webp": {
+    "bytes": 258044,
+    "sha256": "5c1d7361dd8ae50ac572399c1f1812f07e8cd3d2db28b48427188b603d977347"
+  },
+  "assets/art/scenes/1840-1842.webp": {
+    "bytes": 269032,
+    "sha256": "02807ae20625432ebc602ce2cfabe932b3820c0c12d9c538f2ebe18afa04f926"
+  },
+  "assets/art/scenes/1849.webp": {
+    "bytes": 288408,
+    "sha256": "8341f0607f3435de99715c262eb9225e34b8aad2adcd7db93f56b881b3eff42b"
+  },
+  "assets/art/scenes/1851-1852.webp": {
+    "bytes": 222382,
+    "sha256": "3b2f2ed73032e4d9d43c87f8b389fe7e2db5620321f29aa233a9b7e3127273a6"
+  },
+  "assets/art/scenes/1851-1853.webp": {
+    "bytes": 225900,
+    "sha256": "c87a8db93a7a062568f2c56009383b3525b9286d50ccf4e4534862c1b474a72a"
+  },
+  "assets/art/scenes/1851-1854.webp": {
+    "bytes": 217312,
+    "sha256": "386496e1375609c38dd6ee7373d614ff82ca9842f10d17557f51a81f85552dd7"
+  },
+  "assets/art/scenes/1851-1855.webp": {
+    "bytes": 227884,
+    "sha256": "ac0ca9cd9f4323c632c4e59d0ad451f8921104780204da3b5af5601e84850f83"
+  },
+  "assets/art/scenes/1861.webp": {
+    "bytes": 207038,
+    "sha256": "bd6d1f8c56ad8f4b6b6211b658d2a9987f77131a91c19db9a32ceed88a8a1bb4"
+  },
+  "assets/art/scenes/1867.webp": {
+    "bytes": 257716,
+    "sha256": "426d21d134a8fed21ac86a8ab6d7a9466cff13d33913088bdd5a203dc0e9eb24"
+  },
+  "assets/art/scenes/1873.webp": {
+    "bytes": 281540,
+    "sha256": "981c40475f988da4bf88d0feea8738613fb18a1a945857695808dde82ee193e8"
+  },
+  "assets/art/scenes/1880.webp": {
+    "bytes": 269184,
+    "sha256": "5689ef5894e84dba8a0626b8b0efcf8df7ad0f03f2c35f7cf8bffd7b8a3d38be"
+  },
+  "assets/art/scenes/1881.webp": {
+    "bytes": 245830,
+    "sha256": "d994a9bce809d2b2541842fce5c48098daab9f6a295d500b9b4a408bb2abb220"
+  },
+  "assets/art/scenes/1886.webp": {
+    "bytes": 245064,
+    "sha256": "148312de830bd797efbd4cbb842d7a6e31f522246cbd7f809cf0db43f59abee4"
+  },
+  "assets/art/scenes/1887.webp": {
+    "bytes": 211504,
+    "sha256": "855bbf47ffe6a106363d5b70c4ea9dc316af2d7505bdde1381bb61c55ad90390"
+  },
+  "assets/art/scenes/1909-1910.webp": {
+    "bytes": 245120,
+    "sha256": "7a7f0f40a448d0a1fd1ff84edb34c36123b3ee5797603788c8c0814599ebdac8"
+  },
+  "assets/art/scenes/1909-1911.webp": {
+    "bytes": 197142,
+    "sha256": "136a5cb9f119842cc84372e83d0f8934ba9aa9ad5d114cf0055907c731abc32f"
+  },
+  "assets/art/scenes/1909-1912.webp": {
+    "bytes": 242696,
+    "sha256": "07e73e09968aa56d337bb633bd05c332b9fbba94f431129d9af47206b95cd52e"
+  },
+  "assets/art/scenes/1909.webp": {
+    "bytes": 218726,
+    "sha256": "391bdc71f0c064267d934b32d0fb52f998248afe67542801aa6f548d2d1f249f"
+  },
+  "assets/art/scenes/1915.webp": {
+    "bytes": 280688,
+    "sha256": "ef5d9961ed670c591ef7065ae95e33c90a3a4276327c7ce64ebbbed61b88f349"
+  },
+  "assets/art/scenes/1920.webp": {
+    "bytes": 266958,
+    "sha256": "3395a86be6a752287ccd082da61d468f1f1bac5c8f649702b08b2932bca50e4d"
+  },
+  "assets/art/scenes/1926.webp": {
+    "bytes": 259458,
+    "sha256": "29fa46f58de2e79e9321f541e09c946d26a417514d6d6594fad0ec62203a1ddb"
+  },
+  "assets/art/scenes/1927.webp": {
+    "bytes": 267192,
+    "sha256": "3afc8905ebcc48f78611ee7567f08cae481e6fe4cbeeb381b6d92b7aa04120a8"
+  },
+  "assets/art/scenes/1929.webp": {
+    "bytes": 265978,
+    "sha256": "12ce1d185c8ccccb75ab5e84156641dacadd2d530c14fca7c483aba55ccbeaab"
+  },
+  "assets/art/scenes/1933.webp": {
+    "bytes": 273200,
+    "sha256": "ecf74e5522348b74aa55efa784207a4f39e8d9676cc294da64dbf29765f0aede"
+  },
+  "assets/art/scenes/1935.webp": {
+    "bytes": 302308,
+    "sha256": "4928ce31597e7fb7feba2ccc1771a1d21eab441216ce1f884287bada4bb68156"
+  },
+  "assets/art/scenes/1938.webp": {
+    "bytes": 251516,
+    "sha256": "4d14245b0b0ee9d1293c65777c884e226b6aa41f218332a01afdaff0528bdb50"
+  },
+  "assets/art/scenes/1942.webp": {
+    "bytes": 278618,
+    "sha256": "1ef7d9e547d68cbc87326355fba416742efa5689820ffd939bed9a8f6ad54c76"
+  },
+  "assets/art/scenes/1945.webp": {
+    "bytes": 261644,
+    "sha256": "bc5c5ffc8252634ff456b2aadbddb4cfca12949b18070a0deb70fe1bc6d36725"
+  },
+  "assets/art/scenes/1948.webp": {
+    "bytes": 276900,
+    "sha256": "c584940f7cf91219fc03f53903e23d8924bddaf95be2b16fdd0288080329888d"
+  },
+  "assets/art/scenes/1951.webp": {
+    "bytes": 296632,
+    "sha256": "c8d9157e6219e4a027499bc398c4a02a458b08f7520a993da265efab877701d5"
+  },
+  "assets/art/scenes/1953.webp": {
+    "bytes": 271718,
+    "sha256": "e06ab9e5e70f700fe7870da4045db0e5400cdead2adc300e93be86604b847cd1"
+  },
+  "assets/art/scenes/1956.webp": {
+    "bytes": 260384,
+    "sha256": "450d239ad078071ef608efcb13ad21f0b38793a34a8f0476adfdafaa0117788e"
+  },
+  "assets/art/scenes/1958.webp": {
+    "bytes": 290564,
+    "sha256": "ebf1cbd577ecce66e848fa7d635944cfcc4e59e530f0eb87627b6a15af20edac"
+  },
+  "assets/art/scenes/1959.webp": {
+    "bytes": 278752,
+    "sha256": "4e929b1a252f21997c14443b920a38929b0615510f9af1de121d8ef0e0efd64b"
+  },
+  "assets/art/scenes/1960.webp": {
+    "bytes": 246192,
+    "sha256": "47da9059ff333530fee76ab2dfbf5c8bdd4d83e656064481ee15fe0d28c08a09"
+  },
+  "assets/art/scenes/1962.webp": {
+    "bytes": 219556,
+    "sha256": "0fd694b1e04e5fd57ea69cbab1135129c3336f09f12f29e0ffd329b1cc395632"
+  },
+  "assets/art/scenes/1967.webp": {
+    "bytes": 245532,
+    "sha256": "88ee9e93f77fd522295d4a6bf9d0145e3a52ffc39bd22c52c689d4336e8c3862"
+  },
+  "assets/art/scenes/1970.webp": {
+    "bytes": 214538,
+    "sha256": "1a974f1f1ba973d1c16686d1f5b4fe43d087b1fb35f397f7fe5e0640b5cdfbcf"
+  },
+  "assets/art/scenes/1972.webp": {
+    "bytes": 234346,
+    "sha256": "4babbadf55dc9e1bdabf1db3a361bbc57d4d333480d2b2997aba3b5c00ded2c9"
+  },
+  "assets/art/scenes/1973.webp": {
+    "bytes": 222662,
+    "sha256": "dff1c2e855eaa9824039cc002c4318714801a65fcf0c26e49f882d57821bea8d"
+  },
+  "assets/art/scenes/1975.webp": {
+    "bytes": 242810,
+    "sha256": "a00d35152d81df5a9b31f6f96103e975c9c804f373977efacbb6109eb82a9107"
+  },
+  "assets/art/scenes/1979.webp": {
+    "bytes": 225810,
+    "sha256": "5c3921493fb799722f7c98c36eb116fd069213608d28297d895f96cb6a385b57"
+  },
+  "assets/art/scenes/1980.webp": {
+    "bytes": 244804,
+    "sha256": "f697de8b204f624abf682382c6ee0f2d57ae98bf11df36c2bea7aadf82a7900b"
+  },
+  "assets/art/scenes/1981.webp": {
+    "bytes": 221892,
+    "sha256": "df52bfea593f34c013f5ef0249e6476b771c4f95e1d46d632c958b5311b84ca4"
+  },
+  "assets/art/scenes/1982.webp": {
+    "bytes": 185174,
+    "sha256": "a3d0dd739bd725bb51295d2e5beb05662a4ee9534565ac04906e2b740b557856"
+  },
+  "assets/art/scenes/1983.webp": {
+    "bytes": 232298,
+    "sha256": "c0901217db04af3a917320e5557ffd5397861259184e290b7d290fd4186efea9"
+  },
+  "assets/art/scenes/1987.webp": {
+    "bytes": 259252,
+    "sha256": "446b981893961612ca172126b4998987fd569e63e9276a5c526f9528f19ad67a"
+  },
+  "assets/art/scenes/1992.webp": {
+    "bytes": 243702,
+    "sha256": "357424557dd4bdcde2b9cc66fd8150cdd1d17cc9a8cc0c01b444f0d239b6bf1b"
+  },
+  "assets/art/scenes/1997.webp": {
+    "bytes": 203872,
+    "sha256": "25cb11acdccc1a26592776768ea0f02f54601bbfca2c3d8ddeeb6bf647e2e56a"
+  },
+  "assets/art/scenes/1999.webp": {
+    "bytes": 267324,
+    "sha256": "f3e0e87f582c1bc408955e17ca4c55fc90faa54338f52cf9158f374bc3e7e4ec"
+  },
+  "assets/art/scenes/2004.webp": {
+    "bytes": 206420,
+    "sha256": "d026729315d052f50a882f7b566cc293bfb3eb05c1a1f170e6d24bd8ad2344b7"
+  },
+  "assets/art/scenes/2005.webp": {
+    "bytes": 243722,
+    "sha256": "406d15d231e483e97c0619e932acef7b8cf64309d3a277f3e200c8275460aaf0"
+  },
+  "assets/art/scenes/2008.webp": {
+    "bytes": 252564,
+    "sha256": "8c15262161d203f42060f24a7f925cebf72d5f0582a011536eb6a78bff033495"
+  },
+  "assets/art/scenes/2009.webp": {
+    "bytes": 276204,
+    "sha256": "aa5822209fafe44a750ef8c6f12eba1ebe05c817747183ece643a6607d74de33"
+  },
+  "assets/art/scenes/2014.webp": {
+    "bytes": 206754,
+    "sha256": "2494fff9a5ae04873102504c0729eb110a522e46f1b00ee59f482256e83397d7"
+  },
+  "assets/art/scenes/2017.webp": {
+    "bytes": 225364,
+    "sha256": "265bc2c6356b1f1999c87c8e7d59c669ca26a9fd51b959495bf519acd228a850"
+  },
+  "assets/art/scenes/2022.webp": {
+    "bytes": 245264,
+    "sha256": "6a062d6683fc6fcdbd4c7f1e3c15e5ee19a6b4d3de0fa5535689648464ff3b2f"
+  },
+  "assets/art/scenes/2027.webp": {
+    "bytes": 229978,
+    "sha256": "cfd24dec1ab34ac734caaca4a52c3f92136d5efc18ea4500457324bfb70d79ea"
+  },
+  "assets/art/scenes/2031.webp": {
+    "bytes": 199470,
+    "sha256": "0941cf51d977fc97d6e161419797be2b5d25cf32fc76f26aa9adbfff4f92e584"
+  },
+  "assets/art/scenes/2032.webp": {
+    "bytes": 197634,
+    "sha256": "d0b721b107283b9791e2bb2e9ffd8a3a9801fe21bb919ed26473ceb9b616afa8"
+  },
+  "assets/art/scenes/2033.webp": {
+    "bytes": 258796,
+    "sha256": "a808cb9e759cb94870603935bd4efb6b2d02ac4a4818cdb7576546a03f39b63b"
+  },
+  "assets/art/scenes/2035.webp": {
+    "bytes": 190786,
+    "sha256": "dc42022b139621c7391a5421dad5353e2647f6f0c526e1f5b1eff0e679ce8ed5"
+  },
+  "assets/art/scenes/2036.webp": {
+    "bytes": 198596,
+    "sha256": "1c0401b5225b3556f8cd664357272e38d615fdd5f72ef96a201b1aa52419f241"
+  },
+  "assets/art/scenes/2038.webp": {
+    "bytes": 251528,
+    "sha256": "02d60f09a61664e1e93bd0fc9544c075a8997f9b3b0c432bc15d4028dbb5ac8e"
+  },
+  "assets/art/scenes/2042.webp": {
+    "bytes": 212120,
+    "sha256": "60c63388d5082269580b7898acd702b87a6a0db86cb13a03e905529e36c97c37"
+  },
+  "assets/art/scenes/2044.webp": {
+    "bytes": 201312,
+    "sha256": "c74cc137df85cb17b6199d38fd1e5b82bcb77b2edcba67a0e133b1e37939e8d7"
+  },
+  "assets/art/scenes/2045.webp": {
+    "bytes": 233276,
+    "sha256": "5d802c482dfbff91e82799377aea10a8cd812638f70bf4f688d0b861b054a47d"
+  },
+  "assets/art/scenes/2048.webp": {
+    "bytes": 186736,
+    "sha256": "98956222e8133c63dbbf26a1bfe16af36dc50fa5ccbad9121086c396bd7082b6"
+  },
+  "assets/art/scenes/2049.webp": {
+    "bytes": 232638,
+    "sha256": "794ea1f019f5023639104aeeff49b66cf9831a5ffa95c4832365ab5782eeb8e1"
+  },
+  "assets/art/scenes/2053.webp": {
+    "bytes": 244500,
+    "sha256": "e8fc1fbb655db78fded7504cb796620f7e09e1d3099f5aa8700e846a6d2f5b31"
+  },
+  "assets/art/scenes/2055.webp": {
+    "bytes": 252000,
+    "sha256": "fd6d1eb8a895c8aedb32940084e5b7f27c6b1864eca2392b32d8ed04428c0f1e"
+  },
+  "assets/art/scenes/2059.webp": {
+    "bytes": 222616,
+    "sha256": "03854e60002dd9066b758ede1fac4b42d3e0b4b3cc6c1ff58b3ab66c2d3d3a20"
+  },
+  "assets/art/scenes/2060.webp": {
+    "bytes": 255430,
+    "sha256": "592abfd73af8da0d71a9b943b9ed408b0e074546e8bfbdf425cf6d0ebd4343ce"
+  },
+  "assets/art/scenes/2062.webp": {
+    "bytes": 211764,
+    "sha256": "db08621a190ebf3b84005db1c8ffacd2abb5fb560f62273406c79282d10c6d60"
+  },
+  "assets/art/scenes/2063.webp": {
+    "bytes": 239140,
+    "sha256": "a29bb36a32470598e5c67d70daeb334b3fcf1126bca28fbdab24bdbd2299c20f"
+  },
+  "assets/art/scenes/2064.webp": {
+    "bytes": 261076,
+    "sha256": "57aa83beec4fb2e72138ae0c5c4da896b0f6df94f67a3eee621ef93d3e127bf4"
+  },
+  "assets/art/scenes/2065.webp": {
+    "bytes": 253876,
+    "sha256": "a652957d5400ac1a7739b7d764ba7d02de2ab4b0aeadee158419a92a8b4d196b"
+  },
+  "assets/art/scenes/2069.webp": {
+    "bytes": 238888,
+    "sha256": "fd00efc9c476ffb545c14923724a8ae90af0abde21ebbc70c001b9302ec91c46"
+  },
+  "assets/art/scenes/2071.webp": {
+    "bytes": 223466,
+    "sha256": "319d03bbc78e400b7e4515fc79e217dd8e95b964925b0e686591f4536c02880e"
+  },
+  "assets/art/scenes/2074.webp": {
+    "bytes": 258858,
+    "sha256": "30d81611bca53420a81af6d4458343a1262f7b1956a24334ef24098b8e8268f9"
+  },
+  "assets/art/scenes/2075.webp": {
+    "bytes": 265364,
+    "sha256": "f4a0e51fbda24ec53a2c45df40db7ab89e2bc8e24c22927c657fb9b16c91f80d"
+  },
+  "assets/art/scenes/2077.webp": {
+    "bytes": 224604,
+    "sha256": "e1e7290852895544fb16456c58ddca10cb82cbe8a020bb731643f66b01484a61"
+  },
+  "assets/art/scenes/2078.webp": {
+    "bytes": 221072,
+    "sha256": "4033a607f9453498743a6351360cb4cefd8d100cac7aa261a7838d4a4c8c2f4a"
+  },
+  "assets/art/scenes/2080.webp": {
+    "bytes": 260442,
+    "sha256": "c6e418fa57059bf2014059e3d3aba173b36b89c4b7e4b0bfc98b1190b066e5a9"
+  },
+  "assets/art/scenes/2081.webp": {
+    "bytes": 220994,
+    "sha256": "0e8bb69bf67475d0813bec07df05c7e26fc3a0ad83c432ae6bc4c31026d52773"
+  },
+  "assets/art/scenes/2082.webp": {
+    "bytes": 254170,
+    "sha256": "985bbb20c79bab00e644979114b7ce2e6cbde3dd00267d9054cd6e291aa15785"
+  },
+  "assets/art/scenes/2083.webp": {
+    "bytes": 254778,
+    "sha256": "dabce8fa16d79e2514aec0b47f454e0759f47b837720d6018206d1b9a6a0ae85"
+  },
+  "assets/art/scenes/2086.webp": {
+    "bytes": 268126,
+    "sha256": "2b31764e40e2e6cf8617a90e457e45f7fac843aaf311e15b578c170430b16f85"
+  },
+  "assets/art/scenes/2087.webp": {
+    "bytes": 231792,
+    "sha256": "afce72318572f6fbf04714f4ce0210dd23d5935da78d580de626e73108e63356"
+  },
+  "assets/art/scenes/2088.webp": {
+    "bytes": 256526,
+    "sha256": "5d43e39ffb381ddcfb97d13061462ae9e0e14aa73066c86549ea094fe40894f0"
+  },
+  "assets/art/scenes/2089.webp": {
+    "bytes": 217676,
+    "sha256": "558e5c77d7bc5183fc09e01758bbc5dcf7b2b3ac85f02f3f3936425c22e404e0"
+  },
+  "assets/art/scenes/2090.webp": {
+    "bytes": 210760,
+    "sha256": "2be729e17285216afa3f8edcb864a02feef0a9fa6a9d9d1eaa99c616b021a8d2"
+  },
+  "assets/art/scenes/2091.webp": {
+    "bytes": 254868,
+    "sha256": "9c1c80ef42c7fc589e65c229a9d99b2eb29aea9779607d54db4debbd41a5d6ff"
+  },
+  "assets/art/scenes/2092.webp": {
+    "bytes": 239698,
+    "sha256": "15fedabfc08b390bf9f8f444e2bdb674f0897530f2f4e538143549121e0df86f"
+  },
+  "assets/art/scenes/2093.webp": {
+    "bytes": 247748,
+    "sha256": "346ae16ad4ff90af7cdbd377f21e6630880a67b34385fbc09da1e8cddb4be640"
+  },
+  "assets/art/scenes/2097-2098.webp": {
+    "bytes": 262504,
+    "sha256": "9b455d2613265a8f6cdb38078491d485eb6e7da32ec6818f80de3a4aaa724b49"
+  },
+  "assets/art/scenes/2097-2099.webp": {
+    "bytes": 274242,
+    "sha256": "9bc1a32f6003458e89d49aafabbf9cc23b3851a2131bb8944eddb92d036f3448"
+  },
+  "assets/art/scenes/2103.webp": {
+    "bytes": 250632,
+    "sha256": "2577b39e554e914872d93a184d43068603c54b9192360f986f25eb9af05d7920"
+  },
+  "assets/art/scenes/2104.webp": {
+    "bytes": 269632,
+    "sha256": "050e8338a64a47b4c6c3eb2b99a6d6448e922326b556958e25794c1064ea12be"
+  },
+  "assets/art/scenes/2105.webp": {
+    "bytes": 192894,
+    "sha256": "42b352e928c5120d08bf2d8b0daf4b3259009af4f637c2c6c192bce42123d8cb"
+  },
+  "assets/art/scenes/2107.webp": {
+    "bytes": 193754,
+    "sha256": "78b6c9a2cfff129ed237a25e938f46624725e28688c0c4b3f393e20714379dfb"
+  },
+  "assets/art/scenes/2111.webp": {
+    "bytes": 203840,
+    "sha256": "35e4df03fb9c64e1a28970664a1222d1d557a26d23fb543c3f23773dd009a5fd"
+  },
+  "assets/art/scenes/2115.webp": {
+    "bytes": 205236,
+    "sha256": "c02f341515a795fb78f19657184282518f595efd99a14374e3b6ca38f52fd043"
+  },
+  "assets/art/scenes/2118.webp": {
+    "bytes": 214230,
+    "sha256": "a1016a239ce93faa40a60500224db84917432cc212e69cc2aea1256a148f434c"
+  },
+  "assets/art/scenes/2121.webp": {
+    "bytes": 190412,
+    "sha256": "1ef87431f6c514339457f7a2ff381d7fd41fb1517acc22c16bf6c3143f7dd5bc"
+  },
+  "assets/art/scenes/2123.webp": {
+    "bytes": 196238,
+    "sha256": "a80d1977658ead046e6afe31c955116d0bd517b87cd630199a234f32310e24c0"
+  },
+  "assets/art/scenes/2125.webp": {
+    "bytes": 246988,
+    "sha256": "05e26ee802ec97620a119a0ab46887ac0a0e8200ce2bdbc6c4870a7c16591539"
+  },
+  "assets/art/scenes/2128.webp": {
+    "bytes": 202844,
+    "sha256": "46ea9c1fbe06b1b101e23405383ac3812a9e0eb0ceaaa44ceb2ba77df10ec707"
+  },
+  "assets/art/scenes/2129.webp": {
+    "bytes": 205022,
+    "sha256": "a5e9051e47b5ef69853815d73d5f13ee2941ec855a260f261579892c0897d97b"
+  },
+  "assets/art/scenes/2132.webp": {
+    "bytes": 241256,
+    "sha256": "93df01c47f73e87459ccd2f33169dee3de617536c6ddbd60c4dd496b48f3619b"
+  },
+  "assets/art/scenes/2133.webp": {
+    "bytes": 245816,
+    "sha256": "6aca07e289033f19618dd16d73dd695f1b64153865893ff8aaf1a0d685475aa5"
+  },
+  "assets/art/scenes/2134.webp": {
+    "bytes": 246762,
+    "sha256": "b73f66900b70350ff2e39bcc55e5c39783e242cad40e1316e6f84a0e9e8068b5"
+  },
+  "assets/art/scenes/2135.webp": {
+    "bytes": 261160,
+    "sha256": "6b211a7d0849f0b588f41085cc84b3dceef89773f33dde4b278d5e83e87f5556"
+  },
+  "assets/art/scenes/2139.webp": {
+    "bytes": 211870,
+    "sha256": "7b874c48b6a794270c9879a91ab37d006e5c21598b242ff04f3a351b3b5202b9"
+  },
+  "assets/art/scenes/2140.webp": {
+    "bytes": 262968,
+    "sha256": "b0b9d11107b343546aab040ccd6f85ad1ed53f3420e15b6a46957db74f822f95"
+  },
+  "assets/art/scenes/2141.webp": {
+    "bytes": 176768,
+    "sha256": "fd14d709de69f4c0d4edce4f73465fc983ce70c97d738d14281409bde34ae717"
+  },
+  "assets/art/scenes/2145.webp": {
+    "bytes": 240408,
+    "sha256": "d55874a149dfa42368f23a70f94441f980737bd992152f1ca34b1d615e5d5e0d"
+  },
+  "assets/art/scenes/2148-2149.webp": {
+    "bytes": 204712,
+    "sha256": "26724775c5ccf68c04025025125371538684fd1b4e70b55d1ac8a3547ea5e12a"
+  },
+  "assets/art/scenes/2148-2150.webp": {
+    "bytes": 130262,
+    "sha256": "30333a99e6ba2e435b904449ebda29a69fcb21221d46b24cfcc640a9c5cdbf6e"
+  },
+  "assets/art/scenes/2148-2151.webp": {
+    "bytes": 140390,
+    "sha256": "6ee414319dfaefe16697d4d881be4507e9796695e5c52fbb071193cbc3541932"
+  },
+  "assets/art/scenes/2148-2152.webp": {
+    "bytes": 132382,
+    "sha256": "b3c0cdb57b4c60e7ba6954f525102f0241899f687af299ec50d5fb5e18654bec"
+  },
+  "assets/art/scenes/2148-2153.webp": {
+    "bytes": 92810,
+    "sha256": "2f7f939297286ec67c1ce43128c021d207dc78f8b059d9d96ad7ba86fe2fc4e3"
+  },
+  "assets/art/scenes/2154.webp": {
+    "bytes": 267998,
+    "sha256": "d588312a8ab441327d974a8a431288a30f59d7e8757137ab47df298995857e63"
+  },
+  "assets/art/scenes/2157.webp": {
+    "bytes": 242008,
+    "sha256": "6582720292a7b6b7da2f359d4bb912c033fb23ec345367c59e0e1d3acbfb62d8"
+  },
+  "assets/art/scenes/2158.webp": {
+    "bytes": 281374,
+    "sha256": "833dd55fd9135892f7caaaea1bdcdad4e2c0574ae698acd38b038d60fa1b7261"
+  },
+  "assets/art/scenes/2159.webp": {
+    "bytes": 263214,
+    "sha256": "a021f0123c362fa3bae325dc7c9bb2899172411e15b7e216580ae987a401bafc"
+  },
+  "assets/art/scenes/2160.webp": {
+    "bytes": 279078,
+    "sha256": "dd11eaa5abcfe6568ea7a176f4ab6456ae8816996e0a6c50c6871fdd06759de7"
+  },
+  "assets/art/scenes/2161.webp": {
+    "bytes": 267130,
+    "sha256": "a0b67149a82c4933d33699a9693b48aabdbe0543cda782aab3cbd00f9e1fff3a"
+  },
+  "assets/art/scenes/2164.webp": {
+    "bytes": 267672,
+    "sha256": "bbaa2230f302158558b91aa6698dd4a8647ea7eb6eabf09d7cabd52d20eb01b2"
+  },
+  "assets/art/scenes/2168-2171-2169-2172-2170.webp": {
+    "bytes": 253024,
+    "sha256": "ebd83b4521ee56e1b45c5c4942da1fd0e382305922f618d9b13463f2ee560498"
+  },
+  "assets/art/scenes/2173.webp": {
+    "bytes": 278002,
+    "sha256": "af495f3543ceb18456f85135a4023df98b86ec0fa53ba14ffa2815ca426c3648"
+  },
+  "assets/art/scenes/2174.webp": {
+    "bytes": 243602,
+    "sha256": "7a2c8fdc5a7a4e2d0adec1bc0a8d68479e4d09d8bbc5c911749d72832cf7f2d9"
+  },
+  "assets/art/scenes/2178.webp": {
+    "bytes": 240298,
+    "sha256": "3cb6cd9fa9c1bf5221d1b9f9acd508e95cf2cc2d951014ad025e6d412b6c4ba6"
+  },
+  "assets/art/scenes/2179.webp": {
+    "bytes": 215938,
+    "sha256": "6f717533374e7486d4add72fee97b29e7da50aa89e8d56aba35702a6431beb98"
+  },
+  "assets/art/scenes/2183.webp": {
+    "bytes": 247192,
+    "sha256": "b8e7c06329483a96e968fe70b77dddd865f15c2ae4c395285e9cc85621485e4c"
+  },
+  "assets/art/scenes/2184.webp": {
+    "bytes": 280958,
+    "sha256": "02e1b359dd2c6ebb0376b3eec2fc9034d281cd5b2f378521c07043d11c589a1e"
+  },
+  "assets/art/scenes/2185.webp": {
+    "bytes": 251486,
+    "sha256": "f51a88eb197bd2c1aff5c4089cea04603e78ee09717eed2cfaa788078ed07a8a"
+  },
+  "assets/art/scenes/2186.webp": {
+    "bytes": 259988,
+    "sha256": "f1dcd82e6148697d1bba868eeb261b0c22ae013f82aa711c8294142be0610286"
+  },
+  "assets/art/scenes/2187.webp": {
+    "bytes": 242804,
+    "sha256": "ed1b9e31d52613bfbd46d2ca85b91ebb50100a5fe44e3d8251bb7119f0e268b2"
+  },
+  "assets/art/scenes/2190.webp": {
+    "bytes": 163792,
+    "sha256": "87e04bb746f2266d640005f133a814b302dd3da0ed8b19d7bbd460b8e700f599"
+  },
+  "assets/art/scenes/2193.webp": {
+    "bytes": 217892,
+    "sha256": "79b19ba9b11a566a08f614fcc55f5af0f45e874706b56b0f0804c5caf984f886"
+  },
+  "assets/art/scenes/2196.webp": {
+    "bytes": 216656,
+    "sha256": "04ef177ff705a6cc13b3b0d2d1f4a0febf6de78356ae5b8e050a76f6586b0260"
+  },
+  "assets/art/scenes/2199.webp": {
+    "bytes": 236914,
+    "sha256": "89ec8fd08a4c67cf85472039d0a0e1ac3e23de5e9abc056b5fb929dbe160a098"
+  },
+  "assets/art/scenes/2202.webp": {
+    "bytes": 229520,
+    "sha256": "46be2a0197fb03bf8bc41372ae2861abbd1fc40fa98327e85bb31de61d9612bc"
+  },
+  "assets/art/scenes/2205.webp": {
+    "bytes": 242776,
+    "sha256": "676c9cbc1282a3d58f2e1f3a5e1e806e041c8146dcb79020b203f324f6cc807e"
+  },
+  "assets/art/scenes/2209.webp": {
+    "bytes": 201710,
+    "sha256": "f2e62a91da57a8573ecaf8d91882adfe7bcda591f5d9667e2d86f5484e968b2d"
+  },
+  "assets/art/scenes/2212.webp": {
+    "bytes": 243514,
+    "sha256": "136023e46dfa21817a37cdb0b5ee6010abc83c732e9f7217a41f30072d6efb92"
+  },
+  "assets/art/scenes/2213.webp": {
+    "bytes": 202120,
+    "sha256": "6ad2360dab5ba06fd0e70e8831a96e0161412433a9999486dba618bc333e313b"
+  },
+  "assets/art/scenes/2214.webp": {
+    "bytes": 226152,
+    "sha256": "d5da2151f49c80ce5713a1c13a409d336063a7a8681a59a7e3844fcfc4d4e051"
+  },
+  "assets/art/scenes/2218.webp": {
+    "bytes": 216680,
+    "sha256": "ab0864491d84a363b0275a38271bf27c87c9e713613bc4552f08bf1a1e8ad1ee"
+  },
+  "assets/art/scenes/2219.webp": {
+    "bytes": 192792,
+    "sha256": "f673799f3436b28d3512975f9adac2377c95976e6f4b6959516b62432dade89a"
+  },
+  "assets/art/scenes/2220.webp": {
+    "bytes": 224310,
+    "sha256": "614d56ba1c89d2623f8576bd8f09b2b234c899ea157714602e6b2e634943a7f8"
+  },
+  "assets/art/scenes/2221.webp": {
+    "bytes": 177280,
+    "sha256": "96ebb80c0b9245952ae9a342ab1b3a9c6635281693cbc79373ae5e2b52c2b125"
+  },
+  "assets/art/scenes/2222.webp": {
+    "bytes": 229098,
+    "sha256": "253c892da560c489213ab70e5950d8f9d4fc48ece22eb337779850418bfcd71d"
+  },
+  "assets/art/scenes/2223.webp": {
+    "bytes": 233192,
+    "sha256": "9194c315b4d95694da3d191f436786e4e69b17bc70d589474805abb1b3289bb7"
+  },
+  "assets/art/scenes/2224.webp": {
+    "bytes": 254660,
+    "sha256": "50c8590cf116517ade2c348153b15651dc39ba520a182e976bdfbb17f5999053"
+  },
+  "assets/art/scenes/2225.webp": {
+    "bytes": 259166,
+    "sha256": "5d2c552cdf839fea92b9115555ad7b86ed018659ae25471dba6d02027d1a688a"
+  },
+  "assets/art/scenes/2227.webp": {
+    "bytes": 237036,
+    "sha256": "6613a9f77f02b2d81b2f1e9634d60d1785980dea866debd6563d89fd783b0ed7"
+  },
+  "assets/art/scenes/2228.webp": {
+    "bytes": 249698,
+    "sha256": "c9b3924ae55dd3f427730dbb6b83c3b6268ccb8a85484ec6ac9dbcd9bb60b5d8"
+  },
+  "assets/art/scenes/2232.webp": {
+    "bytes": 262204,
+    "sha256": "0feb478683c4685cc73f92a6d36caceedcd397470e47575e786866ed50d11e58"
+  },
+  "assets/art/scenes/2235.webp": {
+    "bytes": 267844,
+    "sha256": "d2f4f916e6fa27bbffa17ff89fdba90e0ca9d2b09bbf53c54baf8b7ca1473f55"
+  },
+  "assets/art/scenes/2236.webp": {
+    "bytes": 241826,
+    "sha256": "85f78172f797c21aaed966ca8ae5a34be69e1756ba3e9cb0cd6e92afbde81d55"
+  },
+  "assets/art/scenes/2240.webp": {
+    "bytes": 242778,
+    "sha256": "75dcecd3a1a58ab853a53a81a160af4d3553a7c24d8d11e0632884a922007d92"
+  },
+  "assets/art/scenes/2241.webp": {
+    "bytes": 250246,
+    "sha256": "83b0660d16481fde37b17812bb9496c051b62b7bab2abe86b18cb55f99864a05"
+  },
+  "assets/art/scenes/2242.webp": {
+    "bytes": 261046,
+    "sha256": "81daa172a9f5d4465a03ccb2dcdfb613312eeb4ba38d60a69ea41eb80d84bb41"
+  },
+  "assets/art/scenes/2243.webp": {
+    "bytes": 226540,
+    "sha256": "f97b3ce1ec336fa944809cb888c4a27c45f68a288cf1021e7e2019028a5be35f"
+  },
+  "assets/art/scenes/2244.webp": {
+    "bytes": 252426,
+    "sha256": "438e8fe75b9d1e89e3716cfb2c293567f96e00db6a9e0fc2aa81d62f69bfdaaf"
+  },
+  "assets/art/scenes/2245.webp": {
+    "bytes": 235208,
+    "sha256": "8f72b77dcb2b3b8050c09cab7d5c252f705d5f5f9503f86715a520608e326c93"
+  },
+  "assets/art/scenes/2248.webp": {
+    "bytes": 270186,
+    "sha256": "566e38fd8af4d8dab5ce50057274016517cae95ed0e33beef79aad3295f1f503"
+  },
+  "assets/art/scenes/2250.webp": {
+    "bytes": 276622,
+    "sha256": "ad8804047e1c2196e7ac74cef3b982ac7e81cdad13af5b7d2cd76b7759201fa5"
+  },
+  "assets/art/scenes/2251.webp": {
+    "bytes": 192170,
+    "sha256": "58a432e402ec488e0cd6f60e195f1dec67b0e3dce6430681abc82537dbbdb688"
+  },
+  "assets/art/scenes/2254.webp": {
+    "bytes": 219130,
+    "sha256": "e9889bcf1a0bbf161bdc88a33c7e36029df422a19813f5cdee201165f79f494d"
+  },
+  "assets/art/scenes/2257.webp": {
+    "bytes": 210360,
+    "sha256": "6c6a4c44a42edc0de0ca6b1cdbfc9d20fd31b743454b3f2b91c11971f095a27f"
+  },
+  "assets/art/scenes/2259.webp": {
+    "bytes": 216916,
+    "sha256": "4f08e97d83efe6b4193388efc0488e671c61cc9a521183e7e8852c4bf466dce1"
+  },
+  "assets/art/scenes/2260.webp": {
+    "bytes": 274614,
+    "sha256": "933629ed40474a8a52903f2c856f4ffb8ef106877f74655c107d5feb13f8da39"
+  },
+  "assets/art/scenes/2263.webp": {
+    "bytes": 267178,
+    "sha256": "e268613ea69ae73847ee195a55f96eb8473661312342031ddcc2c7ea4aca4a5f"
+  },
+  "assets/art/scenes/2264.webp": {
+    "bytes": 201282,
+    "sha256": "9420737521f910e989896862bdf20e23330b63fe19277bdbf5ccdc645418c9b3"
+  },
+  "assets/art/scenes/2265.webp": {
+    "bytes": 194028,
+    "sha256": "45bd32f2ae46bf18856f779436e8b9ef6b946b98eac634498128aeda78672111"
+  },
+  "assets/art/scenes/2268.webp": {
+    "bytes": 222304,
+    "sha256": "2504a059bbaa484d9bf4b7d8030a46461b7ded91252cbee1d1e3062805487ed9"
+  },
+  "assets/art/scenes/2270.webp": {
+    "bytes": 214784,
+    "sha256": "3e6354144a1d09dbe2f21a7b734c115f2ddbd4eec78e908550fc509795813093"
+  },
+  "assets/art/scenes/2271.webp": {
+    "bytes": 294030,
+    "sha256": "811a2004f95ddcf7a070dc363578107912899456ce65344408ba3ec736147501"
+  },
+  "assets/art/scenes/2272.webp": {
+    "bytes": 275766,
+    "sha256": "5a6143d5d13110e7e4746f655d5fcaa5d01999cf8302c6a4860b3c9bc326f4f4"
+  },
+  "assets/art/scenes/2273.webp": {
+    "bytes": 269870,
+    "sha256": "edc4285e7d7b8838f986778e715ae2343d653d963a6378fc9277683925b2c350"
+  },
+  "assets/art/scenes/2274.webp": {
+    "bytes": 249892,
+    "sha256": "7fb10da0c07ea7dd41c822a7dc2a99c4cd62a2eb6f57280087bc418bec81f5cc"
+  },
+  "assets/art/scenes/2275.webp": {
+    "bytes": 266594,
+    "sha256": "47846ed36a1e86499be7e4ec2df0f8157bf758185fe26a5a126104be65305d37"
+  },
+  "assets/art/scenes/2276.webp": {
+    "bytes": 280334,
+    "sha256": "a2839d80f620dd1819785c9f5c309981db2ae54e838da532a98349af069b196a"
+  },
+  "assets/art/scenes/2277.webp": {
+    "bytes": 250836,
+    "sha256": "26e8da4b6db8baf23acc5698edbb2140138b9e6ba5e3ff653f4fec65ba98e703"
+  },
+  "assets/art/scenes/2278.webp": {
+    "bytes": 265048,
+    "sha256": "5ae772a966a47bd40bdb9f8ad0a12aa3ffe87170332825fceb7cf5587926968b"
+  },
+  "assets/art/scenes/2279.webp": {
+    "bytes": 262266,
+    "sha256": "1eb68cc7c7381906b918e49d5b7d91e14c4ccab8c92aecd1a31ca7f18e7237de"
+  },
+  "assets/art/scenes/2280.webp": {
+    "bytes": 262780,
+    "sha256": "5f28a62fefdea53eae5e2f2b48c80bd5a65d5879e7ec71ce6b33e67ef1e16794"
+  },
+  "assets/art/scenes/2281.webp": {
+    "bytes": 258064,
+    "sha256": "eb92205c06bf60f3c7eeaadc43b08872a22415e2d3ad6d7252b01a9a7bcc9f44"
+  },
+  "assets/art/scenes/2282.webp": {
+    "bytes": 256806,
+    "sha256": "f54c5d352b1360c863cdd5868fc569c65e4a0e1cf4a3187eaad6992fd12428f5"
+  },
+  "assets/art/scenes/2284.webp": {
+    "bytes": 242500,
+    "sha256": "e29058220cd365a14f7b69c5135c3d808c14966405dd3f8e415456eaf0dae9d9"
+  },
+  "assets/art/scenes/2286.webp": {
+    "bytes": 237338,
+    "sha256": "cd6c2c93c3045b60a24d7550e645cf6168be1824591abe45e16e3c3e5f60bde3"
+  },
+  "assets/art/scenes/2287.webp": {
+    "bytes": 251004,
+    "sha256": "b3c8451285dca1a242826cd1f9f66526c2e7b8685cc8f81a7e8aadc9f4e79431"
+  },
+  "assets/art/scenes/2289.webp": {
+    "bytes": 198440,
+    "sha256": "47e689c4c30e1281f883b7cd3cf398cc4af109fd3c7f8aee3dcac3e7bb0b8c6e"
+  },
+  "assets/art/scenes/2290.webp": {
+    "bytes": 223030,
+    "sha256": "67a7dacbccac35d62378fb3eb066241010dc95f595990aedc47df692796746e1"
+  },
+  "assets/art/scenes/2292.webp": {
+    "bytes": 200880,
+    "sha256": "fd2af1bb07b80fb5b0962a6bdd8cc9c0a47d703badb73342d28464fbc76067c5"
+  },
+  "assets/art/scenes/2293.webp": {
+    "bytes": 278458,
+    "sha256": "f1e0b2c0721cb11a632c1276f2e1df28b9f28a7fa9ddb7d09bb3aee2a6fb251a"
+  },
+  "assets/art/scenes/2294.webp": {
+    "bytes": 259214,
+    "sha256": "2ef535a47e1f25d1de0903c6c3e98fdde5dd6af0c6d8c3779e878076fe431735"
+  },
+  "assets/art/scenes/2298.webp": {
+    "bytes": 218102,
+    "sha256": "cfa989dbb23486d6db7ec9f488b7c39966aece05f39c9cecf5de3b597d2d07b2"
+  },
+  "assets/art/scenes/2299.webp": {
+    "bytes": 230768,
+    "sha256": "e16de8193b7e9ad1317a9f910b9acf3c5cf34177cbfdd8410329525153d1952f"
+  },
+  "assets/art/scenes/2301.webp": {
+    "bytes": 255050,
+    "sha256": "590fa392bce37495bd92c9e4b80fd675fdd4402201fad69ae58adb25f1e09ec8"
+  },
+  "assets/art/scenes/2305.webp": {
+    "bytes": 251132,
+    "sha256": "db5283e111b7d7cd4ed3d9eeb107c10759146850e3bb3eef497fd5d56d2aba1e"
+  },
+  "assets/art/scenes/2306.webp": {
+    "bytes": 216470,
+    "sha256": "5673d51d03a73bcd78f3fd0ee0f53fb738e9e387f89e59d02b32814a04245788"
+  },
+  "assets/art/scenes/2310.webp": {
+    "bytes": 241424,
+    "sha256": "3b8c3b59d77523cfc5b107f20a438f846246579109bcba6c7c495b0084e1b9ef"
+  },
+  "assets/art/scenes/2311.webp": {
+    "bytes": 276244,
+    "sha256": "99096b18fbebb4b2a12eabcf15eef7e0e8e61509c1f405323dfe1ca971178270"
+  },
+  "assets/art/scenes/2312.webp": {
+    "bytes": 233662,
+    "sha256": "aaa540c5f4d6149cbea9926852752318f46345239be669ffd01e1f9e7ec2ce4e"
+  },
+  "assets/art/scenes/2313.webp": {
+    "bytes": 247284,
+    "sha256": "ef429d61325ce064a2739e24c98aaac183cf6be9a64aede9158a82da8bcacaf2"
+  },
+  "assets/art/scenes/2314.webp": {
+    "bytes": 260486,
+    "sha256": "2d73d95fc239c5feb609d3b7fdd5430b0eeb80d2fe3b21ee677f0b4510bf8e70"
+  },
+  "assets/art/scenes/2315.webp": {
+    "bytes": 185256,
+    "sha256": "ed204cb407b40accefc57a1ee3d1ba39d997d88d0bdd6a3cfa76bd7deec42c31"
+  },
+  "assets/art/scenes/2316.webp": {
+    "bytes": 200758,
+    "sha256": "5dede749e0e4d6255134bb290ec3360c3f7eec1fa0cc5d8a00dd4ff216d20f40"
+  },
+  "assets/art/scenes/2318.webp": {
+    "bytes": 195166,
+    "sha256": "5e12ba20ce35e39533439618079d7cfcc0c0e749ecc96c45b77b410213e6992a"
+  },
+  "assets/art/scenes/2319-2320-2321.webp": {
+    "bytes": 244958,
+    "sha256": "2b56482a3571f1aa44350d75efb11dbdd6074eeff66ec3058ac515f7a4e97d54"
+  },
+  "assets/art/scenes/2319-2321.webp": {
+    "bytes": 266568,
+    "sha256": "72b5b1b9ff5e95aaa14ab0667812b3dcca756313ba50bc73fc44834ac1419f4b"
+  },
+  "assets/art/scenes/2325.webp": {
+    "bytes": 292320,
+    "sha256": "144f7dd56f9aa48b0b9ccca280654f01d3d02e3f817f78041f9b4097e5517e23"
+  },
+  "assets/art/scenes/2326.webp": {
+    "bytes": 237262,
+    "sha256": "6c7c9736de5564bd3bd6767c785b78dc16a1a4ee726bae07b3649d8aa0903708"
+  },
+  "assets/art/scenes/2328.webp": {
+    "bytes": 247286,
+    "sha256": "80b4cf5440d804954d022146c7007fb32b82911fe9c5580f8fc347e452b02e36"
+  },
+  "assets/art/scenes/2331.webp": {
+    "bytes": 259304,
+    "sha256": "3a481f1c75460d833eb52284b1dcee8555bb217ae0d8b02017a0606c65d0ba1e"
+  },
+  "assets/art/scenes/2332.webp": {
+    "bytes": 242294,
+    "sha256": "7dd959e64f84d29fe2e1f80868ac468841480204901f16464e55663f2982db5e"
+  },
+  "assets/art/scenes/2334.webp": {
+    "bytes": 253878,
+    "sha256": "881164c0a1f9f5ccf5e1b939b60e37b0ced32900739196563c21ae7a227cb58d"
+  },
+  "assets/art/scenes/2337.webp": {
+    "bytes": 215854,
+    "sha256": "a4a9ec97f5bac0d621b57a56215f04f5e21b41159e80b10e1c2f5a1c9b713770"
+  },
+  "assets/art/scenes/2341.webp": {
+    "bytes": 267010,
+    "sha256": "4b8de4904fc739a95f79f381e8286da0b90876b77e280f5137589d1f1ef5b043"
+  },
+  "assets/art/scenes/2342.webp": {
+    "bytes": 231348,
+    "sha256": "32d564a7a2ace7d0d6dcf0d97538fca487ee430f0602bd60608c9017f4b678ab"
+  },
+  "assets/art/scenes/2343.webp": {
+    "bytes": 247508,
+    "sha256": "dc08d258dab4f0a7e851cd6789df775d114234490107f3efe9ec3d976d26e3b6"
+  },
+  "assets/art/scenes/2344-2345-2346.webp": {
+    "bytes": 254358,
+    "sha256": "9bb0a4ab7cb93c2145b87a3b43e511e1c868e5e45ebb68e4d4c4306a506ccb1d"
+  },
+  "assets/art/scenes/2351.webp": {
+    "bytes": 187416,
+    "sha256": "9ca39e176d51f7a7f7eecbdf321c1e8cba14634ad474fa3c9350582b0a2229a4"
+  },
+  "assets/art/scenes/2352-2353-2354.webp": {
+    "bytes": 184642,
+    "sha256": "32c2003189575d2e2cd620514814f9325c07dcb5ed952edd2a6b88b13a3ee28a"
+  },
+  "assets/art/scenes/2461.webp": {
+    "bytes": 324338,
+    "sha256": "2183f51be28800c63936b3d76e981dd645e5a6418ffb128795db67632174e00d"
+  },
+  "assets/art/scenes/2464.webp": {
+    "bytes": 162640,
+    "sha256": "50842efe82c9fdb1228e306fabc2c94120c3afab59bfbbdfed3f03dff3032fb6"
+  },
+  "assets/art/scenes/2465.webp": {
+    "bytes": 193082,
+    "sha256": "7377fc23307ce5faedbfa9787d61322f208dad191f67dd2a9285933b3a9fa126"
+  },
+  "assets/art/scenes/2466.webp": {
+    "bytes": 247674,
+    "sha256": "51d619341de01837e87cefc45a889cd766200e3e2cd403a2a3f735d36931766d"
+  },
+  "assets/art/scenes/2467.webp": {
+    "bytes": 255648,
+    "sha256": "ef2079cf950382c0d07bd318d526395ace4dd8852421c6b90c8758639ab9b407"
+  },
+  "assets/art/scenes/2468.webp": {
+    "bytes": 315590,
+    "sha256": "77226045883d8eb7ca52b2cc6a9d425850269a8b18d7ba824dfbe2a0b86990d8"
+  },
+  "assets/art/scenes/2469.webp": {
+    "bytes": 339518,
+    "sha256": "69ad86d9c071872c03ada241171c79ec605250d9fc8cc4c7316a69c097d09928"
+  },
+  "assets/art/scenes/2470.webp": {
+    "bytes": 339516,
+    "sha256": "e47d17bfb8506b6e39899628ab7771e845068514ea9b1274bde3b34e8cd6182a"
+  },
+  "assets/art/scenes/2471.webp": {
+    "bytes": 311918,
+    "sha256": "6146f6f26b7284ce5d981f0275a9ca165cb286971cabdc14a9db9c87dc90a1ea"
+  },
+  "assets/art/scenes/2472.webp": {
+    "bytes": 293834,
+    "sha256": "afa7feffefde334c7462b4355a26f7d3ddc7ef6376feb72ec43a33f1ca5ad246"
+  },
+  "assets/art/scenes/2473.webp": {
+    "bytes": 290772,
+    "sha256": "34611d95bb25e9912eba35fad53b9c70229d5766a36405227c6a21fe9c807c8e"
+  },
+  "assets/art/scenes/2474.webp": {
+    "bytes": 259750,
+    "sha256": "364fb05d282c24766f1502eb802251de28c7b1fdf94ca87a5ff37ff1c493e952"
+  },
+  "assets/art/scenes/2475.webp": {
+    "bytes": 200594,
+    "sha256": "5ff212142ed89e068df3470bd640d70866d885bfb9dad5234d4fe419306c8737"
+  },
+  "assets/art/scenes/2476.webp": {
+    "bytes": 304946,
+    "sha256": "0f6be635c6785a48c04476bc9061a5b25dd1386a7e9e72b9f948aaf4fbf87180"
+  },
+  "assets/art/scenes/2477.webp": {
+    "bytes": 270382,
+    "sha256": "3c5ba3b2ee6f138b0863f203d3aeb524b4c40b6c7ac8cf4552fa0920cd8e5664"
+  },
+  "assets/art/scenes/2478.webp": {
+    "bytes": 363062,
+    "sha256": "19b03905ec0252ec911db0753448a48f93c50a2452deda490b69242fce17b690"
+  },
+  "assets/art/scenes/2479.webp": {
+    "bytes": 330796,
+    "sha256": "0cef38ecd393ba5536accda9d7040c6328f8012048ac914a88cee27ae5333ec0"
+  },
+  "assets/art/scenes/diary.webp": {
+    "bytes": 195076,
+    "sha256": "1787f1bd5b2987d07e798d9438feffaca6d8bb9ef9dfbcc506d46ac08f42cb90"
+  },
+  "assets/music/avenue_11_avenue.m4a": {
+    "bytes": 4112262,
+    "sha256": "d530db07ebd7bf842d3b7d1d92e4d582fd1017b69ca43717acd3f1814dc6aae4"
+  },
+  "assets/music/click_3_click.m4a": {
+    "bytes": 29627,
+    "sha256": "faf80d2c59fa9824f35438b619facfa2c319ef0179fe629e5ba0b4d7b9795407"
+  },
+  "assets/music/dumpster_7_dumpster.m4a": {
+    "bytes": 533225,
+    "sha256": "3cf4214ffc1a797c9dc8930e32e1e3e66f1d223bf318558f5c79b7b0303304ab"
+  },
+  "assets/music/ending_9_ending.m4a": {
+    "bytes": 1337402,
+    "sha256": "45aa9281cd2ae70c944fc28eb8d64a2ca62d198f1a659f8815be44f259d688a3"
+  },
+  "assets/music/home_1_home.m4a": {
+    "bytes": 2779798,
+    "sha256": "481fc55d7c3a3e4033f611bb0cff29718b9b70a1a0452448bd6c9363f91f4785"
+  },
+  "assets/music/mapa_13_mapa.m4a": {
+    "bytes": 4251061,
+    "sha256": "0113ef91a39df117a56ac77ac6894849c1f9ab4688460b078a288223e2de24f4"
+  },
+  "assets/music/opening_6_opening.m4a": {
+    "bytes": 3966979,
+    "sha256": "1c66ba4acc4e62f5f465cfaecf863fa6581616585794060edfe23fdaced100aa"
+  },
+  "assets/music/park_8_park.m4a": {
+    "bytes": 7767145,
+    "sha256": "e2dd955cb5b5277761c98f5977d2117c43ac6d19a0e0222e173d64855ce4d7a2"
+  },
+  "assets/music/pizza_12_pizza.m4a": {
+    "bytes": 1660006,
+    "sha256": "be83beca621490e16665ebab93da24d27518c8b02b99f40990641373abc63c1a"
+  },
+  "assets/music/school_2_school.m4a": {
+    "bytes": 5402944,
+    "sha256": "d0714211fff0835569f21b4f0fb02b56aee2fbb717734482dbb194c97e641749"
+  },
+  "assets/music/victory_10_victory.m4a": {
+    "bytes": 3436242,
+    "sha256": "5326eb582986b89e87092a58d59d478c67155c52d4250e4db95654fb4dafc92c"
+  },
+  "assets/music/waterplant_4_waterplant.m4a": {
+    "bytes": 676530,
+    "sha256": "d6905e97be8ceddf20eb6dc7a627991a1ba1eaf59a4ef3dc0d79c59efdc629c0"
+  },
+  "assets/music/wharehouse_5_wharehouse.m4a": {
+    "bytes": 1291571,
+    "sha256": "239a37de2ad78b9d780baaec8a9b661be34ce00b63b2fab5267b63c2034d8f31"
+  },
+  "assets/narration-zh/Mandarin-opening.mp3": {
+    "bytes": 566796,
+    "sha256": "b99b48c64c93af87c8c1f71048eae0bcc2921293bbf033c57a56802050c8b41c"
+  },
+  "assets/narration-zh/mandarin-126120c484827b9a.mp3": {
+    "bytes": 7822986,
+    "sha256": "2b3dd2910f3f8c6fedd3d4fb13fdf902389bc53d3eee368b628eb77366320b55"
+  },
+  "assets/narration-zh/mandarin-1334f5e945558d96.mp3": {
+    "bytes": 620713,
+    "sha256": "e5491fabd22300972cc80af4e07822d75e4e396550f60bcf969fb71aaa67c453"
+  },
+  "assets/narration-zh/mandarin-1dde7ed70a487892.mp3": {
+    "bytes": 7332719,
+    "sha256": "555c34b57eb9780b7f3e1361a01cee70eb3d17b77b1823b20a35e71dcd546593"
+  },
+  "assets/narration-zh/mandarin-306379a79f8f12b3.mp3": {
+    "bytes": 7999782,
+    "sha256": "a6303a4d4f85e17ef86f14f420ec3620bd1011599f0927a7c42eab98a6b61e9b"
+  },
+  "assets/narration-zh/mandarin-41317f1199ae0ad5.mp3": {
+    "bytes": 6057944,
+    "sha256": "c730fc28b13f1f913fc72c7cb9d5ef528235c7a06ae209a586e86a0aa87cd8bf"
+  },
+  "assets/narration-zh/mandarin-4d29205aec54afcd.mp3": {
+    "bytes": 2906532,
+    "sha256": "967941076aaae8a48ed375fcc2a74877ee8482d57112c33866e0033a16f6e793"
+  },
+  "assets/narration-zh/mandarin-6ff3e3fe3446d5db.mp3": {
+    "bytes": 7439299,
+    "sha256": "a1dd30c0e07de9077cc948c737f92d6a9b25c8dfffc8378149f921ac71c24224"
+  },
+  "assets/narration-zh/mandarin-b683a76893e20e6a.mp3": {
+    "bytes": 7883172,
+    "sha256": "2e07f6ae55832e3470eed5e0e64258b93d2ffdcdebffa3f6894e170142a24155"
+  },
+  "assets/narration-zh/mandarin-cb816bc0ba338f7d.mp3": {
+    "bytes": 7788713,
+    "sha256": "ffbb231a64d25557cecae51e5154b59dfe3609d724c32fa3cf65ce764e858aea"
+  },
+  "assets/narration-zh/mandarin-d7b1beb612a51152.mp3": {
+    "bytes": 8130186,
+    "sha256": "40ed2c128c72648e620f757e8b741ae8a778c7a20ebf73513c2e9106a5d96edb"
+  },
+  "assets/narration-zh/mandarin-d890f95fb598a9c8.mp3": {
+    "bytes": 7601885,
+    "sha256": "2d4eed7e372a33c5490e7d6de56412c07371370f24b36c86e32795089d4f65a5"
+  },
+  "assets/narration-zh/mandarin-e67154e491f813be.mp3": {
+    "bytes": 6595439,
+    "sha256": "37bc506e5f170bc781ce36d3f34b51753a84821abb048b6c8790a4aee8022af7"
+  },
+  "assets/narration-zh/mandarin-f472848cc154e138.mp3": {
+    "bytes": 2316791,
+    "sha256": "9e8bef2af5a5720c92108cde016d1d17b25216248bd7e33314b8b86eccf7205d"
+  },
+  "assets/narration-zh/repair-013799cf267f7dc8.mp3": {
+    "bytes": 43511,
+    "sha256": "2ca71ac0c42124771d53b9ae7a48c8ada7e571e8a7b92b9e89f288bc7bc3ab49"
+  },
+  "assets/narration-zh/repair-017351fc1adec5ee.mp3": {
+    "bytes": 47273,
+    "sha256": "d865117eb0da4a4013b2791fb25342e99a922c34ae6dd5523f08801316f2ae09"
+  },
+  "assets/narration-zh/repair-024c77a86a63b079.mp3": {
+    "bytes": 36824,
+    "sha256": "c8c37d86ba2711dd8b8035dbae9d49c98a365b5eac5de426e5f1ee5b35bf6eea"
+  },
+  "assets/narration-zh/repair-03f8745fa3395dec.mp3": {
+    "bytes": 44765,
+    "sha256": "5737dc4389b9ace909429b07cdfc10cf9f9981e708d05b811edfb20f782fde94"
+  },
+  "assets/narration-zh/repair-055b09b1c741026c.mp3": {
+    "bytes": 41839,
+    "sha256": "995f43c585191aeaebaf3e0eb878cbbd32a63abb268dafd7d929b2f4fa379a7b"
+  },
+  "assets/narration-zh/repair-081ac59df2937b72.mp3": {
+    "bytes": 1217141,
+    "sha256": "669c513af8aa3733c84cd5183c19aae652c384465e2d89d6c5778f1785efc77d"
+  },
+  "assets/narration-zh/repair-0862dcbde7d6b10a.mp3": {
+    "bytes": 1110979,
+    "sha256": "27af37b24bd99ce59166f205b9163c1df48b22a5a6c5ec5e9883b8f4d57e29b3"
+  },
+  "assets/narration-zh/repair-09f68a660f86f792.mp3": {
+    "bytes": 43511,
+    "sha256": "15af61fb9ed59c33cbe4ef6adbec7feb249ead9b74841d36478428a554bc0441"
+  },
+  "assets/narration-zh/repair-0aac2c4ad0c3905c.mp3": {
+    "bytes": 43511,
+    "sha256": "ce6a493f70ff83052923be436472605690f25bd0eebb9ccefdf9486deff534b1"
+  },
+  "assets/narration-zh/repair-0bb0fccf2552fe07.mp3": {
+    "bytes": 44765,
+    "sha256": "81095461c1ba34375acf497c6b6467658210f75e265ea684f95656121b1c9e25"
+  },
+  "assets/narration-zh/repair-0d09818b5d02e477.mp3": {
+    "bytes": 44765,
+    "sha256": "04ebed702bb0ec7b3860226c5fc9fae685a0d931a46e1744796fa5009c46afe6"
+  },
+  "assets/narration-zh/repair-1040da1e5bc8330c.mp3": {
+    "bytes": 47273,
+    "sha256": "94278269aaeb4296850e50c042b32f9d100f73c3dcfcacbe4d8a75b028a1c3e1"
+  },
+  "assets/narration-zh/repair-10aea04057edeaa4.mp3": {
+    "bytes": 1825271,
+    "sha256": "da523279c33404e35a70ce5ef69f37667865cd6ee2d8c021f297a12b1aeb69dd"
+  },
+  "assets/narration-zh/repair-10bd8ee3ec89eae6.mp3": {
+    "bytes": 43511,
+    "sha256": "bc03cbf58adf75566ae856621064cc868e15141f1a2a2474d3071eeced5a5430"
+  },
+  "assets/narration-zh/repair-10ffd59d25e5cd65.mp3": {
+    "bytes": 119998,
+    "sha256": "a85ab9f33cc3e32fbda8dea75861d734966d2e18231c2f36ea843a9df0324118"
+  },
+  "assets/narration-zh/repair-11db776e500b0f3a.mp3": {
+    "bytes": 43511,
+    "sha256": "a30f1b85cf5b0e6de7f61c1ac5c4e47d33bf3825299273317bd502fbff832d21"
+  },
+  "assets/narration-zh/repair-12800a4e59d62125.mp3": {
+    "bytes": 994368,
+    "sha256": "ec9fffb2f581b628405ede302fad4d8b6f68e53e5a8e6118abfdb15090a1a38f"
+  },
+  "assets/narration-zh/repair-167cce1921bea8a7.mp3": {
+    "bytes": 41839,
+    "sha256": "8da9120f00fe6fe36e89e8ae74f75fad94be3fbf475a6418205d8158691b15b0"
+  },
+  "assets/narration-zh/repair-193397edba7c0a8d.mp3": {
+    "bytes": 41839,
+    "sha256": "6b7446620144b3615e6d630574e3117bd2035f58beb7b007c71187b3dae66d44"
+  },
+  "assets/narration-zh/repair-1b1973e45eb3302d.mp3": {
+    "bytes": 1489650,
+    "sha256": "78cb795809ff8fe23e5732a11279205bcf2bfaadff240f14fa8bcc24804a17fc"
+  },
+  "assets/narration-zh/repair-1d9825cb7c2c7714.mp3": {
+    "bytes": 43511,
+    "sha256": "ee05b8ab88b151a4838b65ccf9bfa7c069a5aa33e3603e843850b4028e5c0332"
+  },
+  "assets/narration-zh/repair-1e24b411378c9907.mp3": {
+    "bytes": 41839,
+    "sha256": "a1ad32c3ab48e1afa31a6b5c2962d9570f929d49bd956f4c11b0b11ff60ba6ae"
+  },
+  "assets/narration-zh/repair-1e747ba7a826f997.mp3": {
+    "bytes": 38078,
+    "sha256": "d3aae5357b5442421b55bc3ac667a15796749860fc95b4c3761e7581b39e1125"
+  },
+  "assets/narration-zh/repair-1e754d3a245f82dd.mp3": {
+    "bytes": 47273,
+    "sha256": "829e503d4f5f28256106e6998deea3727001f2ce153c2416f4c60255969c3c5f"
+  },
+  "assets/narration-zh/repair-1f962199abb02a98.mp3": {
+    "bytes": 496579,
+    "sha256": "176959b7c5a97ac24180bb5863b620e6a09658f198bbefbce7f62666a5c75eab"
+  },
+  "assets/narration-zh/repair-2062c4ada54eea6e.mp3": {
+    "bytes": 39332,
+    "sha256": "1f7e124aaef5a6b23db845d119699d445813f11c8c45231f8a1996680be6a67a"
+  },
+  "assets/narration-zh/repair-21289f85fb8299eb.mp3": {
+    "bytes": 44765,
+    "sha256": "6339050ea8919a3f33ccd888874709f3fd52fa288bb037ba693e99ec99a6593b"
+  },
+  "assets/narration-zh/repair-214492ba00026ba6.mp3": {
+    "bytes": 253327,
+    "sha256": "528c018f296893315da5f2eb284b8180b8a31267b4e165aac4a750f2e99c7d6b"
+  },
+  "assets/narration-zh/repair-21946035f82ca295.mp3": {
+    "bytes": 49781,
+    "sha256": "bb60e97037dff8e111c659ad6962a0ae4af4ccfc33e38c851fa1dc1b1374daf0"
+  },
+  "assets/narration-zh/repair-2286e7c563a0ad2d.mp3": {
+    "bytes": 43511,
+    "sha256": "c65ebf0a4396b4575ba2840f88eecd8ab662ce3a5cc38e13659fe7640ac9bea9"
+  },
+  "assets/narration-zh/repair-229764846c0f175f.mp3": {
+    "bytes": 44765,
+    "sha256": "84fac61999d6e68574acbad8b66227dd46c4a70345ba92e429519917bdd5faeb"
+  },
+  "assets/narration-zh/repair-22d562d24d1ee932.mp3": {
+    "bytes": 43511,
+    "sha256": "16f5138eff044ca10c0effc8b5b1ff4e49bb0b42f98ab444f0e5818b18ad22e6"
+  },
+  "assets/narration-zh/repair-23308ab37f7b416a.mp3": {
+    "bytes": 43511,
+    "sha256": "397099cab7f5b6a596e53862965be0bdb480ad828e52b41572600036097c1690"
+  },
+  "assets/narration-zh/repair-23af32044d11f778.mp3": {
+    "bytes": 23031,
+    "sha256": "6458b8a8ccf723cfbf4e6fe7f4a0f13663441b496f4ab9b330632889a40f4d6c"
+  },
+  "assets/narration-zh/repair-242459d028d26a72.mp3": {
+    "bytes": 40586,
+    "sha256": "19b38856f9a725aaf047abb1bc56a89d1d4051b80ef0ca85280be0404cc6c6b4"
+  },
+  "assets/narration-zh/repair-24464f05355a5128.mp3": {
+    "bytes": 43511,
+    "sha256": "9c76c51c9d5c55a1d91552cd5cbfccefe3d3e686200fc14577f984ea0d01fbb4"
+  },
+  "assets/narration-zh/repair-244a7f7271208490.mp3": {
+    "bytes": 34316,
+    "sha256": "dcded2ee756ef4b58da3a0c059d89f22c7ecbc895f4df792c475ce0719015120"
+  },
+  "assets/narration-zh/repair-2457bc7ea8a37898.mp3": {
+    "bytes": 1261862,
+    "sha256": "feb0e8df94b71fec86f1789cef14aefad4d3d4a1c489da96ad4f89def5108de5"
+  },
+  "assets/narration-zh/repair-270451b3b7151fbe.mp3": {
+    "bytes": 1335005,
+    "sha256": "6e5180645b37b3fece05b859765ce5e066c845595adb1ab73b0e0f48e1e2f0c2"
+  },
+  "assets/narration-zh/repair-2ca1b96c920bab91.mp3": {
+    "bytes": 31808,
+    "sha256": "24534a465e220160dd9580a1eb1c4336713fa95317ee269064515a5392cf3f08"
+  },
+  "assets/narration-zh/repair-2cfba4e422fee83c.mp3": {
+    "bytes": 56050,
+    "sha256": "46c0714f6982c286bf098d8798e1b0d76d8c364aa14013ef30dafd085d1069f3"
+  },
+  "assets/narration-zh/repair-2dd5ab89de75c3e7.mp3": {
+    "bytes": 36824,
+    "sha256": "08d9cb3385b88aaef8521fdec835feb2a53c5a656ccfc2e8a62c5e99ad29efc4"
+  },
+  "assets/narration-zh/repair-2f47d1688c7606e4.mp3": {
+    "bytes": 43511,
+    "sha256": "12e433176d8848b55b381eebe905dc868bed2eea7f3619f37aba94f02842d768"
+  },
+  "assets/narration-zh/repair-30b7a097a0c28b5e.mp3": {
+    "bytes": 41839,
+    "sha256": "7e899623088be12be1592b9bd3be294ba475d10b532adefa16ac7518eddd7819"
+  },
+  "assets/narration-zh/repair-31638bfbd68703fa.mp3": {
+    "bytes": 41839,
+    "sha256": "cc35eb71169448213f6f8b241202943abf1bf365c205326b3efce4c01bb43aaf"
+  },
+  "assets/narration-zh/repair-3183fc5caebdbb6e.mp3": {
+    "bytes": 61066,
+    "sha256": "63bfd48de66a3c3cce1e09301e8e29375861a28403a7866e2f1736db928fcc32"
+  },
+  "assets/narration-zh/repair-31d84517ffa47daf.mp3": {
+    "bytes": 46019,
+    "sha256": "30aa8a7ed6b3066c468d6d2acf195ca0e02a8ab5249d58be981af4ecc902ebd3"
+  },
+  "assets/narration-zh/repair-3499d6a312aa04ac.mp3": {
+    "bytes": 46019,
+    "sha256": "670a0218cf8259c95df4337db377010f391bbb9763d4f5c330c66496538d66fa"
+  },
+  "assets/narration-zh/repair-35ab2e29b3ffa97f.mp3": {
+    "bytes": 1366770,
+    "sha256": "fb0c8002961757ee250ee6a56da59bd393b5be137f0cf5e87b36f0bbb3f5cd7c"
+  },
+  "assets/narration-zh/repair-38cba834d58667f9.mp3": {
+    "bytes": 44765,
+    "sha256": "984002aa04c4117b8262db2133c324a0a4c5eb2543b8a8d7124ae237992c7651"
+  },
+  "assets/narration-zh/repair-39d9e693169e453a.mp3": {
+    "bytes": 46019,
+    "sha256": "815fb845884ecd80e1f46961b255ebacc5655e12b6359814df9af0fa69e1cb0d"
+  },
+  "assets/narration-zh/repair-3a4d8ff20d583b7e.mp3": {
+    "bytes": 43511,
+    "sha256": "6bd0f7db75cacef96b64e45f691c3d26e98acb91ada526926fa611dc005ef2fd"
+  },
+  "assets/narration-zh/repair-3cb8b4d7a641fd36.mp3": {
+    "bytes": 48527,
+    "sha256": "a11fd0e5fcedef2d4069a0ade9ee50d6e967f2d3e53b2b94b3ce69da5e346c5a"
+  },
+  "assets/narration-zh/repair-3d08e0f8db84aa2b.mp3": {
+    "bytes": 41839,
+    "sha256": "dadeb1aa0e2daf5ce1c366897c3c94c7a19f32e185235ccf30aef505e1b9f452"
+  },
+  "assets/narration-zh/repair-3d42c370fd6ba153.mp3": {
+    "bytes": 47273,
+    "sha256": "38f08abe51db4328e02a8e233ba7fb2f7e7ec1b5eda1e0cd9f452f03f89320e5"
+  },
+  "assets/narration-zh/repair-3f2b972fb45d542f.mp3": {
+    "bytes": 44765,
+    "sha256": "573520ba2e90821f914cab09185ce3fea161debaaac699f8111b07c4f6c1d111"
+  },
+  "assets/narration-zh/repair-3f8203d4fd1ebcf1.mp3": {
+    "bytes": 1982424,
+    "sha256": "20a2d5daa268ceeb922d0d3438a65ce4426929c7adf161bbf9296840ee99edf1"
+  },
+  "assets/narration-zh/repair-40437a535490a1e1.mp3": {
+    "bytes": 41839,
+    "sha256": "4fda2376e0baa542acfb23b7fd54680163a6f5fca2b4a97e31b39ad38f8a8e37"
+  },
+  "assets/narration-zh/repair-4184c322a53a5ad5.mp3": {
+    "bytes": 43511,
+    "sha256": "bd78db0e29176c035ae31ed324ff5d386920030de3d32a887bfb79677f5ed226"
+  },
+  "assets/narration-zh/repair-4460089d71809a62.mp3": {
+    "bytes": 1416925,
+    "sha256": "13fec96ac25e101fb6c71a4271f0004eb24cf46c314c07067576dc5dc6de0465"
+  },
+  "assets/narration-zh/repair-44f67fc26976e76b.mp3": {
+    "bytes": 38078,
+    "sha256": "3c285743d43399dab60127ff7b428b88a212df3147f1ebb678928fe22b72f55a"
+  },
+  "assets/narration-zh/repair-478759d0f516c454.mp3": {
+    "bytes": 43511,
+    "sha256": "35a965878e6e32287c780233f4e916568a07758973d6a2726efd4052fae9d2f3"
+  },
+  "assets/narration-zh/repair-47e46504605f302d.mp3": {
+    "bytes": 39332,
+    "sha256": "c0884978241f391b84a91af1c22f2b3bdcf645da64fe3da42c61c2905a663c37"
+  },
+  "assets/narration-zh/repair-49607c5b55464820.mp3": {
+    "bytes": 46019,
+    "sha256": "e65a524c65c5f82c6a5a081be421215059b7d0343f54f01ab9f53abe4f5905dd"
+  },
+  "assets/narration-zh/repair-4af319b4ce16172b.mp3": {
+    "bytes": 43511,
+    "sha256": "4372710d2097c4f7c2800145cc472deff9631a9a78a97b282a1b653b1768b189"
+  },
+  "assets/narration-zh/repair-4b2ed5f5cf27a9d1.mp3": {
+    "bytes": 1142744,
+    "sha256": "924f24a608e2a56dbb1bfe9ed7f9b91232ff0752f4d6cfb96ef8987920bdb27e"
+  },
+  "assets/narration-zh/repair-4be53525cb269dcf.mp3": {
+    "bytes": 39332,
+    "sha256": "22725fde62aa8aadd113438f4298b398998c559936cfe1c8326a2ab81cafbd98"
+  },
+  "assets/narration-zh/repair-4d2f38705adc64c3.mp3": {
+    "bytes": 47273,
+    "sha256": "65782aa9a75a523302557d3beecdf83ecaf0aa05b09b491c3491a0c26bfb4563"
+  },
+  "assets/narration-zh/repair-4df66d5e87dab37d.mp3": {
+    "bytes": 44765,
+    "sha256": "61c207e784037137466193e7a1956ae69e78ff7d58aa4981625bbdc840204abb"
+  },
+  "assets/narration-zh/repair-4e269876c60b9f8e.mp3": {
+    "bytes": 46019,
+    "sha256": "78528127303485b30fae9d95a0a8592211ac373fa76d7f8a255ccd5e901c4ef3"
+  },
+  "assets/narration-zh/repair-4e3058b082c05baa.mp3": {
+    "bytes": 12582,
+    "sha256": "76dfd9c1d6cce31643abf8d86fa90947b978e73534ef202a6f26eb55b7ce880b"
+  },
+  "assets/narration-zh/repair-4f51d0f781bd169a.mp3": {
+    "bytes": 44765,
+    "sha256": "52b4966a653839188ab30f761770973bd82a6787ae553754334b6345ad1e61a2"
+  },
+  "assets/narration-zh/repair-50ec23c9663f6db1.mp3": {
+    "bytes": 40586,
+    "sha256": "06e93a2d6ef8f065a3780acf5ce4910f38d87462fdfc632db9d90d3cb748f781"
+  },
+  "assets/narration-zh/repair-5136386cd3650bac.mp3": {
+    "bytes": 28047,
+    "sha256": "a938fde56dcabd13b11c6b99999bd7904f4e8e6ff27b15fbd60fdcda15457fc7"
+  },
+  "assets/narration-zh/repair-515d16e4d3e4f5d4.mp3": {
+    "bytes": 36824,
+    "sha256": "42f164a88c0320f6276457a950e365b13be0f6c4aa7fb55037274c98d2f6853f"
+  },
+  "assets/narration-zh/repair-5270fcc725787085.mp3": {
+    "bytes": 47273,
+    "sha256": "1fc0eabeba0d14ff69ef1b23bfb4725b834886cf29d3bc58747a1943b6d1cae4"
+  },
+  "assets/narration-zh/repair-528a857f0b3d284e.mp3": {
+    "bytes": 40586,
+    "sha256": "791c7a22bc95e15f7b2036046df17c472b3fbb0f97d9a1890c6cf3505fe427ba"
+  },
+  "assets/narration-zh/repair-531ba333845b1800.mp3": {
+    "bytes": 1352559,
+    "sha256": "1eed9890d58a16a042699bf67f52b7ba196deb976d16747a89ee5c76546923f0"
+  },
+  "assets/narration-zh/repair-53977d05bcb61fcd.mp3": {
+    "bytes": 26793,
+    "sha256": "d521d7564362d348db5294140112919edcb8ec9fab6465f324ea2c2adfdc12d3"
+  },
+  "assets/narration-zh/repair-53d335bc54ed7a7c.mp3": {
+    "bytes": 38078,
+    "sha256": "6c73de7a472baaf7e09d137f2be607b9e31eed726b004cd2c4a50deab9b2ba27"
+  },
+  "assets/narration-zh/repair-54116b0eb7880683.mp3": {
+    "bytes": 298048,
+    "sha256": "63425d9873356118553b09efd60c8b4abf9ba3f9dc79bbcc107d5530429e1ac9"
+  },
+  "assets/narration-zh/repair-559d7578e1b62abb.mp3": {
+    "bytes": 39332,
+    "sha256": "71c7f7456dcf675333e7cd2cc9d677c8c6d1b98b3080bf1a3d718b3a606b3a61"
+  },
+  "assets/narration-zh/repair-56619c4a7033303c.mp3": {
+    "bytes": 46019,
+    "sha256": "00a598366a2b6aa64698706460d70959398239eef36103e835df66d5240c387b"
+  },
+  "assets/narration-zh/repair-5a42b1d62c65614e.mp3": {
+    "bytes": 47273,
+    "sha256": "e12859ae6ef82aef28758259c8648fc85c3dfa06f2107e1bfd6a10d4acaf36c5"
+  },
+  "assets/narration-zh/repair-5be9ad4f2f14c412.mp3": {
+    "bytes": 39332,
+    "sha256": "49c757d5e033493a99114b45852cbf0ecdb1391db76bdafcd7424d0f3c07df0d"
+  },
+  "assets/narration-zh/repair-5c691499d10150e3.mp3": {
+    "bytes": 46019,
+    "sha256": "4833ace79228a0d9ef906d572d058a61a4af9dffc6aa7351140456754be6ccac"
+  },
+  "assets/narration-zh/repair-5ccc6cad31dcd47e.mp3": {
+    "bytes": 1166986,
+    "sha256": "2fe6c73393051a3a2de551e0d4cfb16142e9bce791275444847d660c876a2c5b"
+  },
+  "assets/narration-zh/repair-5d7d39d2b004d94f.mp3": {
+    "bytes": 48527,
+    "sha256": "f0f29823f5083f189fa043ee5233bcffc68049fa1d16e1d0da85338c4efe5071"
+  },
+  "assets/narration-zh/repair-5dfc7567c9174ec5.mp3": {
+    "bytes": 36824,
+    "sha256": "b2b9a4b0ea0d4bce9d94e90b1a6d6532d629f8ac9304c29d82fbc57f5733b39f"
+  },
+  "assets/narration-zh/repair-5f1097b265eab113.mp3": {
+    "bytes": 43511,
+    "sha256": "aeafddbb056d41d35e7c5388f97c633131d567dab748aa4c9ff4470d1fba7dde"
+  },
+  "assets/narration-zh/repair-61792fc3e1cbc7a5.mp3": {
+    "bytes": 39332,
+    "sha256": "bcecb6bf90197ea30bb0691ada81c44885b5e5bf6ed1f14e7dc70a7e939ad7dd"
+  },
+  "assets/narration-zh/repair-61876d8cee8a6f9c.mp3": {
+    "bytes": 40586,
+    "sha256": "46a8aac86706c5d8eb6d84dc1bed5c7a4d97ba1446d397a4631df62dc0b6abc6"
+  },
+  "assets/narration-zh/repair-63744b0e4fe1e500.mp3": {
+    "bytes": 43511,
+    "sha256": "3eeb5145441852c004c1ff83926bd3893daafb38fe69f9090a0478f9f5a92329"
+  },
+  "assets/narration-zh/repair-6380431a958666a3.mp3": {
+    "bytes": 39332,
+    "sha256": "b9ebab3028faa2f987212f3be1d46b86a1bb4d8306e79e8b6a939c058b46bed9"
+  },
+  "assets/narration-zh/repair-6523f1921c7570f0.mp3": {
+    "bytes": 107459,
+    "sha256": "6392bbe09af7362b0e80a73fa11e2de2223a8a2a349459faa4d1c16a665beec4"
+  },
+  "assets/narration-zh/repair-671a1a0973f6d406.mp3": {
+    "bytes": 857278,
+    "sha256": "c218db85e460dc36d3e4a6fd08eb32c4fdd7de31f0ef4843fc509a482bfe30ae"
+  },
+  "assets/narration-zh/repair-675793e3182e9ff5.mp3": {
+    "bytes": 1110979,
+    "sha256": "f61ad7746792cbec0099e039d3528369547441b27f023fc232a2cafb4adfa9cd"
+  },
+  "assets/narration-zh/repair-6a1e9ffd977637fd.mp3": {
+    "bytes": 31808,
+    "sha256": "5343123545004cabf31401a30094bbb6f214d0d95fb84513305901e4cc67b89d"
+  },
+  "assets/narration-zh/repair-6b36dd81088f72a8.mp3": {
+    "bytes": 1407730,
+    "sha256": "7c112647d90e27833078ccf4a03879cf86a9716274109b2b49f8e9db49151646"
+  },
+  "assets/narration-zh/repair-6baf2d0d7486882b.mp3": {
+    "bytes": 43511,
+    "sha256": "75904c2bb2855adaeab63a9b0d1aec117b521cf0db7548bf71fa670cd24ce8c1"
+  },
+  "assets/narration-zh/repair-6c82d018ff2eb676.mp3": {
+    "bytes": 33062,
+    "sha256": "b40208b54f35be230fcce73375fa07283ed50df26746b87aa3264fafaf794467"
+  },
+  "assets/narration-zh/repair-6e59cba38d41c3cd.mp3": {
+    "bytes": 41839,
+    "sha256": "840c5dd2863f002ac7567ebebd26d57fc5a6edd26bca375500e492923622040a"
+  },
+  "assets/narration-zh/repair-6ed6997958e30942.mp3": {
+    "bytes": 1635518,
+    "sha256": "cb90cf4c4377a0962eea70072a3ba3bfaca45a811b0c82bff271aa08c00d81df"
+  },
+  "assets/narration-zh/repair-7292feaeb1b3db94.mp3": {
+    "bytes": 43511,
+    "sha256": "b25e3b01288f1a57298bf13c247f87de23db2c6ca9904aaeb957a66b56682717"
+  },
+  "assets/narration-zh/repair-73992ed925c04fe4.mp3": {
+    "bytes": 44765,
+    "sha256": "280ed2e93a80fcc6f62b9858a48d76adeb9d3317ba0273c79de33376cc995d56"
+  },
+  "assets/narration-zh/repair-73bcefe1b844fbc2.mp3": {
+    "bytes": 135462,
+    "sha256": "d8dfe7b184229047acdfaa7869610dd635b97d20ef1d83749e486c89d11d2c83"
+  },
+  "assets/narration-zh/repair-750a5882a5f9ef89.mp3": {
+    "bytes": 41839,
+    "sha256": "faf3622ab9ddd2df4dd66c18b0479116032bfab7db9f1dfb143f76c66aa5cf8c"
+  },
+  "assets/narration-zh/repair-75d0ab3778400c01.mp3": {
+    "bytes": 39332,
+    "sha256": "32b9a75456c2b2993d5f14aa084485bcd1b3ca713d28867a7aac186fc0a211f0"
+  },
+  "assets/narration-zh/repair-76968cb44da48bdb.mp3": {
+    "bytes": 1143998,
+    "sha256": "f49302ead46c72d5bf681407a74b8ccb6165b850f9ed1dc44a83ddc52258f8f2"
+  },
+  "assets/narration-zh/repair-7794a03d2a01a4d0.mp3": {
+    "bytes": 41839,
+    "sha256": "7142b44b33bbe6ae54ffcbe30252ec9d083199f558e66425209f18cf8033a176"
+  },
+  "assets/narration-zh/repair-782dee0929f4df80.mp3": {
+    "bytes": 40586,
+    "sha256": "1fefb142d26ffb42db5e277b7e7f399bce6ec7a3728c1a5fbad7f1e6d01470f3"
+  },
+  "assets/narration-zh/repair-78b465f167a342c5.mp3": {
+    "bytes": 49781,
+    "sha256": "9b847cd31027fb9181735baad0f8231c7a2df77028eda779d4f7bdad659976e7"
+  },
+  "assets/narration-zh/repair-7954e76d470562ca.mp3": {
+    "bytes": 40586,
+    "sha256": "fe1240c9c11f9389b67e22802a290c93aecea4567517e667008f13bc216a7832"
+  },
+  "assets/narration-zh/repair-7aef75fc54eafc30.mp3": {
+    "bytes": 48527,
+    "sha256": "21103faf7b20734095d0eb5e7fc5a433bc245a21567cc390d842c165339fca1c"
+  },
+  "assets/narration-zh/repair-7c1aff72e03bd51f.mp3": {
+    "bytes": 1366770,
+    "sha256": "ce43fefa9c990eaf0dd7fd5bff6ae32557cd76f285344cb97153f2680f29c86c"
+  },
+  "assets/narration-zh/repair-7cb8ec16d869e58f.mp3": {
+    "bytes": 62319,
+    "sha256": "3f7486ff334eb1028d30d7756a6256af811b36f645c0f6d4857c5d4f9e8b0d03"
+  },
+  "assets/narration-zh/repair-7dbb6824e0575680.mp3": {
+    "bytes": 33062,
+    "sha256": "cd3dca78210a6bd234307c7e725fc45517d2d967cf48dadd0835253b6b5eb595"
+  },
+  "assets/narration-zh/repair-7fb0333133c53a41.mp3": {
+    "bytes": 43511,
+    "sha256": "aa891894fc1d467e9f8b5b2b947dcbfe9a731ec9bb5d0726c949b97ebfd13a9a"
+  },
+  "assets/narration-zh/repair-7fd0851a9ae155c9.mp3": {
+    "bytes": 1311599,
+    "sha256": "a02ecae9fa2bec446fbf70b281ca50d9ad71bbcf1c2d1004ddb2b55fa6a4813f"
+  },
+  "assets/narration-zh/repair-808ce9ecf150df16.mp3": {
+    "bytes": 44765,
+    "sha256": "b70fdf2e617f06d1b96a5fb345206cd2f6e03d37b939abf7eaca333c424d68ed"
+  },
+  "assets/narration-zh/repair-80dc61d9d29b2e29.mp3": {
+    "bytes": 40586,
+    "sha256": "5ff495834cfe46c2ab5b8338fc0b6d9d334888e8d310a99b36d9678e6eacb567"
+  },
+  "assets/narration-zh/repair-84e9e6c2cd722280.mp3": {
+    "bytes": 1091753,
+    "sha256": "6958b2ce07d7951202e204eecb4024fde7f83fb968e4a9c879248e4321110574"
+  },
+  "assets/narration-zh/repair-8598f4c0491233c7.mp3": {
+    "bytes": 43511,
+    "sha256": "10d8e640789d32b5a6cd879daebc23a5f0a99e1235d9de87699969186a5a942e"
+  },
+  "assets/narration-zh/repair-85d7fd6c5fe9277d.mp3": {
+    "bytes": 1616292,
+    "sha256": "9cee11f43e7f8b04556f3632bb7f06c1639ff24579298dd2028101b20824884d"
+  },
+  "assets/narration-zh/repair-8a9dc6da13f0d5af.mp3": {
+    "bytes": 39332,
+    "sha256": "6e6f3f6992122b78ee617775027f4b5fe783b03f3f36f7387eae316ce4d4ceff"
+  },
+  "assets/narration-zh/repair-8ae187e6386f5395.mp3": {
+    "bytes": 1115995,
+    "sha256": "67ca26a1e74647030b0c8dff4a3889d01c05225d11bdbe572efb9255a1cd2ca6"
+  },
+  "assets/narration-zh/repair-8b28fe8d0b6ca4cf.mp3": {
+    "bytes": 43511,
+    "sha256": "0ac134bb0f0e2c957a29cf28ddaf81d8e328c8a354de26a97dfb2d3a9dea9394"
+  },
+  "assets/narration-zh/repair-8bdd0fff3735e32e.mp3": {
+    "bytes": 46019,
+    "sha256": "5c9d289aeeab627fd9a93c0490687f9bacf0bcc5209b5d1c24525d27ac4119ff"
+  },
+  "assets/narration-zh/repair-8c0e7a4903b14771.mp3": {
+    "bytes": 36824,
+    "sha256": "b35fad62e98540fec366c5b3d7817c3d423f517fdb8ea31f703ef9db01346f48"
+  },
+  "assets/narration-zh/repair-8ceedec7d3fbfa71.mp3": {
+    "bytes": 44765,
+    "sha256": "213418077ef149c78ca6e024549822f26dc9f6f973fa5f8d21d13725ae360969"
+  },
+  "assets/narration-zh/repair-8d156a45b9a25639.mp3": {
+    "bytes": 36824,
+    "sha256": "a498ae44bf69c5cff3a8fc81f2e0c364be468fc0cb4153b56cafc2d98e1dba6c"
+  },
+  "assets/narration-zh/repair-8e8da7bcf6b8f0b8.mp3": {
+    "bytes": 40586,
+    "sha256": "de2afe8cd9e99a1d8816231d719e1d6f6f2f74132eb2205d53c9e5d81f320473"
+  },
+  "assets/narration-zh/repair-913cc1cc05df16aa.mp3": {
+    "bytes": 1470424,
+    "sha256": "ed05e79cbf28053b73b790d2335035f94c7e051ddf2a5b9c2d1201e15266a2a9"
+  },
+  "assets/narration-zh/repair-94df54ff7f21152d.mp3": {
+    "bytes": 33062,
+    "sha256": "94aa43e0f8068be80d4c79acfe68d0473bf051f920bce7c36bfdb0efb8e791a9"
+  },
+  "assets/narration-zh/repair-9505e6c9d1cc03e4.mp3": {
+    "bytes": 30555,
+    "sha256": "ddbf4ef8d63512721cf6bbcd80f4112c5aa7960409ca9c56dac09348687a20af"
+  },
+  "assets/narration-zh/repair-974fb9007577a303.mp3": {
+    "bytes": 46019,
+    "sha256": "5be5603580df6d28b6c863bfcc1cb9a1f4514131c9d8e5a37432ad8d881b48ff"
+  },
+  "assets/narration-zh/repair-97769252bdb6f23e.mp3": {
+    "bytes": 40586,
+    "sha256": "ea89cd5ce4e0889c0457d45962f3d019b9c1945771de5cb9f7c79abccc65ef39"
+  },
+  "assets/narration-zh/repair-978fc7c2d6061493.mp3": {
+    "bytes": 34316,
+    "sha256": "d8d86d08d0778917bd86d2db98618d361a7fedb9c9bbba342b9c4ebf22f82bfc"
+  },
+  "assets/narration-zh/repair-9919bcb433dcc52a.mp3": {
+    "bytes": 39332,
+    "sha256": "dd469f04354b14c6480d21a59192c535581a9c20a59ebda7e20654c84d70897b"
+  },
+  "assets/narration-zh/repair-99fc8c66706c503f.mp3": {
+    "bytes": 43511,
+    "sha256": "c9452821464e8e4753ab78330f64c546cffb57f470cbbedf3b8e49dd25b661e2"
+  },
+  "assets/narration-zh/repair-9d00e36546852f1c.mp3": {
+    "bytes": 40586,
+    "sha256": "35875660d03c6a1d63316e419a01f9719066e5015499280a84f2d05aa8ac94d0"
+  },
+  "assets/narration-zh/repair-9e5addc40196677c.mp3": {
+    "bytes": 38078,
+    "sha256": "302ab3e1f80c9633f947b613039c850afb0d79e73f9fc6eb77218b87cef6dad7"
+  },
+  "assets/narration-zh/repair-9e89491f24b23200.mp3": {
+    "bytes": 46019,
+    "sha256": "e0d25e9095efbfe4fab5c1cc11a01e0cdbf3442bf79767817d97840ae576c346"
+  },
+  "assets/narration-zh/repair-a2686a313f89a4b6.mp3": {
+    "bytes": 47273,
+    "sha256": "5b281303a587bc4cab5709ba44f73f3669d7b849d6610e1796f1d5ef197e7e7e"
+  },
+  "assets/narration-zh/repair-a2e39c0a5d0ba4d5.mp3": {
+    "bytes": 44765,
+    "sha256": "0c5205556598f8338e533cb3cc00390104ca77e600038cad320574e051e193e1"
+  },
+  "assets/narration-zh/repair-a44238bc45d9cb11.mp3": {
+    "bytes": 36824,
+    "sha256": "8d37a8a4a6e389ede8123f997c20ea7a4f7517bef12cf723bc991dd9d54640bd"
+  },
+  "assets/narration-zh/repair-a730f2ecda13259d.mp3": {
+    "bytes": 1474186,
+    "sha256": "34b3c92c6ee18067747b9e7f5a7070700043d16dd4d4e90f5d13f203285698c9"
+  },
+  "assets/narration-zh/repair-a79187c6e93a21d3.mp3": {
+    "bytes": 40586,
+    "sha256": "f78d753337af41135fef1aea1a6c0680a25225c44f09a631c430a7095baa783a"
+  },
+  "assets/narration-zh/repair-aed6cc61d98daa5e.mp3": {
+    "bytes": 44765,
+    "sha256": "8a6b48f015c42d8b623ec053aaa6601e574f572029751ac8e52cadda8a188ae8"
+  },
+  "assets/narration-zh/repair-b29ef84966cf2acf.mp3": {
+    "bytes": 46019,
+    "sha256": "f5cc4eeca1ca8560a2c1dc503f0502ef7914f3ef2844f504db56355d9f4a8276"
+  },
+  "assets/narration-zh/repair-b3474a1979069f00.mp3": {
+    "bytes": 40586,
+    "sha256": "d2d8bb72a0873e31769335925b09a8f72dc0446f0e111b570ac7d60f8b5772d5"
+  },
+  "assets/narration-zh/repair-b478ba7b153accb6.mp3": {
+    "bytes": 46019,
+    "sha256": "5639fa9c0ae1c506c52f344db2146de612a64258184b54358f4e6f933be873a9"
+  },
+  "assets/narration-zh/repair-b5d79412f38b9f08.mp3": {
+    "bytes": 40586,
+    "sha256": "688dc5640d1075fbe279c3ea94001cf5199cdb427f8ae9f9e5fea92ec87f35e5"
+  },
+  "assets/narration-zh/repair-b6cbb3e1fd440cf1.mp3": {
+    "bytes": 41839,
+    "sha256": "bbed546e474799ec6083ee2a1dd59c8170c794095588013727b17cd5a8e90191"
+  },
+  "assets/narration-zh/repair-b7258ade1538cedf.mp3": {
+    "bytes": 1297807,
+    "sha256": "8271f0d84b378dc87fdea64643a3caabb2719c8c0c73ac1898be9317077fd0b7"
+  },
+  "assets/narration-zh/repair-b8ae492dc63c9624.mp3": {
+    "bytes": 40586,
+    "sha256": "c1b5685e4da98441a9eaa693c7a8e6460e136931df4ede56fa4ccf0c6e262619"
+  },
+  "assets/narration-zh/repair-bb1410f9cad60f5e.mp3": {
+    "bytes": 40586,
+    "sha256": "c434301253558d444283bde6af03a4398503851788cba3005d5da2704e2a1dcc"
+  },
+  "assets/narration-zh/repair-bc5d5ab37d3e75c3.mp3": {
+    "bytes": 1603753,
+    "sha256": "211c421e1fc0d193abb2be17bfae444111143ba4ff45f8ba7ae1a79f88c853c9"
+  },
+  "assets/narration-zh/repair-bd087548a0bfad35.mp3": {
+    "bytes": 46019,
+    "sha256": "1c809c93277e841f76e6fab204091d4c5d19066d50105f9258a3566f1d7f7f3e"
+  },
+  "assets/narration-zh/repair-bd2d8c7059ade76a.mp3": {
+    "bytes": 41839,
+    "sha256": "475bea3d7fc5dbd8c102f109a08f58677ffb9192686a1c872c1d67f7ce7857c4"
+  },
+  "assets/narration-zh/repair-bd3bf50fc64426f8.mp3": {
+    "bytes": 1136475,
+    "sha256": "708ddeb8d86821d1687ed2ec415a86224b75d1723d6e0b716bf15a605ad45da5"
+  },
+  "assets/narration-zh/repair-bff081767b0e1794.mp3": {
+    "bytes": 36824,
+    "sha256": "b39c43d5cdfdeb71c6997a1e014eeb1e89ffda44ee4fa7f119956ccb97b1c429"
+  },
+  "assets/narration-zh/repair-c0bd81882ef131d9.mp3": {
+    "bytes": 47273,
+    "sha256": "a6efceb558e4ec175dffb868f82ec35ea59cd1bb600981cde1bd3af2f411ac31"
+  },
+  "assets/narration-zh/repair-c14dd2f06a66031d.mp3": {
+    "bytes": 1489650,
+    "sha256": "3563cfd724fa1d4bbc79e312e1d46a07071e5809f7aad53021814f917a271736"
+  },
+  "assets/narration-zh/repair-c357693521b6d67e.mp3": {
+    "bytes": 36824,
+    "sha256": "45fe8af820b98113d369e0058a395b3e5f76760cc26e6ced34c424ff758feb30"
+  },
+  "assets/narration-zh/repair-c3b79507fdba2b18.mp3": {
+    "bytes": 1341275,
+    "sha256": "a5e388b180b6ca9feb56498d700a96b3443718df7b7a752fe4f97b33da223a33"
+  },
+  "assets/narration-zh/repair-c49a042d7467af05.mp3": {
+    "bytes": 39332,
+    "sha256": "2d55b4e1f573bf2a54071698f2ce972a7471c12e638688b6c3c0a70e5521dea7"
+  },
+  "assets/narration-zh/repair-c4e6f95b0c9b0482.mp3": {
+    "bytes": 40586,
+    "sha256": "02df5e2d37ca0a38dc9dc34fb05a04675a97361595f0afb6a32d97a181ba98db"
+  },
+  "assets/narration-zh/repair-c740e1523d7e67c2.mp3": {
+    "bytes": 41839,
+    "sha256": "91e8145bd1a1919fae8c47b6b0b8ad7217006bc51159f8e416f523f0d7496c6d"
+  },
+  "assets/narration-zh/repair-c79f690cbdff73f3.mp3": {
+    "bytes": 24285,
+    "sha256": "3d95c361b5756b967323c7cfdc888504dc5eab820b1facc1b4af2f8cf2015316"
+  },
+  "assets/narration-zh/repair-c83e0207cb73fcb3.mp3": {
+    "bytes": 43511,
+    "sha256": "9f0df44354acdd760565e41472e199c095b6ef1eff9810563ea6fa9a6fe79009"
+  },
+  "assets/narration-zh/repair-cd032c3d8f1e6b1a.mp3": {
+    "bytes": 40586,
+    "sha256": "7add75e49549850087ebb31947b2c61b98dac8654f506ac25513df20ebc1cce2"
+  },
+  "assets/narration-zh/repair-cd36af6ac4cb85b9.mp3": {
+    "bytes": 39332,
+    "sha256": "1b5df3c2339692b704a765739f4b6e5a4c72be16d6a1290d95ae8f309dfb4d11"
+  },
+  "assets/narration-zh/repair-cd67b765362bd751.mp3": {
+    "bytes": 40586,
+    "sha256": "412ccfbe4d7002780063e5c7224407c124cd6e019e7fe98a585297b1623e73ce"
+  },
+  "assets/narration-zh/repair-ceb0d5c9f3f0ec4f.mp3": {
+    "bytes": 46019,
+    "sha256": "29581fdb88046705498f99be965efacce87355cfb93e37929ebacaac27fc4359"
+  },
+  "assets/narration-zh/repair-cfbefd1b43b5853f.mp3": {
+    "bytes": 40586,
+    "sha256": "326afd6d931e9cb816541184b193554ba309d621e628cf358760d3ad6b6122b6"
+  },
+  "assets/narration-zh/repair-d1e1fe2dee88b2bb.mp3": {
+    "bytes": 43511,
+    "sha256": "9ef286a644a89f210488f07f40c3d9f1ac0cccfdd6dde6c7ac956b3eb7d562e2"
+  },
+  "assets/narration-zh/repair-d2688be99b7cbeb9.mp3": {
+    "bytes": 49781,
+    "sha256": "5af2143639f269f1fea203f9cbf5316c35c557e838e4bf1d20c8fb301cfb1b4e"
+  },
+  "assets/narration-zh/repair-d46c562138408135.mp3": {
+    "bytes": 1320795,
+    "sha256": "5431af1aec878258e479dafac4e8dc6293f2aa34b903fb62237e1a44c8e4f4f9"
+  },
+  "assets/narration-zh/repair-d513280f9f287463.mp3": {
+    "bytes": 1789327,
+    "sha256": "7bb46978764f2b7b0beafe4ced5aed9c974c499eda4f22cdc57a239fdee61dbe"
+  },
+  "assets/narration-zh/repair-d58f799246d1ef41.mp3": {
+    "bytes": 41839,
+    "sha256": "4ebca5973f6493a54fb078668501d29605bb53d6cdc41363248e0a3b6fde7384"
+  },
+  "assets/narration-zh/repair-d5b6c93f0b060152.mp3": {
+    "bytes": 40586,
+    "sha256": "b52701472e35855e3d062484d94e0cb4a34c2359ffa037a0b09651e2339c2769"
+  },
+  "assets/narration-zh/repair-daf091046bf27296.mp3": {
+    "bytes": 46019,
+    "sha256": "933af84d1949c3f15a341ecc6ba5fd759cf76032eb1c7858f32376bb0c45858b"
+  },
+  "assets/narration-zh/repair-daf0c8ec7c380972.mp3": {
+    "bytes": 46019,
+    "sha256": "583bc05293d2363a14b0e5c499f9303b7b086bc7e689fc295f05de7af9db5e48"
+  },
+  "assets/narration-zh/repair-db8a9198412b9144.mp3": {
+    "bytes": 41839,
+    "sha256": "999990bb0be89dc118ee7cd6a9e8f9466f552eb7c0f8d21d18e68b1117efc5b2"
+  },
+  "assets/narration-zh/repair-dc63e8c8a964cc6b.mp3": {
+    "bytes": 48527,
+    "sha256": "652377b8f3971e6ee45a3a2564dfde384da29fdaaa6a559774721d36bc1fd28e"
+  },
+  "assets/narration-zh/repair-dc6a893ff0f92515.mp3": {
+    "bytes": 39332,
+    "sha256": "7050302a6d1d4d21c5ae65deb66471b7ab69b496f3b9dc028decf9a0a84077f3"
+  },
+  "assets/narration-zh/repair-dd348fac1a15d79a.mp3": {
+    "bytes": 40586,
+    "sha256": "cac2f997c05875bf206c88a656837169056607a92ba3ab60c3bc959c1c2c7dbf"
+  },
+  "assets/narration-zh/repair-ddc8e69971cb8ae5.mp3": {
+    "bytes": 25539,
+    "sha256": "e71dd9097a3f46f6cbbc287bdd2f53b7eb55bd44462778665be044039bf6679f"
+  },
+  "assets/narration-zh/repair-df1a4b0a37369279.mp3": {
+    "bytes": 43511,
+    "sha256": "c111aa428629635389f45fe8a3f2bffae97a7d79a68af51f61dc6ac9b27b1a5d"
+  },
+  "assets/narration-zh/repair-dfcb78af8eef4087.mp3": {
+    "bytes": 801271,
+    "sha256": "6361a90a84fa9c7182eea10e68c1b8fc78f1820959f504531f8cd777daf7409c"
+  },
+  "assets/narration-zh/repair-e04480231ce50b49.mp3": {
+    "bytes": 39332,
+    "sha256": "241a9019f34ece4a5263a57244514ced3782fad1e835a18b5f04b9123a43d064"
+  },
+  "assets/narration-zh/repair-e3360e35f50af2f0.mp3": {
+    "bytes": 59812,
+    "sha256": "9793360b2f5880cc1085b5a8f2f63d7053b10821802f9604ea5b9c3c8b167b0f"
+  },
+  "assets/narration-zh/repair-e4dd3ad5c2626cc2.mp3": {
+    "bytes": 41839,
+    "sha256": "99f2083f0aa665165eeaec50c8fa1734ad351279c666033d3a826b5c6af0f473"
+  },
+  "assets/narration-zh/repair-e572397119d39a1b.mp3": {
+    "bytes": 43511,
+    "sha256": "eae2bb66eda96b5303802745e9a3fe153d963e82add2b6d440d4d26518dd282b"
+  },
+  "assets/narration-zh/repair-e58f36b9f307fe4a.mp3": {
+    "bytes": 191887,
+    "sha256": "25ea6677d7051cd558935033ea9c01f8a04bf65af3cc6b020b793eb17dcf1857"
+  },
+  "assets/narration-zh/repair-e66fe6f69e4209d6.mp3": {
+    "bytes": 40586,
+    "sha256": "f738d818e59ca4fc837d6b3a9c5be058cd5775b0a0f8a3da54eb5ad7d5a013af"
+  },
+  "assets/narration-zh/repair-e788ccfbfc3883e8.mp3": {
+    "bytes": 40586,
+    "sha256": "411318b376139ba303ab358c05e4dc89434db3c4fc760f4df45044f7be53c80c"
+  },
+  "assets/narration-zh/repair-eb9015764b5e2301.mp3": {
+    "bytes": 43511,
+    "sha256": "d65be4d41b603e336372eeebd734a44f276a5170ee1c445f0aaa6a9c5669df37"
+  },
+  "assets/narration-zh/repair-ece1191c01fe9d95.mp3": {
+    "bytes": 39332,
+    "sha256": "d77af691fe0593fa4b251de58d0994dc33c2511c1a79c2ed99b197383c4801cb"
+  },
+  "assets/narration-zh/repair-ed9fcbce06bbd9a5.mp3": {
+    "bytes": 1335005,
+    "sha256": "9d114186892c75211d1883353690822bdd9e92c534f140539d5c8f99a3eecf1a"
+  },
+  "assets/narration-zh/repair-edc48483138118f3.mp3": {
+    "bytes": 41839,
+    "sha256": "bd906bd718437b349add1e8e49ad7ea42ebb13509a046cc94438ae13bc7c809e"
+  },
+  "assets/narration-zh/repair-efcf0f6ab2e1364f.mp3": {
+    "bytes": 43511,
+    "sha256": "f85deef64fce3456331396f4e2af5d0ad248b82c146ba9aebaaec51bd7111044"
+  },
+  "assets/narration-zh/repair-f0acebf60672750d.mp3": {
+    "bytes": 1648475,
+    "sha256": "bc532a7de24e70dc91c995a0f683f7a44e1df85f4102311644c98b2ba0d12122"
+  },
+  "assets/narration-zh/repair-f1a1b692e67a9e77.mp3": {
+    "bytes": 1364262,
+    "sha256": "c6f0b44eb2ee4253b0ed1bd9fba71247fcb47f4133c3f32073054ecd1c97a17d"
+  },
+  "assets/narration-zh/repair-f35ce008be0cd3a8.mp3": {
+    "bytes": 2025892,
+    "sha256": "4ff285663ecaa7f6b9324ebc9b73b0b0aba437ec7194bbae828e02108bbd6e40"
+  },
+  "assets/narration-zh/repair-f4d2c68188436d58.mp3": {
+    "bytes": 39332,
+    "sha256": "480543208acac850ccf310e48ae55d6850957b19148cce4394ebb539ba0c3f6a"
+  },
+  "assets/narration-zh/repair-f514d8a3b7a4dcf3.mp3": {
+    "bytes": 1382235,
+    "sha256": "d64234f026c5643197dd5cc3125a351a69fbfce344fdc2974d277c11e35bbe50"
+  },
+  "assets/narration-zh/repair-f51fbf0e78525308.mp3": {
+    "bytes": 46019,
+    "sha256": "c6acd21bce79b42b624ccc6bb97f74c4d2ce1e527fc573bcd380609ff914839b"
+  },
+  "assets/narration-zh/repair-f5385b99cb358729.mp3": {
+    "bytes": 41839,
+    "sha256": "f7f22b1e1c547dea65a709236f2003e4ecfc220d121a6cd9f850a89f57f5a846"
+  },
+  "assets/narration-zh/repair-f67d007d061b296d.mp3": {
+    "bytes": 44765,
+    "sha256": "bd240a2b4ce58a6b6f12dd5146f5cebf63a13aec4aed4b7b4bc5edf675615aab"
+  },
+  "assets/narration-zh/repair-f707064a7c6fd962.mp3": {
+    "bytes": 40586,
+    "sha256": "aea82314d6c75e848dde85c19683b3f18dabecf45be92d5cf062158ea850290a"
+  },
+  "assets/narration-zh/repair-f737445f932ca9e8.mp3": {
+    "bytes": 39332,
+    "sha256": "0842358f31c0dfa608a77f73dd62c7fea196784187f0ada97301b3503f214d01"
+  },
+  "assets/narration-zh/repair-f84897b558132485.mp3": {
+    "bytes": 43511,
+    "sha256": "1d922e42d3cb6889eb7c933a5931f5263333f90e93b6e3e61ebefcc597d13074"
+  },
+  "assets/narration-zh/repair-f95a956af7662271.mp3": {
+    "bytes": 44765,
+    "sha256": "b385487ecd08e9d8d0415422b2f8c95eba55fe72b6311077790469ab6e1224f2"
+  },
+  "assets/narration-zh/repair-f9cd3f8ccefd79e7.mp3": {
+    "bytes": 43511,
+    "sha256": "0a927c7e4e33be6096007706b9ed88e72d8f5834fd703a68e96ef4d45c3448a1"
+  }
+}

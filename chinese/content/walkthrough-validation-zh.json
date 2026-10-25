@@ -1,0 +1,13 @@
+{
+  "legalWinningRoute": true,
+  "actions": 261,
+  "loops": 10,
+  "endingsSeen": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "originalOracle": true,
+  "resumeAfterEveryAction": true
+}

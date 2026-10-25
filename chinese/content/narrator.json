@@ -1,0 +1,16 @@
+{
+  "voice": "Julian",
+  "voice_id": "j2FxFb20sd3xlm2pRaM5",
+  "model_id": "eleven_v3_conversational",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "direction": "Young male native Mandarin narrator: tense, self-serious, worried and firm, sincere tenderness and fear of being alone. Preserve Harry’s original character; dry humor comes from the text, never a wink or cartoon villain performance.",
+  "opening_source": "Simplified Chinese opening audition; original English Harry audition unchanged in English edition",
+  "casting_status": "Mandarin casting selected from provider language/age/tone metadata; user listening review still welcome. Three opening auditions generated.",
+  "sample_prompt": "[quietly] 昨晚，我又做了那个噩梦。我心爱的向日葵，枯萎了，死了。被谋杀了。\n[tense] 我已经不知道该怎么办了。我知道今晚就会发生，我就是知道。所以，我得先找到凶手。\n啊，我的向日葵，我日子里的光。忠实的伙伴……就算在最黑暗的时候，我也一直照料着它。也只有这件事，才让我没疯掉。\n[worried] 我不想让它死……我不想孤零零一个人……\n[firmly] 我得让它活下去。",
+  "language_code": "zh"
+}

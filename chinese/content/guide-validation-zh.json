@@ -1,0 +1,12 @@
+{
+  "assistance": true,
+  "spoilerGating": true,
+  "allFiveEndings": true,
+  "oneCluePerGameDay": true,
+  "midnightBoundary": true,
+  "saveReloadEveryAction": true,
+  "legalActions": 261,
+  "clueDays": 9,
+  "diaryFacts": 19,
+  "gameStateUnchanged": true
+}

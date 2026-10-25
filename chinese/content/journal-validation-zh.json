@@ -1,0 +1,15 @@
+{
+  "journal": true,
+  "observedMaterialOnly": true,
+  "allFiveEndingAlbums": true,
+  "partialLegacyHistory": true,
+  "boardPersistence": true,
+  "ritualHasNoGameEffect": true,
+  "originalTimeRulesForAllEightDestinations": true,
+  "departurePhaseMarks": true,
+  "pinsSurviveLoops": true,
+  "choiceContextAndOutcome": true,
+  "saveReloadEveryAction": 261,
+  "newFindings": 19,
+  "gameStateUnchanged": true
+}

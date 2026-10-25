@@ -1,0 +1,2067 @@
+{
+  "language_code": "zho",
+  "language_probability": 1.0,
+  "text": "昨晚我又做了那个噩梦。我心爱的向日葵枯萎了，死了，被谋杀了。我已经不知道该怎么办了。我知道今晚就会发生，我就是知道。所以我得先找到凶手。哎，我的向日葵，我日子里的光，忠实的伙伴。就算在最黑暗的时候，我也一直照料着它。也只有这件事儿才让我没疯掉。我不想让它死，我不想孤零零一个人，我得让它活下去。",
+  "words": [
+    {
+      "text": "昨",
+      "start": 0.12,
+      "end": 0.36,
+      "type": "word",
+      "logprob": -3.3854863431770355e-05,
+      "characters": [
+        {
+          "text": "昨",
+          "start": 0.12,
+          "end": 0.36
+        }
+      ]
+    },
+    {
+      "text": "晚",
+      "start": 0.36,
+      "end": 0.62,
+      "type": "word",
+      "logprob": -7.748573807475623e-06,
+      "characters": [
+        {
+          "text": "晚",
+          "start": 0.36,
+          "end": 0.62
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 1.32,
+      "end": 1.46,
+      "type": "word",
+      "logprob": -0.00018821375851985067,
+      "characters": [
+        {
+          "text": "我",
+          "start": 1.32,
+          "end": 1.46
+        }
+      ]
+    },
+    {
+      "text": "又",
+      "start": 1.46,
+      "end": 1.72,
+      "type": "word",
+      "logprob": -0.00018821375851985067,
+      "characters": [
+        {
+          "text": "又",
+          "start": 1.46,
+          "end": 1.72
+        }
+      ]
+    },
+    {
+      "text": "做",
+      "start": 1.72,
+      "end": 1.9,
+      "type": "word",
+      "logprob": -4.9470632802695036e-05,
+      "characters": [
+        {
+          "text": "做",
+          "start": 1.72,
+          "end": 1.9
+        }
+      ]
+    },
+    {
+      "text": "了",
+      "start": 1.9,
+      "end": 2.02,
+      "type": "word",
+      "logprob": -4.9470632802695036e-05,
+      "characters": [
+        {
+          "text": "了",
+          "start": 1.9,
+          "end": 2.02
+        }
+      ]
+    },
+    {
+      "text": "那",
+      "start": 2.02,
+      "end": 2.14,
+      "type": "word",
+      "logprob": -5.483612312673358e-06,
+      "characters": [
+        {
+          "text": "那",
+          "start": 2.02,
+          "end": 2.14
+        }
+      ]
+    },
+    {
+      "text": "个",
+      "start": 2.14,
+      "end": 2.28,
+      "type": "word",
+      "logprob": -5.483612312673358e-06,
+      "characters": [
+        {
+          "text": "个",
+          "start": 2.14,
+          "end": 2.28
+        }
+      ]
+    },
+    {
+      "text": "噩",
+      "start": 2.28,
+      "end": 2.48,
+      "type": "word",
+      "logprob": -0.2014632374048233,
+      "characters": [
+        {
+          "text": "噩",
+          "start": 2.28,
+          "end": 2.48
+        }
+      ]
+    },
+    {
+      "text": "梦",
+      "start": 2.48,
+      "end": 2.62,
+      "type": "word",
+      "logprob": -1.3470558769768104e-05,
+      "characters": [
+        {
+          "text": "梦",
+          "start": 2.48,
+          "end": 2.62
+        }
+      ]
+    },
+    {
+      "text": "。",
+      "start": 2.62,
+      "end": 2.62,
+      "type": "word",
+      "logprob": -1.9073304429184645e-05,
+      "characters": [
+        {
+          "text": "。",
+          "start": 2.62,
+          "end": 2.62
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 3.5,
+      "end": 3.62,
+      "type": "word",
+      "logprob": -4.410734163684538e-06,
+      "characters": [
+        {
+          "text": "我",
+          "start": 3.5,
+          "end": 3.62
+        }
+      ]
+    },
+    {
+      "text": "心",
+      "start": 3.62,
+      "end": 3.8,
+      "type": "word",
+      "logprob": -0.00023707917716819793,
+      "characters": [
+        {
+          "text": "心",
+          "start": 3.62,
+          "end": 3.8
+        }
+      ]
+    },
+    {
+      "text": "爱",
+      "start": 3.8,
+      "end": 3.92,
+      "type": "word",
+      "logprob": -0.000565249880310148,
+      "characters": [
+        {
+          "text": "爱",
+          "start": 3.8,
+          "end": 3.92
+        }
+      ]
+    },
+    {
+      "text": "的",
+      "start": 3.92,
+      "end": 4.019,
+      "type": "word",
+      "logprob": -0.000565249880310148,
+      "characters": [
+        {
+          "text": "的",
+          "start": 3.92,
+          "end": 4.019
+        }
+      ]
+    },
+    {
+      "text": "向",
+      "start": 4.019,
+      "end": 4.22,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07,
+      "characters": [
+        {
+          "text": "向",
+          "start": 4.019,
+          "end": 4.22
+        }
+      ]
+    },
+    {
+      "text": "日",
+      "start": 4.22,
+      "end": 4.38,
+      "type": "word",
+      "logprob": -3.576278118089249e-07,
+      "characters": [
+        {
+          "text": "日",
+          "start": 4.22,
+          "end": 4.38
+        }
+      ]
+    },
+    {
+      "text": "葵",
+      "start": 4.38,
+      "end": 4.4,
+      "type": "word",
+      "logprob": -2.6702524337451905e-05,
+      "characters": [
+        {
+          "text": "葵",
+          "start": 4.38,
+          "end": 4.4
+        }
+      ]
+    },
+    {
+      "text": "枯",
+      "start": 5.24,
+      "end": 5.48,
+      "type": "word",
+      "logprob": -7.962863310240209e-05,
+      "characters": [
+        {
+          "text": "枯",
+          "start": 5.24,
+          "end": 5.48
+        }
+      ]
+    },
+    {
+      "text": "萎",
+      "start": 5.48,
+      "end": 5.72,
+      "type": "word",
+      "logprob": -9.929640509653836e-05,
+      "characters": [
+        {
+          "text": "萎",
+          "start": 5.48,
+          "end": 5.72
+        }
+      ]
+    },
+    {
+      "text": "了",
+      "start": 5.72,
+      "end": 5.86,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "了",
+          "start": 5.72,
+          "end": 5.86
+        }
+      ]
+    },
+    {
+      "text": "，",
+      "start": 5.86,
+      "end": 6.4,
+      "type": "word",
+      "logprob": -3.576278118089249e-07,
+      "characters": [
+        {
+          "text": "，",
+          "start": 5.86,
+          "end": 6.4
+        }
+      ]
+    },
+    {
+      "text": "死",
+      "start": 6.4,
+      "end": 6.7,
+      "type": "word",
+      "logprob": -3.099436753473128e-06,
+      "characters": [
+        {
+          "text": "死",
+          "start": 6.4,
+          "end": 6.7
+        }
+      ]
+    },
+    {
+      "text": "了",
+      "start": 6.7,
+      "end": 6.84,
+      "type": "word",
+      "logprob": -3.099436753473128e-06,
+      "characters": [
+        {
+          "text": "了",
+          "start": 6.7,
+          "end": 6.84
+        }
+      ]
+    },
+    {
+      "text": "，",
+      "start": 6.84,
+      "end": 7.56,
+      "type": "word",
+      "logprob": -5.960462772236497e-07,
+      "characters": [
+        {
+          "text": "，",
+          "start": 6.84,
+          "end": 7.56
+        }
+      ]
+    },
+    {
+      "text": "被",
+      "start": 7.56,
+      "end": 7.72,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "被",
+          "start": 7.56,
+          "end": 7.72
+        }
+      ]
+    },
+    {
+      "text": "谋",
+      "start": 7.72,
+      "end": 7.98,
+      "type": "word",
+      "logprob": -0.000604565953835845,
+      "characters": [
+        {
+          "text": "谋",
+          "start": 7.72,
+          "end": 7.98
+        }
+      ]
+    },
+    {
+      "text": "杀",
+      "start": 7.98,
+      "end": 8.26,
+      "type": "word",
+      "logprob": -0.030665304511785507,
+      "characters": [
+        {
+          "text": "杀",
+          "start": 7.98,
+          "end": 8.26
+        }
+      ]
+    },
+    {
+      "text": "了",
+      "start": 8.26,
+      "end": 8.38,
+      "type": "word",
+      "logprob": -0.030665304511785507,
+      "characters": [
+        {
+          "text": "了",
+          "start": 8.26,
+          "end": 8.38
+        }
+      ]
+    },
+    {
+      "text": "。",
+      "start": 8.38,
+      "end": 8.38,
+      "type": "word",
+      "logprob": -8.344646857949556e-07,
+      "characters": [
+        {
+          "text": "。",
+          "start": 8.38,
+          "end": 8.38
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 9.06,
+      "end": 9.16,
+      "type": "word",
+      "logprob": -7.152555099310121e-07,
+      "characters": [
+        {
+          "text": "我",
+          "start": 9.06,
+          "end": 9.16
+        }
+      ]
+    },
+    {
+      "text": "已",
+      "start": 9.16,
+      "end": 9.28,
+      "type": "word",
+      "logprob": -7.152555099310121e-07,
+      "characters": [
+        {
+          "text": "已",
+          "start": 9.16,
+          "end": 9.28
+        }
+      ]
+    },
+    {
+      "text": "经",
+      "start": 9.28,
+      "end": 9.42,
+      "type": "word",
+      "logprob": -7.152555099310121e-07,
+      "characters": [
+        {
+          "text": "经",
+          "start": 9.28,
+          "end": 9.42
+        }
+      ]
+    },
+    {
+      "text": "不",
+      "start": 9.42,
+      "end": 9.52,
+      "type": "word",
+      "logprob": -1.311301275563892e-06,
+      "characters": [
+        {
+          "text": "不",
+          "start": 9.42,
+          "end": 9.52
+        }
+      ]
+    },
+    {
+      "text": "知",
+      "start": 9.52,
+      "end": 9.62,
+      "type": "word",
+      "logprob": -1.311301275563892e-06,
+      "characters": [
+        {
+          "text": "知",
+          "start": 9.52,
+          "end": 9.62
+        }
+      ]
+    },
+    {
+      "text": "道",
+      "start": 9.62,
+      "end": 9.78,
+      "type": "word",
+      "logprob": -1.311301275563892e-06,
+      "characters": [
+        {
+          "text": "道",
+          "start": 9.62,
+          "end": 9.78
+        }
+      ]
+    },
+    {
+      "text": "该",
+      "start": 9.78,
+      "end": 9.94,
+      "type": "word",
+      "logprob": -3.3378546504536644e-06,
+      "characters": [
+        {
+          "text": "该",
+          "start": 9.78,
+          "end": 9.94
+        }
+      ]
+    },
+    {
+      "text": "怎",
+      "start": 9.94,
+      "end": 10.04,
+      "type": "word",
+      "logprob": -2.3841830625315197e-06,
+      "characters": [
+        {
+          "text": "怎",
+          "start": 9.94,
+          "end": 10.04
+        }
+      ]
+    },
+    {
+      "text": "么",
+      "start": 10.04,
+      "end": 10.2,
+      "type": "word",
+      "logprob": -2.3841830625315197e-06,
+      "characters": [
+        {
+          "text": "么",
+          "start": 10.04,
+          "end": 10.2
+        }
+      ]
+    },
+    {
+      "text": "办",
+      "start": 10.2,
+      "end": 10.38,
+      "type": "word",
+      "logprob": -2.3841830625315197e-06,
+      "characters": [
+        {
+          "text": "办",
+          "start": 10.2,
+          "end": 10.38
+        }
+      ]
+    },
+    {
+      "text": "了",
+      "start": 10.38,
+      "end": 10.46,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "了",
+          "start": 10.38,
+          "end": 10.46
+        }
+      ]
+    },
+    {
+      "text": "。",
+      "start": 10.46,
+      "end": 10.46,
+      "type": "word",
+      "logprob": -2.2053474822314456e-05,
+      "characters": [
+        {
+          "text": "。",
+          "start": 10.46,
+          "end": 10.46
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 10.88,
+      "end": 11.04,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "我",
+          "start": 10.88,
+          "end": 11.04
+        }
+      ]
+    },
+    {
+      "text": "知",
+      "start": 11.04,
+      "end": 11.2,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "知",
+          "start": 11.04,
+          "end": 11.2
+        }
+      ]
+    },
+    {
+      "text": "道",
+      "start": 11.2,
+      "end": 11.36,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "道",
+          "start": 11.2,
+          "end": 11.36
+        }
+      ]
+    },
+    {
+      "text": "今",
+      "start": 11.36,
+      "end": 11.48,
+      "type": "word",
+      "logprob": -7.152555099310121e-07,
+      "characters": [
+        {
+          "text": "今",
+          "start": 11.36,
+          "end": 11.48
+        }
+      ]
+    },
+    {
+      "text": "晚",
+      "start": 11.48,
+      "end": 11.62,
+      "type": "word",
+      "logprob": -4.768370445162873e-07,
+      "characters": [
+        {
+          "text": "晚",
+          "start": 11.48,
+          "end": 11.62
+        }
+      ]
+    },
+    {
+      "text": "就",
+      "start": 11.62,
+      "end": 11.72,
+      "type": "word",
+      "logprob": -0.0007914748275652528,
+      "characters": [
+        {
+          "text": "就",
+          "start": 11.62,
+          "end": 11.72
+        }
+      ]
+    },
+    {
+      "text": "会",
+      "start": 11.72,
+      "end": 11.84,
+      "type": "word",
+      "logprob": -0.0007914748275652528,
+      "characters": [
+        {
+          "text": "会",
+          "start": 11.72,
+          "end": 11.84
+        }
+      ]
+    },
+    {
+      "text": "发",
+      "start": 11.86,
+      "end": 12.0,
+      "type": "word",
+      "logprob": -8.821448318485636e-06,
+      "characters": [
+        {
+          "text": "发",
+          "start": 11.86,
+          "end": 12.0
+        }
+      ]
+    },
+    {
+      "text": "生",
+      "start": 12.0,
+      "end": 12.18,
+      "type": "word",
+      "logprob": -8.821448318485636e-06,
+      "characters": [
+        {
+          "text": "生",
+          "start": 12.0,
+          "end": 12.18
+        }
+      ]
+    },
+    {
+      "text": "，",
+      "start": 12.48,
+      "end": 12.5,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07,
+      "characters": [
+        {
+          "text": "，",
+          "start": 12.48,
+          "end": 12.5
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 12.5,
+      "end": 12.62,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "我",
+          "start": 12.5,
+          "end": 12.62
+        }
+      ]
+    },
+    {
+      "text": "就",
+      "start": 12.62,
+      "end": 12.82,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07,
+      "characters": [
+        {
+          "text": "就",
+          "start": 12.62,
+          "end": 12.82
+        }
+      ]
+    },
+    {
+      "text": "是",
+      "start": 12.82,
+      "end": 12.98,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07,
+      "characters": [
+        {
+          "text": "是",
+          "start": 12.82,
+          "end": 12.98
+        }
+      ]
+    },
+    {
+      "text": "知",
+      "start": 12.98,
+      "end": 13.16,
+      "type": "word",
+      "logprob": -4.410734163684538e-06,
+      "characters": [
+        {
+          "text": "知",
+          "start": 12.98,
+          "end": 13.16
+        }
+      ]
+    },
+    {
+      "text": "道",
+      "start": 13.16,
+      "end": 13.28,
+      "type": "word",
+      "logprob": -4.410734163684538e-06,
+      "characters": [
+        {
+          "text": "道",
+          "start": 13.16,
+          "end": 13.28
+        }
+      ]
+    },
+    {
+      "text": "。",
+      "start": 13.28,
+      "end": 13.28,
+      "type": "word",
+      "logprob": -0.00048828122089616954,
+      "characters": [
+        {
+          "text": "。",
+          "start": 13.28,
+          "end": 13.28
+        }
+      ]
+    },
+    {
+      "text": "所",
+      "start": 13.88,
+      "end": 14.02,
+      "type": "word",
+      "logprob": -0.17974653840065002,
+      "characters": [
+        {
+          "text": "所",
+          "start": 13.88,
+          "end": 14.02
+        }
+      ]
+    },
+    {
+      "text": "以",
+      "start": 14.02,
+      "end": 14.16,
+      "type": "word",
+      "logprob": -0.17974653840065002,
+      "characters": [
+        {
+          "text": "以",
+          "start": 14.02,
+          "end": 14.16
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 14.78,
+      "end": 14.9,
+      "type": "word",
+      "logprob": -0.17974653840065002,
+      "characters": [
+        {
+          "text": "我",
+          "start": 14.78,
+          "end": 14.9
+        }
+      ]
+    },
+    {
+      "text": "得",
+      "start": 14.9,
+      "end": 15.06,
+      "type": "word",
+      "logprob": -2.50339189733495e-06,
+      "characters": [
+        {
+          "text": "得",
+          "start": 14.9,
+          "end": 15.06
+        }
+      ]
+    },
+    {
+      "text": "先",
+      "start": 15.06,
+      "end": 15.32,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "先",
+          "start": 15.06,
+          "end": 15.32
+        }
+      ]
+    },
+    {
+      "text": "找",
+      "start": 15.32,
+      "end": 15.48,
+      "type": "word",
+      "logprob": -5.245195097813848e-06,
+      "characters": [
+        {
+          "text": "找",
+          "start": 15.32,
+          "end": 15.48
+        }
+      ]
+    },
+    {
+      "text": "到",
+      "start": 15.48,
+      "end": 15.62,
+      "type": "word",
+      "logprob": -5.245195097813848e-06,
+      "characters": [
+        {
+          "text": "到",
+          "start": 15.48,
+          "end": 15.62
+        }
+      ]
+    },
+    {
+      "text": "凶",
+      "start": 15.62,
+      "end": 15.88,
+      "type": "word",
+      "logprob": -1.847726889536716e-05,
+      "characters": [
+        {
+          "text": "凶",
+          "start": 15.62,
+          "end": 15.88
+        }
+      ]
+    },
+    {
+      "text": "手",
+      "start": 15.88,
+      "end": 16.059,
+      "type": "word",
+      "logprob": -5.960462772236497e-07,
+      "characters": [
+        {
+          "text": "手",
+          "start": 15.88,
+          "end": 16.059
+        }
+      ]
+    },
+    {
+      "text": "。",
+      "start": 16.059,
+      "end": 16.059,
+      "type": "word",
+      "logprob": -0.00035684893373399973,
+      "characters": [
+        {
+          "text": "。",
+          "start": 16.059,
+          "end": 16.059
+        }
+      ]
+    },
+    {
+      "text": "哎",
+      "start": 17.2,
+      "end": 17.38,
+      "type": "word",
+      "logprob": -0.162132129073143,
+      "characters": [
+        {
+          "text": "哎",
+          "start": 17.2,
+          "end": 17.38
+        }
+      ]
+    },
+    {
+      "text": "，",
+      "start": 17.38,
+      "end": 17.9,
+      "type": "word",
+      "logprob": -1.7881377516459906e-06,
+      "characters": [
+        {
+          "text": "，",
+          "start": 17.38,
+          "end": 17.9
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 17.9,
+      "end": 18.0,
+      "type": "word",
+      "logprob": -3.576278118089249e-07,
+      "characters": [
+        {
+          "text": "我",
+          "start": 17.9,
+          "end": 18.0
+        }
+      ]
+    },
+    {
+      "text": "的",
+      "start": 18.0,
+      "end": 18.14,
+      "type": "word",
+      "logprob": -3.576278118089249e-07,
+      "characters": [
+        {
+          "text": "的",
+          "start": 18.0,
+          "end": 18.14
+        }
+      ]
+    },
+    {
+      "text": "向",
+      "start": 18.14,
+      "end": 18.38,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "向",
+          "start": 18.14,
+          "end": 18.38
+        }
+      ]
+    },
+    {
+      "text": "日",
+      "start": 18.38,
+      "end": 18.56,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "日",
+          "start": 18.38,
+          "end": 18.56
+        }
+      ]
+    },
+    {
+      "text": "葵",
+      "start": 18.56,
+      "end": 18.58,
+      "type": "word",
+      "logprob": -6.6756979322235566e-06,
+      "characters": [
+        {
+          "text": "葵",
+          "start": 18.56,
+          "end": 18.58
+        }
+      ]
+    },
+    {
+      "text": "，",
+      "start": 18.84,
+      "end": 19.44,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "，",
+          "start": 18.84,
+          "end": 19.44
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 19.44,
+      "end": 19.56,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "我",
+          "start": 19.44,
+          "end": 19.56
+        }
+      ]
+    },
+    {
+      "text": "日",
+      "start": 19.56,
+      "end": 19.78,
+      "type": "word",
+      "logprob": -0.0013460394693538547,
+      "characters": [
+        {
+          "text": "日",
+          "start": 19.56,
+          "end": 19.78
+        }
+      ]
+    },
+    {
+      "text": "子",
+      "start": 19.78,
+      "end": 19.9,
+      "type": "word",
+      "logprob": -0.0013460394693538547,
+      "characters": [
+        {
+          "text": "子",
+          "start": 19.78,
+          "end": 19.9
+        }
+      ]
+    },
+    {
+      "text": "里",
+      "start": 19.9,
+      "end": 20.04,
+      "type": "word",
+      "logprob": -1.3232143828645349e-05,
+      "characters": [
+        {
+          "text": "里",
+          "start": 19.9,
+          "end": 20.04
+        }
+      ]
+    },
+    {
+      "text": "的",
+      "start": 20.04,
+      "end": 20.18,
+      "type": "word",
+      "logprob": -1.3232143828645349e-05,
+      "characters": [
+        {
+          "text": "的",
+          "start": 20.04,
+          "end": 20.18
+        }
+      ]
+    },
+    {
+      "text": "光",
+      "start": 20.18,
+      "end": 20.42,
+      "type": "word",
+      "logprob": -5.960462772236497e-07,
+      "characters": [
+        {
+          "text": "光",
+          "start": 20.18,
+          "end": 20.42
+        }
+      ]
+    },
+    {
+      "text": "，",
+      "start": 20.42,
+      "end": 21.0,
+      "type": "word",
+      "logprob": -3.933898824470816e-06,
+      "characters": [
+        {
+          "text": "，",
+          "start": 20.42,
+          "end": 21.0
+        }
+      ]
+    },
+    {
+      "text": "忠",
+      "start": 21.0,
+      "end": 21.26,
+      "type": "word",
+      "logprob": -2.622600959512056e-06,
+      "characters": [
+        {
+          "text": "忠",
+          "start": 21.0,
+          "end": 21.26
+        }
+      ]
+    },
+    {
+      "text": "实",
+      "start": 21.26,
+      "end": 21.4,
+      "type": "word",
+      "logprob": -0.0006498370785266161,
+      "characters": [
+        {
+          "text": "实",
+          "start": 21.26,
+          "end": 21.4
+        }
+      ]
+    },
+    {
+      "text": "的",
+      "start": 21.4,
+      "end": 21.52,
+      "type": "word",
+      "logprob": -0.0006498370785266161,
+      "characters": [
+        {
+          "text": "的",
+          "start": 21.4,
+          "end": 21.52
+        }
+      ]
+    },
+    {
+      "text": "伙",
+      "start": 21.52,
+      "end": 21.76,
+      "type": "word",
+      "logprob": -4.207999518257566e-05,
+      "characters": [
+        {
+          "text": "伙",
+          "start": 21.52,
+          "end": 21.76
+        }
+      ]
+    },
+    {
+      "text": "伴",
+      "start": 21.76,
+      "end": 21.92,
+      "type": "word",
+      "logprob": -4.207999518257566e-05,
+      "characters": [
+        {
+          "text": "伴",
+          "start": 21.76,
+          "end": 21.92
+        }
+      ]
+    },
+    {
+      "text": "。",
+      "start": 21.92,
+      "end": 21.92,
+      "type": "word",
+      "logprob": -0.0010333680547773838,
+      "characters": [
+        {
+          "text": "。",
+          "start": 21.92,
+          "end": 21.92
+        }
+      ]
+    },
+    {
+      "text": "就",
+      "start": 22.6,
+      "end": 22.8,
+      "type": "word",
+      "logprob": -0.0001842805795604363,
+      "characters": [
+        {
+          "text": "就",
+          "start": 22.6,
+          "end": 22.8
+        }
+      ]
+    },
+    {
+      "text": "算",
+      "start": 22.8,
+      "end": 22.96,
+      "type": "word",
+      "logprob": -0.0001842805795604363,
+      "characters": [
+        {
+          "text": "算",
+          "start": 22.8,
+          "end": 22.96
+        }
+      ]
+    },
+    {
+      "text": "在",
+      "start": 22.96,
+      "end": 23.1,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "在",
+          "start": 22.96,
+          "end": 23.1
+        }
+      ]
+    },
+    {
+      "text": "最",
+      "start": 23.1,
+      "end": 23.3,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "最",
+          "start": 23.1,
+          "end": 23.3
+        }
+      ]
+    },
+    {
+      "text": "黑",
+      "start": 23.3,
+      "end": 23.44,
+      "type": "word",
+      "logprob": -9.536738616588991e-07,
+      "characters": [
+        {
+          "text": "黑",
+          "start": 23.3,
+          "end": 23.44
+        }
+      ]
+    },
+    {
+      "text": "暗",
+      "start": 23.44,
+      "end": 23.58,
+      "type": "word",
+      "logprob": -9.536738616588991e-07,
+      "characters": [
+        {
+          "text": "暗",
+          "start": 23.44,
+          "end": 23.58
+        }
+      ]
+    },
+    {
+      "text": "的",
+      "start": 23.58,
+      "end": 23.7,
+      "type": "word",
+      "logprob": -3.683499380713329e-05,
+      "characters": [
+        {
+          "text": "的",
+          "start": 23.58,
+          "end": 23.7
+        }
+      ]
+    },
+    {
+      "text": "时",
+      "start": 23.7,
+      "end": 23.88,
+      "type": "word",
+      "logprob": -3.683499380713329e-05,
+      "characters": [
+        {
+          "text": "时",
+          "start": 23.7,
+          "end": 23.88
+        }
+      ]
+    },
+    {
+      "text": "候",
+      "start": 23.88,
+      "end": 23.94,
+      "type": "word",
+      "logprob": -3.683499380713329e-05,
+      "characters": [
+        {
+          "text": "候",
+          "start": 23.88,
+          "end": 23.94
+        }
+      ]
+    },
+    {
+      "text": "，",
+      "start": 24.18,
+      "end": 24.2,
+      "type": "word",
+      "logprob": -2.622600959512056e-06,
+      "characters": [
+        {
+          "text": "，",
+          "start": 24.18,
+          "end": 24.2
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 24.2,
+      "end": 24.3,
+      "type": "word",
+      "logprob": -1.0728830375228426e-06,
+      "characters": [
+        {
+          "text": "我",
+          "start": 24.2,
+          "end": 24.3
+        }
+      ]
+    },
+    {
+      "text": "也",
+      "start": 24.48,
+      "end": 24.5,
+      "type": "word",
+      "logprob": -1.0728830375228426e-06,
+      "characters": [
+        {
+          "text": "也",
+          "start": 24.48,
+          "end": 24.5
+        }
+      ]
+    },
+    {
+      "text": "一",
+      "start": 24.5,
+      "end": 24.72,
+      "type": "word",
+      "logprob": -1.0728830375228426e-06,
+      "characters": [
+        {
+          "text": "一",
+          "start": 24.5,
+          "end": 24.72
+        }
+      ]
+    },
+    {
+      "text": "直",
+      "start": 24.72,
+      "end": 24.94,
+      "type": "word",
+      "logprob": -1.0728830375228426e-06,
+      "characters": [
+        {
+          "text": "直",
+          "start": 24.72,
+          "end": 24.94
+        }
+      ]
+    },
+    {
+      "text": "照",
+      "start": 24.94,
+      "end": 25.14,
+      "type": "word",
+      "logprob": -3.7788631743751466e-05,
+      "characters": [
+        {
+          "text": "照",
+          "start": 24.94,
+          "end": 25.14
+        }
+      ]
+    },
+    {
+      "text": "料",
+      "start": 25.14,
+      "end": 25.32,
+      "type": "word",
+      "logprob": -0.008323976770043373,
+      "characters": [
+        {
+          "text": "料",
+          "start": 25.14,
+          "end": 25.32
+        }
+      ]
+    },
+    {
+      "text": "着",
+      "start": 25.32,
+      "end": 25.44,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "着",
+          "start": 25.32,
+          "end": 25.44
+        }
+      ]
+    },
+    {
+      "text": "它",
+      "start": 25.44,
+      "end": 25.6,
+      "type": "word",
+      "logprob": -4.4225667807040736e-05,
+      "characters": [
+        {
+          "text": "它",
+          "start": 25.44,
+          "end": 25.6
+        }
+      ]
+    },
+    {
+      "text": "。",
+      "start": 25.6,
+      "end": 25.6,
+      "type": "word",
+      "logprob": -0.00861463975161314,
+      "characters": [
+        {
+          "text": "。",
+          "start": 25.6,
+          "end": 25.6
+        }
+      ]
+    },
+    {
+      "text": "也",
+      "start": 26.44,
+      "end": 26.62,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "也",
+          "start": 26.44,
+          "end": 26.62
+        }
+      ]
+    },
+    {
+      "text": "只",
+      "start": 26.62,
+      "end": 26.78,
+      "type": "word",
+      "logprob": -1.7881377516459906e-06,
+      "characters": [
+        {
+          "text": "只",
+          "start": 26.62,
+          "end": 26.78
+        }
+      ]
+    },
+    {
+      "text": "有",
+      "start": 26.78,
+      "end": 26.92,
+      "type": "word",
+      "logprob": -1.7881377516459906e-06,
+      "characters": [
+        {
+          "text": "有",
+          "start": 26.78,
+          "end": 26.92
+        }
+      ]
+    },
+    {
+      "text": "这",
+      "start": 26.92,
+      "end": 27.04,
+      "type": "word",
+      "logprob": -0.00018702188390307128,
+      "characters": [
+        {
+          "text": "这",
+          "start": 26.92,
+          "end": 27.04
+        }
+      ]
+    },
+    {
+      "text": "件",
+      "start": 27.04,
+      "end": 27.24,
+      "type": "word",
+      "logprob": -0.00018702188390307128,
+      "characters": [
+        {
+          "text": "件",
+          "start": 27.04,
+          "end": 27.24
+        }
+      ]
+    },
+    {
+      "text": "事",
+      "start": 27.24,
+      "end": 27.42,
+      "type": "word",
+      "logprob": -0.00018702188390307128,
+      "characters": [
+        {
+          "text": "事",
+          "start": 27.24,
+          "end": 27.42
+        }
+      ]
+    },
+    {
+      "text": "儿",
+      "start": 27.42,
+      "end": 27.94,
+      "type": "word",
+      "logprob": -0.11290327459573746,
+      "characters": [
+        {
+          "text": "儿",
+          "start": 27.42,
+          "end": 27.94
+        }
+      ]
+    },
+    {
+      "text": "才",
+      "start": 27.94,
+      "end": 28.08,
+      "type": "word",
+      "logprob": -0.0017033604672178626,
+      "characters": [
+        {
+          "text": "才",
+          "start": 27.94,
+          "end": 28.08
+        }
+      ]
+    },
+    {
+      "text": "让",
+      "start": 28.08,
+      "end": 28.22,
+      "type": "word",
+      "logprob": -1.4543427823809907e-05,
+      "characters": [
+        {
+          "text": "让",
+          "start": 28.08,
+          "end": 28.22
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 28.22,
+      "end": 28.32,
+      "type": "word",
+      "logprob": -1.4543427823809907e-05,
+      "characters": [
+        {
+          "text": "我",
+          "start": 28.22,
+          "end": 28.32
+        }
+      ]
+    },
+    {
+      "text": "没",
+      "start": 28.32,
+      "end": 28.5,
+      "type": "word",
+      "logprob": -7.033323527139146e-06,
+      "characters": [
+        {
+          "text": "没",
+          "start": 28.32,
+          "end": 28.5
+        }
+      ]
+    },
+    {
+      "text": "疯",
+      "start": 28.5,
+      "end": 28.7,
+      "type": "word",
+      "logprob": -7.271740287251305e-06,
+      "characters": [
+        {
+          "text": "疯",
+          "start": 28.5,
+          "end": 28.7
+        }
+      ]
+    },
+    {
+      "text": "掉",
+      "start": 28.7,
+      "end": 28.86,
+      "type": "word",
+      "logprob": -7.390948667307384e-06,
+      "characters": [
+        {
+          "text": "掉",
+          "start": 28.7,
+          "end": 28.86
+        }
+      ]
+    },
+    {
+      "text": "。",
+      "start": 28.86,
+      "end": 28.86,
+      "type": "word",
+      "logprob": -8.344646857949556e-07,
+      "characters": [
+        {
+          "text": "。",
+          "start": 28.86,
+          "end": 28.86
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 30.02,
+      "end": 30.12,
+      "type": "word",
+      "logprob": -8.344646857949556e-07,
+      "characters": [
+        {
+          "text": "我",
+          "start": 30.02,
+          "end": 30.12
+        }
+      ]
+    },
+    {
+      "text": "不",
+      "start": 30.12,
+      "end": 30.3,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "不",
+          "start": 30.12,
+          "end": 30.3
+        }
+      ]
+    },
+    {
+      "text": "想",
+      "start": 30.3,
+      "end": 30.48,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "想",
+          "start": 30.3,
+          "end": 30.48
+        }
+      ]
+    },
+    {
+      "text": "让",
+      "start": 30.48,
+      "end": 30.64,
+      "type": "word",
+      "logprob": -0.002030455507338047,
+      "characters": [
+        {
+          "text": "让",
+          "start": 30.48,
+          "end": 30.64
+        }
+      ]
+    },
+    {
+      "text": "它",
+      "start": 30.64,
+      "end": 30.82,
+      "type": "word",
+      "logprob": -9.536738616588991e-07,
+      "characters": [
+        {
+          "text": "它",
+          "start": 30.64,
+          "end": 30.82
+        }
+      ]
+    },
+    {
+      "text": "死",
+      "start": 30.82,
+      "end": 31.02,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "死",
+          "start": 30.82,
+          "end": 31.02
+        }
+      ]
+    },
+    {
+      "text": "，",
+      "start": 31.02,
+      "end": 31.56,
+      "type": "word",
+      "logprob": -6.794906312279636e-06,
+      "characters": [
+        {
+          "text": "，",
+          "start": 31.02,
+          "end": 31.56
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 31.62,
+      "end": 31.72,
+      "type": "word",
+      "logprob": -2.50339189733495e-06,
+      "characters": [
+        {
+          "text": "我",
+          "start": 31.62,
+          "end": 31.72
+        }
+      ]
+    },
+    {
+      "text": "不",
+      "start": 31.72,
+      "end": 31.92,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "不",
+          "start": 31.72,
+          "end": 31.92
+        }
+      ]
+    },
+    {
+      "text": "想",
+      "start": 31.92,
+      "end": 32.159,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "想",
+          "start": 31.92,
+          "end": 32.159
+        }
+      ]
+    },
+    {
+      "text": "孤",
+      "start": 32.159,
+      "end": 32.32,
+      "type": "word",
+      "logprob": -2.884823152271565e-05,
+      "characters": [
+        {
+          "text": "孤",
+          "start": 32.159,
+          "end": 32.32
+        }
+      ]
+    },
+    {
+      "text": "零",
+      "start": 32.32,
+      "end": 32.46,
+      "type": "word",
+      "logprob": -0.014075060375034809,
+      "characters": [
+        {
+          "text": "零",
+          "start": 32.32,
+          "end": 32.46
+        }
+      ]
+    },
+    {
+      "text": "零",
+      "start": 32.46,
+      "end": 32.659,
+      "type": "word",
+      "logprob": -3.814689989667386e-06,
+      "characters": [
+        {
+          "text": "零",
+          "start": 32.46,
+          "end": 32.659
+        }
+      ]
+    },
+    {
+      "text": "一",
+      "start": 32.659,
+      "end": 32.86,
+      "type": "word",
+      "logprob": -4.7801782784517854e-05,
+      "characters": [
+        {
+          "text": "一",
+          "start": 32.659,
+          "end": 32.86
+        }
+      ]
+    },
+    {
+      "text": "个",
+      "start": 32.86,
+      "end": 33.0,
+      "type": "word",
+      "logprob": -4.7801782784517854e-05,
+      "characters": [
+        {
+          "text": "个",
+          "start": 32.86,
+          "end": 33.0
+        }
+      ]
+    },
+    {
+      "text": "人",
+      "start": 33.2,
+      "end": 33.24,
+      "type": "word",
+      "logprob": -4.7801782784517854e-05,
+      "characters": [
+        {
+          "text": "人",
+          "start": 33.2,
+          "end": 33.24
+        }
+      ]
+    },
+    {
+      "text": "，",
+      "start": 33.24,
+      "end": 33.36,
+      "type": "word",
+      "logprob": -2.4318398573086597e-05,
+      "characters": [
+        {
+          "text": "，",
+          "start": 33.24,
+          "end": 33.36
+        }
+      ]
+    },
+    {
+      "text": "我",
+      "start": 34.1,
+      "end": 34.22,
+      "type": "word",
+      "logprob": 0.0,
+      "characters": [
+        {
+          "text": "我",
+          "start": 34.1,
+          "end": 34.22
+        }
+      ]
+    },
+    {
+      "text": "得",
+      "start": 34.22,
+      "end": 34.3,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "得",
+          "start": 34.22,
+          "end": 34.3
+        }
+      ]
+    },
+    {
+      "text": "让",
+      "start": 34.3,
+      "end": 34.44,
+      "type": "word",
+      "logprob": -0.0015541153261438012,
+      "characters": [
+        {
+          "text": "让",
+          "start": 34.3,
+          "end": 34.44
+        }
+      ]
+    },
+    {
+      "text": "它",
+      "start": 34.44,
+      "end": 34.58,
+      "type": "word",
+      "logprob": -1.5497195136049413e-06,
+      "characters": [
+        {
+          "text": "它",
+          "start": 34.44,
+          "end": 34.58
+        }
+      ]
+    },
+    {
+      "text": "活",
+      "start": 34.58,
+      "end": 34.72,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07,
+      "characters": [
+        {
+          "text": "活",
+          "start": 34.58,
+          "end": 34.72
+        }
+      ]
+    },
+    {
+      "text": "下",
+      "start": 34.84,
+      "end": 34.92,
+      "type": "word",
+      "logprob": -2.145764938177308e-06,
+      "characters": [
+        {
+          "text": "下",
+          "start": 34.84,
+          "end": 34.92
+        }
+      ]
+    },
+    {
+      "text": "去",
+      "start": 35.0,
+      "end": 35.04,
+      "type": "word",
+      "logprob": -2.145764938177308e-06,
+      "characters": [
+        {
+          "text": "去",
+          "start": 35.0,
+          "end": 35.04
+        }
+      ]
+    },
+    {
+      "text": "。",
+      "start": 35.04,
+      "end": 35.04,
+      "type": "word",
+      "logprob": -9.536738616588991e-07,
+      "characters": [
+        {
+          "text": "。",
+          "start": 35.04,
+          "end": 35.04
+        }
+      ]
+    }
+  ],
+  "transcription_id": "st2w2HWAfth7He0qQMZC",
+  "audio_duration_secs": 35.36
+}

@@ -1,0 +1,21 @@
+{
+  "notebookUI": "DOM and simulated media integration",
+  "boardPinAndTheory": true,
+  "keyboardAndPointerMovement": true,
+  "connectionsAndCrossouts": true,
+  "titleEditingPreservesSave": true,
+  "ritualPreservesClockAndVoice": true,
+  "mapPinsAndVisitMarks": true,
+  "echoDoesNotChoose": true,
+  "endingSpoilerGate": true,
+  "albumSeparateNarrator": true,
+  "albumRestoresPositionAndPause": true,
+  "titleAlbumDoesNotResumeGame": true,
+  "resetSkipAndAutomatic": true,
+  "resetWhileHidden": true,
+  "reducedMotion": true,
+  "firstDiscoveryOnly": true,
+  "diaryDoesNotUseClue": true,
+  "legalWinningRoute": 261,
+  "visualBrowserQA": false
+}

@@ -1,0 +1,2741 @@
+[
+  {
+    "key": "1840-1842",
+    "ids": [
+      1840,
+      1842
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "001",
+    "introNode": "intro1",
+    "text": "This town has always had this old dumpster full of junk. Piles of trash, car wheels, metal doors, and plastic. You can find almost anything in here if you search long enough, but almost no one comes here. That’s precisely why I figured this could be the perfect hiding place for the murderer.\nI decided to..."
+  },
+  {
+    "key": "1840-1841-1842",
+    "ids": [
+      1840,
+      1841,
+      1842
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "001",
+    "introNode": "introN",
+    "text": "This town has always had this old dumpster full of junk. Piles of trash, car wheels, metal doors, and plastic. You can find almost anything in here if you search long enough, but almost no one comes here. That’s precisely why I figured this could be the perfect hiding place for the murderer.\nI thought I’d be alone, but apparently I’ve got some company. I spot the town’s hobo leaning against a broken car, probably drunk. I wondered if it wouldn’t be best to just ignore him.\nI decided to..."
+  },
+  {
+    "key": "1849",
+    "ids": [
+      1849
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "intro",
+    "introNode": "introN",
+    "text": "I decided to visit our town’s water processing plant. After all, sunflowers need nothing but two things to live: sunshine and water. Since the sun was probably out of reach, I figured the murderer might try to make his move on my sunflower’s only other vulnerability - water."
+  },
+  {
+    "key": "1851-1852",
+    "ids": [
+      1851,
+      1852
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "001",
+    "introNode": "intro1",
+    "text": "I went to the abandoned warehouses on the lonely side of town looking for clues, and saw the sunrise on metal, rust and broken glass, wild dusty bushes, ragged quiet. Then I..."
+  },
+  {
+    "key": "1851-1854",
+    "ids": [
+      1851,
+      1854
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "001",
+    "introNode": "intro1",
+    "text": "I went to the abandoned warehouses on the lonely side of town looking for clues, and saw the sun directing a haze of floating orange dust soaked light towards me. Then I..."
+  },
+  {
+    "key": "1851-1853",
+    "ids": [
+      1851,
+      1853
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "001",
+    "introNode": "introN",
+    "text": "I went to the abandoned warehouses on the lonely side of town looking for clues, and Then I..."
+  },
+  {
+    "key": "1851-1855",
+    "ids": [
+      1851,
+      1855
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "001",
+    "introNode": "introN",
+    "text": "I went to the abandoned warehouses on the lonely side of town looking for clues, and saw the street lights buzzing with electric delight over the abandoned and empty streets. I walked through thick darkness broken by cones of yellow. I walked through the futility of it all. Then I..."
+  },
+  {
+    "key": "1861",
+    "ids": [
+      1861
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "001",
+    "introNode": "introN",
+    "text": "I went home and made sure everything was all right. My flat is small, so, living there all alone, not much tends to happen in it. After watering my sunflower, I decided to..."
+  },
+  {
+    "key": "1867",
+    "ids": [
+      1867
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "001",
+    "introNode": "intro1",
+    "text": "I strolled towards the school, an old brick building surrounded by a tall black iron fence.\nOne is never too old to learn, right? As I got closer I realized how good it felt knowing I was free to walk away whenever I wanted. Upon arriving, I..."
+  },
+  {
+    "key": "1873",
+    "ids": [
+      1873
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "001",
+    "introNode": "introN",
+    "text": "I decided to take a stroll through the town’s park, thinking that perhaps it would help me clear my thoughts. It was almost silent there, except for the refreshing sound of the wind through the leaves. I liked the park even though it had no sunflowers - I had looked.\nAs I was walking around, I spotted..."
+  },
+  {
+    "key": "1880",
+    "ids": [
+      1880
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "001",
+    "introNode": "introN",
+    "text": "My search for new clues led me to the main avenue of the town. Everyone passes through here at some point, so I figured that, logically, the assassin would do so too. As soon as I came to the avenue, my attention was caught by..."
+  },
+  {
+    "key": "1881",
+    "ids": [
+      1881
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "001",
+    "introNode": "intro1",
+    "text": "I came back to the Avenue. I could feel there was something left for me to do there. As soon as I got there, I headed to..."
+  },
+  {
+    "key": "1886",
+    "ids": [
+      1886
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "001",
+    "introNode": "introN",
+    "text": "Fermat pizza shop has been there forever. Some say it is a hole full of cockroaches, which is true. It is also the best pizza you can find in town. And the place to be to gather information and gossip."
+  },
+  {
+    "key": "1887",
+    "ids": [
+      1887
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "001",
+    "introNode": "introN",
+    "text": "I went back to the pizza place. It was hot in there."
+  },
+  {
+    "key": "diary",
+    "ids": [
+      1890,
+      1891,
+      1895,
+      1896,
+      1898,
+      1899
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "002",
+    "introNode": "introN",
+    "text": "... write down all the clues I had found so far, to get a clearer picture of my progress.\n - I found a cap on some bushes next to the warehouses. It had a sign resembling a sunflower.\n - I saw a little girl playing around the main avenue in the afternoon and evening.\n - I saw Fermat looking away as I said ''sunflower''. He is hiding something!\n - I found out my neighbour is part of the complot. She will abseil down and immolate herself and the sunflower at midnight unless I stop her!\n - Crazy as it sounds, I think I’m trapped in a time loop, reliving the same 24 hours over and over.\n"
+  },
+  {
+    "key": "1909-1910",
+    "ids": [
+      1909,
+      1910
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "004",
+    "introNode": "introN",
+    "text": "... knocked on her door. She didn’t answer. I guess she wasn’t at home? I should try again later."
+  },
+  {
+    "key": "1909-1911",
+    "ids": [
+      1909,
+      1911
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "004",
+    "introNode": "introN",
+    "text": "... knocked on her door. She opened it.\n''Hey, neighbour, it’s you'' she said, eyeing me suspiciously. ''Did you need anything in particular?''\nThe memories of her, dressed only with dynamite and abseiling down my flat, rushed into my mind. I won’t deny I got a tad nervous, and probably gave myself away by saying ''Eh...um... Hello! Where did you learn how to abseil?'' To which she answered \n''I’m a firefighter''\nThat was more that I could handle and rushed back home to the sweet solace of my sunflower."
+  },
+  {
+    "key": "1909-1912",
+    "ids": [
+      1909,
+      1912
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "004",
+    "introNode": "intro1",
+    "text": "... knocked on her door. She opened it.\n''Hey, it’s you!'' She said.\n''Err...um... Hello!'' I replied, not really knowing what to say ''Soo, what is that you do with your life?'' To which she answered \n''I’m a firefighter''\n That was more that I could handle and rushed back home to the solace of my sunflower."
+  },
+  {
+    "key": "1909",
+    "ids": [
+      1909
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "004",
+    "introNode": "intro1",
+    "text": "... knocked on her door. "
+  },
+  {
+    "key": "1915",
+    "ids": [
+      1915
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "002",
+    "introNode": "introN",
+    "text": " a gardener, tending to his plants. I hold a deep respect for all gardeners, but, given the circumstances, I couldn’t help but mistrust him. After all, if you know how to keep a plant alive, you also know how best to kill it. I had to ask the question.\n“What’s your favourite flower?” I heard right then, interrupting my thoughts. I raised my head and saw the gardener smiling at me. There was a serene sadness in his eyes."
+  },
+  {
+    "key": "1920",
+    "ids": [
+      1920
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "006",
+    "introNode": "intro1",
+    "text": "... a gardener, tending to his plants, or at least trying to. At the moment, he was mostly looking at his empty water hose with a mourning face. \n“They cut the water”, he said sadly, as if he had just woken from a beautiful dream. “How am I supposed to water my plants now?”."
+  },
+  {
+    "key": "1926",
+    "ids": [
+      1926
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "027b",
+    "introNode": "introN",
+    "text": "Then they started talking about a new girl that had recently moved to town and was attending second grade.\nApparently, her mother was a new teacher at the school. They all seemed to like the new girl, but they complained that she always seemed to be busy for some reason, and they almost never got a chance to play with her.\nAfter a while I got tired of their talk and went home.  "
+  },
+  {
+    "key": "1927",
+    "ids": [
+      1927
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "003",
+    "introNode": "introN",
+    "text": "“Sunflowers,” I replied without hesitation. The gardener’s smile broadened, and he said, “yes, you do look like the sunflower type. Not many left around these days, huh?” he added with a mournful voice. \n“No, sadly not,” I agreed, wondering if I had given myself away too soon. The gardener looked at me once more with that rueful smile, and said “here, take these gardenias. A gift, from a fellow lover of flowers to another”.\nI thanked him and left, not knowing quite what to make of him."
+  },
+  {
+    "key": "1929",
+    "ids": [
+      1929
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "006b",
+    "introNode": "intro1",
+    "text": "“I heard there was a problem at the water processing plant”. \nAs soon as I said those words, he looked up at me with a shine to his eyes. “Really? Well, we can’t allow that, can we? No, no, no. I will have to go there immediately. Oh, yes. They shall hear about this. What kind of water processing plant stops processing the water for my plants on such an important day? Oh, no, no, no, I will have none of that”.\n"
+  },
+  {
+    "key": "1933",
+    "ids": [
+      1933
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "007",
+    "introNode": "intro1",
+    "text": "“He kept on muttering to himself as he stood up and left in direction to the water plant, but all I heard were some isolated words like “fire”, “massacre” and “thermonuclear punishment”. \nAfter he left, I noticed he had forgotten some recently cut flowers and a sandwich. "
+  },
+  {
+    "key": "1935",
+    "ids": [
+      1935
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "010",
+    "introNode": "intro1",
+    "text": "Seemed like he wasn’t going to need them anyway, where he was going."
+  },
+  {
+    "key": "1938",
+    "ids": [
+      1938
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "014",
+    "introNode": "introN",
+    "text": "Approach him, but as soon as he noticed me he stopped talking abruptly and shot me a guilty glance. All I could overhear was ”my love”, “destroy” and “warehouse”, but that was enough. Why else would he be looking at me with such a look of guilt painted all over his face?"
+  },
+  {
+    "key": "1942",
+    "ids": [
+      1942
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "015",
+    "introNode": "introN",
+    "text": "“You’re the sunflower murderer!”, I screamed in a fit of rage, and then I tackled him. I don’t recall the exact details of what happened next. There might have been a moment when I bit his finger off? I hope it was a finger and not an ear, but, to be honest, it’s hard to tell. All I’m certain of is that he managed to escape at some point, and that by the time I regained my wits I had an awful lot of blood on my t-shirt. Most of which was probably not mine. \nPerhaps I should hone my diplomacy skills a bit."
+  },
+  {
+    "key": "1945",
+    "ids": [
+      1945
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "017",
+    "introNode": "introN",
+    "text": "“You’re right, I don’t wanna hear this”, I said, and I left. Humans are scary."
+  },
+  {
+    "key": "1948",
+    "ids": [
+      1948
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "019",
+    "introNode": "introN",
+    "text": "“Sure you can,” I said, not really knowing what I was talking about. All of my love has and shall always be for my sunflower. \n“Yeah, but what would happen then?”, he countered. “The world would be ruined. Everything would be lost. No, I just cannot do it. I can’t. It hurts and it’s unfair, but I have to suck it up and do what’s right”.\n”Uh...  okay”, I answered, not really knowing what else to say. And he left. What am I supposed to make of that that? This case needs someone who actually understands people..."
+  },
+  {
+    "key": "1951",
+    "ids": [
+      1951
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "025",
+    "introNode": "introN",
+    "text": "“Err, I... no.”\n“Oh”, she said. “Oh. So who are you, then? Did you come for me at last, O Grim Reaper? Is that what this is? The time of my parting, the final curtain, the eternal rest finally embracing me in its soft arms, forever? Well, then, I am ready. Yes, I may have sinned, and not a little, but I regret nothing. Every ounce of joy, every inch of pleasure and rebellion I scraped out of this dull, gray world, it was all worth it. Mary Antoniette’s lips upon mine, and to hell with whatever they said. And her sister’s lips, later on. Ah, the orgies. The ecstasy. The bliss. Yes, it was all worth it. You may take me, O Death. Take me and do with this old body what you will, for my spirit has soared high as any other.”"
+  },
+  {
+    "key": "1953",
+    "ids": [
+      1953
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "025b",
+    "introNode": "introN",
+    "text": "What was I supposed to do? I couldn’t just leave, not after that. I was left with no option but to give her what she was asking for. I tried to be gentle, but choking someone to death is never a walk in the park.\nOne way or another, though, in the end she got the rest she wanted."
+  },
+  {
+    "key": "1956",
+    "ids": [
+      1956
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "021b",
+    "introNode": "introN",
+    "text": "“This... might help?”, I tried.\n“You really think so?”\n“Yes?” No.\n“Well, that’s beautiful. No one had ever given me flowers before. I... really, thanks. Maybe I should actually give love a try, you know. All my life I did what was expected of me as a member of a secret holy order, and what did I really get out of that? Yeah, saved the world a couple times, stopped one or two apocalypses. Well, that’s not the kind of thing that will warm me at night when I’m old, you know what I mean? No, I’ve had enough. I deserve this. I’ve got to think about myself, at least once in my life. Thank you, my friend, for showing me the way. I shall not forget this.”"
+  },
+  {
+    "key": "1958",
+    "ids": [
+      1958
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "021c",
+    "introNode": "introN",
+    "text": "And with these words he left. I didn’t really understand any of what he’d said, but hey, it’s not like I thought I would. I’m just a guy who randomly says “flowers”."
+  },
+  {
+    "key": "1959",
+    "ids": [
+      1959
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "002",
+    "introNode": "intro1",
+    "text": "... find the murderer’s hideout. \nThe dumpster was quite big, but I had plenty of time. After hours of searching, I found a cat feeding her kittens, a wild raccoon, and two scorpions. I found a nest of mockingbirds. I found a pair of socks which seemed quite warm and comfortable, too. But no hideout. In the end, I had no option but to face the truth and go home. The murderer simply wasn’t here."
+  },
+  {
+    "key": "1960",
+    "ids": [
+      1960
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "004",
+    "introNode": "introN",
+    "text": "... a neat pile of wooden planks, along with some tools. Nails, a hammer, etc. They could be useful to barricade my house. Or to build anything I needed in my quest, so I decided to take them with me."
+  },
+  {
+    "key": "1962",
+    "ids": [
+      1962
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "008",
+    "introNode": "introN",
+    "text": "I kept listening to him.\n“Yes! it is the new ...mumblemumble ... loophole...the most efficient arrangement ... mumblemubmle.. quantum entanglement ...r(n) = √n  ... the Golden Angle ... φ = (1+√5)/2.. mimb... it is the only... 137,5°....the sunflower... AHHH! ike ike, one of a hundred ...mumblemumble... the Day finally has come...  the order of... mumble... fermat mumblmubmle ...the golden spiral... mumblemumb  how many times... need to find mumble... ”"
+  },
+  {
+    "key": "1967",
+    "ids": [
+      1967
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "009",
+    "introNode": "introN",
+    "text": "“Hey, hold on! What did you say about sunflowers?” I asked without much hope. Surprisingly, he stopped his nonsense and kept silent for much longer than I thought possible. Not only he was silent. Everything was still."
+  },
+  {
+    "key": "1970",
+    "ids": [
+      1970
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "",
+    "introNode": "",
+    "text": "“Hey dude! fancy a sandwich?” I handed him the sandwich. He ate it without a comment. After finishing it he took a sip of beer, eructed, and kept on mumbling. I decided to go home."
+  },
+  {
+    "key": "1972",
+    "ids": [
+      1972
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "009b",
+    "introNode": "introN",
+    "text": "Suddenly, I started hearing the voices once again. “Am I going crazy?” I thought. \n\n”...”\n\n “I must be dreaming all of this.”\n\n”...”\n\nMuch to my relief, I came back to reality when he suddenly spat out:\n“Sunflower.”\n“One of a hundred.”"
+  },
+  {
+    "key": "1973",
+    "ids": [
+      1973
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "010",
+    "introNode": "introN",
+    "text": "I kept listening, and he started vomiting words all over, shouting and moving his arms around. \n“will come the time and surely this time has come and past and come AGAIN till it passes away if only no one would PASS AWAY, y’know??\nplay would stop reap shot poison bomb the one we could keep doin keep gofin, keep moving forward! y'know? save it if you can save it yourself and don't waste my time, hey dude don’t waste my time, yesterday is gone tomorrow won't come just shut up SHUT UP and bend low bend down!!”"
+  },
+  {
+    "key": "1975",
+    "ids": [
+      1975
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "011",
+    "introNode": "introN",
+    "text": "He sat silent, eyes closed. I bent down and closed my eyes as well. Completely alienated from the world of cars and  pedestrians passing by, I thought of my sunflower. That pacified my mind. Pacified my mind. Pacified my mind. When I opened my eyes again I found some ugly letters carved in the pavement. They read:\nTo save the sunflower you must\nControl the water\nStop war\nSteal the food\nMake love stay\nDrink the poison\nThe hobo looked at me with sparkly eyes. “I made up the last one, so don’t take it so seriously haha” He explained proudly, grinning his rotten teeth at me. “Want some?” And he offered me a glass bottle reeking of alcohol."
+  },
+  {
+    "key": "1979",
+    "ids": [
+      1979
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "012",
+    "introNode": "introN",
+    "text": "“Sure” I said, accepting the booze and taking a long gulp. “Y’now” He said eventually “I wouldn't like to be in your position, much responsibility. Anyway, no hurry eh, me I just chillin man, just take it easy. Take your time. It is not like we are going anywhere.” He told me. For once I forgot about it all."
+  },
+  {
+    "key": "1980",
+    "ids": [
+      1980
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "016",
+    "introNode": "introN",
+    "text": "”Isn’t that your marker?” I asked\n”Well, that’s a really common marker,” he replied before falling soundly asleep. I went home."
+  },
+  {
+    "key": "1981",
+    "ids": [
+      1981
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "002",
+    "introNode": "introN",
+    "text": "... sat on a dusty old sofa and did nothing till the moon peeked through the clouds.\nThe world seemed to be turning just fine."
+  },
+  {
+    "key": "1982",
+    "ids": [
+      1982
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "002",
+    "introNode": "introN",
+    "text": "... sat on this dusty old sofa and did nothing for a while til the shadows moved.\nThe world seemed to be turning just fine."
+  },
+  {
+    "key": "1983",
+    "ids": [
+      1983
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "007",
+    "introNode": "introN",
+    "text": "I walked in and stumbled upon the street sweeper.  The room was big and empty, and he was holding a gun!\n"
+  },
+  {
+    "key": "1987",
+    "ids": [
+      1987
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "008",
+    "introNode": "introN",
+    "text": "“Holly sunflowers, I hope you are not going to kill me with that!” I cried. He cried back.\n“Will you just chill down a second? I'm not killing anyone”\n"
+  },
+  {
+    "key": "1992",
+    "ids": [
+      1992
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "009",
+    "introNode": "introN",
+    "text": "“What are you doing here?” I asked the guy."
+  },
+  {
+    "key": "1997",
+    "ids": [
+      1997
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "010",
+    "introNode": "introN",
+    "text": "''Are you dealing with weapons?'' I guessed stupidly. His face relaxed and he giggled in relief.\n''Of course I'm not. I don’t like weapons myself. I’m here to destroy it and fulfill my sacred duty within the Order and the Sunflower. There’s no need to worry, my brother. The sunflower is safe, now. You should go home and be with who you love most.'' He said, tears in his eyes. "
+  },
+  {
+    "key": "1999",
+    "ids": [
+      1999
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "009",
+    "introNode": "introN",
+    "text": "I rushed in and stumbled upon him."
+  },
+  {
+    "key": "2004",
+    "ids": [
+      2004
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "023",
+    "introNode": "introN",
+    "text": "I kept looking for a few more sweaty minutes. Eventually the guy managed to start a fire and destroy whatever artifact he had been holding. I left before he could stumble upon me by the door, feeling quite unsure about what exactly had happened there."
+  },
+  {
+    "key": "2005",
+    "ids": [
+      2005
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "025",
+    "introNode": "introN",
+    "text": "... got the hell out of there before someone came and got the wrong idea."
+  },
+  {
+    "key": "2008",
+    "ids": [
+      2008
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "028",
+    "introNode": "introN",
+    "text": "I tried to open it by pushing against it, but the door was locked solid. There was nothing I could do here without better tools."
+  },
+  {
+    "key": "2009",
+    "ids": [
+      2009
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "002",
+    "introNode": "introN",
+    "text": "Once I got there, I..."
+  },
+  {
+    "key": "2014",
+    "ids": [
+      2014
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "004",
+    "introNode": "intro1",
+    "text": "... went to look for some pizza behind the counter. In one of the cupboards I found a very suspicious bottle. I grabbed it and..."
+  },
+  {
+    "key": "2017",
+    "ids": [
+      2017
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "007",
+    "introNode": "introN",
+    "text": "... went to get some pizza. I approached Fermat, who was sitting behind the counter, looking gloomy. ''I’d like some pizza'' I said. \n''Sure thing! What would you like in your pizza?'' he replied, fast and professional."
+  },
+  {
+    "key": "2022",
+    "ids": [
+      2022
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "008",
+    "introNode": "introN",
+    "text": "''The same as always, you know me''.\n''I don’t. Have we ever met before?'', he answered, sticking his head out and staring at me."
+  },
+  {
+    "key": "2027",
+    "ids": [
+      2027
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "009",
+    "introNode": "introN",
+    "text": "Yes, I’ve come here twice a week for the past 10 years.''\n''I couldn't tell'' he shrugged ''there’s a lot of people passing by. What would you like in your pizza?''"
+  },
+  {
+    "key": "2031",
+    "ids": [
+      2031
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "013",
+    "introNode": "introN",
+    "text": "''I would like something new, daring, fresh.''\n ''All we have is pizza.'"
+  },
+  {
+    "key": "2032",
+    "ids": [
+      2032
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "014",
+    "introNode": "introN",
+    "text": "''That’d be pepperoni, tomato, rucola... and sunflower'' I added, hoping to catch him off guard.\n ''Umm, ehh... we, we don’t have any of that,'' he mumbled, looking down. He had to be hiding something there! ''And now, now get out of here, the restaurant is too full!''"
+  },
+  {
+    "key": "2033",
+    "ids": [
+      2033
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "",
+    "introNode": "",
+    "text": "...approached the hobo sitting on the sidewalk next door. \nI figured that since he often spent the whole day sitting in the middle of the street, drugged on God knows what, he would know better than anyone what was going on inside the human soul, and thus could help me uncover the murderer. I sat next to him, but he didn’t seem to notice me. He was mumbling something to himself and making strange drawings on the pavement. On a second thought, he was probably just nuts."
+  },
+  {
+    "key": "2035",
+    "ids": [
+      2035
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "023",
+    "introNode": "introN",
+    "text": "''Hey, hold on! What did you say about sunflowers?'' I asked without much hope. Surprisingly, he stopped his nonsense and kept silent for much longer than I thought possible. Not only he was silent. Everything was still.\n Suddenly, I started hearing the voices once again. ''Am I going crazy?'' I thought. \n\n''...''\n\n ''I must be dreaming all of this.''\n\n''...''\n\nMuch to my relief, I came back to reality when he suddenly spat out:\n''Sunflower.''\n''One of a hundred.''"
+  },
+  {
+    "key": "2036",
+    "ids": [
+      2036
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "024",
+    "introNode": "introN",
+    "text": "I kept listening, and he started vomiting words all over, shouting and moving his arms around. \n''will come the time and surely this time has come and past and come AGAIN till it passes away if only no one would PASS AWAY, y’know??\nplay would stop reap shot poison bomb the one we could keep doin keep gofin, keep moving forward! y'know? save it if you can save it yourself and don't waste my time, hey dude don’t waste my time, yesterday is gone tomorrow won't come just shut up SHUT UP and bend low bend down!!''"
+  },
+  {
+    "key": "2038",
+    "ids": [
+      2038
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "025",
+    "introNode": "introN",
+    "text": "He sat silent, eyes closed. I bent down and closed my eyes as well. Completely alienated from the world of cars and  pedestrians passing by, I thought of my sunflower. That pacified my mind. Pacified my mind. Pacified my mind. When I opened my eyes again I found some ugly letters carved in the pavement. They read:\nTo save the sunflower you must\nControl the water\nStop war\nSteal the food\nMake love stay\nDrink the poison\nThe hobo looked at me with sparkly eyes. ''I made up the last one, so don’t take it so seriously haha'' He explained proudly, grinning his rotten teeth at me. ''Want some?'' And he offered me a glass bottle reeking of alcohol."
+  },
+  {
+    "key": "2042",
+    "ids": [
+      2042
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "026",
+    "introNode": "introN",
+    "text": "''Sure'' I said, accepting the booze and taking a long gulp. ''Y’now'' He said eventually ''I wouldn't like to be in your position, much responsibility. Anyway, no hurry eh, me I just chillin man, just take it easy. Take your time. It is not like we are going anywhere.'' He told me. For once I forgot about it all."
+  },
+  {
+    "key": "2044",
+    "ids": [
+      2044
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "029",
+    "introNode": "introN",
+    "text": "''Isn’t that your bed?'' I asked.\n''Yes indeed! The pictograms appeared in my bed this morning. A time traveler must have made them,'' he replied before falling soundly asleep. I went home."
+  },
+  {
+    "key": "2045",
+    "ids": [
+      2045
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "017",
+    "introNode": "introN",
+    "text": "cleaning it, but instead I..."
+  },
+  {
+    "key": "2048",
+    "ids": [
+      2048
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "005",
+    "introNode": "intro1",
+    "text": "drank it. \nIt tasted like death."
+  },
+  {
+    "key": "2049",
+    "ids": [
+      2049
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "",
+    "introNode": "",
+    "text": "infiltrate the plant through the public entrance! Full of bravery and determination, I nonchalantly strolled towards the gate of the public gate. My plan consisted on passing the barrier with casual confidence, as if I knew exactly what I was doing and it was the most natural thing on this world. \nMy plan failed miserably.\nAs soon as I reached the gate, a security guard yelled for me to stop. ''Sir, I will need a valid ID, government entry authorization, and reason of your visit!''. \n''I, err...'' I... "
+  },
+  {
+    "key": "2053",
+    "ids": [
+      2053
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "013",
+    "introNode": "intro1",
+    "text": "infiltrate the plant through the public entrance! The guard post was empty, so there was no one to stop me from freely entering the water processing plant.\nSeems like guarding the entrance isn’t so important now that your daughter is dead or about to die at the town hospital, huh, Mr I’m-So-Sorry-But-There’s-Nothing-I-Can-Do?\n"
+  },
+  {
+    "key": "2055",
+    "ids": [
+      2055
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "001",
+    "introNode": "introN",
+    "text": "The water processing plant formed a massive, heavily guarded structure, surrounded in its entirety by a spiked fence and security cameras. It had a public entrance for visitors, and a private, PIN-protected entrance for the employees. \nAfter a brief survey of the area, I was gripped with a doubtless certainty in regards to my upcoming plan. I would..."
+  },
+  {
+    "key": "2059",
+    "ids": [
+      2059
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "003",
+    "introNode": "introN",
+    "text": "... fought. What else was I going to do? If I had to go, I would go out it with a bang.\nUpon hearing his words, I dashed towards the barrier in an impressive sprint, expecting to be torn to pieces by heavy artillery at any moment. \nFortunately, reality wasn’t so dazzling. Rather than being shot down on sight, the security guard - who was a bit past his fifties, and packed a few extra pounds - managed to run me down and handcuff me. I received a sizable fine for resistance to authority, but was left otherwise unscathed at the door of my home."
+  },
+  {
+    "key": "2060",
+    "ids": [
+      2060
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "",
+    "introNode": "",
+    "text": "''Certainly, sir!'', I replied with confidence. ''(541) 754-3010, lack of entry authorization due to jackal assault, and my visit is due to mandatory inspection of the facilities by member of licensed traveling circus''.\n''Finally. Five-four-one-s... wait, that’s a mobile phone number. Hold on, jackal what? Jim!'' he shouted through an intercom after dialing a number on a pad. ''Jim, we’ve got one of those. No, not the dangerous kind. Yep, just... disturbed. Be gentle, if you can''.\nI then received an invitation to leave the facilities, which I graciously accepted."
+  },
+  {
+    "key": "2062",
+    "ids": [
+      2062
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "",
+    "introNode": "",
+    "text": "''Really?'' he asked stupidly, and I could see the corners of his eyes beginning to water. ''I try to be a good father, of course, but I have to work so much... I never knew she valued... I never thought she... well, this is quite a surprise, sir'' he babbled a while before stopping, speechless."
+  },
+  {
+    "key": "2063",
+    "ids": [
+      2063
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "",
+    "introNode": "",
+    "text": "''Yes, yes, she loves you dearly. Now, if I may...''"
+  },
+  {
+    "key": "2064",
+    "ids": [
+      2064
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "",
+    "introNode": "",
+    "text": "''Yes, yes, she loves you dearly. Now, if I may go in for a minute...'' I said as I casually strolled towards the barrier.\n''Ah, no. I’m afraid that’s impossible. I understand you’re a good friend of my daughter, but I have strict orders to stop anyone trying to enter the facility without proper authorization. I’m so sorry, but there’s nothing I can do.''\nI decided not to tempt my luck any longer. Seems like I would have to find a more... impactful way to get rid of the girl’s father..."
+  },
+  {
+    "key": "2065",
+    "ids": [
+      2065
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "016",
+    "introNode": "intro1",
+    "text": "''Onwards, to destiny!'' I told myself as I finally entered the water processing plant. Near the entrance I found a closet with some worker clothes, so I put them on to better disguise myself. I crossed a couple of employees, but they didn’t take a second glance at me. Now, if I were the sunflower murderer, where would I go?"
+  },
+  {
+    "key": "2069",
+    "ids": [
+      2069
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "017",
+    "introNode": "intro1",
+    "text": "The repository was a huge storage room full with all the tools and materials needed for the proper functioning of the water processing plant. It was kind of boring, but at least I took the chance to pick up a crowbar I saw lying around. You never know when one of those will come in handy.\nAfterwards, I headed to..."
+  },
+  {
+    "key": "2071",
+    "ids": [
+      2071
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "019",
+    "introNode": "intro1",
+    "text": "The control room was a big cubicle at the end of a long corridor, full of screens and beeping sounds and serious looking people doing serious looking things and bustling about. It didn’t really look like the kind of place where one could find a sunflower murderer, but what I did find was a big red button with the label “EMERGENCY STOP OF ALL WATER OPERATIONS”. I..."
+  },
+  {
+    "key": "2074",
+    "ids": [
+      2074
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "020",
+    "introNode": "intro1",
+    "text": "... pushed it. The moment I did, a loud emergency alarm got activated, red lights started flashing all over the water treatment plant, and the serious looking people started looking less serious and more panicky. It didn’t seem like they would be too happy about me pushing their button, so I took the chaos and confusion as my cue to disappear from the water treatment plant before they checked their video feed recordings."
+  },
+  {
+    "key": "2075",
+    "ids": [
+      2075
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "012",
+    "introNode": "introN",
+    "text": "What had given me such ideas to begin with? The murderer was probably as clueless as I was. In fact, he might be standing around the water processing plant at this very moment, just like I was, failing to find a way to enter, just like I had. If anything, I had a higher chance of finding the murderer by continuing to wander aimlessly around the plant, as I had been doing for the last forty minutes!\nAfter two more hours like that, I left."
+  },
+  {
+    "key": "2077",
+    "ids": [
+      2077
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "",
+    "introNode": "",
+    "text": "The guard started dialing a number on a pad even before I could finished my sentence. ''Jim, we’ve got one of those,'' he shouted through an intercom. ''No, not the dangerous kind. Yep, just... disturbed. Be gentle, if you can''.\nI then received an invitation to leave the facilities, which I graciously accepted. "
+  },
+  {
+    "key": "2078",
+    "ids": [
+      2078
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "002",
+    "introNode": "introN",
+    "text": "... a suspicious alleyway. If I was a murderer of sunflowers, that’s clearly the kind of place where I would hide to plot my evil plans. \nThe alleyway was empty except for a dirty dog and some broken bottles. I was about to leave when I heard a mysterious voice that seemed to come from nowhere in particular. \n“Pssst, you! Yeah, you! Do you know how many times the sun rose today?”"
+  },
+  {
+    "key": "2080",
+    "ids": [
+      2080
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "003",
+    "introNode": "introN",
+    "text": "“Well, I am quite worried about my sunflower”, I admitted. \n“Ah, and as well you should”, assured the Voice, seriously. “Remember you are not alone in your endeavor, noble Guardian. There are others like you, others who oppose the tyranny of the Destroyer of Suns. By their love of sunflowers you shall recognize them. And now go in peace, young Guardian.”"
+  },
+  {
+    "key": "2081",
+    "ids": [
+      2081
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "008",
+    "introNode": "introN",
+    "text": "After that came only silence, and I was left alone feeling quite unsure of what exactly had happened."
+  },
+  {
+    "key": "2082",
+    "ids": [
+      2082
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "006",
+    "introNode": "introN",
+    "text": "“I’d say you’re just an idiot hiding under a sewer door...” I replied, losing my temper. \n“Brother, you’re not really angry with me, but with yourself. Sunflowers, grant patience to this lost lamb. He’ll be back once he’s ready to hear the Truth”."
+  },
+  {
+    "key": "2083",
+    "ids": [
+      2083
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "010",
+    "introNode": "introN",
+    "text": " “No... I’m just looking for someone, although I don’t really know who,” I answered feeling a bit down.\n“Oh, that seems tricky,” she said, and then her face lit up. “You know what? Maybe I can help you find this person!” she said brightly."
+  },
+  {
+    "key": "2086",
+    "ids": [
+      2086
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "011",
+    "introNode": "introN",
+    "text": "“No, you wouldn’t know someone like that. But thanks anyway for asking”. \nShe smiled at me again, and then began jumping the rope again."
+  },
+  {
+    "key": "2087",
+    "ids": [
+      2087
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "014",
+    "introNode": "introN",
+    "text": "“Why are they so busy, if I may ask? Does it have anything to do with sunflowers?”, I asked, eyeing her suspiciously. She smiled at me innocently, not seeming to notice my tension. \n“Oh, you know. My mom’s a teacher at the local school, so she’s always busy with homework, and my dad works double shifts as a security guard at the water processing plant.” \nShe raised her head and stared frankly into my eyes. “Being an adult isn’t too fun, is it?”\nI didn’t really know what to answer to that."
+  },
+  {
+    "key": "2088",
+    "ids": [
+      2088
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "018",
+    "introNode": "introN",
+    "text": "“No, it was just a thought,” I said, feeling sorry for her face of disappointment."
+  },
+  {
+    "key": "2089",
+    "ids": [
+      2089
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "025",
+    "introNode": "introN",
+    "text": "... his favourite chocolate. “Ahhh, hard to say, hard to say...” he muttered to himself, before finally handing me a bar of 80% homemade organic chocolate. \nI paid in cash and asked if he had seen anyone who looked like they might hate sunflowers, but the shopkeeper just stared blankly at me, so I left."
+  },
+  {
+    "key": "2090",
+    "ids": [
+      2090
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "021",
+    "introNode": "introN",
+    "text": "I left the main avenue feeling lost and lonely among the crowd of passers-by. It was getting dark already, and I had a sunflower to protect at home."
+  },
+  {
+    "key": "2091",
+    "ids": [
+      2091
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "022",
+    "introNode": "introN",
+    "text": "I was about to say goodbye when suddenly a huge van crashed against a red mailbox less than five meters away from us. I yelped and jumped away, terrified, but apparently everyone was fine, including the driver. With all the chaos I lost sight of the girl, and soon afterwards I left as well."
+  },
+  {
+    "key": "2092",
+    "ids": [
+      2092
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "002",
+    "introNode": "introN",
+    "text": "walked up to the main entrance. There was a strong flow of kids running, yelling, jumping, fighting and rejoicing in their freedom as they went out the door. I tried to oppose the current but I was swept by it."
+  },
+  {
+    "key": "2093",
+    "ids": [
+      2093
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "002",
+    "introNode": "introN",
+    "text": "walked up to the main entrance.\nAs I went in, a woman welcomed me.  ''Good morning, sir. May I help you?'' It was obvious she expected some kind of comment about my visit."
+  },
+  {
+    "key": "2097-2098",
+    "ids": [
+      2097,
+      2098
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "004",
+    "introNode": "intro1",
+    "text": "walked up to the main entrance, but it was closed. A timetable said the school was open every weekday from dawn till noon. I had arrived too late."
+  },
+  {
+    "key": "2097-2099",
+    "ids": [
+      2097,
+      2099
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "004",
+    "introNode": "intro1",
+    "text": "walked up to the main entrance, but it was closed. A timetable said the school was open every weekday from dawn till noon.I fished the school keys I had stolen that morning out of my pocket, and slowly opened the iron gates of the school. They made an ominous metal sound, and, just like that, I was inside. \nI finally had all the time in the world to uncover the secrets of the school - and Miss Summers. As soon as I was inside, I…"
+  },
+  {
+    "key": "2103",
+    "ids": [
+      2103
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "009",
+    "introNode": "introN",
+    "text": "''Is it too late for me to sign in?'' I asked, feeling suddenly encouraged to resume my learning by the yells and shouts of schoolchildren, and the general mayhem of the school. After all, if these children managed to learn something despite having been immersed in such conditions almost since their birth and against their own will, then it couldn’t be so hard for me, right? \n Apparently, the school concierge disagreed.\n''Well… with all respect, I would say there are other learning centers that would prove more, uh, more appropriate for your… current age'', she answered. \nAh, the outrage, the shame. They say knowledge is the greatest gift, and to have it denied just like that, without even an apology. I had to go home and think about this."
+  },
+  {
+    "key": "2104",
+    "ids": [
+      2104
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "011",
+    "introNode": "introN",
+    "text": "I ran away. What had I been thinking, coming back here? After everything I’d suffered in this cage, after everything I had been through, had I somehow managed to forgot how utterly stupid and unforgiving adults actually are? While fleeing, the words ''run away, Simba. Run. Run away and never return'' kept echoing on my head, and they didn’t stop until I had been safely tucked under my own bed for over twenty minutes. Yikes."
+  },
+  {
+    "key": "2105",
+    "ids": [
+      2105
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "029",
+    "introNode": "intro1",
+    "text": "headed back to the teacher’s room. I believed this time, with no reason to hurry up, I might be able to find some clues related to Miss Summers. \nThe teacher’s room was barricaded against nocturnal children and beasts, but I managed to squeeze in through a loose plank.\nMiss Summer’s documents seemed perfectly normal. She looked like a regular teacher - stern and devoted to her work, yes, but not insane. Why did I still have this hunch, then, that I was getting closer and closer to the truth?"
+  },
+  {
+    "key": "2107",
+    "ids": [
+      2107
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "032",
+    "introNode": "intro1",
+    "text": "I closed my eyes, trying to focus on the problem, to find the missing piece on this puzzle. And then I knew. Perhaps I had known all along, but I had been to stubborn to accept it. It was too far-fetched. Too monstruous. But it was the only option. \nStill, I had to see it by myself. I needed proof. \nI had to reach classroom 2B. I headed out of the teacher’s room and…"
+  },
+  {
+    "key": "2111",
+    "ids": [
+      2111
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "033",
+    "introNode": "intro1",
+    "text": "Went upstairs to the second floor. Then I…"
+  },
+  {
+    "key": "2115",
+    "ids": [
+      2115
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "035",
+    "introNode": "intro1",
+    "text": "Turned left near the broom closet, and realized I was lost."
+  },
+  {
+    "key": "2118",
+    "ids": [
+      2118
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "039",
+    "introNode": "intro1",
+    "text": "039 Went down one floor and realized I was lost."
+  },
+  {
+    "key": "2121",
+    "ids": [
+      2121
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "041",
+    "introNode": "intro1",
+    "text": "It was her. It had always been her. Inside the false bottom of Valentine Summers’ desk I found all her secret plans and schematics, her musings and calculations. She had planned everything, accounted for every setback. What kind of twisted, brilliant mind lay hidden inside that innocent-looking eight year old girl? I couldn’t follow her entire lines of thought, as there were too many ramifications and leaps of logic for me, but on those childish notebook pages I saw equations of M-theory and quantum physics that many accomplished theoretical physicists would have killed to read. During the following hours I understood everything, including why she wanted to murder my sunflower. Perhaps the simplest explanation was found on this old entry of her diary:"
+  },
+  {
+    "key": "2123",
+    "ids": [
+      2123
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "042",
+    "introNode": "intro1",
+    "text": "Dear Diary,\nMy calculations have proven that the Iroquois legend is indeed real. There is a day, a single day every one hundred years, when a single sunflower on Earth becomes the Guiding Sunflower for an entire Earth rotation. Throughout these 24 hours, the Guiding Sunflower stops following the Sun’s trajectory, and instead it is the Sun that starts following the Sunflower. Of course, that sunflower is indistinguishable from any other by any conventional means. But if someone were to locate and destroy the Guiding Sunflower during the time of its awakening, then I have proven that not only would the Sun’s motion stop, but also the flow of Time itself. This would mean that I could live and play forever. I could eat candy forever. And what’s more: the date of awakening of the next Guiding Sunflower falls on a Saturday. That means that if I manage to destroy the Guiding Sunflower, I will never ever have to go back to school. Ever."
+  },
+  {
+    "key": "2125",
+    "ids": [
+      2125
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "043",
+    "introNode": "intro1",
+    "text": "And now, finally, I realize. She didn’t expect any of this. She is trapped on this time loop just like I am, except she doesn’t know about it. Her plans to destroy the Guiding Sunflower, my sunflower, keep succeeding every time, and that resets the Time flux once again. Somehow I have to find the way to thwart the perfect plans of the evil genius who has managed to stop the flux of the universe’s space-time continuum, or we will all be trapped in here forever. We are doomed."
+  },
+  {
+    "key": "2128",
+    "ids": [
+      2128
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "037",
+    "introNode": "intro1",
+    "text": "Went upstairs one floor and realized I was lost."
+  },
+  {
+    "key": "2129",
+    "ids": [
+      2129
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "007",
+    "introNode": "introN",
+    "text": "I rushed towards her, unwilling to leave her daughter alone with that monster for a minute longer than necessary. \n ''Miss! Miss!'' I screamed. She turned towards me, obviously startled by my tone of voice. ''There’s a dangerous individual inside the school. We have to find her and kick her out, no matter what''. \nShe looked alarmed by my words, ''Sir, I think you need to calm down. There is no danger, and all the staff of the school are qualified professionals. Is your child inside the school?''"
+  },
+  {
+    "key": "2132",
+    "ids": [
+      2132
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "014",
+    "introNode": "introN",
+    "text": "“You don’t understand! Your own daughter is talking to the murderer!'', I screamed in panic. Surprisingly, Miss Summers stayed as calm as a cool breeze. “My daughter, you say? Well, you will find she’s quite mature for her age. Why don’t we call her and ask her about it?”. And that’s just what she did. Five minutes later her daughter was at the gate, wearing the same dress as the other day… which actually made sense, of course, considering we were reliving the same twenty-four hours over and over. “Dear, this man here says he saw you talking with a strange person a few minutes ago. Is that true?” said Miss Summers to her daughter."
+  },
+  {
+    "key": "2133",
+    "ids": [
+      2133
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "015",
+    "introNode": "introN",
+    "text": "Her daughter’s face lit up, delighted to know the answer to the question. “Strange? It was just Miss Montreau, the fire woman who’s been coming this week to prepare us for the fire emergency drills. She was telling me stories of the people she has saved, mom!” she yelled with wide eyes. \nMiss Summers made a dismissive gesture with her hand. “See? No reason to get so worked out. And now, if you’ll excuse me, I have quite a busy day ahead”."
+  },
+  {
+    "key": "2134",
+    "ids": [
+      2134
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "017",
+    "introNode": "introN",
+    "text": "“Your daughter is in danger, Miss Summers”, I said. I was expecting her to panic at such an announcement, or at least get alarmed, but she stayed as calm as a cool breeze. “My daughter, you say? Well, you will find she’s quite mature for her age. Why don’t we call her and ask her about it?”. And that’s just what she did. Five minutes later her daughter was at the gate, wearing the same dress as the other day… which actually made sense, of course, considering we were reliving the same twenty-four hours over and over. “Dear, this man here says he saw you talking with a strange person a few minutes ago. Is that true?” said Miss Summers to her daughter."
+  },
+  {
+    "key": "2135",
+    "ids": [
+      2135
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "022",
+    "introNode": "noPoison2",
+    "text": "“I’m sure a teacher with such good recommendations as yourself will know better than to start wandering about on a new School. As you know, Schools are no place for the faint of heart. Until you become familiar with our most dangerous regions and get acquainted with the main predators of our local fauna, please stick to my directions and you’ll have no trouble getting to your destination. Now I must excuse myself, as I have a parents meeting today. I’ll check on you by lunchtime, all right? Good luck with the class”.\nFeeling somewhat dazed by her unending stream of words, but also quite elated at the success of my infiltration attempt, I decided to…"
+  },
+  {
+    "key": "2139",
+    "ids": [
+      2139
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "",
+    "introNode": "",
+    "text": "find my students on 5B and give them a masterclass on ostrich reproduction. I’ve always believed that if someone had just done that for me when I was their age, they would have saved me from becoming the mental shipwreck I currently am. Unfortunately, class 5B wasn’t as easy to find as it seemed, and by the time I managed to reach it the class had already ended and children were running towards their freedom. I followed them to the main entrance and went home with a bitter feeling of disappointment at having wasted my one true chance in life at sacrificing myself for the greater good. "
+  },
+  {
+    "key": "2140",
+    "ids": [
+      2140
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "",
+    "introNode": "",
+    "text": "ran away from him, afraid he would give me away to a teacher. In the end, though, I ended up getting so lost I wasn’t sure I would be able to get out of the school even if I wanted, so by the time I heard the lunch time bell and found a window that connecting to the outside, I gave a silent prayer of gratitude and escaped through through it, swearing never to set a foot on that accursed place again."
+  },
+  {
+    "key": "2141",
+    "ids": [
+      2141
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "028",
+    "introNode": "noPoison2",
+    "text": "I won’t describe in detail the trials and tribulations we went through on our grand journey. Suffice it to say that eventually we made our way to the teacher’s room - although my guide lost one finger on the way, during a fight with a particularly ferocious tribe of class skippers that were competing with us for vital resources. In the teacher’s room we burned the concierge’s purse, as promised, thus sealing our pledge of eternal goodwill before parting ways. It wasn’t until I had almost given up my search for clues that I found something truly valuable: a copy of the school keys for the main gate, hidden away in a small locker of the teacher’s room. I pocketed them and quickly made my exit to the outside, to prepare for my return. "
+  },
+  {
+    "key": "2145",
+    "ids": [
+      2145
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "003",
+    "introNode": "introN",
+    "text": "... spy on my neighbour. She lives two floors up. I went out in my sleepers and..."
+  },
+  {
+    "key": "2148-2150",
+    "ids": [
+      2148,
+      2150
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "005",
+    "introNode": "introN",
+    "text": "... peeked through the keyhole. I saw my neighbour. She was writing a note on a piece of paper."
+  },
+  {
+    "key": "2148-2149",
+    "ids": [
+      2148,
+      2149
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "005",
+    "introNode": "introN",
+    "text": "... peeked through the keyhole. It was just dark."
+  },
+  {
+    "key": "2148-2152",
+    "ids": [
+      2148,
+      2152
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "005",
+    "introNode": "introN",
+    "text": "... peeked through the keyhole. She was writing a note on a piece of paper."
+  },
+  {
+    "key": "2148-2151",
+    "ids": [
+      2148,
+      2151
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "005",
+    "introNode": "introN",
+    "text": "... peeked through the keyhole. There was a long rope coiled on the ground and some red cylinders with a string sticking out of them next to it."
+  },
+  {
+    "key": "2148-2153",
+    "ids": [
+      2148,
+      2153
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "005",
+    "introNode": "intro1",
+    "text": "... peeked through the keyhole. I saw my neighbour on the ground with a red face fighting to breathe. The street sweeper was holding a phone in one hand and the bouquet of flowers in the other. Poor guy."
+  },
+  {
+    "key": "2154",
+    "ids": [
+      2154
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "024",
+    "introNode": "introN",
+    "text": "... a really old lady sitting on a bench, so peacefully. I went to sit next to her, and she seemed startled for a second until she squeezed her eyes and said, “Timothy? Is that you, dear?”"
+  },
+  {
+    "key": "2157",
+    "ids": [
+      2157
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "004",
+    "introNode": "introN",
+    "text": "“Su... Roses,” I replied shrewdly. I wasn’t so dumb to reveal my true allegiances to a complete stranger just like that. What if he was the sunflower murderer?\n“Ah”, he said, looking somehow disappointed with my answer. “Well, I do have some roses, if you want them”. \nSeedless flowers hold no appeal to me, but I took the roses anyway, not wanting to give myself away.\nI was getting more and more uncomfortable with my charade, as if I had betrayed my pure devotion of sunflowers, so I thanked the gardener and walked away soon after that."
+  },
+  {
+    "key": "2158",
+    "ids": [
+      2158
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "008",
+    "introNode": "intro1",
+    "text": "“Cheer up, it will only last a few hours”, I said, trying to help. I wasn’t sure he was actually on my side, but he was nice to his flowers. \n“Yes”, he said absentmindedly. “Yes, I suppose you’re right”. \nAfter that he just sat there, waiting, and a while later I decided to leave. "
+  },
+  {
+    "key": "2159",
+    "ids": [
+      2159
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "011",
+    "introNode": "intro1",
+    "text": "I took the sandwich. What can I say? I was hungry, and it was a really good looking sandwich."
+  },
+  {
+    "key": "2160",
+    "ids": [
+      2160
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "022",
+    "introNode": "introN",
+    "text": "Leave him alone. We all need our privacy from time to time. Perhaps later would be a better time."
+  },
+  {
+    "key": "2161",
+    "ids": [
+      2161
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "016",
+    "introNode": "introN",
+    "text": "“You, uhm... what were you talking about just now?”, I tried to ask as casually as I could. \nHe was still startled, but he looked at me and sighed. \n“I, uh... it’s complicated,” he said."
+  },
+  {
+    "key": "2164",
+    "ids": [
+      2164
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "018",
+    "introNode": "introN",
+    "text": "“I have time”.\n “Well... I, I don’t know you, but I don’t really have anyone else to talk with. I, uh... it’s a woman. I love her, I truly do... but to be with her, I would have to betray everything I believe in. And I can’t just do that, can I?”"
+  },
+  {
+    "key": "2168-2171-2169-2172-2170",
+    "ids": [
+      2168,
+      2171,
+      2169,
+      2172,
+      2170
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "020",
+    "introNode": "introN",
+    "text": "“That’s right. You have a duty”, I said. He nodded to himself, seemingly absorbed in his own thoughts.”Look at my case. Sometimes I don’t like being trapped in an endless time loop either, searching for a way to save my sunflower, you know? But it is what it is.\n”Yeah”, he said at last, although I wasn’t sure if he had really heard me. “Yeah. You’re right. Thanks bro. I needed that”. He gave a small squeeze on my shoulder, and then he left."
+  },
+  {
+    "key": "2173",
+    "ids": [
+      2173
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "026",
+    "introNode": "introN",
+    "text": "“Certainly.”\n“Oh, Timothy. Such a good lad, such a good lad. And so grown, too, as of late,” she added, squeezing her eyes again to see me better, unsuccesfully. I could now see that she was almost completely blind, but that didn’t stop her from gazing towards me with a look of deep affection in her face. We sat there in that bench for more than two hours, holding each other’s hands, saying almost nothing. \nWe didn’t need to."
+  },
+  {
+    "key": "2174",
+    "ids": [
+      2174
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "003",
+    "introNode": "intro1",
+    "text": "... search for useful junk. \nIt wasn’t easy to find something I could use among the trash, but I persevered. As I was doing my third pass through the dumpster, I saw something that caught my eye. It was..."
+  },
+  {
+    "key": "2178",
+    "ids": [
+      2178
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "005",
+    "introNode": "introN",
+    "text": "... a weird contraption made of wool, glass and copper tubes. After examining more closely, I realized it was actually a weird musical instrument I had never seen before. I didn’t know what it could be useful for, but I decided to bring it home with me anyway."
+  },
+  {
+    "key": "2179",
+    "ids": [
+      2179
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "014",
+    "introNode": "introN",
+    "text": "”Hey, hold on! What was that loophole thing about?”, I asked. \n“In a temporal loop let’s say you, particles cannot go back, the arrow of time won’t completely stop for them, follow me? if we think we are subatomic particles and because the quantum entanglement and the fractal nature of existence we can think that ‘kay? some things won’t reset every loop y‘know? as it is shown and revealed in this pictograms made by a sage.” \nA shaky finger and a broken nail pointed towards some ugly drawings made with a marker in a cardboard box."
+  },
+  {
+    "key": "2183",
+    "ids": [
+      2183
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "017",
+    "introNode": "introN",
+    "text": "“Isn’t that your handwritting?” I asked.\n“I have a very conventional handwritting,”he replied before falling soundly asleep.\nI went home."
+  },
+  {
+    "key": "2184",
+    "ids": [
+      2184
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "003",
+    "introNode": "intro1",
+    "text": "... looked around for clues. After searching for a couple hours, I found a cap between some bushes. I didn’t think much of it until I realized its logo depicted the exact pattern of sunflower seeds. This couldn’t be a coincidence. Shaken to the core, I decided to go back home and think about the implications of such a reveal."
+  },
+  {
+    "key": "2185",
+    "ids": [
+      2185
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "011",
+    "introNode": "introN",
+    "text": "''Are you planning to kill my neighbour?'' I guessed. \n''Of course not! Why would I? I still love her!'' He yelled back, shaking and holding the shotgun tightly. ''I want to be alone. This is none of your bussiness. Your plant is safe now and that is all you need to know. Just go and forget you ever saw me.''"
+  },
+  {
+    "key": "2186",
+    "ids": [
+      2186
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "008",
+    "introNode": "introN",
+    "text": "''Why don’t you give me that weapon?'' I asked reasonably.\n''No way, I have to destroyt it'' he said.\n"
+  },
+  {
+    "key": "2187",
+    "ids": [
+      2187
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "007",
+    "introNode": "introN",
+    "text": "''Um... I was just casually passing by'' I told him innocently. \n''Don't lie to me.''\n"
+  },
+  {
+    "key": "2190",
+    "ids": [
+      2190
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "020",
+    "introNode": "introN",
+    "text": "I peeked through the door. The street sweeper was holding something, but I couldn’t see it clearly. "
+  },
+  {
+    "key": "2193",
+    "ids": [
+      2193
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "022",
+    "introNode": "introN",
+    "text": "I held my breath and kept my eyes open. The street sweeper was manipulating the object awkwardly. Breathing heavily he was turning it around and examining it, looking at it from all sides. \n"
+  },
+  {
+    "key": "2196",
+    "ids": [
+      2196
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "005",
+    "introNode": "introN",
+    "text": "I smelled it. It smelled almost unbearably fishy.\n"
+  },
+  {
+    "key": "2199",
+    "ids": [
+      2199
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "024",
+    "introNode": "introN",
+    "text": " I yelled out of panic when a pigeon bumped against my back. Some other birds came out flying from their nests because of my scream, and then I heard a really loud ''BANG!'' echoing loudly. The street sweeper laid facing the ground in a pool of blood. The object he had been holding turned out to be a gun, and he had shoot himself by accident because of my noise. I..."
+  },
+  {
+    "key": "2202",
+    "ids": [
+      2202
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "026",
+    "introNode": "introN",
+    "text": "... went to check him up. He was dead. I felt guilty for a second, at least until I realized that he would probably be fine by tomorrow if the time loop reset itself, so I decided to pick his pockets. I found a wallet, two rusty nails, some oily fish, a few coins, some matchsticks, a folded piece of paper, and an emblem of the order of the Sunflower with the following inscription carved ''The Sun follows, the Flower guides''\n"
+  },
+  {
+    "key": "2205",
+    "ids": [
+      2205
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "026b",
+    "introNode": "introN",
+    "text": "I opened the folded paper. It had some oil spots on it but I could still read it: \n''Darling, it is so sweet you finally decided to help me out with this. I want you to know that I really appreciate it. \nYou’ll find you-know-what behind some boxes, near the door. The target is located two balconies under mine, and you can easily hit it from the rooftop in the next building. I’ll be waiting for you. Love you''\nLooked like your typical cold-blooded murderer love letter. I got the idea that my neighbour was somehow involved in it. Anyway, she could do no harm anymore, so I took off before someone came and got the wrong idea. "
+  },
+  {
+    "key": "2209",
+    "ids": [
+      2209
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "016",
+    "introNode": "introN",
+    "text": "... went to the toilet. Nobody had cleaned in ages. The dirtiness made me think of..."
+  },
+  {
+    "key": "2212",
+    "ids": [
+      2212
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "010",
+    "introNode": "introN",
+    "text": "''Yes, I’m the guy with the sunflower.''\n ''Oh yes, I might remember you'' He said looking suspicious. I paid and he handed me one of the best pizza in town."
+  },
+  {
+    "key": "2213",
+    "ids": [
+      2213
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "015",
+    "introNode": "introN",
+    "text": "''Don’t you ever clean the toilet?'' I inquired.\n ''No,'' he said. ''And if you’re not going to get anything, I’m going to have to ask you to leave.''"
+  },
+  {
+    "key": "2214",
+    "ids": [
+      2214
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "028",
+    "introNode": "introN",
+    "text": "''Hey, hold on! What was that loophole thing about?'', I asked. \n''In a temporal loop let’s say you, particles cannot go back, the arrow of time won’t completely stop for them, follow me? if we think we are subatomic particles and because the quantum entanglement and the fractal nature of existence we can think that ‘kay? some things won’t reset every loop y‘know? as it is shown and revealed in these pictograms made by a sage.'' \nA shaky finger and a broken nail pointed towards some ugly drawings made with a marker in a cardboard box."
+  },
+  {
+    "key": "2218",
+    "ids": [
+      2218
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "027",
+    "introNode": "introN",
+    "text": "''I’ll pass this one'' I replied, excusing myself. I don’t think he even heard me. He had sunk into his nonsense talk again."
+  },
+  {
+    "key": "2219",
+    "ids": [
+      2219
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "030",
+    "introNode": "introN",
+    "text": "''Isn’t that your marker?'' I asked\n''Well, that’s a really common marker,'' he replied before falling soundly asleep. I went home."
+  },
+  {
+    "key": "2220",
+    "ids": [
+      2220
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "019",
+    "introNode": "introN",
+    "text": "... delicious pizza, so I..."
+  },
+  {
+    "key": "2221",
+    "ids": [
+      2221
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "006",
+    "introNode": "intro1",
+    "text": "... read the label. There was enough herbicide in that bottle to kill a Baobab... Or to clean a toilet. ''Hehe, Fermat won’t be happy about this'', I thought. Once I finished cleaning the toilette, I replenished the bottle with plain water and left it where it was. I felt great. Not only I had helped cleanse the world, but I had also saved the sunflower from another deadly threat."
+  },
+  {
+    "key": "2222",
+    "ids": [
+      2222
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "010",
+    "introNode": "introN",
+    "text": "Infiltrate the plant through the private entrance, of course! As Sun Tzu once said, ''Attack your enemy where he is unprepared, appear where you are not expected''. A perfect plan, indeed. \nExcept, for, well, that PIN code detail. Right. Well, the PIN had only four digits, whereas I had twenty. How hard could it be to defeat it with such an advantage?\nI reached the pad and looked around to make sure there was no one around, and then I input the super secret PIN number... "
+  },
+  {
+    "key": "2223",
+    "ids": [
+      2223
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "",
+    "introNode": "",
+    "text": "... fled. What else was I going to do? I’m a coward, yes, but at least I’ve never pretended otherwise."
+  },
+  {
+    "key": "2224",
+    "ids": [
+      2224
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "",
+    "introNode": "",
+    "text": "''Err... Sunflower!'' \nYeah, I’ve never been able to lie. So what? Whenever I get too nervous or I feel questioned, the truth just comes out of my mouth out of its own will. It’s a compulsion. I can’t help it. \n''Su... what?'' asked the guard, perplexed. \n''Yes, sir. My sunflower. I have to save it. They want to murder it! If only you would let me in for a..."
+  },
+  {
+    "key": "2225",
+    "ids": [
+      2225
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "018",
+    "introNode": "intro1",
+    "text": "The treatment plant was where all the fun really happened. Less than five minutes after arriving I was already swimming with all the algae and bacteria of the anoxic tank, and making sand castles on the sand filters. Had it not been for the toxic smells of all those chemicals making me kind of dizzy, I would have certainly stayed there way longer, and I might never have reached..."
+  },
+  {
+    "key": "2227",
+    "ids": [
+      2227
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "009",
+    "introNode": "introN",
+    "text": "... an innocent looking girl, about eight or nine years old. She was jumping rope on the sidewalk, but as soon as I approached her she flashed me a charming smile. “Good evening, sir! Did you get lost?”, she asked with wide eyes."
+  },
+  {
+    "key": "2228",
+    "ids": [
+      2228
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "009",
+    "introNode": "intro1",
+    "text": "... an innocent looking girl. ”Hey, it’s you again!” she said, “Are you still lost?”"
+  },
+  {
+    "key": "2232",
+    "ids": [
+      2232
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "004",
+    "introNode": "introN",
+    "text": "“And who the hell are you?”, I asked quite briskly. I admit I don’t take too kindly to invisible strangers startling me in small alleways. \n“Worry not, sunflower Brother. As I said, I am the Mysterious Voice™, Protector of the Poor and Helpless, Saver of Worlds, and Professional Adventure Advisor.”"
+  },
+  {
+    "key": "2235",
+    "ids": [
+      2235
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "007",
+    "introNode": "introN",
+    "text": "“If you say so...”, I said, hesitating. \n“Of course I say so”, replied the Voice with unwavering confidence. “Now go save a space-time continuum or two. And remember me when you find yourself in need of a friendly, mysterious Voice.”"
+  },
+  {
+    "key": "2236",
+    "ids": [
+      2236
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "013",
+    "introNode": "introN",
+    "text": "“All my life. How about you?” I asked back.\n“Oh, I live right over there,” she said, waving vaguely to the right. “But I get bored at home. My dad and my mom are always so busy... “ she said, pouting. "
+  },
+  {
+    "key": "2240",
+    "ids": [
+      2240
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "012",
+    "introNode": "introN",
+    "text": " “Sure, why not. Do you know someone with a murderous hatred for sunflowers?”, I asked, glad to finally find someone willing to help. \nShe pondered at this quite seriously for a few seconds, wrinkling her forehead. “You mean... those cute yellow flowers that are always facing the sun? Why would anyone hate that?”.\n“My thoughts exactly,” I agreed quite passionately. “It’s okay, forget about it”."
+  },
+  {
+    "key": "2241",
+    "ids": [
+      2241
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "015",
+    "introNode": "introN",
+    "text": "“Why don’t you get a plant? That’s what I did”, I offered helpfully. \n“A plant? What kind of plant?”\n“A sunflower” I replied automatically. \nShe eyed me curiously. “I will think about it. Maybe mom would get me one if I ask”, she finally said before resuming her rope jumping. "
+  },
+  {
+    "key": "2242",
+    "ids": [
+      2242
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "019",
+    "introNode": "introN",
+    "text": "“Sure, here you are,” I said, handing her the chocolate bar I had bought before."
+  },
+  {
+    "key": "2243",
+    "ids": [
+      2243
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "026",
+    "introNode": "introN",
+    "text": "... his most expensive chocolate. “Well, I have some Amedei Porcelana from Tuscana, Italy. It’s an amazing dark chocolate, but it’s certainly not cheap... “\nI paid in cash and asked the shopkeeper if he had seen anyone who looked like they might hate sunflowers, but he just stared blankly at me, so I left. "
+  },
+  {
+    "key": "2244",
+    "ids": [
+      2244
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "005",
+    "introNode": "introN",
+    "text": "talked with some adults at the gate. Most of them were parents delivering or waiting to pick up their children, too busy to pay me any attention. I asked around, but no one had seen anyone suspicious, and although I managed to eavesdrop some conversations here and there, I learned nothing useful in relation to my sunflower."
+  },
+  {
+    "key": "2245",
+    "ids": [
+      2245
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "005",
+    "introNode": "introN",
+    "text": "talked with some adults at the gate. Most of them were parents delivering or waiting to pick up their children, too busy to pay me any attention. I was looking for a way to get inside the school and save the innocent girl from the main avenue when, suddenly, my attention was caught by a grown woman who looked just like the little girl. It had to be her mother!"
+  },
+  {
+    "key": "2248",
+    "ids": [
+      2248
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "010",
+    "introNode": "introN",
+    "text": "'Have you seen anyone suspicious around the school lately?'' I asked nonchalantly. The concierge returned me a blank stare. ''I don’t really get your meaning, sir. I mean, in my eyes all children are clearly suspect of being bloodthirsty, uncivilized savages with no respect whatsoever for morality, dignity or the basic human need of not having the salt on your shaker secretly replaced with washing powder. So in a sense, yes, I’ve seen about two hundred suspicious persons around, although ''person'' may be an overstatement''."
+  },
+  {
+    "key": "2250",
+    "ids": [
+      2250
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "030",
+    "introNode": "intro1",
+    "text": "tried to locate my kin tribe again. I had a hunch they might have set camp in one of the rainforests on the eastern wings of the School.\nI lost most of my clothes and my left ear during a particularly violent attack by wildlings, but I managed to reach the eastern wings with my life intact. And, just as I had predicted, my tribe was camped right there in the rainforests, close to a huge waterfall. They made fluttering sounds and clapped their hands against their shoulders as a signal of welcome, and offered me some roasted leather, probably from the covers of wild books scavenged on the northern libraries. And I must say that sitting there in the campfire, roasting leatherbound volumes and listening to their wordless atonal songs, I felt home at last. Tomorrow I would wake up in my home and I would continue the quest to save my sunflower, but, at least today, I would stay here and sing battlesongs with my newfound family."
+  },
+  {
+    "key": "2251",
+    "ids": [
+      2251
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "034",
+    "introNode": "intro1",
+    "text": "Turn left before the fire exit. Then I…"
+  },
+  {
+    "key": "2254",
+    "ids": [
+      2254
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "036",
+    "introNode": "intro1",
+    "text": "Turned right near the cafeteria, then I finally…"
+  },
+  {
+    "key": "2257",
+    "ids": [
+      2257
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "040",
+    "introNode": "intro1",
+    "text": "Followed straight until I reached classroom 2B. Miss Summers’ daughter’s class. \n I had to search desk by desk, as I had no idea which one was hers, but soon enough I found a desk with a pile of papers signed under the name “Valentine Summers”. She had a neat, regular handwriting, and the papers were all perfectly inconspicuous. Some watercolor drawings, a notebook page with substractions and additions for math class… I started to give up, thinking I was going mad, but my fingers kept prickling around the her desk, and then I felt it. A tiny hole under the table, almost too small to feel it with your own fingers. A false bottom. I took out the ink charge of one of her pens and used it to life the fake bottom of her desk drawer. And inside, I finally found what I had been looking for. The truth."
+  },
+  {
+    "key": "2259",
+    "ids": [
+      2259
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "038",
+    "introNode": "intro1",
+    "text": "Went down the double staircase and realized I was lost."
+  },
+  {
+    "key": "2260",
+    "ids": [
+      2260
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "008",
+    "introNode": "introN",
+    "text": "I asked a nearby father for her surname, and he helpfully revealed it was ''Summers''.\n''Miss Summers, I presume? May I have a minute?'' I asked with a serious voice. She looked at me and nodded."
+  },
+  {
+    "key": "2263",
+    "ids": [
+      2263
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "016",
+    "introNode": "introN",
+    "text": "''I have no children, I came here to save my sunflower!'', I screamed in panic. Miss Summers wrinkled her eyebrows. “Save your...? Sir, are you aware that you are not allowed to be here unless you are the legal guardian of one of the school students? I’m afraid I’ll have to ask you to leave the premises immediately. And don’t worry, if there was in fact a dangerous person in our school, which I doubt, we would take care of it.\nWith that she crossed the gate, and I was left by myself with nothing to do but go home."
+  },
+  {
+    "key": "2264",
+    "ids": [
+      2264
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "019",
+    "introNode": "introN",
+    "text": "“I’m the new substitute teacher,” I said confidently. Miss Summers shot me a look of appraisal, and then she nodded. \n“About time, I would say. And what was your name again, Mr…?”"
+  },
+  {
+    "key": "2265",
+    "ids": [
+      2265
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "024",
+    "introNode": "noPoison2",
+    "text": "look for the teachers room. Perhaps I could find some useful clues there. The problem was that I naturally had no idea about the location of the teacher’s room, so I started walking at random until I found a young boy, maybe five or six years old, sitting in one of the school staircases. I…"
+  },
+  {
+    "key": "2268",
+    "ids": [
+      2268
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "027",
+    "introNode": "noPoison2",
+    "text": "tried to enlist his help for my cause. “Well met, stranger”, I began, “I hail from distant lands with a proposal to you and your tribe, which I believe shall work towards the betterment and attainment of our mutual interests in this hostile wasteland known to some as School. Show me where the teacher’s room is, and we shall dance naked around a bonfire where we’ll burn the concierge’s purse and use its ashes to paint our faces as a sign of everlasting kinship and affiliation”.\nHe seemed to think about it for a few seconds, and then he nodded curtly before jumping out of the stairs, motioning for me to follow him."
+  },
+  {
+    "key": "2270",
+    "ids": [
+      2270
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "006",
+    "introNode": "introN",
+    "text": "... search for cameras or traps around the house. All I found were some old donnuts, my favorite underwear, a lighter, the tv remote and a pregnant mouse."
+  },
+  {
+    "key": "2271",
+    "ids": [
+      2271
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "028",
+    "introNode": "introN",
+    "text": "... my favourite sitting spot. \nAs I lay there, breathing slowly, drinking it all in, I could almost feel all my problems beginning to fade away. If only I could stay there forever, enjoying that nice breeze and thinking of nothing... \nBut I couldn’t. I still had a murderer to catch, and a sunflower to save."
+  },
+  {
+    "key": "2272",
+    "ids": [
+      2272
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "005",
+    "introNode": "introN",
+    "text": "“Hey, that’s what I wanted to ask!” I protested. He had stolen my question! Would he steal my sunflower too?\nThe gardener laughed out loud, shook his head and kept on tending to the plants. \n“My favourite flowers are Fire Lilies”, he said after a while. “If most people had half their intensity, we would live in a much more interesting world”. Then he looked at me once more with that rueful smile, and said “here, take these gardenias. A gift, from a fellow lover of flowers to another”. I thanked him and left, not knowing quite what to make of him."
+  },
+  {
+    "key": "2273",
+    "ids": [
+      2273
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "009",
+    "introNode": "intro1",
+    "text": "“I like flowers”, I said. \nHe looked up at me, his eyes still unfocused, and slowly he came back to his senses. \n“Yes... yes, me too. Here, you can have some, if you want”, he muttered. \nI thanked him and left, as he seemed ill-disposed at the moment."
+  },
+  {
+    "key": "2274",
+    "ids": [
+      2274
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "023",
+    "introNode": "introN",
+    "text": "Spy on him. He had the sign of the sunflower, after all. I had to get this. \nAs I approached, hiding through the bushes, I could clearly overhear his conversation. \n“Yes. Yes sir. No, I won’t let love get in the way, sir. I know we have to destroy it. Yes, it’s for the greater good. I’ll be at the warehouse on Roller Street in the afternoon, right after I finish my work here. Over.”Well, well. Seemed like I was finally getting somewhere. The old warehouse on Roller Street, this afternoon. I would have to take a look at that."
+  },
+  {
+    "key": "2275",
+    "ids": [
+      2275
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "021",
+    "introNode": "introN",
+    "text": "“Flowers”, I said. \n “What?”, he asked, perplexed.\nTo be honest, I had never really intended to say anything. I just randomly mutter the word “flowers” from time to time, especially when I get nervous, ever since I can remember, just like other people get a hiccup. Well, me, I never get a hiccup. I just say “flowers”. \nBut since I was actually engaged on a mission of deception, I handed him the flowers I had obtained a while back from the gardener. Trouble was, he still looked at me as if expecting me to say something."
+  },
+  {
+    "key": "2276",
+    "ids": [
+      2276
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "007",
+    "introNode": "introN",
+    "text": "... go talk to the hobo. \nI figured that since he often sat in the middle of the street all day, probably drugged on God knows what, he would know better than anyone what was going on inside the human soul, and thus could help me uncover the murderer. I sat next to him, but he didn’t seem to notice me. He was mumbling something to himself and making strange drawings on the pavement. On a second thought, he was probably just nuts."
+  },
+  {
+    "key": "2277",
+    "ids": [
+      2277
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "006",
+    "introNode": "intro1",
+    "text": "... a sturdy-looking crowbar, which I could probably use to open almost any locked door I encountered. Handy."
+  },
+  {
+    "key": "2278",
+    "ids": [
+      2278
+    ],
+    "kind": "story",
+    "place": 3,
+    "node": "015",
+    "introNode": "introN",
+    "text": "”Isn’t that your bed?” I asked.\n“Yes indeed! The pictograms appeared in my bed this morning. A time traveler must have made them,” he replied before falling soundly asleep. I went home."
+  },
+  {
+    "key": "2279",
+    "ids": [
+      2279
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "004",
+    "introNode": "intro1",
+    "text": " fed some cats I found lying around. Then I got bored of it went back home. "
+  },
+  {
+    "key": "2280",
+    "ids": [
+      2280
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "004",
+    "introNode": "intro1",
+    "text": "Or I should say I would have fed them, except I had no food on me and didn’t feel like being eaten alive yet."
+  },
+  {
+    "key": "2281",
+    "ids": [
+      2281
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "012",
+    "introNode": "introN",
+    "text": "''Are you planning to kill my plant?'' I asked full of accusation. \n''No, that’s not what I wanted! I was so confused.. I was deeply in love, you see. But luckily I’ve come to my senses in time! Now I will destroy this firearm and save your sunflower from all danger. You should go home and be with who you love the most'' He said with tears in his eyes. What a sad story... but if his words were true, my sunflower was now safe."
+  },
+  {
+    "key": "2282",
+    "ids": [
+      2282
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "009",
+    "introNode": "introN",
+    "text": "''What are you going to do with that?'' I asked. \n "
+  },
+  {
+    "key": "2284",
+    "ids": [
+      2284
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "008",
+    "introNode": "introN",
+    "text": "'You’re the sunflower murderer!!'' I shouted. \n''This is not true! It’s not what it seems...'' He looked down, ashamed.\n"
+  },
+  {
+    "key": "2286",
+    "ids": [
+      2286
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "30",
+    "introNode": "introN",
+    "text": " I tried to open it with my crowbar. I managed to injure myself with it and, much to my surprise, it worked. Inside the room I easily found the sniper’s gun hidden under a box. I picked it up and tossed it on a random potato field. Let the plants deal with it. My sunflower would be safe today."
+  },
+  {
+    "key": "2287",
+    "ids": [
+      2287
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "021",
+    "introNode": "introN",
+    "text": "... approached the hobo sitting on the sidewalk next door. \nI figured that since he often spent the whole day sitting in the middle of the street, drugged on God knows what, he would know better than anyone what was going on inside the human soul, and thus could help me uncover the murderer. I sat next to him, but he didn’t seem to notice me. He was mumbling something to himself and making strange drawings on the pavement. On a second thought, he was probably just nuts."
+  },
+  {
+    "key": "2289",
+    "ids": [
+      2289
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "011",
+    "introNode": "introN",
+    "text": "'Yes, and you should clean your toilet.'' \nHis eyes narrowed.\n ''If you’re not going to get anything, I’m going to have to ask you to leave.''"
+  },
+  {
+    "key": "2290",
+    "ids": [
+      2290
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "",
+    "introNode": "",
+    "text": "''Hey dude! fancy a sandwich?'' I handed him the sandwich. He ate it without a comment. After finishing it he took a sip of beer, eructed, and kept on mumbling. I decided to go home."
+  },
+  {
+    "key": "2292",
+    "ids": [
+      2292
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "031",
+    "introNode": "introN",
+    "text": "''Isn’t that your handwritting?'' I asked\n''I have a very conventional handwritting,'' he replied before falling soundly asleep. I went home."
+  },
+  {
+    "key": "2293",
+    "ids": [
+      2293
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "011",
+    "introNode": "introN",
+    "text": "... explore the outside of the water processing plant. Yes, the world is full of thrilling tales of adventure, daring escapes and cunning infiltrations. Yes, those stories fill us all with awe and admiration towards their heroes. And no, I am not one of them. \nI had no intention whatsoever of ending in jail, even less so if it required trespassing a heavily armed government compound out of the nonsensical notion that the murderers of my sunflower might be found inside."
+  },
+  {
+    "key": "2294",
+    "ids": [
+      2294
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "",
+    "introNode": "",
+    "text": "tried to talk my way in. \n''And good morning to you, sir!'' I boomed back with what I hoped would be a confident voice. The guard eyed me perfunctorily before repeating \n''ID. Autorization. Reason of visit.''"
+  },
+  {
+    "key": "2298",
+    "ids": [
+      2298
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "",
+    "introNode": "",
+    "text": "''Wouldn’t you happen to have an eight year old daughter?''\nThe guard looked at me with disbelief. ''You know my daughter?'' he asked, cautiously. \n''Well, of course! I’m a volunteer at the public school, and she’s always talking of you, and all the wonderful things you do together! She loves you very, very much''. "
+  },
+  {
+    "key": "2299",
+    "ids": [
+      2299
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "024",
+    "introNode": "intro1",
+    "text": "The control room was a big cubicle at the end of a long corridor, full of screens and beeping sounds and serious looking people doing serious looking things and bustling about. There I picked up an employee card with the number 8774 written on it. It didn’t really look like the kind of place where one could find a sunflower murderer, but what I did find was a big red button with the label “EMERGENCY STOP OF ALL WATER OPERATIONS”.  I..."
+  },
+  {
+    "key": "2301",
+    "ids": [
+      2301
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "024",
+    "introNode": "introN",
+    "text": "... a chocolate store. What can I say - I may cherish sunflowers, but I have a love for all edible seeds, and chocolate is no exception. \nThe shop was well stocked, and the shopkeeper was a smiling old man with a bushy beard. I asked him for... "
+  },
+  {
+    "key": "2305",
+    "ids": [
+      2305
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "005",
+    "introNode": "introN",
+    "text": "“My, my. I’m glad to see the Guiding Sunflower has such a perceptive guardian. Keep in mind that not everyone follows the exact same patterns every loop. Something to do with quantum decoherence in the brain microtubules, I’m told. Anyway, make good use of the gift the Guiding Sunflower has bestowed upon you to save It, and to save us all. Go in peace, young guardian.”"
+  },
+  {
+    "key": "2306",
+    "ids": [
+      2306
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "017",
+    "introNode": "introN",
+    "text": "“Do you like chocolate?” I asked, ignoring her question. Her face brightened up immediately. \n“Of course!” she yelled in delight. “Why, do you have some?”"
+  },
+  {
+    "key": "2310",
+    "ids": [
+      2310
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "016",
+    "introNode": "introN",
+    "text": "“I get lonely too”, I said. I had never told anyone anything like that before, but I was feeling a strange kind of connection with this little girl. Perhaps it was because somehow, under her cheerful appearance, she seemed as sad as I was. “To be honest, sometimes I feel like my only reason for going through the day is taking care of my sunflower”.\nShe gave me a sympathetic smile and said nothing else. "
+  },
+  {
+    "key": "2311",
+    "ids": [
+      2311
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "020",
+    "introNode": "introN",
+    "text": "“Sure, but I need your help”, I said slowly. “Do you see that red mailbox over there? I need you to put that letter in for me, and then I’ll give you the chocolate.”\nJust as she was leaning against the mailbox to throw in the letter, the van crashed against both of them, just as I had predicted. I heard someone calling for an ambulance, but I was already far away by then. \nI can’t say I’m proud of what I did, but desperate circumstances call for desperate measures.  And, in my defense, I knew she was going to be fine as soon as the loop reset. "
+  },
+  {
+    "key": "2312",
+    "ids": [
+      2312
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "027",
+    "introNode": "introN",
+    "text": "... whatever a child might like, thinking of the little girl I had seen playing outside. \nI paid in cash and asked the shopkeeper if he had seen anyone who looked like they might hate sunflowers, but he just stared blankly at me, so I left."
+  },
+  {
+    "key": "2313",
+    "ids": [
+      2313
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "013",
+    "introNode": "introN",
+    "text": "saw my neighbour talking with a young schoolgirl! How was this even possible? What was a cold-blooded murderer doing here? I leaned against the fence, and I realized the schoolgirl was the young girl I had seen playing at the main avenue. That was so strange… what was actually happening here? Was my evil neighbour somehow using this poor child for the purposes of her evil plans? I would have to find a way to get inside the school and unveil the truth."
+  },
+  {
+    "key": "2314",
+    "ids": [
+      2314
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "012",
+    "introNode": "introN",
+    "text": "''Let me in, there’s a murderer inside the school!''. The concierge looked strangely serene given the situation.\n''Are you sure, sir?'' was all she asked.\n''Absolutely! I saw her with my own eyes''.\n''But sir, are you completely certain?'' she asked once more.\n''Completely''.\n''Finally'' sighed the concierge, and a tiny smile somehow managed to creep into the corners of her mouth. ''I can’t believe those little fuckers are finally going to get what they deserve'' And with that she locked the school fence and started whistling happily, locking me outside."
+  },
+  {
+    "key": "2315",
+    "ids": [
+      2315
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "031",
+    "introNode": "intro1",
+    "text": "started walking randomly through the wastelands of a public School at night. What could ever go wrong, right?\nAt first I didn’t hear the noise, but after a while I became certain I was being followed. Far ahead I could hear a faint scraping of metal or bone against the wooden floor. Now that I paid attention, I became certain that the pack hunting me consisted of at least a dozen individuals, probably no longer human. It was an ambush. \nPerhaps a braver explorer would have stayed to find out what kind of abominable beasts were going to devour them, out of scientific curiosity if nothing else, but not me. I slit my wrists right there and then, the way I had been taught during my training, knowing I could always come back next loop."
+  },
+  {
+    "key": "2316",
+    "ids": [
+      2316
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "",
+    "introNode": "",
+    "text": "spy on Miss Summer’s parent meeting. I felt like there was something off about that woman.\nAt first everything went just fine. I followed her through the school as silently as possible, and she kept on walking through corridors and staircases. Really, how big could that building be? But then after a while I lost track of her, and when I tried to retrace my steps to follow her, I ended up meeting her face to face. She didn’t seem pleased to find me there, and I fear she suspected I had been following her. After that, she insisted on keeping an eye on me for the rest of the school day, which made me lose any opportunity to investigate further."
+  },
+  {
+    "key": "2318",
+    "ids": [
+      2318
+    ],
+    "kind": "story",
+    "place": 1,
+    "node": "007",
+    "introNode": "introN",
+    "text": " build a barricade to block the door with my bed and a few wooden planches I found in the dumpster.. The door was locked, so I had to stay inside for the rest of the day."
+  },
+  {
+    "key": "2319-2320-2321",
+    "ids": [
+      2319,
+      2320,
+      2321
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "013",
+    "introNode": "introN",
+    "text": "... a street sweeper, cleaning the park avenue. At the moment, he seemed to be talking very agitatedly with someone over the phone. A sudden realization hit me right then when I looked at him: his uniform showed the exact same sign I had found on that cap in the warehouse a while ago. The sign of the sunflower! I decided to..."
+  },
+  {
+    "key": "2319-2321",
+    "ids": [
+      2319,
+      2321
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "013",
+    "introNode": "introN",
+    "text": "... a street sweeper, cleaning the park avenue. At the moment, he seemed to be talking very agitatedly with someone over the phone. I decided to..."
+  },
+  {
+    "key": "2325",
+    "ids": [
+      2325
+    ],
+    "kind": "story",
+    "place": 2,
+    "node": "027",
+    "introNode": "introN",
+    "text": "... a group of children chasing each other. They seemed so happy, there in the park, like they didn’t have a worry in this world.\nAs I approached and sat on a bench near the playground, some of them looked at me warily, but after a while they resumed their game.\nWhile sitting on the bench I could easily overhear their conversation, although most of it was of no interest to me, having nothing to do with sunflowers. Apparently, a substitute teacher named Martin had been expected at the school this morning, but in the end he had never shown up."
+  },
+  {
+    "key": "2326",
+    "ids": [
+      2326
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "005",
+    "introNode": "introN",
+    "text": "... went to the Roller Street warehouse. It had just one door. It was hard, big and ugly. Probably nobody had ever loved it."
+  },
+  {
+    "key": "2328",
+    "ids": [
+      2328
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "006",
+    "introNode": "introN",
+    "text": "... went to the Roller Street warehouse. Once I got there, I walked towards the door. It was hard, big, ugly and open.\n"
+  },
+  {
+    "key": "2331",
+    "ids": [
+      2331
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "013",
+    "introNode": "introN",
+    "text": "I trust you won't do anything stupid.'' I told him.\n He smiled. ''I won’t. I must destroy this instrument of evil for the sake of everyone... It’ll all be alright. You should go home and take it easy'' He replied calmly. "
+  },
+  {
+    "key": "2332",
+    "ids": [
+      2332
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "008",
+    "introNode": "introN",
+    "text": "There must be a way I could open this door before this guy gets here'' I thought out loud.\n''Excuse me?'' He said, confused.\n"
+  },
+  {
+    "key": "2334",
+    "ids": [
+      2334
+    ],
+    "kind": "story",
+    "place": 4,
+    "node": "007",
+    "introNode": "introN",
+    "text": "''Yes, I knew something smelled fishy!'' I said triumphantly. \n''You mean the cats?'' He duly answered. ''I feed them every day.'' \n"
+  },
+  {
+    "key": "2337",
+    "ids": [
+      2337
+    ],
+    "kind": "story",
+    "place": 5,
+    "node": "012",
+    "introNode": "introN",
+    "text": "''Are you serious? Come on! It’s me.'' \n ''Look'' he said ''your face does look familiar, ok?  What would you like in your pizza?''"
+  },
+  {
+    "key": "2341",
+    "ids": [
+      2341
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "015",
+    "introNode": "introN",
+    "text": "Hah. I knew this puny PIN would be no match for me. True, I had to kill a perfectly innocent girl and take advantage of his father’s grief in order to defeat it, but hey, nothing good ever came out of dwelling in the past too much."
+  },
+  {
+    "key": "2342",
+    "ids": [
+      2342
+    ],
+    "kind": "story",
+    "place": 6,
+    "node": "014",
+    "introNode": "introN",
+    "text": "You fought well, brave PIN, and you might have defeated me this time, but we shall see each other again. On this day I swear revenge on you. You may have won this battle, but I shall be the one to win the war."
+  },
+  {
+    "key": "2343",
+    "ids": [
+      2343
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "",
+    "introNode": "",
+    "text": "The voice chuckled to itself. “Indeed, brother. Indeed. Anyway,"
+  },
+  {
+    "key": "2344-2345-2346",
+    "ids": [
+      2344,
+      2345,
+      2346
+    ],
+    "kind": "story",
+    "place": 7,
+    "node": "002b",
+    "introNode": "introN",
+    "text": "“Oh, dear, so innocent. It rose 6 times already. Anyway,... you look kind of down. Seems like you might need some advice from your friendly next door mysterious voice, amirite?”\nAt first I thought I was imagining voices again, but this one seemed too real to be a figment. In fact, as I listened I realized the sound seemed to be coming from the sewer door directly under my feet. "
+  },
+  {
+    "key": "2351",
+    "ids": [
+      2351
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "021",
+    "introNode": "noPoison2",
+    "text": "“Martin. Pleased to meet you” I answered, hoping that was in fact the name I’d overheard at the park. It seemed to match what she was expecting, because she signaled me to follow her and started walking through the school at a brisk pace. \n“Please come with me, Mr Martin. We have no time to lose. You will be covering class 5B for today. Our school is in fact quite big, and new teachers have often mentioned difficulties getting around at first. For now, all you need to know is that in order to reach class 5B from the main entrance you should go upstairs to the second floor, then turn right near the cafeteria, follow straight past class 2B, then go up one more floor before taking your first turn to the left”."
+  },
+  {
+    "key": "2352-2353-2354",
+    "ids": [
+      2352,
+      2353,
+      2354
+    ],
+    "kind": "story",
+    "place": 8,
+    "node": "020",
+    "introNode": "introN",
+    "text": "“666. Pleased to meet you.” I answered, hoping for a fluke, but Miss Summers wrinkled her forehead as soon as she heard my name. “Really? Mr 666? Seems like there’s been some kind of misunderstanding, then. This is Saint Nicolas Public Elementary School, and I’m afraid we are already expecting someone else to cover our vacant teaching spot. No doubt he will arrive soon, although he’s already seven minutes late, and I’m not one to approve of tardiness."
+  },
+  {
+    "key": "2461",
+    "ids": [
+      2461
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "008",
+    "introNode": "victory4",
+    "text": "GAME OVER :)"
+  },
+  {
+    "key": "2464",
+    "ids": [
+      2464
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "",
+    "introNode": "intro1",
+    "text": "Last night I had that nightmare again. My precious sunflower, withered, dead. Murdered.\nI don’t know what to do anymore. I know it’s going to happen tonight, I just know. So I have to find the murderer first.\nOh, my sunflower, the light of my days. My loyal companion... Even in my darkest hour I kept nurturing it, and that’s all that kept me sane.\nI don’t want it to die...\nI don’t want to be alone...\nI have to keep it alive."
+  },
+  {
+    "key": "2465",
+    "ids": [
+      2465
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "004",
+    "introNode": "introN",
+    "text": "Once again, it happened. They managed to kill the sunflower. Am I trapped here for all eternity? Is this ever going to end? How many times will I have to go back and watch my beloved sunflower die? Why is this happening to me?! \nShush… I have to be strong, now. I have to quiet the voices. This diary is all that’s keeping me sane. I will relive the loop as many times as I must, until I find a way to stop it. A way to get out of here.\nA way to save my sunflower."
+  },
+  {
+    "key": "2466",
+    "ids": [
+      2466
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "004",
+    "introNode": "endIntro1",
+    "text": "It’s night time and I’m sitting here, at home, all alone. Waiting for them. I knew they were coming, but I can’t help but wonder. Have my preparations been enough? Have I been able to outsmart them?\n"
+  },
+  {
+    "key": "2467",
+    "ids": [
+      2467
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "027b",
+    "introNode": "endIntro2",
+    "text": "It’s night time and I’m sitting here, at home, all alone. Waiting for them. I knew they were coming, but I can’t help but wonder. Have my preparations been enough? Have I been able to outsmart them this time?\n"
+  },
+  {
+    "key": "2468",
+    "ids": [
+      2468
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "004",
+    "introNode": "noLove",
+    "text": "Suddenly, I hear a noise. The balcony window implodes, and my neighbour appears in my living room, fully geared with abseiling equipment. I didn’t anticipate that. She climbed down all the way from her own flat, two floors up."
+  },
+  {
+    "key": "2469",
+    "ids": [
+      2469
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "004",
+    "introNode": "noLove2",
+    "text": "Time seems to freeze as she throws a final smile of triumph. She’s too close to the sunflower, and suddenly I know there’s nothing I can do to stop her. Not anymore. \nThen she pulls a string from her suit, and she immolates herself and the sunflower.\n… The world ends."
+  },
+  {
+    "key": "2470",
+    "ids": [
+      2470
+    ],
+    "kind": "intro",
+    "place": 5,
+    "node": "026",
+    "introNode": "noGun",
+    "text": "As the seconds tick away, I let out a small sigh of relief. Seems like I finally got rid of my neighbour. Perhaps this time… but no. As if it had been summoned by my thoughts, a sniper shoots an explosive bullet at the sunflower from one of the nearby roofs, engulfing the sunflower in a shroud of fire.\n… The world ends."
+  },
+  {
+    "key": "2471",
+    "ids": [
+      2471
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "015",
+    "introNode": "noPoison",
+    "text": "This time it will work, I tell myself. I made so many preparations. I’m even starting to forget what the world was like before the loop. This time I got rid of my neighbour, and I destroyed the sniper’s weapon. There’s nothing that should go wrong now…"
+  },
+  {
+    "key": "2472",
+    "ids": [
+      2472
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "015",
+    "introNode": "noPoison2",
+    "text": "Suddenly, I wake up with a shiver, realizing I have fallen asleep. It’s morning, and the sun shines. I look at my phone, and the date shows the next day. I did it, I finally… oh. Wait. Something’s wrong with the sunflower. I look at it with disbelief. The leaves are withered. It is dying. How could it be? I’m sure nobody entered the flat. Perhaps it was… poison?\n… The world ends."
+  },
+  {
+    "key": "2473",
+    "ids": [
+      2473
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "014",
+    "introNode": "noEvil",
+    "text": "Has it been years? Months? I don’t know anymore. I look back at the time when a neighbour abseiling down from her flat and immolating herself was all it took to defeat me. Hah. I was so foolish, back then. So naive. But they keep using the same strategies, making the same moves. The same mistakes. Only I keep learning, improving. And this time, this time I shall get it right. The neighbour, the sniper, the poison, I got rid of them all. Long live the sunflower!"
+  },
+  {
+    "key": "2474",
+    "ids": [
+      2474
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "014",
+    "introNode": "noEvil2",
+    "text": "Suddenly, the lights go out. I look around, confused. I hear a spraying sound, and I start feeling sleepy. So sleepy. \nThen I hear the voice. It’s a female voice. Cheerful, soft. I know it’s her. She’s the one I’ve been fighting all along. The Destroyer of Suns. And I’m sure I’ve heard her before… somewhere."
+  },
+  {
+    "key": "2475",
+    "ids": [
+      2475
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "014",
+    "introNode": "noEvil3",
+    "text": "''It’s all right'', she whispers. ''Why do you resist it so much? A world without time won’t be so bad, you know. According to my calculations, we will all be young forever. Don’t you want to live forever...?''\n… The world ends."
+  },
+  {
+    "key": "2476",
+    "ids": [
+      2476
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "008",
+    "introNode": "victory",
+    "text": "First, it was the neighbour. Then the sniper. Then poison. Then, her. \nI sit calmly on my sofa. I look, but I no longer see the world. I only see causality. The universe is under my spell. I own the trajectory of every fly, of every speck of dust. Of everything that lives and moves.\nI am millenary."
+  },
+  {
+    "key": "2477",
+    "ids": [
+      2477
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "008",
+    "introNode": "victory2",
+    "text": "And then she comes, like she has to. Believing she has won, like always. But not this time. She may be brilliant beyond comprehension, but she’s still a slave of causality. I can see through her every feint, her every plan and counterplan."
+  },
+  {
+    "key": "2478",
+    "ids": [
+      2478
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "008",
+    "introNode": "victory3",
+    "text": "We meet on the roof, by moonlight. She looks at me. A little girl, just eight years old. I know how long until she blinks again. I know how long she will exhale for. She looks at me, and she knows I know.\n''It seems my calculations were wrong, after all. Destroying the Guiding Sunflower doesn’t stop time… just resets it. But not for you. How long have you been trapped in here?'', she wonders.\n''Eons''."
+  },
+  {
+    "key": "2479",
+    "ids": [
+      2479
+    ],
+    "kind": "intro",
+    "place": 0,
+    "node": "008",
+    "introNode": "victory4",
+    "text": "I look at the clouds and I realize that, suddenly, I am no longer God. This is all new time, out of the loop, beyond my kingdom. I look at the world and it all seems alien, unfathomable. What was it like to live without knowing everything? Who was I before this began? I no longer remember. But who cares. "
+  }
+]
