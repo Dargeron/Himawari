@@ -13,6 +13,7 @@ import {createMap} from './map.js';
 import {createTitle} from './title.js';
 import {createNotebook} from './notebook/index.js';
 import {createPrefetch} from './prefetch.js';
+import {isNative, onBack, onLifecycle, shareFile} from './native.js';
 import {
   advanceAction,
   continuation,
@@ -104,9 +105,9 @@ export function startGame(boot = {}) {
     },
     mainAudio: audio,
     createAudio,
-    fullscreen: {available: !!document.fullscreenEnabled, toggle: toggleFullscreen},
+    fullscreen: {available: !!document.fullscreenEnabled && !isNative(), toggle: toggleFullscreen},
     install: boot.install,
-    language: {label: t('other.label'), href: '../' + t('other.route') + '/?choose=1', code: t('other.code')},
+    language: {label: t('other.label'), href: '../' + t('other.route') + '/index.html', code: t('other.code')},
     onOpen: () => {
       clearTimeout(autoTimer);
       audio.hold();
@@ -186,7 +187,10 @@ export function startGame(boot = {}) {
     guide.observe(s);
     journal.observe(s);
     if (discoveries) {
-      const fresh = guide.summary(s).facts.filter(f => !priorFacts.has(f.id)).map(f => f.id);
+      const fresh = guide
+        .summary(s)
+        .facts.filter(f => !priorFacts.has(f.id))
+        .map(f => f.id);
       if (fresh.length) {
         journal.markDiscoveries(fresh);
         hud.notice(t(fresh.length === 1 ? 'notice.finding' : 'notice.findings'), () => notebook.open('diary'));
@@ -205,7 +209,8 @@ export function startGame(boot = {}) {
       history = history.slice(-120);
     }
     lastSignature = signature;
-    const freshSegment = !previous || previous.screen.kind === 'map' || isNight(previous) !== isNight(s) || transition === 'loop';
+    const freshSegment =
+      !previous || previous.screen.kind === 'map' || isNight(previous) !== isNight(s) || transition === 'loop';
     if (s.screen.kind === 'map') showMapScreen(s);
     else showStoryScreen(s, freshSegment);
     audio.music(musicFor(s));
@@ -231,7 +236,13 @@ export function startGame(boot = {}) {
 
   function cardFor(s, transition) {
     if (transition === 'loop')
-      return {flowerPath: 'assets/art/original/hima1.webp', title: t('card.loop', {n: displayLoop(s)}), sub: tally(displayLoop(s)), rewind: true, duration: 2400};
+      return {
+        flowerPath: 'assets/art/original/hima1.webp',
+        title: t('card.loop', {n: displayLoop(s)}),
+        sub: tally(displayLoop(s)),
+        rewind: true,
+        duration: 2400,
+      };
     if (transition === 'night') return {flowerPath: 'assets/art/original/hima5.webp', title: L.phases.Night};
     return {flowerPath: flowerFor(s), title: phaseName(s)};
   }
@@ -480,7 +491,13 @@ export function startGame(boot = {}) {
       engine = next;
       history = Array.isArray(saved.history)
         ? saved.history
-            .filter(h => typeof h?.text === 'string' && typeof h?.location === 'string' && typeof h?.phase === 'string' && Number.isInteger(h?.loop))
+            .filter(
+              h =>
+                typeof h?.text === 'string' &&
+                typeof h?.location === 'string' &&
+                typeof h?.phase === 'string' &&
+                Number.isInteger(h?.loop),
+            )
             .slice(-120)
         : [];
       guide = createGuide(saved.guide);
@@ -521,10 +538,15 @@ export function startGame(boot = {}) {
   function exportSave() {
     if (!saved && !active) return toast(t('save.beginFirst'));
     const data = JSON.stringify(active ? save() : saved);
+    const name = L.code === 'en' ? 'Himawari-save.json' : 'Himawari-' + L.code + '-save.json';
+    if (isNative()) {
+      shareFile(name, data).then(ok => toast(t(ok ? 'save.exported' : 'save.shareFailed')));
+      return;
+    }
     const url = URL.createObjectURL(new Blob([data], {type: 'application/json'})),
       a = document.createElement('a');
     a.href = url;
-    a.download = L.code === 'en' ? 'Himawari-save.json' : 'Himawari-' + L.code + '-save.json';
+    a.download = name;
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     toast(t('save.exported'));
@@ -671,6 +693,19 @@ export function startGame(boot = {}) {
     suspendMedia();
   });
   window.addEventListener('pageshow', resumeMedia);
+  onLifecycle(() => {
+    if (active) save();
+    suspendMedia();
+  }, resumeMedia);
+  // Android's back button: close what is open, else the notebook is the pause
+  // menu; on the cover it closes the app.
+  onBack(() => {
+    if (notebook.isOpen()) return notebook.close(), true;
+    if (looking) return setLooking(false), true;
+    if (hud.carding) return hud.finishCard(), true;
+    if (active) return notebook.open('settings'), true;
+    return false;
+  });
   document.addEventListener('visibilitychange', () => (document.hidden ? suspendMedia() : resumeMedia()));
 
   // --- Start ------------------------------------------------------------------

@@ -1,0 +1,112 @@
+name: Android app
+
+# Pushing a version tag (v2.0.0, …) builds the APK and publishes it as a
+# GitHub release. Running the workflow by hand builds the APK as an artifact.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Android SDK platform and build tools
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "build-tools;36.0.0" > /dev/null
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Original rules, winning route and both language packs
+        run: npm run test:logic
+      - name: Build both editions with every file inside the app
+        run: python3 tools/build.py --app
+      - name: Copy the game into the Android project
+        run: npx cap sync android
+
+      # A persistent key (repository secrets) lets every release install over
+      # the previous one. Without it, this release gets a one-off key.
+      - name: Signing key
+        env:
+          KEYSTORE_BASE64: ${{ secrets.HIMAWARI_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.HIMAWARI_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.HIMAWARI_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.HIMAWARI_KEY_PASSWORD }}
+        run: |
+          store="$RUNNER_TEMP/himawari.keystore"
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 -d > "$store"
+            echo "::add-mask::$KEYSTORE_PASSWORD"
+            {
+              echo "HIMAWARI_KEYSTORE=$store"
+              echo "HIMAWARI_KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD"
+              echo "HIMAWARI_KEY_ALIAS=$KEY_ALIAS"
+              echo "HIMAWARI_KEY_PASSWORD=${KEY_PASSWORD:-$KEYSTORE_PASSWORD}"
+              echo "SIGNING=persistent"
+            } >> "$GITHUB_ENV"
+          else
+            password="$(openssl rand -hex 24)"
+            echo "::add-mask::$password"
+            keytool -genkeypair -keystore "$store" -storepass "$password" -keypass "$password" \
+              -alias himawari -keyalg RSA -keysize 3072 -validity 10000 -dname "CN=Himawari" > /dev/null 2>&1
+            {
+              echo "HIMAWARI_KEYSTORE=$store"
+              echo "HIMAWARI_KEYSTORE_PASSWORD=$password"
+              echo "HIMAWARI_KEY_ALIAS=himawari"
+              echo "HIMAWARI_KEY_PASSWORD=$password"
+              echo "SIGNING=temporary"
+            } >> "$GITHUB_ENV"
+          fi
+
+      - name: Build the APK
+        working-directory: android
+        run: ./gradlew --no-daemon assembleRelease
+
+      - name: Name and fingerprint the APK
+        run: |
+          version="$(node -p "require('./package.json').version")"
+          apk="Himawari-$version.apk"
+          mv android/app/build/outputs/apk/release/app-release.apk "$apk"
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify "$apk"
+          sha256sum "$apk" > "$apk.sha256"
+          {
+            echo "VERSION=$version"
+            echo "APK=$apk"
+            echo "APK_SHA256=$(cut -d' ' -f1 "$apk.sha256")"
+            echo "APK_MB=$(( $(stat -c%s "$apk") / 1000000 ))"
+          } >> "$GITHUB_ENV"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: himawari-android
+          path: |
+            ${{ env.APK }}
+            ${{ env.APK }}.sha256
+          retention-days: 30
+
+      - name: Publish the release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          notes="$RUNNER_TEMP/notes.md"
+          sed -e "s/{{VERSION}}/$VERSION/g" -e "s/{{APK}}/$APK/g" -e "s/{{SHA256}}/$APK_SHA256/g" -e "s/{{MB}}/$APK_MB/g" \
+            .github/release-notes.md > "$notes"
+          if [ "$SIGNING" = temporary ]; then cat .github/release-notes-temporary-key.md >> "$notes"; fi
+          gh release create "$GITHUB_REF_NAME" "$APK" "$APK.sha256" \
+            --title "Himawari $VERSION" --notes-file "$notes" --verify-tag

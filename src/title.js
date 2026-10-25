@@ -15,7 +15,7 @@ export function createTitle(root, actions) {
   $('title-language').addEventListener('click', () => actions.onLanguage?.());
 
   const fullscreen = $('title-fullscreen');
-  fullscreen.hidden = !document.fullscreenEnabled;
+  fullscreen.hidden = !document.fullscreenEnabled || globalThis.Capacitor?.isNativePlatform?.();
   fullscreen.addEventListener('click', () => actions.onFullscreen());
 
   const install = $('title-install');

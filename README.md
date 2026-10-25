@@ -41,7 +41,20 @@ python3 tools/build.py
 python3 -m http.server 8000 --directory dist
 ```
 
-Open <http://localhost:8000/> and choose a language. On the website the game starts as soon as the title and opening are ready, and keeps downloading the rest in the background; later visits and offline play use the cached copy. `python3 tools/build.py --complete` downloads and verifies everything before the title instead, for packaged apps (apk/exe).
+Open <http://localhost:8000/> and choose a language. On the website the game starts as soon as the title and opening are ready, and keeps downloading the rest in the background; later visits and offline play use the cached copy. `python3 tools/build.py --complete` downloads and verifies everything before the title instead; `--app` puts every file inside the package (used for the Android app).
+
+## Android
+
+Each version tag (`v2.0.0`, …) builds the Android app and publishes it on the [Releases](https://github.com/Dargeron/Himawari/releases) page (`.github/workflows/android.yml`). The APK holds both editions and every picture, voice and piece of music, so it plays fully offline; it needs Android 7 or newer.
+
+To build it yourself you need the Android SDK (platform 36), JDK 21 and Node 22:
+
+```sh
+npm ci
+npm run android:apk        # python3 tools/build.py --app, npx cap sync android, gradle
+```
+
+Set `HIMAWARI_KEYSTORE`, `HIMAWARI_KEYSTORE_PASSWORD`, `HIMAWARI_KEY_ALIAS` and `HIMAWARI_KEY_PASSWORD` to sign it. For releases, add the same key as repository secrets (`HIMAWARI_KEYSTORE_BASE64` — the keystore file in base64 — plus the password, alias and key password) so every release installs over the previous one; without them each release is signed with a one-off key. Launcher icons and the splash come from the author's sunflower (`python3 tools/android_resources.py`).
 
 ## Publishing
 

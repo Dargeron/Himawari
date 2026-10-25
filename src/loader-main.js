@@ -22,7 +22,8 @@ const view = {
   retry: $('loader-retry'),
   app: $('app'),
 };
-const local = location.protocol === 'file:';
+// Local: opened from disk, or packaged in an app with every file inside it.
+const local = location.protocol === 'file:' || boot.mode === 'local';
 const workers = !local && 'serviceWorker' in navigator && window.isSecureContext !== false;
 const supported = typeof fetch === 'function' && typeof Blob === 'function' && !!window.URL?.createObjectURL;
 

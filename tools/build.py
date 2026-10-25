@@ -11,8 +11,10 @@ Standard library only. The output is a static site:
 
 Usage:
   python3 tools/build.py              progressive loading (the website)
-  python3 tools/build.py --complete   download everything before the title,
-                                      for packaged apps (apk / exe)
+  python3 tools/build.py --complete   download and verify everything before
+                                      the title (a hosted, offline-first copy)
+  python3 tools/build.py --app        every file ships inside the package
+                                      (Android apk): nothing is downloaded
 """
 from pathlib import Path
 import argparse, hashlib, json, re, shutil
@@ -192,12 +194,13 @@ def edition_assets(code, data):
     return manifest
 
 
-def build(complete=False, output=ROOT / 'dist'):
+def build(complete=False, output=ROOT / 'dist', app=False):
     if output.exists():
         shutil.rmtree(output)
     output.mkdir(parents=True)
     css = stylesheet()
-    summary = {'version': VERSION, 'mode': 'complete' if complete else 'progressive'}
+    mode = 'local' if app else 'complete' if complete else 'progressive'
+    summary = {'version': VERSION, 'mode': mode}
     shared = {}
     for code, edition in EDITIONS.items():
         data = pack_data(code)
@@ -211,7 +214,7 @@ def build(complete=False, output=ROOT / 'dist'):
         (target / 'game.js').write_text(game)
         (target / 'style.css').write_text(css)
         boot = {
-            'mode': 'complete' if complete else 'progressive',
+            'mode': mode,
             'assetRoot': '../',
             'cacheName': 'himawari-assets-v2',
             'files': manifest,
@@ -281,6 +284,7 @@ def critical_assets(code, data):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--complete', action='store_true', help='download every asset before the title screen')
-    parser.add_argument('--out', default=str(ROOT / 'dist'))
+    parser.add_argument('--app', action='store_true', help='package every asset inside an app; nothing is downloaded')
+    parser.add_argument('--out', default=None)
     args = parser.parse_args()
-    build(args.complete, Path(args.out))
+    build(args.complete, Path(args.out) if args.out else ROOT / ('dist-app' if args.app else 'dist'), app=args.app)

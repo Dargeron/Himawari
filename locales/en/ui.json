@@ -77,5 +77,6 @@
   "save.beginFirst": "Begin the game before exporting a save.",
   "save.exported": "Save exported.",
   "save.imported": "Save imported.",
-  "save.invalid": "This file is not a valid Himawari save."
+  "save.invalid": "This file is not a valid Himawari save.",
+  "save.shareFailed": "The save could not be shared. Try again, or choose another app."
 }

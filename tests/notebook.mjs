@@ -269,7 +269,7 @@ const results = {};
   assert.match($('nb-narration-label').textContent, new RegExp(L.narrator));
   click('#nb-language');
   assert.equal(p.w.localStorage.getItem('himawari-language'), t('other.code'));
-  assert.match($('nb-language').getAttribute('href'), /\?choose=1$/);
+  assert.equal($('nb-language').getAttribute('href'), '../' + t('other.route') + '/index.html');
   key('Escape');
   // The settings survive a reload and show as stored.
   const again = boot(p.storage());

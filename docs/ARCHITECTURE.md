@@ -40,6 +40,7 @@ web/index.html       the language picker at the site root
 tests/               logic per language, game screen and notebook DOM, loader, media
 tools/build.py       the dependency-free bundler and site builder
 docs/history/        notes and reports from the earlier releases
+android/             the Capacitor Android project (src/native.js is its bridge)
 ```
 
 ## The screen

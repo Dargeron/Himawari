@@ -16,7 +16,7 @@
     var chosen = localStorage.getItem('himawari-language');
     if (!/[?&]choose\b/.test(location.search) && (chosen === 'en' || chosen === 'zh-CN')) {
       document.documentElement.className = 'leaving';
-      location.replace(chosen + '/');
+      location.replace(chosen + '/index.html');
     }
   } catch (e) {}
 })();
@@ -235,8 +235,8 @@ nav {
   <p class="kana" lang="ja">ひまわり</p>
   <p class="credit">A game by Liam McHara &amp; Albert Casals</p>
   <nav aria-label="Choose a language · 选择语言">
-   <a class="choice" href="en/" lang="en" hreflang="en" data-code="en"><span class="label">Play in English</span><span class="voice">narrated by Harry</span></a>
-   <a class="choice" href="zh-CN/" lang="zh-CN" hreflang="zh-CN" data-code="zh-CN"><span class="label">简体中文</span><span class="voice">朱利安朗读</span></a>
+   <a class="choice" href="en/index.html" lang="en" hreflang="en" data-code="en"><span class="label">Play in English</span><span class="voice">narrated by Harry</span></a>
+   <a class="choice" href="zh-CN/index.html" lang="zh-CN" hreflang="zh-CN" data-code="zh-CN"><span class="label">简体中文</span><span class="voice">朱利安朗读</span></a>
   </nav>
   <p class="note">The first visit downloads the game’s art, narration and music as you play.</p>
   <p class="note" lang="zh-CN">首次游玩时，游戏会一边玩一边下载画面、朗读和音乐。</p>
