@@ -1,0 +1,18 @@
+{
+  "name": "himawari-remake",
+  "version": "1.5.0",
+  "private": true,
+  "type": "module",
+  "description": "Himawari, reconstructed from its original Unity WebGL build",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "portable": "python3 tools/build.py --portable",
+    "test": "node tests/mechanics.mjs && node tests/walkthrough.mjs && node tests/ui.mjs && node tests/audio.mjs && node tests/audio-transitions.mjs && node tests/guide.mjs && node tests/journal.mjs && node tests/notebook-ui.mjs && python3 tests/assets.py && node tests/preload.mjs && node tests/scenes.mjs && node tests/cinematic.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "30.1.1"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
