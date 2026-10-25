@@ -3,13 +3,14 @@
   "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Himawari — a sunflower, a town, and another day. Both editions from one source.",
+  "description": "Himawari \u2014 a sunflower, a town, and another day. Both editions from one source.",
   "scripts": {
     "build": "python3 tools/build.py",
     "build:complete": "python3 tools/build.py --complete",
     "format": "prettier --write src tests/*.mjs tests/helpers",
     "test:logic": "for c in en zh-CN; do node tests/mechanics.mjs $c && node tests/walkthrough.mjs $c && node tests/guide.mjs $c && node tests/journal.mjs $c && node tests/audio.mjs $c && node tests/audio-transitions.mjs $c && node tests/scenes.mjs $c || exit 1; done && node tests/localization.mjs",
-    "test": "npm run test:logic"
+    "test": "npm run test:logic && npm run test:ui",
+    "test:ui": "python3 tools/build.py >/dev/null && node tests/ui.mjs en && node tests/ui.mjs zh-CN"
   },
   "devDependencies": {
     "jsdom": "30.1.1",

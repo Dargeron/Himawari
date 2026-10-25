@@ -93,10 +93,6 @@ html[data-phase='night'] .stage-shade {
   animation: none;
 }
 
-.stage.looking .stage-layer[data-fit='fill'] .stage-art {
-  display: block;
-}
-
 /* Portrait: the picture takes the top of the screen and fades into its own
    blurred continuation behind the ink box, so the subject stays visible. */
 @media (max-aspect-ratio: 1/1) {

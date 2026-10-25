@@ -112,6 +112,10 @@ html:lang(zh-CN) .hud-phase {
   transition: background-color 160ms;
 }
 
+#game[data-screen='map'] #look-button {
+  display: none;
+}
+
 .hud-button:hover {
   background: rgba(13, 9, 6, 0.95);
 }

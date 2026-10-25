@@ -88,6 +88,10 @@ export function startGame(boot = {}) {
     exportSave,
     importSave,
     restart: begin,
+    toTitle: () => {
+      notebook.close();
+      showTitle();
+    },
     requestClue: () => {
       guide.requestClue(current);
       save();
@@ -235,6 +239,7 @@ export function startGame(boot = {}) {
     map.hide();
     const box = $('inkbox');
     box.dataset.mode = 'story';
+    $('game').dataset.screen = 'story';
     const key = illustrationKey(s),
       focus = L.focus?.[key],
       art = sceneArtPath(s);
@@ -298,6 +303,7 @@ export function startGame(boot = {}) {
   function showMapScreen(s) {
     const box = $('inkbox');
     box.dataset.mode = 'map';
+    $('game').dataset.screen = 'map';
     box.dataset.side = 'right';
     stage.show('assets/art/original/mapa_joc.webp', {fit: 'fill'});
     map.show(s, journal.map(guideDay(s)));
@@ -635,7 +641,7 @@ export function startGame(boot = {}) {
     } else if (key === 'r') {
       narrating = true;
       audio.replay();
-    } else if (key === 'v' || key === 'h') setLooking(true);
+    } else if ((key === 'v' || key === 'h') && screen.kind !== 'map') setLooking(true);
     else if (key === 'n' || key === 'Escape') notebook.open(key === 'Escape' ? 'settings' : undefined);
     else if (key === 's' && read) setSkipping(!skipping);
     else if (key === 'a') auto.click();
