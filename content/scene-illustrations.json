@@ -679,10 +679,10 @@
     "ids": [
       2044
     ],
-    "bytes": 133558,
+    "bytes": 94750,
     "width": 1024,
     "height": 768,
-    "sha256": "9deea658a8e6f5d944baeabdb049e1a4ac423985125ddb90fd7070b814ddd69e"
+    "sha256": "5ad90aa1d53a5efe22f8aadbefa5921a0b214da8ad021d88b39d93b1b65c1050"
   },
   "2045": {
     "asset": "assets/art/scenes/2045.webp",
@@ -869,20 +869,20 @@
     "ids": [
       2081
     ],
-    "bytes": 143288,
+    "bytes": 65680,
     "width": 1024,
     "height": 768,
-    "sha256": "b5e7ddfc2976531e2ccde3f64786037e49e4834327078a5c3339c7ab3282195d"
+    "sha256": "be9f0dc17e37d2f65f88e7f9228fd9937ecaa93da4e836236a26c648d6cc61cd"
   },
   "2082": {
     "asset": "assets/art/scenes/2082.webp",
     "ids": [
       2082
     ],
-    "bytes": 173202,
+    "bytes": 84766,
     "width": 1024,
     "height": 768,
-    "sha256": "aeff5b05fa3174d545c84bc8e14ebeb9de8d6d8e6497e5da3e3cef7e1d640ed5"
+    "sha256": "bd005f917bd43c14d2a31a7210106098ac337d6338f8df0b6f80ed85383349ae"
   },
   "2083": {
     "asset": "assets/art/scenes/2083.webp",
@@ -1470,10 +1470,10 @@
     "ids": [
       2202
     ],
-    "bytes": 151830,
+    "bytes": 89860,
     "width": 1024,
     "height": 768,
-    "sha256": "d0dfa8915e561fa281ed3ed155506f21fa67b324b64a1f24e3544d2ab39b6806"
+    "sha256": "a63984e4a95ad1bf610dd5ff3247b767b53e48cf33e705e9003a26c870aeb13a"
   },
   "2205": {
     "asset": "assets/art/scenes/2205.webp",
@@ -1530,20 +1530,20 @@
     "ids": [
       2218
     ],
-    "bytes": 135660,
+    "bytes": 93654,
     "width": 1024,
     "height": 768,
-    "sha256": "484fe5fd23245e444b08043f9ed8753c26bad92b4657d540bd4a4e1ba82e6721"
+    "sha256": "867987daaab907eb67065756e5a1271fccd03343b3df4399605cf239f59c5ae2"
   },
   "2219": {
     "asset": "assets/art/scenes/2219.webp",
     "ids": [
       2219
     ],
-    "bytes": 125826,
+    "bytes": 107734,
     "width": 1024,
     "height": 768,
-    "sha256": "bc18412d6613fc4d730c86c044eb976f031b739dcb2211dff6f5c297d78ab0d8"
+    "sha256": "5e72aea7440aaaa61696f2d1691460e77114d0396119a5421e7dcd055a4dc0b1"
   },
   "2220": {
     "asset": "assets/art/scenes/2220.webp",
@@ -1630,10 +1630,10 @@
     "ids": [
       2232
     ],
-    "bytes": 171390,
+    "bytes": 52322,
     "width": 1024,
     "height": 768,
-    "sha256": "c7d26b4ddc029cabb55c6c9d86a7a10b7eb697a9223bc89148a5d8ced64eb7a4"
+    "sha256": "d028f9b2f555aebf86af6148325459d220dc3522749b99857a57c52dab2d87b0"
   },
   "2235": {
     "asset": "assets/art/scenes/2235.webp",
@@ -1830,10 +1830,10 @@
     "ids": [
       2270
     ],
-    "bytes": 132270,
+    "bytes": 109528,
     "width": 1024,
     "height": 768,
-    "sha256": "facde2d205b11020ada67cc74a1b0e62d05638b96988023728cf498fd9f5167f"
+    "sha256": "9d75a1e01cc2b4d7fedeb127aa98f2d94d5ad2f172de38bb1ee15d40352722a4"
   },
   "2271": {
     "asset": "assets/art/scenes/2271.webp",
@@ -2010,10 +2010,10 @@
     "ids": [
       2292
     ],
-    "bytes": 136330,
+    "bytes": 111954,
     "width": 1024,
     "height": 768,
-    "sha256": "bc02e634d458f545c5b6c2135701134ebfb787867e93730c608e3a3423637074"
+    "sha256": "2eee793cd74600205273ae90678037d524e999951507d67da9da0c0b39178967"
   },
   "2293": {
     "asset": "assets/art/scenes/2293.webp",
@@ -2110,10 +2110,10 @@
     "ids": [
       2312
     ],
-    "bytes": 159242,
+    "bytes": 97146,
     "width": 1024,
     "height": 768,
-    "sha256": "47e6ac7fdfddd2eb046bcb60b5cb0c30ea73b0e5f5e03ba6ef73c9b060deb1bb"
+    "sha256": "9a2c81b0ae1058c5d6b17e2300090a565bf1e4c02d857dfe2098b2ced43ff979"
   },
   "2313": {
     "asset": "assets/art/scenes/2313.webp",
@@ -2273,10 +2273,10 @@
     "ids": [
       2342
     ],
-    "bytes": 153170,
+    "bytes": 153834,
     "width": 1024,
     "height": 768,
-    "sha256": "32a7973c97a72c5dbdfdcca1f507f76d4c9f5e1f08f4c93e3b5a2a8303a4277b"
+    "sha256": "aa080bcff96289db0ac0c3ce876946c4f92a76d2a114f1482f20108961074a20"
   },
   "2343": {
     "asset": "assets/art/scenes/2343.webp",
@@ -2387,10 +2387,10 @@
     "ids": [
       2469
     ],
-    "bytes": 171154,
-    "width": 1280,
-    "height": 962,
-    "sha256": "4b775a0da68a30a1d04312e5ab3ca73c2903a699e1c499eb988c1e7b24acd858"
+    "bytes": 50866,
+    "width": 1024,
+    "height": 768,
+    "sha256": "a24cc6ed0a9a2e3d987cc9e1807ac58ec8b2ce9b2b51de67834e39a8329a64c0"
   },
   "2470": {
     "asset": "assets/art/scenes/2470.webp",
