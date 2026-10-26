@@ -71,7 +71,7 @@ const clean = text => text.replace(/\s+/g, ' ').trim();
   assert.equal(g.$('#title').hidden, false);
   assert.equal(g.$('#title-continue').hidden, true);
   assert.equal(g.$('#title-begin').textContent, L.strings['title.begin']);
-  assert.match(g.$('.stage-layer.visible .stage-art')?.src || g.$('.stage-art').src, /scenes\/2464\.webp/);
+  assert.match(g.$('.stage-layer.visible .stage-art')?.src || g.$('.stage-art').src, /cover\/title\.webp/);
   g.click('#title-begin');
   assert.equal(g.$('#title').hidden, true);
   assert.equal(g.$('#game').hidden, false);

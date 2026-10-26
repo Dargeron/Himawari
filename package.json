@@ -1,9 +1,9 @@
 {
   "name": "himawari",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "private": true,
   "type": "module",
-  "description": "Himawari \u2014 a sunflower, a town, and another day. Both editions from one source.",
+  "description": "Himawari — a sunflower, a town, and another day. Both editions from one source.",
   "scripts": {
     "build": "python3 tools/build.py",
     "build:complete": "python3 tools/build.py --complete",

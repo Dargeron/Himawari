@@ -4,7 +4,9 @@ import {L} from './i18n.js';
 // preference entry must never hide a healthy autosave.
 const reduceMotion = () => globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches || false;
 
-export const textSpeeds = {slow: 18, normal: 30, fast: 55, instant: Infinity};
+// Letters per second without narration. With narration, slow and normal
+// follow the voice and fast writes twice as fast as it speaks.
+export const textSpeeds = {slow: 18, normal: 30, fast: 60, instant: Infinity};
 
 export function defaultSettings() {
   return {

@@ -107,7 +107,7 @@
   "nb.settings.textSpeed": "Text speed",
   "nb.settings.speed.slow": "Slow",
   "nb.settings.speed.normal": "Normal",
-  "nb.settings.speed.fast": "Fast",
+  "nb.settings.speed.fast": "Fast ×2",
   "nb.settings.speed.instant": "Instant",
   "nb.settings.narrateRead": "Narrate passages I’ve read before",
   "nb.settings.autoContinue": "Continue automatically after narration",

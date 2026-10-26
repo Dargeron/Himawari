@@ -184,6 +184,7 @@ def fill(template, strings, extra):
 def edition_assets(code, data):
     """Every file the edition can request, as path -> {bytes, sha256}."""
     files = set(ROOT.glob('assets/art/original/*.webp')) | set(ROOT.glob('assets/art/scenes/*.webp'))
+    files |= set(ROOT.glob('assets/art/cover/*.webp'))
     files |= set(ROOT.glob('assets/music/*.m4a')) | set(edition_fonts(code))
     files |= set(ROOT.glob('assets/icons/*.png'))
     files |= {ROOT / clip['file'] for clip in data['narration'].values()}
@@ -272,7 +273,7 @@ def critical_assets(code, data):
     """What the title screen and the first minute of play need."""
     opening = data['narration']['2464']['file']
     first_scene = data['scenes']['2464']['asset'] if '2464' in data['scenes'] else None
-    names = ['assets/art/original/mapa_joc.webp', 'assets/art/original/continueBtn.webp',
+    names = ['assets/art/cover/title.webp', 'assets/art/original/mapa_joc.webp', 'assets/art/original/continueBtn.webp',
              *[f'assets/art/original/hima{i}.webp' for i in range(1, 6)],
              'assets/music/opening_6_opening.m4a', 'assets/music/click_3_click.m4a', opening]
     if first_scene:

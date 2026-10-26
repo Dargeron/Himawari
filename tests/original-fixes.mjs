@@ -74,4 +74,17 @@ for (const choice of [1, 2]) {
   assert.deepEqual(e.snapshot().screen.parts.map(p => p.id), [2245]);
   assert.equal(e.snapshot().state.phase, 'Morning');
 }
-console.log(JSON.stringify({controlRoomButton: true, onceADay: true, morningGate: true}));
+// The water plant's public entrance shows the guard and his three answers;
+// the original went straight on to the Fought outcome.
+for (const [choice, outcome] of [[1, 2059], [2, 2223], [3, 2294]]) {
+  const e = at(4);
+  e.action('go', 6);
+  e.action('choice', 1);
+  e.action('choice', 1);
+  const s = e.snapshot();
+  assert.deepEqual(s.screen.parts.map(p => p.id), [2049]);
+  assert.deepEqual(s.screen.options.map(o => o.parts[0].id), [2050, 2051, 2052]);
+  e.action('choice', choice);
+  assert.deepEqual(e.snapshot().screen.parts.map(p => p.id), [outcome]);
+}
+console.log(JSON.stringify({controlRoomButton: true, onceADay: true, morningGate: true, publicEntrance: true}));

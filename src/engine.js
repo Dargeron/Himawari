@@ -152,6 +152,22 @@ export function createEngine({
     bytes[flag('itemSandWich')] = 0; // he ate it
     bytes[flag('infoHoboSandwich')] = 1;
   }
+  // Water plant (place 6): the outside menu (node at slot 1987892) while the
+  // guard is still at his post (itemDeadGirl unset).
+  const publicEntrance = () =>
+    u32(GC + 76) === 6 && str(u32(GC + 80)).raw === str(u32(1987892)).raw && !bytes[flag('itemDeadGirl')];
+  function guardAtTheGate() {
+    // As the original's first branch does, without falling into the next one.
+    const [node, text, fought, fled, talk] = [1988088, 1988728, 1988732, 1988736, 1988740].map(a => u32(a));
+    set32(GC + 80, node);
+    set32(GC + 84, text);
+    set32(GC + 88, fought);
+    set32(GC + 92, fled);
+    set32(GC + 96, talk);
+    screen.kind = 'story';
+    write(text);
+    options(fought, fled, talk);
+  }
   const listeners = new Set();
   function u32(address) {
     return ints[address >>> 2];
@@ -387,7 +403,12 @@ export function createEngine({
       // it showed an empty page and never stopped the water, so the gardener
       // could not react. Answer that button as node 019 does.
       if (u32(GC + 76) === 6 && str(u32(GC + 80)).raw === '024') set32(GC + 80, u32(CONTROL_ROOM_NODE));
-      core['GameController_Option' + value](GC, 0);
+      // Original-game fix: the water plant's public entrance sets up the guard
+      // ("Sir, I will need a valid ID...") with Fought / Fled / talk, but a
+      // missing break let the next test match the node it had just set, so
+      // the Fought outcome replaced the guard at once. Show the guard instead.
+      if (value === 1 && publicEntrance()) guardAtTheGate();
+      else core['GameController_Option' + value](GC, 0);
       if (sandwich) bytes[flag('itemSandWich')] = 1;
       if (morningGate) set32(GC + 64, 2);
     } else if (kind === 'continue') {
