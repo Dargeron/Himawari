@@ -27,7 +27,9 @@ import {
 } from './screens.js';
 
 const $ = id => document.getElementById(id);
-const COVER_ART = 'assets/art/scenes/2464.webp';
+// The title screen shows the original painting of Harry's room with the bed
+// empty; the first passage (scene 2464) then shows him asleep in it.
+const COVER_ART = 'assets/art/cover/title.webp';
 
 // The game: one stage, one ink box, one notebook. Everything here only
 // presents snapshots and forwards the player's actions to the recovered rules.
