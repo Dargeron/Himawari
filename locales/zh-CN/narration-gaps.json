@@ -1,0 +1,18 @@
+{
+  "about": "Passages whose recording does not say their text. Re-timing against the audio (2026) could not find these lines in any recording (or only garbled), so they are left silent rather than playing other words.",
+  "unspoken": {
+    "1927": "not found in the recording",
+    "1997": "not found in the recording",
+    "2004": "not found in the recording",
+    "2008": "not found in the recording",
+    "2011": "not found in the recording",
+    "2048": "not found in the recording",
+    "2191": "only found inside another sentence",
+    "2256": "not found in the recording",
+    "2267": "not found in the recording",
+    "2282": "not found in the recording",
+    "2354": "not found in the recording",
+    "2465": "not found in the recording"
+  },
+  "numbers": true
+}

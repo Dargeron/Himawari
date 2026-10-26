@@ -1,0 +1,13 @@
+{
+  "loader.preparing": "Preparing the story…",
+  "loader.critical": "Preparing the opening…",
+  "loader.complete": "Downloading the complete game…",
+  "loader.opening": "Opening…",
+  "loader.amount": "{done} of {total} MB",
+  "loader.retry": "Try again",
+  "loader.error": "Some files did not finish downloading. Please try again; finished files are kept.",
+  "loader.offline": "You seem to be offline. Connect to the internet, then try again; finished files are kept.",
+  "loader.unsupported": "This browser cannot run Himawari. Please open it in a recent version of Chrome, Edge, Firefox or Safari.",
+  "loader.noCache": "This browser could not keep the downloaded files, so a later visit may need to download them again.",
+  "loader.noscript": "Himawari needs JavaScript. Please enable it and reload the page."
+}

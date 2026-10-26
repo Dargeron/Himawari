@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="{{lang}}" data-mode="{{mode}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
+<meta name="theme-color" content="#0d0906">
+<meta name="description" content="{{meta.description}}">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Himawari</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="../assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/icons/icon-512.png">
+<link id="game-style" rel="stylesheet" href="style.css?v={{version}}">
+</head>
+<body>
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+ <filter id="ink-edge" x="-4%" y="-4%" width="108%" height="108%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="12"/></filter>
+ <filter id="paper-edge" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="9"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter>
+</svg>
+
+<section id="loader" class="loader" aria-labelledby="loader-title">
+ <div class="loader-inner">
+  <h1 id="loader-title" class="wordmark">Himawari</h1>
+  <p class="loader-kana" lang="ja">ひまわり</p>
+  <div class="loader-bar" aria-hidden="true"><div id="loader-fill" class="loader-fill"></div></div>
+  <p id="loader-status" class="loader-status" role="status">{{loader.preparing}}</p>
+  <p id="loader-amount" class="loader-amount" aria-hidden="true"></p>
+  <button id="loader-retry" class="ink-button" type="button" hidden>{{loader.retry}}</button>
+  <noscript><p class="loader-status">{{loader.noscript}}</p></noscript>
+ </div>
+</section>
+
+<div id="app" class="app" hidden inert>
+ <div id="stage" class="stage" aria-hidden="true">
+  <div class="stage-layer" data-layer="a"><div class="stage-fill"></div><img class="stage-art" alt="" decoding="async"></div>
+  <div class="stage-layer" data-layer="b"><div class="stage-fill"></div><img class="stage-art" alt="" decoding="async"></div>
+  <div class="stage-shade"></div>
+  <div class="stage-grain"></div>
+ </div>
+
+ <div id="map" class="map" hidden>
+  <div id="map-sheet" class="map-sheet">
+   <img id="map-art" class="map-art" alt="{{map.alt}}" width="1280" height="974">
+   <div id="map-tint" class="map-tint" aria-hidden="true"></div>
+   <div id="map-spots" class="map-spots" role="group" aria-label="{{map.group}}"></div>
+  </div>
+ </div>
+
+ <section id="title" class="title" aria-labelledby="title-name">
+  <div class="title-brand">
+   <img id="title-flower" class="title-flower" alt="">
+   <h1 id="title-name" class="wordmark">Himawari</h1>
+   <p class="title-kana" lang="ja">ひまわり</p>
+   <p class="title-credit">{{title.credit}}</p>
+  </div>
+  <nav class="inkbox title-box" aria-label="{{title.menu}}">
+   <div class="ink-surface" aria-hidden="true"></div>
+   <button id="title-continue" class="title-option primary" type="button" hidden>{{title.continue}}</button>
+   <button id="title-begin" class="title-option" type="button">{{title.begin}}</button>
+   <button id="title-notebook" class="title-option" type="button" hidden>{{title.notebook}}</button>
+   <button id="title-settings" class="title-option" type="button">{{title.settings}}</button>
+   <p id="title-note" class="title-note">{{title.headphones}}</p>
+  </nav>
+  <div id="title-photos" class="title-photos" hidden></div>
+  <footer class="title-foot">
+   <a id="title-language" class="quiet-link" href="../{{other.route}}/index.html" hreflang="{{other.code}}" lang="{{other.code}}">{{other.label}}</a>
+   <button id="title-install" class="quiet-link" type="button" hidden>{{title.install}}</button>
+   <button id="title-fullscreen" class="quiet-link" type="button" hidden>{{title.fullscreen}}</button>
+   <button id="title-credits" class="quiet-link" type="button">{{title.credits}}</button>
+  </footer>
+ </section>
+
+ <main id="game" class="game" hidden>
+  <header id="hud" class="hud">
+   <div id="hud-time" class="hud-time" role="status" aria-live="polite" aria-atomic="true">
+    <img id="hud-flower" class="hud-flower" alt="">
+    <div class="hud-reading"><span id="hud-phase" class="hud-phase"></span><span id="hud-loop" class="hud-loop"></span></div>
+   </div>
+   <div class="hud-actions">
+    <button id="look-button" class="hud-button" type="button" aria-label="{{hud.look}}" title="{{hud.look}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    <button id="notebook-button" class="hud-button" type="button" aria-label="{{hud.notebook}}" title="{{hud.notebook}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v14c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v14"/></svg><span id="notebook-badge" class="hud-badge" hidden></span></button>
+   </div>
+   <button id="hud-note" class="hud-note" type="button" hidden></button>
+  </header>
+
+  <section id="inkbox" class="inkbox story-box" aria-label="{{ink.story}}">
+   <div class="ink-surface" aria-hidden="true"></div>
+   <div id="ink-scroll" class="ink-scroll" tabindex="-1">
+    <div id="ink-log" class="ink-log"></div>
+    <div id="ink-responses" class="ink-responses"></div>
+   </div>
+   <div class="ink-bar">
+    <button id="voice-toggle" class="voice-button" type="button" aria-label="{{voice.pause}}" title="{{voice.pause}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h3v14H8zm5 0h3v14h-3z"/></svg></button>
+    <button id="voice-replay" class="bar-button" type="button" aria-label="{{voice.replay}}" title="{{voice.replay}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v4h4"/></svg></button>
+    <div class="voice-caption"><span id="voice-status" class="voice-status"></span><span class="voice-line"><i id="voice-fill"></i></span></div>
+    <span id="read-mark" class="read-mark" hidden>{{ink.readBefore}}</span>
+    <button id="skip-button" class="bar-toggle" type="button" aria-pressed="false" hidden>{{ink.skip}}</button>
+    <button id="auto-button" class="bar-toggle" type="button" aria-pressed="false">{{ink.auto}}</button>
+    <span id="key-hint" class="key-hint" aria-hidden="true"></span>
+   </div>
+  </section>
+
+  <div id="card" class="phase-card" hidden>
+   <img id="card-flower" class="card-flower" alt="">
+   <p id="card-title" class="card-title"></p>
+   <p id="card-sub" class="card-sub"></p>
+  </div>
+ </main>
+
+ <!--#include notebook.html-->
+
+ <div id="toast" class="toast" role="status" hidden></div>
+ <div id="sr-story" class="visually-hidden" aria-live="polite"></div>
+</div>
+<script src="loader.js?v={{version}}"></script>
+</body>
+</html>

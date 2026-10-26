@@ -10,3 +10,10 @@ dist/
 .wrangler/
 **/.wrangler/
 **/.DS_Store
+
+# Local agent worktrees and tooling
+.claude/
+
+# Android: the web build copied into the app, and Gradle output
+dist-app/
+.cache/

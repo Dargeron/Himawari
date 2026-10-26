@@ -1,0 +1,31 @@
+{
+  "name": "himawari",
+  "version": "2.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Himawari \u2014 a sunflower, a town, and another day. Both editions from one source.",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "build:complete": "python3 tools/build.py --complete",
+    "format": "prettier --write src tests/*.mjs tests/helpers",
+    "test:logic": "for c in en zh-CN; do node tests/mechanics.mjs $c && node tests/walkthrough.mjs $c && node tests/guide.mjs $c && node tests/journal.mjs $c && node tests/audio.mjs $c && node tests/audio-transitions.mjs $c && node tests/scenes.mjs $c && node tests/original-fixes.mjs $c || exit 1; done && node tests/localization.mjs",
+    "test": "npm run test:logic && node tests/loader.mjs && npm run test:ui && npm run test:assets",
+    "test:ui": "python3 tools/build.py >/dev/null && node tests/ui.mjs en && node tests/ui.mjs zh-CN && node tests/notebook.mjs en && node tests/notebook.mjs zh-CN",
+    "test:assets": "python3 tests/assets.py en && python3 tests/assets.py zh-CN",
+    "android:sync": "python3 tools/build.py --app && npx cap sync android",
+    "android:apk": "npm run android:sync && cd android && ./gradlew assembleRelease"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/share": "^8.0.3",
+    "jsdom": "30.1.1",
+    "prettier": "3.3.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,171 @@
+/* The loading screen: the wordmark on ink, a hand-drawn line that fills with
+   sun yellow, and one quiet line of status. Shown before game.js runs. */
+.loader {
+  --bar: min(18rem, 64vw);
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-loader);
+  display: grid;
+  place-items: center;
+  padding: var(--edge-top) var(--edge-right) var(--edge-bottom) var(--edge-left);
+  overflow: hidden;
+  color: var(--paper-on-ink);
+  background: radial-gradient(
+      70% 55% at 50% 42%,
+      rgba(233, 185, 73, 0.075),
+      rgba(233, 185, 73, 0.02) 55%,
+      transparent 80%
+    ),
+    radial-gradient(130% 100% at 50% 45%, transparent 50%, rgba(0, 0, 0, 0.55) 100%), var(--ink);
+}
+
+.loader[hidden] {
+  display: none;
+}
+
+.loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(28rem, 100%);
+  text-align: center;
+  animation: loader-in 900ms var(--ease) both;
+}
+
+.loader .wordmark {
+  margin: 0;
+  /* The name is always set in EB Garamond, in both editions. */
+  font-family: 'EB Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(3.4rem, 7vw + 1.2rem, 6.25rem);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--paper-on-ink);
+  text-shadow: 0 0 42px rgba(233, 185, 73, 0.12);
+}
+
+.loader-kana {
+  margin: 0.7rem 0 0;
+  padding-left: 0.42em; /* balances the trailing letter-spacing */
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', 'Noto Serif CJK JP', var(--font-story);
+  font-size: 0.95rem;
+  letter-spacing: 0.42em;
+  color: var(--paper-faint);
+}
+
+html:lang(zh-CN) .loader-kana {
+  font-family: var(--font-story);
+}
+
+/* A pencil line on paper: the track is faint, the fill is the same stroke in
+   sun yellow, drawn at the track's full width so it never stretches. */
+.loader-bar {
+  position: relative;
+  width: var(--bar);
+  height: 10px;
+  margin-top: 2.4rem;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 10' preserveAspectRatio='none'%3E%3Cpath d='M2 5.6C38 4.1 71 6.2 112 5c43-1.3 79-.7 118 .4 26 .7 47-.3 68-1.2' fill='none' stroke='%23f3ead6' stroke-opacity='.2' stroke-width='1.6' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E")
+    center / 100% 100% no-repeat;
+}
+
+.loader-fill {
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 10' preserveAspectRatio='none'%3E%3Cpath d='M2 5.6C38 4.1 71 6.2 112 5c43-1.3 79-.7 118 .4 26 .7 47-.3 68-1.2' fill='none' stroke='%23e9b949' stroke-width='2.4' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3Cpath d='M4 6.3C46 5.2 83 6.6 126 5.6c37-.9 75-.2 112 .5 22 .4 40-.2 58-.9' fill='none' stroke='%23e9b949' stroke-opacity='.45' stroke-width='1' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E")
+    left center / var(--bar) 100% no-repeat;
+  filter: drop-shadow(0 0 5px rgba(233, 185, 73, 0.35));
+  transition: width 420ms var(--ease);
+}
+
+.loader-status {
+  min-height: calc(var(--leading) * 1em);
+  max-width: 26rem;
+  margin: 1.5rem 0 0;
+  font-family: var(--font-story);
+  font-size: var(--text-ui);
+  line-height: var(--leading);
+  color: var(--paper-dim);
+  text-wrap: balance;
+}
+
+.loader-amount {
+  min-height: 1.4em;
+  margin: 0.35rem 0 0;
+  font-family: var(--font-hand);
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: var(--paper-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.loader .ink-button {
+  min-height: var(--target);
+  margin-top: 1.4rem;
+  padding: 0.35rem 1.6rem;
+  border: 1px solid rgba(243, 234, 214, 0.32);
+  border-radius: 255px 18px 225px 18px / 18px 225px 18px 255px;
+  background: rgba(243, 234, 214, 0.04);
+  color: var(--paper-on-ink);
+  font-family: var(--font-story);
+  font-size: var(--text-ui);
+  cursor: pointer;
+  transition:
+    border-color var(--fade) var(--ease),
+    color var(--fade) var(--ease),
+    background-color var(--fade) var(--ease);
+}
+
+.loader .ink-button:hover {
+  border-color: var(--sun-soft);
+  background: rgba(233, 185, 73, 0.08);
+  color: var(--sun);
+}
+
+.loader .ink-button:focus-visible {
+  outline: 1.5px solid rgba(233, 185, 73, 0.75);
+  outline-offset: 5px;
+}
+
+.loader .ink-button[hidden] {
+  display: none;
+}
+
+.loader[data-state='error'] .loader-status {
+  color: var(--paper-on-ink);
+}
+
+.loader[data-state='error'] .loader-fill {
+  filter: none;
+  opacity: 0.55;
+}
+
+@keyframes loader-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (max-height: 560px) {
+  .loader .wordmark {
+    font-size: clamp(2.6rem, 5vw + 1rem, 4rem);
+  }
+  .loader-bar {
+    margin-top: 1.4rem;
+  }
+  .loader-status {
+    margin-top: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader-inner {
+    animation: none;
+  }
+  .loader-fill {
+    transition: none;
+  }
+}

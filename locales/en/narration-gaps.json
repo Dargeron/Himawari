@@ -1,0 +1,14 @@
+{
+  "about": "Passages whose recording does not say their text. Re-timing against the audio (2026) found these lines missing or spoken differently, so they are left silent rather than playing someone else's words. The spoken number list (number:0-300) is garbled in the recording, so typed numbers are not read aloud.",
+  "unspoken": {
+    "1917": "recorded as \"Sunflowers, sir\"",
+    "2039": "not in the recording",
+    "2050": "recorded as \"I fled\"",
+    "2137": "not in the recording",
+    "2167": "not in the recording",
+    "2231": "not in the recording",
+    "2296": "recorded as \"Certainly, sir. Sunflower\"",
+    "2323": "recorded as \"spy on him\""
+  },
+  "numbers": false
+}

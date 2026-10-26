@@ -1,0 +1,12 @@
+{
+  "appId": "io.github.dargeron.himawari",
+  "appName": "Himawari",
+  "webDir": "dist-app",
+  "backgroundColor": "#0d0906",
+  "android": {
+    "backgroundColor": "#0d0906",
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": false
+  }
+}

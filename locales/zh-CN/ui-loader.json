@@ -1,0 +1,13 @@
+{
+  "loader.preparing": "正在准备故事……",
+  "loader.critical": "正在准备开场……",
+  "loader.complete": "正在下载完整游戏……",
+  "loader.opening": "正在打开……",
+  "loader.amount": "{done} / {total} MB",
+  "loader.retry": "重试",
+  "loader.error": "部分文件没有下载完成，请重试。已下载好的文件会保留。",
+  "loader.offline": "网络似乎已断开。请连接网络后重试，已下载好的文件会保留。",
+  "loader.unsupported": "此浏览器无法运行 Himawari。请使用较新版本的 Chrome、Edge、Firefox 或 Safari 打开。",
+  "loader.noCache": "此浏览器无法保存已下载的文件，下次访问时可能需要重新下载。",
+  "loader.noscript": "Himawari 需要 JavaScript 才能运行。请启用后重新加载页面。"
+}

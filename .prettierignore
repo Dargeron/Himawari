@@ -1,0 +1,9 @@
+src/core/
+dist/
+node_modules/
+docs/history/
+tools/legacy/
+assets/
+locales/
+content/
+tests/**/*.json
