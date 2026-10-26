@@ -10,11 +10,11 @@ Every night someone murders Harry's sunflower, and every morning he wakes up to 
 - **Voice and text speed in the ink box:** *voice* turns Harry's narration on or off, and *×2* writes the text twice as fast as he speaks while he keeps reading; the next passage starts its own narration.
 - **The voice no longer drops out** mid-passage when a recording's download is interrupted: it picks up again from the same word.
 - **The water plant's public entrance** now shows the guard and lets you choose to fight, flee or talk your way in (the game skipped straight to the fight).
-- **The neighbour's midnight visit** is redrawn: she crashes through the window in a dynamite vest with the grin of someone who has completely lost it.
+- **Back to the original watercolours.** The pictures redrawn in 2.1 and 2.2 lost the game's painted style. Every one of them is the original painting again, edited only where it showed the wrong thing: Valentine's new look (glasses and the sticker notebook she never puts down), the hobo outside the pizzeria, the Voice in the alley, the water-plant guard, and a neighbour who comes through the window at midnight in a dynamite vest with a very calm, very wrong smile.
 
 ### Earlier in 2.2
 
-- Every scene picture checked and fixed (130 redrawn), Valentine redesigned; the school gate works in the morning; the narrator starts every line from its first word and never reads the choices aloud; the control-room button works however you reach it; Fermat's counter opens by bribing the hobo with the gardener's sandwich; the gun, the gardener, the park sweeper and the girl on the avenue are once a day.
+- The school gate works in the morning; the narrator starts every line from its first word and never reads the choices aloud; the control-room button works however you reach it; Fermat's counter opens by bribing the hobo with the gardener's sandwich; the gun, the gardener, the park sweeper and the girl on the avenue are once a day.
 
 ### Install
 
