@@ -39,6 +39,7 @@ const clueIds = [
   'weapon',
   'poison',
   'fermat',
+  'gardener',
   'destroyer',
   'school',
   'inside',
@@ -137,7 +138,8 @@ export function createGuide(saved) {
     if (memory.seenEndings.includes(1) && !st.itemLove)
       return st.infoAllergy ? 'feelings' : st.infoGorra && !st.infoWarehouse ? 'connections' : 'neighbour';
     if (memory.seenEndings.includes(2) && !st.itemGun) return st.infoWeapon ? 'weapon' : 'sniper';
-    if (memory.seenEndings.includes(3) && !st.itemPoison) return st.infoFermat ? 'fermat' : 'poison';
+    if (memory.seenEndings.includes(3) && !st.itemPoison)
+      return st.itemWater && !st.itemSandWich ? 'gardener' : st.infoFermat ? 'fermat' : 'poison';
     if (memory.seenEndings.includes(4) && !st.infoEvilGirl)
       return memory.facts.some(f => f.id === 'event:schoolEntry')
         ? 'inside'

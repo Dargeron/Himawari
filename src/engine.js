@@ -80,6 +80,9 @@ const INTRO_WRITER = 4001024,
   END_IMAGE = 4001088;
 const phaseNames = ['Dawn', 'Morning', 'Noon', 'Afternoon', 'Dusk'];
 
+// String-cache slot of the water plant's control-room node name, "019".
+const CONTROL_ROOM_NODE = 1988320;
+
 export function createEngine({
   seed = Date.now(),
   coreFactory = createCore,
@@ -296,6 +299,12 @@ export function createEngine({
       if (screen.kind !== 'story' || bytes[PM + 57]) throw new Error(t('error.noChoice'));
       if (value < 1 || value > screen.options.length) throw new Error(t('error.unknownChoice'));
       if (!screen.options[value - 1].raw.trim()) throw new Error(t('error.unavailable'));
+      // Original-game fix: going straight to the water plant's control room
+      // (node 024) shows the same red button as the way through the repository
+      // or treatment plant (node 019), but its choices were never wired: pushing
+      // it showed an empty page and never stopped the water, so the gardener
+      // could not react. Answer that button as node 019 does.
+      if (u32(GC + 76) === 6 && str(u32(GC + 80)).raw === '024') set32(GC + 80, u32(CONTROL_ROOM_NODE));
       core['GameController_Option' + value](GC, 0);
     } else if (kind === 'continue') {
       // One original warehouse response clears every option. Give that

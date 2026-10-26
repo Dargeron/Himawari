@@ -4,7 +4,7 @@ The 2026 edition is a static web game. One source tree builds two editions (Engl
 
 ## Ground rules
 
-1. **The story and the rules are the original game's.** `src/core/recovered-core.js` is the original Unity controller, recovered from WASM and translated to JavaScript. `src/engine.js` adapts it (strings, randomness, saves) without changing a decision. `tests/mechanics.mjs` compares 18,000 random legal actions with the original WASM in `recovery/`; `tests/walkthrough.mjs` replays the legal 261-action winning route against it with a save/reload after every action. If either fails, the change is wrong.
+1. **The story and the rules are the original game's.** `src/core/recovered-core.js` is the original Unity controller, recovered from WASM and translated to JavaScript. `src/engine.js` adapts it (strings, randomness, saves) without changing a decision. `tests/mechanics.mjs` compares 18,000 random legal actions with the original WASM in `recovery/`; `tests/walkthrough.mjs` replays the legal 261-action winning route against it with a save/reload after every action. If either fails, the change is wrong. The one deliberate exception is a wiring bug the authors asked to fix, kept in `engine.js` (marked "Original-game fix") and covered by `tests/original-fixes.mjs`: the water plant's control room reached directly had a red button that did nothing.
 2. **Story text is not edited.** `locales/<code>/literals.json` holds every string as `raw` (what the rules compare; never change it) and `text` (what is shown). The interface never rewrites, shortens or paraphrases `text`.
 3. **Everything else is presentation.** The interface only reads snapshots and forwards actions (`next`, `go`, `choice`, `continue`, `input`).
 
