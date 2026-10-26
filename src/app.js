@@ -563,9 +563,16 @@ export function startGame(boot = {}) {
     applySettings(settings);
     storeSettings(settings);
     audio.update();
-    $('auto-button').setAttribute('aria-pressed', String(settings.autoContinue));
+    syncBar();
     if (key === 'narrationEnabled' && value && active) startNarration(current);
     if (key === 'reducedMotion' && value) inkbox.showAll();
+  }
+
+  // The ink bar's toggles mirror their settings.
+  function syncBar() {
+    $('auto-button').setAttribute('aria-pressed', String(settings.autoContinue));
+    $('voice-button').setAttribute('aria-pressed', String(settings.narrationEnabled));
+    $('speed-button').setAttribute('aria-pressed', String(settings.textSpeed === 'fast'));
   }
 
   function rememberLanguage() {
@@ -599,12 +606,15 @@ export function startGame(boot = {}) {
   });
   $('skip-button').addEventListener('click', () => setSkipping(!skipping));
   const auto = $('auto-button');
-  auto.setAttribute('aria-pressed', String(settings.autoContinue));
+  syncBar();
   auto.addEventListener('click', () => {
     changeSetting('autoContinue', !settings.autoContinue);
-    auto.setAttribute('aria-pressed', String(settings.autoContinue));
     if (settings.autoContinue) scheduleAuto(600);
   });
+  $('voice-button').addEventListener('click', () => changeSetting('narrationEnabled', !settings.narrationEnabled));
+  $('speed-button').addEventListener('click', () =>
+    changeSetting('textSpeed', settings.textSpeed === 'fast' ? 'normal' : 'fast'),
+  );
   $('look-button').addEventListener('click', event => {
     event.stopPropagation();
     setLooking(!looking);

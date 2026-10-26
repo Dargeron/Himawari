@@ -2,7 +2,9 @@ import {L} from './i18n.js';
 
 // Reveals a passage letter by letter. With narration it follows the voice:
 // letters keep pace with the recording, hold when it pauses and restart when it
-// is replayed. Without narration it writes at the chosen text speed. Letters
+// is replayed; at the fast text speed they run at twice the voice's pace and
+// the voice reads on behind them. Without narration it writes at the chosen
+// text speed. Letters
 // are laid out from the start (only their opacity changes), so the text never
 // reflows while it is being written.
 export function createTypewriter({
@@ -53,7 +55,11 @@ export function createTypewriter({
     const delta = Math.min(100, Math.max(0, time - stamp));
     stamp = time;
     if (!isHidden()) {
-      if (voiced() && status.playing && !status.loading) {
+      if (voiced() && settings.textSpeed === 'fast') {
+        elapsed = Math.max(elapsed, status.progress * duration);
+        elapsed = Math.min(duration, elapsed + (delta / 1000) * 2 * (settings.voiceRate || 1));
+        show((elapsed / duration) * letters.length);
+      } else if (voiced() && status.playing && !status.loading) {
         elapsed = Math.max(elapsed, status.progress * duration);
         elapsed = Math.min(duration, elapsed + (delta / 1000) * (settings.voiceRate || 1));
         show((elapsed / duration) * letters.length);

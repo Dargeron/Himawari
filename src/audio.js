@@ -46,7 +46,8 @@ export function createAudio(settings, onStatus = () => {}) {
     blocked = false,
     total = 0,
     held = false,
-    ducked = false;
+    ducked = false,
+    retries = 0;
   function emit() {
     const clip = queue[index];
     const before = queue.slice(0, index).reduce((s, c) => s + c.end - c.start, 0);
@@ -104,9 +105,10 @@ export function createAudio(settings, onStatus = () => {}) {
     if (seekCleanup) seekCleanup();
     seekCleanup = null;
   }
-  function playClip() {
+  function playClip(from) {
     // Every clip, including Replay, owns a distinct generation. A delayed load,
     // seek or play() rejection from any earlier clip has no authority over it.
+    // `from` resumes a clip part-way through (after a failed download).
     const myToken = ++token;
     playAttempt++;
     clearSeek();
@@ -128,10 +130,11 @@ export function createAudio(settings, onStatus = () => {}) {
     blocked = false;
     voice.volume = settings.voiceVolume;
     voice.playbackRate = settings.voiceRate;
+    const startAt = from ?? clip.start;
     const changedFile = loadedFile !== clip.file;
     const ownsClip = () => myToken === token && queue[index] === clip;
     const ready = () => {
-      if (!ownsClip() || voice.readyState < 1 || voice.seeking || Math.abs(voice.currentTime - clip.start) > 0.04)
+      if (!ownsClip() || voice.readyState < 1 || voice.seeking || Math.abs(voice.currentTime - startAt) > 0.04)
         return;
       prepared = true;
       clearSeek();
@@ -147,7 +150,7 @@ export function createAudio(settings, onStatus = () => {}) {
       // Seeking is asynchronous. Do not play, report progress, or inspect the
       // end boundary until seeked confirms this clip's start, even for one file.
       try {
-        voice.currentTime = clip.start;
+        voice.currentTime = startAt;
       } catch {
         return;
       }
@@ -169,7 +172,7 @@ export function createAudio(settings, onStatus = () => {}) {
     if (!prepared && voice.readyState >= 1) seek();
     // Unlock the media element from the Begin gesture. Only zero-offset audio
     // can safely start before metadata; later passages wait for their seek.
-    if (!prepared && changedFile && voice.readyState < 1 && clip.start === 0 && playing && voice.paused) requestPlay();
+    if (!prepared && changedFile && voice.readyState < 1 && startAt === 0 && playing && voice.paused) requestPlay();
     fade();
     emit();
   }
@@ -207,6 +210,17 @@ export function createAudio(settings, onStatus = () => {}) {
   });
   voice.addEventListener('error', () => {
     if (!queue.length || !voice.error) return;
+    // A download cut off mid-passage (MEDIA_ERR_NETWORK, or a broken read):
+    // load the recording again and carry on from the same moment. A file that
+    // cannot be played at all (MEDIA_ERR_SRC_NOT_SUPPORTED) is reported.
+    const clip = queue[index];
+    if (clip && playing && retries < 3 && voice.error.code !== 4) {
+      retries++;
+      const at = prepared ? Math.max(clip.start, Math.min(clip.end - 0.05, voice.currentTime)) : clip.start;
+      loadedFile = '';
+      playClip(at);
+      return;
+    }
     playAttempt++;
     voice.pause();
     playing = false;
@@ -229,6 +243,7 @@ export function createAudio(settings, onStatus = () => {}) {
     completed = true;
     blocked = false;
     autoResume = false;
+    retries = 0;
     for (const part of parts || []) {
       if (part.id !== undefined) {
         const clip = clipFor(String(part.id));

@@ -18,8 +18,6 @@ export function createSettings(ctx) {
   function changed(key, value) {
     api.onSetting(key, value);
     ctx.settingsChanged(key);
-    // The ink bar's auto toggle mirrors this setting.
-    if (key === 'autoContinue') document.getElementById('auto-button')?.setAttribute('aria-pressed', String(!!value));
   }
 
   for (const input of controls) {
