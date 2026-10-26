@@ -24,8 +24,11 @@ for (const id of Object.keys(narrationEN).filter(k => /^\d+$/.test(k))) {
 }
 assert.equal(inputValue('马丁').raw, 'Martin');
 assert.equal(inputValue('Martin').text, '马丁');
-assert.equal(inputValue('Ｍａｒｔｉｎ').raw, 'Ｍａｒｔｉｎ');
-assert.equal(inputValue('马丁 ').raw, '马丁 ');
+assert.equal(inputValue('Ｍａｒｔｉｎ').raw, 'Martin');
+assert.equal(inputValue('马丁 ').raw, 'Martin');
+assert.equal(inputValue('martin').raw, 'Martin');
+assert.equal(inputValue(' ８７７４ ').raw, '8774');
+assert.equal(inputValue('Marton').raw, 'Marton');
 assert.equal(inputValue('８７７４').raw, '8774');
 assert.equal(inputValue('8775').raw, '8775');
 assert.equal(inputValue('张伟').text, '张伟');

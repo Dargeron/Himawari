@@ -206,6 +206,8 @@ export function answerForm(onSubmit) {
   input.type = 'text';
   input.autocomplete = 'off';
   input.spellcheck = false;
+  input.setAttribute('autocorrect', 'off');
+  input.setAttribute('autocapitalize', 'off');
   input.maxLength = 120;
   input.enterKeyHint = 'done';
   input.placeholder = t('ink.answerPlaceholder');

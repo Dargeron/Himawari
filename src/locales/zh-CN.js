@@ -92,12 +92,12 @@ export default {
     return L.pronunciations?.[char] ? 'syllable:' + L.pronunciations[char] : null;
   },
 
-  // Typed answers: full-width digits and the translated name are exact aliases.
-  // Incorrect answers stay incorrect; nothing is auto-corrected.
+  // Typed answers: the translated name is an alias, and surrounding spaces,
+  // letter case and full-width characters don't matter. A wrong name or PIN
+  // stays wrong.
   inputValue(value) {
-    const text = String(value),
-      digits = text.replace(/[０-９]/g, c => String.fromCharCode(c.charCodeAt(0) - 0xfee0));
-    const raw = text === '马丁' ? 'Martin' : digits;
+    const text = String(value).normalize('NFKC').trim();
+    const raw = text === '马丁' || /^martin$/i.test(text) ? 'Martin' : text;
     const display = raw === 'Martin' ? '马丁' : text;
     return {raw, text: display, parts: [{text: display}]};
   },

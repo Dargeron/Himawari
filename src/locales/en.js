@@ -80,6 +80,13 @@ export default {
   numberScale: [[1e9, 'billion'], [1e6, 'million'], [1e3, 'thousand'], [100, 'hundred']],
   numberJoin: (amount, rest) => amount === 100,
   martin: ['Martin'],
+  // Typed answers: surrounding spaces (phone keyboards add one after
+  // autocomplete), letter case and full-width characters don't matter.
+  // A wrong name or PIN stays wrong.
+  inputValue(value) {
+    const text = String(value).normalize('NFKC').trim();
+    return /^martin$/i.test(text) ? 'Martin' : text;
+  },
   spell(char) {
     const c = char.toUpperCase();
     return /[A-Z]/.test(c) ? 'letter:' + c : /[0-9]/.test(c) ? 'number:' + c : null;
