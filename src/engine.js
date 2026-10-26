@@ -82,6 +82,10 @@ const phaseNames = ['Dawn', 'Morning', 'Noon', 'Afternoon', 'Dusk'];
 
 // String-cache slot of the water plant's control-room node name, "019".
 const CONTROL_ROOM_NODE = 1988320;
+// Once a day (authors' rule): the Roller Street warehouse where the gun is, the
+// gardener and the street sweeper in the park, and the girl on the avenue. After
+// one of these is chosen, it leaves its place's menu until the next loop.
+const ONCE_A_DAY = new Set([1859, 1874, 1877, 1884]);
 
 export function createEngine({
   seed = Date.now(),
@@ -95,6 +99,14 @@ export function createEngine({
   const strings = new Map(),
     intern = new Map();
   const screen = {kind: 'intro', text: '', raw: '', parts: [], options: [], input: false, ending: 0, music: 0};
+  let doneToday = {loop: -1, ids: []};
+  const spentToday = option =>
+    doneToday.loop === u32(GC + 68) && option.parts?.length === 1 && doneToday.ids.includes(option.parts[0].id);
+  function visibleScreenOptions() {
+    const shown = screen.options.map(o => (spentToday(o) ? {...o, raw: '', text: '', parts: []} : o));
+    // Never leave a menu without a choice.
+    return shown.some(o => o.raw.trim()) ? shown : screen.options;
+  }
   const listeners = new Set();
   function u32(address) {
     return ints[address >>> 2];
@@ -271,6 +283,7 @@ export function createEngine({
       state,
       screen: structuredClone({
         ...screen,
+        options: visibleScreenOptions(),
         input: !!bytes[PM + 57],
         needsContinue: screen.kind === 'story' && !bytes[PM + 57] && !screen.options.some(o => o.raw.trim()),
         finished: screen.raw === 'GAME OVER :)',
@@ -298,7 +311,14 @@ export function createEngine({
     } else if (kind === 'choice') {
       if (screen.kind !== 'story' || bytes[PM + 57]) throw new Error(t('error.noChoice'));
       if (value < 1 || value > screen.options.length) throw new Error(t('error.unknownChoice'));
-      if (!screen.options[value - 1].raw.trim()) throw new Error(t('error.unavailable'));
+      const chosen = visibleScreenOptions()[value - 1];
+      if (!chosen.raw.trim()) throw new Error(t('error.unavailable'));
+      const id = chosen.parts?.length === 1 ? chosen.parts[0].id : undefined;
+      if (ONCE_A_DAY.has(id)) {
+        const loop = u32(GC + 68);
+        if (doneToday.loop !== loop) doneToday = {loop, ids: []};
+        if (!doneToday.ids.includes(id)) doneToday.ids.push(id);
+      }
       // Original-game fix: going straight to the water plant's control room
       // (node 024) shows the same red button as the way through the repository
       // or treatment plant (node 019), but its choices were never wired: pushing
@@ -333,6 +353,7 @@ export function createEngine({
       strings: Array.from(strings).filter(([p]) => p >= staticEnd && roots.has(p)),
       screen: structuredClone(screen),
       alloc,
+      doneToday: structuredClone(doneToday),
     };
   }
   function importSave(save) {
@@ -424,6 +445,11 @@ export function createEngine({
       screen,
       L.relocalize ? {...L.relocalize(save.screen), options: save.screen.options.map(L.relocalize)} : save.screen,
     );
+    const done = save.doneToday;
+    doneToday =
+      done && Number.isInteger(done.loop) && Array.isArray(done.ids) && done.ids.every(id => ONCE_A_DAY.has(id))
+        ? {loop: done.loop, ids: [...done.ids]}
+        : {loop: -1, ids: []};
     return notify();
   }
   return {

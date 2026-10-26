@@ -28,4 +28,37 @@ for (const choice of [1, 2]) {
   assert.ok(s.screen.text.trim(), 'pushing it shows the alarm, not an empty page');
   assert.equal(s.state.itemWater, true, 'the button stops the water');
 }
-console.log(JSON.stringify({controlRoomButton: true}));
+
+// Once a day: after talking to the girl on the avenue, she is gone from the
+// avenue's menu until the next loop; the choice also survives a save and load.
+{
+  const girl = L.literals[1884].raw;
+  const offers = e => e.snapshot().screen.options.some(o => o.raw === girl);
+  const toMap = e => {
+    for (let n = 0; n < 12 && e.snapshot().screen.kind !== 'map'; n++) {
+      const s = e.snapshot();
+      if (s.screen.kind === 'intro') e.action('next');
+      else if (s.screen.needsContinue) e.action('continue');
+      else e.action('choice', s.screen.options.findIndex(o => o.raw.trim()) + 1);
+    }
+  };
+  let e = at(91);
+  e.action('go', 7);
+  assert.ok(offers(e), 'the girl is on the avenue in the afternoon');
+  e.action('choice', e.snapshot().screen.options.findIndex(o => o.raw === girl) + 1);
+  toMap(e);
+  const loop = e.snapshot().state.loop;
+  const copy = createEngine({seed: route.seed});
+  copy.importSave(JSON.parse(JSON.stringify(e.exportSave())));
+  for (const x of [e, copy]) {
+    x.action('go', 7);
+    assert.equal(offers(x), false, 'only once a day');
+  }
+  // A choice made on an earlier day does not count today.
+  const earlier = e.exportSave();
+  earlier.doneToday.loop = loop - 1;
+  const next = createEngine({seed: route.seed});
+  next.importSave(JSON.parse(JSON.stringify(earlier)));
+  assert.ok(offers(next), 'available again on another day');
+}
+console.log(JSON.stringify({controlRoomButton: true, onceADay: true}));
