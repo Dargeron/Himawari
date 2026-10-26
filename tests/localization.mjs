@@ -54,7 +54,11 @@ let english = createEnglishEngine({seed: route.seed}),
   chinese = createEngine({seed: route.seed});
 let crossLanguageSaves = 0;
 const translatedRoute = [];
-for (const [kind, value] of route.actions) {
+// The pizzeria visit at action 247 is where the authors' later rules (the
+// hobo's bribe) part from the old English engine: compare up to there, then
+// let the Chinese game finish the route alone.
+const sharedActions = 247;
+for (const [kind, value] of route.actions.slice(0, sharedActions)) {
   const en = english.action(kind, value);
   const cn = chinese.action(
     kind,
@@ -72,6 +76,8 @@ for (const [kind, value] of route.actions) {
   crossLanguageSaves++;
   translatedRoute.push([kind, value]);
 }
+for (const [kind, value] of route.actions.slice(sharedActions))
+  chinese.action(kind, kind === 'input' && value === 'Martin' ? '马丁' : value);
 assert.ok(chinese.snapshot().screen.finished);
 fs.rmSync(temp, {recursive: true, force: true});
 const guide = createGuide(),

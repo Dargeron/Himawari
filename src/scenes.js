@@ -2,6 +2,8 @@ import {L} from './i18n.js';
 import {originalScene} from './graphics.js';
 export function illustrationKey(s) {
   if (s.screen.kind === 'map') return null;
+  const pinned = s.screen.parts.find(p => p.scene && L.scenes[p.scene]);
+  if (pinned) return pinned.scene;
   const ids = s.screen.parts.filter(p => Number.isInteger(p.id)).map(p => p.id);
   if (ids.includes(1890)) return 'diary';
   const key = ids.join('-');

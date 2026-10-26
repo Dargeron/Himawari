@@ -85,7 +85,12 @@ const CONTROL_ROOM_NODE = 1988320;
 // Once a day (authors' rule): the Roller Street warehouse where the gun is, the
 // gardener and the street sweeper in the park, and the girl on the avenue. After
 // one of these is chosen, it leaves its place's menu until the next loop.
-const ONCE_A_DAY = new Set([1859, 1874, 1877, 1884]);
+const ONCE_A_DAY = new Set([1859, 1874, 1877, 1884, 1965]);
+// The hobo's bribe (authors' design): the pizzeria counter opens only after
+// Harry gives the hobo the gardener's sandwich in exchange for a scene. The
+// original game opened the counter whenever Harry carried the sandwich.
+const HOBO_OFFER = 1965; // "Hey, dude! Fancy a sandwich?" (unused in the original)
+const PIZZA_COUNTER_NODE = 1988160; // string-cache slot of node "003", the counter menu
 
 export function createEngine({
   seed = Date.now(),
@@ -102,10 +107,50 @@ export function createEngine({
   let doneToday = {loop: -1, ids: []};
   const spentToday = option =>
     doneToday.loop === u32(GC + 68) && option.parts?.length === 1 && doneToday.ids.includes(option.parts[0].id);
+  const flag = name => GC + 12 + flags.indexOf(name);
+  // The hobo outside the pizzeria (node 021) can be offered the sandwich.
+  const canBribe = () =>
+    !screen.virtual &&
+    u32(GC + 76) === 5 &&
+    str(u32(GC + 80)).raw === '021' &&
+    bytes[flag('itemSandWich')] &&
+    !spentToday({parts: [{id: HOBO_OFFER}]});
   function visibleScreenOptions() {
-    const shown = screen.options.map(o => (spentToday(o) ? {...o, raw: '', text: '', parts: []} : o));
+    let shown = screen.options.map(o => (spentToday(o) ? {...o, raw: '', text: '', parts: []} : o));
     // Never leave a menu without a choice.
-    return shown.some(o => o.raw.trim()) ? shown : screen.options;
+    if (!shown.some(o => o.raw.trim())) shown = screen.options;
+    if (canBribe() && shown.length < 4) {
+      const offer = L.literals[HOBO_OFFER];
+      shown = [...shown, {raw: offer.raw, text: offer.text, parts: [{id: HOBO_OFFER}], choice: shown.length + 1}];
+    }
+    return shown;
+  }
+  function bribeScene() {
+    // A new passage (no recording): the hobo makes a scene, Fermat leaves the counter.
+    const text = t('story.hoboRuckus');
+    const go = L.literals[2355];
+    Object.assign(screen, {
+      kind: 'story',
+      text,
+      raw: text,
+      parts: [{text, narrated: false, scene: '2036'}],
+      options: [{raw: go.raw, text: go.text, parts: [{id: 2355}], choice: 1}],
+      input: false,
+      ending: 0,
+      virtual: 'ruckus',
+    });
+  }
+  function behindTheCounter() {
+    // Continue into the original counter scene: node 003, option 1.
+    delete screen.virtual;
+    const gardener = bytes[flag('itemGardenerIsGone')];
+    set32(GC + 80, u32(PIZZA_COUNTER_NODE));
+    bytes[flag('itemSandWich')] = 1;
+    bytes[flag('itemGardenerIsGone')] = 1;
+    core.GameController_Option1(GC, 0);
+    bytes[flag('itemGardenerIsGone')] = gardener;
+    bytes[flag('itemSandWich')] = 0; // he ate it
+    bytes[flag('infoHoboSandwich')] = 1;
   }
   const listeners = new Set();
   function u32(address) {
@@ -310,8 +355,9 @@ export function createEngine({
       core['GameController_' + d.method](GC, 0);
     } else if (kind === 'choice') {
       if (screen.kind !== 'story' || bytes[PM + 57]) throw new Error(t('error.noChoice'));
-      if (value < 1 || value > screen.options.length) throw new Error(t('error.unknownChoice'));
-      const chosen = visibleScreenOptions()[value - 1];
+      const visible = visibleScreenOptions();
+      if (value < 1 || value > visible.length) throw new Error(t('error.unknownChoice'));
+      const chosen = visible[value - 1];
       if (!chosen.raw.trim()) throw new Error(t('error.unavailable'));
       const id = chosen.parts?.length === 1 ? chosen.parts[0].id : undefined;
       if (ONCE_A_DAY.has(id)) {
@@ -319,6 +365,18 @@ export function createEngine({
         if (doneToday.loop !== loop) doneToday = {loop, ids: []};
         if (!doneToday.ids.includes(id)) doneToday.ids.push(id);
       }
+      if (screen.virtual === 'ruckus') {
+        behindTheCounter();
+        return notify();
+      }
+      if (id === HOBO_OFFER) {
+        bribeScene();
+        return notify();
+      }
+      // Arriving at the pizzeria with the sandwich shows the usual menu (with
+      // the hobo); the counter only opens through the bribe above.
+      const sandwich = u32(GC + 76) === 5 && str(u32(GC + 80)).raw === '001' && bytes[flag('itemSandWich')];
+      if (sandwich) bytes[flag('itemSandWich')] = 0;
       // Original-game fix: going straight to the water plant's control room
       // (node 024) shows the same red button as the way through the repository
       // or treatment plant (node 019), but its choices were never wired: pushing
@@ -326,6 +384,7 @@ export function createEngine({
       // could not react. Answer that button as node 019 does.
       if (u32(GC + 76) === 6 && str(u32(GC + 80)).raw === '024') set32(GC + 80, u32(CONTROL_ROOM_NODE));
       core['GameController_Option' + value](GC, 0);
+      if (sandwich) bytes[flag('itemSandWich')] = 1;
     } else if (kind === 'continue') {
       // One original warehouse response clears every option. Give that
       // otherwise stranded response its normal default Option1 continuation.
@@ -445,6 +504,7 @@ export function createEngine({
       screen,
       L.relocalize ? {...L.relocalize(save.screen), options: save.screen.options.map(L.relocalize)} : save.screen,
     );
+    if (screen.virtual === 'ruckus') bribeScene(); // in the current language
     const done = save.doneToday;
     doneToday =
       done && Number.isInteger(done.loop) && Array.isArray(done.ids) && done.ids.every(id => ONCE_A_DAY.has(id))

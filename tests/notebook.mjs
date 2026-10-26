@@ -643,7 +643,11 @@ let boardStorage;
 {
   const p = boot(quiet);
   const {$, d, click, key, saved, snapshot, open} = p;
+  // The route depends on the night's coin flips, so the new game uses its seed.
+  const now = p.w.Date.now;
+  p.w.Date.now = () => route.seed;
   click('#title-begin');
+  p.w.Date.now = now;
   let found = false;
   for (const action of route.actions) {
     p.act(action);

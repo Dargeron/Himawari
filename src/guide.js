@@ -40,6 +40,7 @@ const clueIds = [
   'poison',
   'fermat',
   'gardener',
+  'bribe',
   'destroyer',
   'school',
   'inside',
@@ -139,7 +140,7 @@ export function createGuide(saved) {
       return st.infoAllergy ? 'feelings' : st.infoGorra && !st.infoWarehouse ? 'connections' : 'neighbour';
     if (memory.seenEndings.includes(2) && !st.itemGun) return st.infoWeapon ? 'weapon' : 'sniper';
     if (memory.seenEndings.includes(3) && !st.itemPoison)
-      return st.itemWater && !st.itemSandWich ? 'gardener' : st.infoFermat ? 'fermat' : 'poison';
+      return st.itemSandWich ? 'bribe' : st.itemWater ? 'gardener' : st.infoFermat ? 'fermat' : 'poison';
     if (memory.seenEndings.includes(4) && !st.infoEvilGirl)
       return memory.facts.some(f => f.id === 'event:schoolEntry')
         ? 'inside'

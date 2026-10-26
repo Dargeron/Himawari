@@ -59,6 +59,7 @@ export default {
     weapon: 'Knowing where a danger begins is useful even when you cannot get inside yet. Other places may offer a way past the obstacle.',
     poison: 'Think back to people who reacted oddly to your sunflower. Something ordinary in their surroundings may deserve a closer look.',
     fermat: 'Fermat’s reaction still seems suspicious. Pay attention to what is around you when you have a reason to spend time there. People keep their own hours, and a day only has five visits: something you learn late one day may open a door early the next.',
+    bribe: 'Fermat never leaves his counter on his own. Someone hungry next door might make enough noise for a sandwich, if he is there today.',
     gardener: 'Someone who lives for his plants would be furious to hear about the water. Find him before evening; he leaves the park at dusk.',
     destroyer: 'That voice sounded familiar. Your earlier conversations may connect her to a place where people leave personal traces.',
     school: 'Getting into the school may depend on understanding its everyday routine. The people outside it can know more than the gatekeeper.',

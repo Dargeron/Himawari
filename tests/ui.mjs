@@ -144,7 +144,12 @@ function click(g, node) {
 let finalSave;
 {
   const g = open({settings: {reducedMotion: true, narrationEnabled: false}});
+  // The route depends on the night's coin flips (where the hobo sleeps), so the
+  // new game uses the route's seed.
+  const now = g.w.Date.now;
+  g.w.Date.now = () => route.seed;
   g.click('#title-begin');
+  g.w.Date.now = now;
   const phases = new Set();
   let readSeen = false,
     skipOffered = false,

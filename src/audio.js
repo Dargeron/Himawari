@@ -233,7 +233,7 @@ export function createAudio(settings, onStatus = () => {}) {
       if (part.id !== undefined) {
         const clip = clipFor(String(part.id));
         if (clip) queue.push(clip);
-      } else queue.push(...dynamicClips((part.text || '').trim()));
+      } else if (part.narrated !== false) queue.push(...dynamicClips((part.text || '').trim()));
     }
     total = queue.reduce((s, c) => s + c.end - c.start, 0);
     if (queue.length && autoplay && (settings.narrationEnabled || force) && !suspended) playClip();
