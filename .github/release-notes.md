@@ -4,11 +4,11 @@ Every night someone murders Harry's sunflower, and every morning he wakes up to 
 
 **One app, both editions:** English (narrated by Harry) and 简体中文 (朱利安朗读). Choose on first launch; change it any time from the cover or the notebook.
 
-### New in 2.1
+### New in 2.2
 
-- **The narrator** now starts every line from its first word and stops before the next one, in both languages, and never reads the choices aloud.
-- **New pictures:** Valentine's whole story, the Voice in the alley, the hobo, the water-plant guard, and every scene that showed the wrong thing or had a drawing error (69 in all).
-- **Fixes from the authors:** the water plant's control-room button now works whichever way you reach it; typed answers ignore spaces and capital letters; Fermat's counter opens by bribing the hobo with the gardener's sandwich; the gun, the gardener, the park sweeper and the girl on the avenue are once a day.
+- **Every scene picture checked and fixed:** besides Valentine's story, the Voice, the hobo and the guard from 2.1, the smaller flaws are fixed too (130 pictures redrawn in all).
+- **The school gate** works in the morning as well as at dawn: ask a father for her name and pose as the substitute teacher.
+- **The narrator** starts every line from its first word, in both languages, and never reads the choices aloud; the control-room button works however you reach it; typed answers ignore spaces and capitals; Fermat's counter opens by bribing the hobo with the gardener's sandwich; the gun, the gardener, the park sweeper and the girl on the avenue are once a day.
 
 ### Install
 

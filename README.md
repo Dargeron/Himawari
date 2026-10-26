@@ -58,7 +58,7 @@ Set `HIMAWARI_KEYSTORE`, `HIMAWARI_KEYSTORE_PASSWORD`, `HIMAWARI_KEY_ALIAS` and 
 
 ## Publishing
 
-`.github/workflows/pages.yml` tests, builds and deploys both editions to GitHub Pages on every push to `main` (Settings → Pages → Source → GitHub Actions). The site is static: no server, account or API key.
+`.github/workflows/pages.yml` tests, builds and deploys both editions to GitHub Pages on every push to `main`, at <https://dargeron.github.io/Himawari/> (turn it on once in Settings → Pages → Source → GitHub Actions). The site is static: no server, account or API key.
 
 ## Working on it
 
