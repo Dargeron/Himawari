@@ -309,10 +309,10 @@
     "ids": [
       1948
     ],
-    "bytes": 155182,
+    "bytes": 136560,
     "width": 1024,
     "height": 768,
-    "sha256": "49d400325943070688f385e4b1bb15d080d0ca2dd3589321a70755868c5f8285"
+    "sha256": "4dc3524cfa96b2d148f092475247d867faf143d2eddd1deb30762e18d3084258"
   },
   "1951": {
     "asset": "assets/art/scenes/1951.webp",
@@ -991,10 +991,10 @@
       2097,
       2099
     ],
-    "bytes": 189294,
+    "bytes": 96200,
     "width": 1024,
     "height": 768,
-    "sha256": "2bd40aea0eb3b763a9f09f9e98f3f1f0a4e75a22d9bb8e360c9a0cbd608a7e19"
+    "sha256": "749ff56e2e8a7044a0368887ea3a5765b8b133e3132c501f87da9eb213f9b624"
   },
   "2103": {
     "asset": "assets/art/scenes/2103.webp",
@@ -1171,10 +1171,10 @@
     "ids": [
       2140
     ],
-    "bytes": 178894,
+    "bytes": 147438,
     "width": 1024,
     "height": 768,
-    "sha256": "bc3395abc9d8bdba3d80cedc9338607bf4b31e4e09304343d178c02f2acc5271"
+    "sha256": "61eb207f2393b0d45f786d5c163d259aec0667644b6cf00d590f7d8043ef2090"
   },
   "2141": {
     "asset": "assets/art/scenes/2141.webp",
@@ -1410,10 +1410,10 @@
     "ids": [
       2186
     ],
-    "bytes": 175734,
+    "bytes": 89076,
     "width": 1024,
     "height": 768,
-    "sha256": "092e583ebc501c8dac60733808b1f6af295316d934985bce62ec330692be4c81"
+    "sha256": "baba492952332ead06f6adf72ffde8f1811d5898d4882af644d6f88cf32a0ec9"
   },
   "2187": {
     "asset": "assets/art/scenes/2187.webp",
@@ -1460,10 +1460,10 @@
     "ids": [
       2199
     ],
-    "bytes": 151372,
+    "bytes": 109830,
     "width": 1024,
     "height": 768,
-    "sha256": "c5c8e2d7d82546c2763b0d55844116b3d007e7a33214b78de9e88a9a90280b58"
+    "sha256": "444196241d5ef52430349fa73a45948268896658cf4f96c7187fd553f4194322"
   },
   "2202": {
     "asset": "assets/art/scenes/2202.webp",
@@ -1520,10 +1520,10 @@
     "ids": [
       2214
     ],
-    "bytes": 147678,
+    "bytes": 101206,
     "width": 1024,
     "height": 768,
-    "sha256": "c00ce648d7f75dd78884dce92308c776aac06f2d49a7d4db033fa034945fb678"
+    "sha256": "d9a9315b6d9d27a9d8db830bc9b083ee0709c70f917c192b80d2e2772cf1c875"
   },
   "2218": {
     "asset": "assets/art/scenes/2218.webp",
@@ -1800,10 +1800,10 @@
     "ids": [
       2264
     ],
-    "bytes": 129336,
+    "bytes": 152598,
     "width": 1024,
     "height": 768,
-    "sha256": "bbc8cfd0da118e684f3a91ce4dd5a38f37e2d28b811cde85a8bff77ffb27b714"
+    "sha256": "9a92bcb2486e34c8467dd00c1bf88b7544f759518509c07efa0349c16e3d6dfa"
   },
   "2265": {
     "asset": "assets/art/scenes/2265.webp",
@@ -1910,10 +1910,10 @@
     "ids": [
       2278
     ],
-    "bytes": 177962,
+    "bytes": 145946,
     "width": 1024,
     "height": 768,
-    "sha256": "53d7da153e4f2621584495c372fd03362beaa5326e1c863957d54a20e17d04ed"
+    "sha256": "788ce019ab02993be17f90aaa8cb3397769449adedff5d9ddd8615b757663bf2"
   },
   "2279": {
     "asset": "assets/art/scenes/2279.webp",
@@ -2000,10 +2000,10 @@
     "ids": [
       2290
     ],
-    "bytes": 114410,
+    "bytes": 146704,
     "width": 1024,
     "height": 768,
-    "sha256": "a208c87f0b4f4504ac2d9661b0fadd505f85521ebbfb18e0607becdc5a5e2eda"
+    "sha256": "17c691ae5747b18e422c72c4e77761ad0512f618e2adba5386d2a98d74739aa2"
   },
   "2292": {
     "asset": "assets/art/scenes/2292.webp",
@@ -2337,10 +2337,10 @@
     "ids": [
       2464
     ],
-    "bytes": 106476,
+    "bytes": 48920,
     "width": 1024,
     "height": 768,
-    "sha256": "374682686f600fed371ebadf1af0a95df47be54a44349fa1f8d239787b741bf4"
+    "sha256": "3903d806b339e14ed3e24cd757dc98b7f0f0b074442f327b66e1e1441a18465b"
   },
   "2465": {
     "asset": "assets/art/scenes/2465.webp",
