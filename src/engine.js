@@ -373,6 +373,10 @@ export function createEngine({
         bribeScene();
         return notify();
       }
+      // The school gate (authors' rule): Miss Summers and her daughter can be
+      // met in the morning as well as at dawn; the original only allowed dawn.
+      const morningGate = id === 1869 && u32(GC + 76) === 8 && u32(GC + 64) === 2;
+      if (morningGate) set32(GC + 64, 1);
       // Arriving at the pizzeria with the sandwich shows the usual menu (with
       // the hobo); the counter only opens through the bribe above.
       const sandwich = u32(GC + 76) === 5 && str(u32(GC + 80)).raw === '001' && bytes[flag('itemSandWich')];
@@ -385,6 +389,7 @@ export function createEngine({
       if (u32(GC + 76) === 6 && str(u32(GC + 80)).raw === '024') set32(GC + 80, u32(CONTROL_ROOM_NODE));
       core['GameController_Option' + value](GC, 0);
       if (sandwich) bytes[flag('itemSandWich')] = 1;
+      if (morningGate) set32(GC + 64, 2);
     } else if (kind === 'continue') {
       // One original warehouse response clears every option. Give that
       // otherwise stranded response its normal default Option1 continuation.

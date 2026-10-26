@@ -1,7 +1,7 @@
 // Fixes to the original game's wiring (see the comments in src/engine.js).
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {createEngine} from '../src/engine.js';
+import {createEngine, flags} from '../src/engine.js';
 import {installLocale, testLocale} from './helpers/locale.mjs';
 const code = testLocale();
 const L = await installLocale(code);
@@ -61,4 +61,17 @@ for (const choice of [1, 2]) {
   next.importSave(JSON.parse(JSON.stringify(earlier)));
   assert.ok(offers(next), 'available again on another day');
 }
-console.log(JSON.stringify({controlRoomButton: true, onceADay: true}));
+
+// The school gate in the morning: with both clues, Miss Summers can be met
+// (the original only allowed dawn).
+{
+  const e = at(4);
+  assert.equal(e.snapshot().state.phase, 'Morning');
+  const b = new Uint8Array(e.debug.memory.buffer);
+  for (const f of ['infoGirlParents', 'infoSchoolNeighbour']) b[e.debug.GC + 12 + flags.indexOf(f)] = 1;
+  e.action('go', 8);
+  e.action('choice', e.snapshot().screen.options.findIndex(o => o.raw === L.literals[1869].raw) + 1);
+  assert.deepEqual(e.snapshot().screen.parts.map(p => p.id), [2245]);
+  assert.equal(e.snapshot().state.phase, 'Morning');
+}
+console.log(JSON.stringify({controlRoomButton: true, onceADay: true, morningGate: true}));
