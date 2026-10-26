@@ -2377,20 +2377,20 @@
     "ids": [
       2468
     ],
-    "bytes": 90394,
+    "bytes": 65072,
     "width": 1024,
     "height": 768,
-    "sha256": "78fc616921fa8f99b9e594fb4664aa822b402a6008ae1e9166fb19ef7ebe9ff2"
+    "sha256": "30e260b0ab5356cea1b79660563537d634a628ccd0c6193a6f2647653342efae"
   },
   "2469": {
     "asset": "assets/art/scenes/2469.webp",
     "ids": [
       2469
     ],
-    "bytes": 50866,
+    "bytes": 73886,
     "width": 1024,
     "height": 768,
-    "sha256": "a24cc6ed0a9a2e3d987cc9e1807ac58ec8b2ce9b2b51de67834e39a8329a64c0"
+    "sha256": "00d987823546dbff78e0c17d1d19f2f44fc94c8e69c254ad4dfd4f0c2b856e3a"
   },
   "2470": {
     "asset": "assets/art/scenes/2470.webp",
