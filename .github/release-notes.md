@@ -4,11 +4,17 @@ Every night someone murders Harry's sunflower, and every morning he wakes up to 
 
 **One app, both editions:** English (narrated by Harry) and 简体中文 (朱利安朗读). Choose on first launch; change it any time from the cover or the notebook.
 
-### New in 2.2
+### New in 2.3
 
-- **Every scene picture checked and fixed:** besides Valentine's story, the Voice, the hobo and the guard from 2.1, the smaller flaws are fixed too (130 pictures redrawn in all).
-- **The school gate** works in the morning as well as at dawn: ask a father for her name and pose as the substitute teacher.
-- **The narrator** starts every line from its first word, in both languages, and never reads the choices aloud; the control-room button works however you reach it; typed answers ignore spaces and capitals; Fermat's counter opens by bribing the hobo with the gardener's sandwich; the gun, the gardener, the park sweeper and the girl on the avenue are once a day.
+- **Signed with Himawari's permanent key.** If you have 2.1 or 2.2 installed, do this once: *Notebook → Settings → Export save*, uninstall the old app, install this one and *Import save*. From now on every update installs straight over the previous one, with your progress kept.
+- **Voice and text speed in the ink box:** *voice* turns Harry's narration on or off, and *×2* writes the text twice as fast as he speaks while he keeps reading; the next passage starts its own narration.
+- **The voice no longer drops out** mid-passage when a recording's download is interrupted: it picks up again from the same word.
+- **The water plant's public entrance** now shows the guard and lets you choose to fight, flee or talk your way in (the game skipped straight to the fight).
+- **The neighbour's midnight visit** is redrawn: she crashes through the window in a dynamite vest with the grin of someone who has completely lost it.
+
+### Earlier in 2.2
+
+- Every scene picture checked and fixed (130 redrawn), Valentine redesigned; the school gate works in the morning; the narrator starts every line from its first word and never reads the choices aloud; the control-room button works however you reach it; Fermat's counter opens by bribing the hobo with the gardener's sandwich; the gun, the gardener, the park sweeper and the girl on the avenue are once a day.
 
 ### Install
 
