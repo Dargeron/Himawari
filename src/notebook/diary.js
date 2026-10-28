@@ -17,6 +17,22 @@ export function createDiary(ctx) {
     $('nb-clue-text').focus({preventScroll: true});
   });
 
+  // Start today again: one button, then a confirmation in place.
+  const redo = {
+    section: $('nb-redo'),
+    ask: $('nb-redo-button'),
+    yes: $('nb-redo-confirm'),
+    no: $('nb-redo-cancel'),
+  };
+  function confirming(on) {
+    redo.ask.hidden = on;
+    redo.yes.hidden = redo.no.hidden = !on;
+    (on ? redo.no : redo.ask).focus({preventScroll: true});
+  }
+  redo.ask.addEventListener('click', () => confirming(true));
+  redo.no.addEventListener('click', () => confirming(false));
+  redo.yes.addEventListener('click', () => api.restartDay?.());
+
   let fresh = new Set();
 
   function render({keepUnread = false} = {}) {
@@ -62,6 +78,10 @@ export function createDiary(ctx) {
     button.textContent = clue.used ? t('nb.diary.clueUsed') : t('nb.diary.clueUse');
     $('nb-clue-note').textContent = g.active ? (clue.used ? t('nb.diary.clueReread') : t('nb.diary.clueNote')) : '';
     $('nb-clue-note').hidden = !g.active;
+
+    redo.section.hidden = !api.canRestartDay?.();
+    redo.ask.hidden = false;
+    redo.yes.hidden = redo.no.hidden = true;
 
     $('nb-prepared').replaceChildren(...summary.preparations.map(line => el('li', '', line)));
     $('nb-prepared-empty').hidden = summary.preparations.length > 0;

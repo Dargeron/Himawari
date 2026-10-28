@@ -144,6 +144,45 @@ function click(g, node) {
   node.click();
 }
 
+// 1b. Starting a day again from its dawn: the diary offers it once the day
+// has moved on, and it returns the town to dawn with today's visits forgotten.
+{
+  const g = open({settings: {reducedMotion: true, narrationEnabled: false}});
+  const now = g.w.Date.now;
+  g.w.Date.now = () => route.seed;
+  g.click('#title-begin');
+  g.w.Date.now = now;
+  const play = ([kind, value]) => {
+    if (kind === 'go') g.click(`.map-spot[data-destination="${value}"]`);
+    else if (kind === 'choice') g.click(g.$(`button.choice[data-choice="${value}"]`) || '#ink-responses .ink-continue');
+    else g.click('#ink-responses .ink-continue');
+  };
+  const diary = () => {
+    g.click('#notebook-button');
+    g.click('#nb-tab-diary');
+    return g.$('#nb-redo');
+  };
+  play(route.actions[0]);
+  const dawn = g.snapshot();
+  assert.equal(dawn.screen.kind, 'map');
+  assert.equal(dawn.state.phase, 'Dawn');
+  assert.equal(diary().hidden, true, 'Nothing to start again at dawn');
+  g.click('#nb-close');
+  for (const action of route.actions.slice(1, 5)) play(action);
+  const later = g.snapshot();
+  assert.notEqual(later.state.t, dawn.state.t);
+  assert.ok(g.$('.map-place.visited'), 'A place visited today is marked');
+  assert.equal(diary().hidden, false);
+  g.click('#nb-redo-button');
+  g.click('#nb-redo-confirm');
+  const again = g.snapshot();
+  assert.equal(again.screen.kind, 'map');
+  assert.equal(again.state.phase, 'Dawn');
+  assert.equal(again.state.loop, dawn.state.loop);
+  assert.ok(!g.$('.map-place.visited'), "Today's visits are forgotten");
+  g.dom.window.close();
+}
+
 // 2. The whole legal winning route through the interface, all six phases,
 // read-before passages and the skip control along the way.
 let finalSave;

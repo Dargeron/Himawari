@@ -41,6 +41,7 @@ export function startGame(boot = {}) {
     guide = createGuide(),
     journal = null,
     history = [],
+    dawn = null,
     saved = null,
     active = false,
     current = engine.snapshot(),
@@ -92,6 +93,8 @@ export function startGame(boot = {}) {
     exportSave,
     importSave,
     restart: begin,
+    canRestartDay,
+    restartDay,
     toTitle: () => {
       notebook.close();
       showTitle();
@@ -217,6 +220,7 @@ export function startGame(boot = {}) {
     else showStoryScreen(s, freshSegment);
     audio.music(musicFor(s));
     if (active) {
+      noteDawn(s);
       save();
       prefetch.current(s);
       if (lastSave) prefetch.ahead(s, lastSave.engine);
@@ -244,6 +248,14 @@ export function startGame(boot = {}) {
         sub: tally(displayLoop(s)),
         rewind: true,
         duration: 2400,
+      };
+    if (transition === 'dawn')
+      return {
+        flowerPath: 'assets/art/original/hima1.webp',
+        title: t('card.dawnAgain'),
+        sub: tally(displayLoop(s)),
+        rewind: true,
+        duration: 2000,
       };
     if (transition === 'night') return {flowerPath: 'assets/art/original/hima5.webp', title: L.phases.Night};
     return {flowerPath: flowerFor(s), title: phaseName(s)};
@@ -416,10 +428,42 @@ export function startGame(boot = {}) {
 
   // --- Sessions ---------------------------------------------------------------
 
+  // The day at dawn: kept when the town map first appears on a loop's dawn,
+  // so the player can start that day again (the notebook keeps what was
+  // learned; the clue already used stays used).
+  function noteDawn(s) {
+    if (s.screen.kind !== 'map' || s.state.t !== 1 || s.screen.finished) return;
+    if (dawn?.loop === s.state.loop) return;
+    dawn = {loop: s.state.loop, engine: engine.exportSave()};
+  }
+
+  function canRestartDay() {
+    const s = current;
+    return (
+      active &&
+      !!s &&
+      dawn?.loop === s.state.loop &&
+      !isNight(s) &&
+      !s.screen.finished &&
+      !(s.screen.kind === 'map' && s.state.t === 1)
+    );
+  }
+
+  function restartDay() {
+    if (!canRestartDay()) return;
+    const next = createEngine();
+    next.importSave(dawn.engine);
+    engine = next;
+    journal.forgetVisits(dawn.loop);
+    notebook.close();
+    render(engine.snapshot(), {transition: 'dawn', discoveries: false});
+  }
+
   function save() {
     const payload = {
       edition: 1,
       engine: engine.exportSave(),
+      dawn,
       guide: guide.exportSave(),
       journal: journal.exportSave(),
       history: history.slice(-120),
@@ -466,6 +510,7 @@ export function startGame(boot = {}) {
     guide = createGuide();
     journal = createJournal();
     history = [];
+    dawn = null;
     enterGame();
     render(engine.snapshot(), {discoveries: false});
   }
@@ -491,6 +536,7 @@ export function startGame(boot = {}) {
             )
             .slice(-120)
         : [];
+      dawn = Number.isInteger(saved.dawn?.loop) && saved.dawn.engine ? saved.dawn : null;
       guide = createGuide(saved.guide);
       if (saved.guide?.version !== 1) guide.recoverHistory(history);
       journal = createJournal(saved.journal);

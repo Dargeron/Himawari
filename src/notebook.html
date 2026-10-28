@@ -55,6 +55,15 @@
        <ul id="nb-prepared" class="nb-checks"></ul>
        <p id="nb-prepared-empty" class="nb-empty small" hidden>{{nb.diary.preparedEmpty}}</p>
       </section>
+      <section id="nb-redo" class="nb-redo" aria-labelledby="nb-redo-h" hidden>
+       <h3 id="nb-redo-h" class="nb-h3">{{nb.diary.redo}}</h3>
+       <p class="nb-small">{{nb.diary.redoNote}}</p>
+       <div class="nb-actions">
+        <button id="nb-redo-button" class="nb-button" type="button">{{nb.diary.redoButton}}</button>
+        <button id="nb-redo-confirm" class="nb-button danger" type="button" hidden>{{nb.diary.redoConfirm}}</button>
+        <button id="nb-redo-cancel" class="nb-button" type="button" hidden>{{nb.diary.redoCancel}}</button>
+       </div>
+      </section>
      </div>
     </div>
     <div class="nb-page">

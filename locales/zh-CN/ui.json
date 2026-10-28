@@ -68,6 +68,7 @@
   "map.unpin": "取消{place}的标记",
   "map.turn": "把手机横过来，地图会更大",
   "card.loop": "第{n}次循环",
+  "card.dawnAgain": "又是黎明",
   "notice.finding": "✎ 日记里有一条新发现",
   "notice.findings": "✎ 日记里有新的发现",
   "notice.item": "+ {item}",
