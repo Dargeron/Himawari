@@ -20,6 +20,18 @@ export const cityRegions = {
   7: [43, 43, 14, 14],
   8: [23, 7, 32, 29],
 };
+// Where each place's name tag sits on the drawing (centre, % of width and
+// height): on open ground next to its building, clear of the other tags.
+export const cityLabels = {
+  1: [21, 69],
+  2: [86, 41],
+  3: [11, 27],
+  4: [76, 96],
+  5: [72, 69],
+  6: [40, 73],
+  7: [50, 58],
+  8: [42, 37],
+};
 export function originalScene(s) {
   if (s.screen.finished) return 'Ending_5b';
   if (s.screen.kind === 'map') return 'mapa_joc';

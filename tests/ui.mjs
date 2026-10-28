@@ -106,9 +106,14 @@ const clean = text => text.replace(/\s+/g, ' ').trim();
   assert.ok(!g.$('#ink-responses').classList.contains('waiting'));
   g.key(' ');
   assert.equal(g.snapshot().screen.kind, 'map');
-  // The map: eight buildings on the drawing and eight numbered places.
+  // The map: eight buildings on the drawing, each with a numbered tag on it;
+  // the ink box rests.
   assert.equal(g.d.querySelectorAll('.map-spot').length, 8);
-  assert.equal(g.d.querySelectorAll('.place').length, 8);
+  const tags = [...g.d.querySelectorAll('#map-places .map-tag')];
+  assert.deepEqual(tags.map(tag => tag.querySelector('.tag-n').textContent), ['1', '2', '3', '4', '5', '6', '7', '8']);
+  assert.equal(tags[1].querySelector('.tag-name').textContent, L.destinations[2].name);
+  assert.equal(g.$('#map-prompt').textContent, L.strings['map.prompt']);
+  assert.equal(g.d.querySelectorAll('#ink-responses button').length, 0);
   assert.match(g.$('#map-art').src, /original\/mapa_joc\.webp/);
   assert.equal(g.$('#map').hidden, false);
   assert.equal(g.$('#inkbox').dataset.mode, 'map');

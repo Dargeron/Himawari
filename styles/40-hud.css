@@ -29,16 +29,22 @@
 .hud-time::before {
   content: '';
   position: absolute;
-  inset: -36px -70px -36px -40px;
+  inset: -40px -80px -40px -44px;
   z-index: -1;
-  background: radial-gradient(closest-side, rgba(13, 9, 6, 0.55), transparent);
+  background: radial-gradient(closest-side, rgba(13, 9, 6, 0.72), rgba(13, 9, 6, 0.35) 60%, transparent);
   pointer-events: none;
 }
 
+/* The flower that tells the time sits on a small pool of ink, with a dark
+   outline, so it reads on bright and busy pictures alike. */
 .hud-flower {
   width: auto;
-  height: 62px;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.55));
+  height: 70px;
+  padding: 4px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(13, 9, 6, 0.78) 0 48%, rgba(13, 9, 6, 0.4) 62%, transparent 71%);
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.8))
+    drop-shadow(0 3px 8px rgba(0, 0, 0, 0.6));
 }
 
 .hud-reading {
@@ -246,7 +252,7 @@ html:lang(zh-CN) .card-title {
 
 @media (max-width: 720px) {
   .hud-flower {
-    height: 48px;
+    height: 56px;
   }
   .hud-phase {
     font-size: 22px;

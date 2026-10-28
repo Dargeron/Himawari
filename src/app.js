@@ -315,10 +315,9 @@ export function startGame(boot = {}) {
     $('game').dataset.screen = 'map';
     box.dataset.side = 'right';
     stage.show('assets/art/original/mapa_joc.webp', {fit: 'fill'});
+    // The map carries its own prompt and numbered tags; the ink box rests.
     map.show(s, journal.map(guideDay(s)));
     inkbox.clear();
-    inkbox.passage(t('map.prompt'), {instant: true, kind: 'map'});
-    inkbox.respond(map.placeList());
     $('read-mark').hidden = true;
     $('skip-button').hidden = true;
     $('key-hint').textContent = t('hint.places');

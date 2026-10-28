@@ -41,11 +41,16 @@
  </div>
 
  <div id="map" class="map" hidden>
+  <div class="map-backdrop" aria-hidden="true"></div>
   <div id="map-sheet" class="map-sheet">
    <img id="map-art" class="map-art" alt="{{map.alt}}" width="1280" height="974">
    <div id="map-tint" class="map-tint" aria-hidden="true"></div>
-   <div id="map-spots" class="map-spots" role="group" aria-label="{{map.group}}"></div>
+   <div id="map-spots" class="map-spots" aria-hidden="true"></div>
+   <div id="map-places" class="map-places" role="group" aria-labelledby="map-prompt"></div>
   </div>
+  <h2 id="map-prompt" class="map-prompt">{{map.prompt}}</h2>
+  <p class="map-hint" aria-hidden="true">{{hint.places}}</p>
+  <p class="map-turn" aria-hidden="true">{{map.turn}}</p>
  </div>
 
  <section id="title" class="title" aria-labelledby="title-name">
