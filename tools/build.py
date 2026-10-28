@@ -63,6 +63,7 @@ def pack_data(code):
     focus = ROOT / 'content/scene-focus.json'
     if focus.exists():
         data['focus'] = json.loads(focus.read_text())
+    data['light'] = read_json('content/scene-light.json')
     if code == 'zh-CN':
         data['pronunciations'] = read_json('locales/zh-CN/name-pronunciations.json')
         english = read_json('locales/en/literals.json')

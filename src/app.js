@@ -67,7 +67,10 @@ export function startGame(boot = {}) {
 
   const typewriter = createTypewriter({settings});
   const audio = createAudio(settings, onVoice);
-  const stage = createStage($('stage'), {whenReady: (path, ms) => boot.whenReady?.(path, ms) ?? Promise.resolve(true)});
+  const stage = createStage($('stage'), {
+    whenReady: (path, ms) => boot.whenReady?.(path, ms) ?? Promise.resolve(true),
+    reduced: () => settings.reducedMotion,
+  });
   const inkbox = createInkbox($('inkbox'), {typewriter, settings});
   const hud = createHud($('hud'), {card: $('card'), settings});
   const prefetch = createPrefetch(boot);
@@ -113,7 +116,9 @@ export function startGame(boot = {}) {
     createAudio,
     fullscreen: {available: !!document.fullscreenEnabled && !isNative(), toggle: toggleFullscreen},
     install: boot.install,
-    language: L.single ? null : {label: t('other.label'), href: '../' + t('other.route') + '/index.html', code: t('other.code')},
+    language: L.single
+      ? null
+      : {label: t('other.label'), href: '../' + t('other.route') + '/index.html', code: t('other.code')},
     onOpen: () => {
       clearTimeout(autoTimer);
       audio.hold();
@@ -272,7 +277,7 @@ export function startGame(boot = {}) {
       focus = L.focus?.[key],
       art = sceneArtPath(s);
     box.dataset.side = focus?.box === 'right' ? 'right' : 'left';
-    stage.show(art, {focus, fit: art.startsWith('assets/art/original/') ? 'contain' : 'cover'});
+    stage.show(art, {focus, fit: art.startsWith('assets/art/original/') ? 'contain' : 'cover', light: L.light?.[key]});
     if (freshSegment) inkbox.clear();
     const text = screen.finished ? t('ink.gameOver') : screen.text;
     const speaks = settings.narrationEnabled && (!read || settings.narrateRead) && !skipping;
