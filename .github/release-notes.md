@@ -2,7 +2,7 @@
 
 Every night someone murders Harry's sunflower, and every morning he wakes up to the same day. A narrated time-loop mystery by **Liam McHara (Guillem) & Albert Casals**.
 
-**One app, both editions:** English (narrated by Harry) and 简体中文 (朱利安朗读). Choose on first launch; change it any time from the cover or the notebook.
+**Two apps, one per language:** English (narrated by Harry) and 简体中文 (朱利安朗读). Install the one you want; both can sit side by side.
 
 ### New in 2.3
 
@@ -17,7 +17,11 @@ Every night someone murders Harry's sunflower, and every morning he wakes up to 
 
 ### Install
 
-1. Download **{{APK}}** below (about {{MB}} MB: every picture, voice and piece of music is inside, so the game plays fully offline).
+1. Download the app for your language below:
+   - **English:** **{{APK_EN}}** (about {{MB_EN}} MB)
+   - **简体中文:** **{{APK_ZH}}** (约 {{MB_ZH}} MB)
+
+   Every picture, voice and piece of music is inside, so the game plays fully offline.
 2. Open it on your Android phone or tablet (Android 7 or newer). If asked, allow your browser or file manager to *install unknown apps*.
 3. Headphones recommended.
 
@@ -28,4 +32,4 @@ Every night someone murders Harry's sunflower, and every morning he wakes up to 
 - The Android back button closes what is open, or opens the notebook; on the cover it closes the app.
 - Progress saves automatically. *Notebook → Settings → Export save* shares a copy of your save (to Drive, Files, email…); *Import save* restores it, also on the website.
 
-SHA-256: `{{SHA256}}`
+SHA-256 · English: `{{SHA256_EN}}` · 简体中文: `{{SHA256_ZH}}`

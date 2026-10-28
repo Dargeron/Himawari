@@ -1,4 +1,4 @@
-import {t} from './i18n.js';
+import {L, t} from './i18n.js';
 import {assetURL} from './assets.js';
 import {el} from './inkbox.js';
 
@@ -12,6 +12,8 @@ export function createTitle(root, actions) {
   $('title-notebook').addEventListener('click', () => actions.onNotebook());
   $('title-settings').addEventListener('click', () => actions.onNotebook('settings'));
   $('title-credits').addEventListener('click', () => actions.onNotebook('credits'));
+  // An app built for one language has no other edition to switch to.
+  $('title-language').hidden = !!L.single;
   $('title-language').addEventListener('click', () => actions.onLanguage?.());
 
   const fullscreen = $('title-fullscreen');

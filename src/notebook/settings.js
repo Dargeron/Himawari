@@ -53,6 +53,7 @@ export function createSettings(ctx) {
   api.install?.onChange?.(syncInstall);
 
   const language = $('nb-language');
+  language.closest('section').hidden = !api.language;
   if (api.language) {
     language.href = api.language.href;
     language.textContent = api.language.label;

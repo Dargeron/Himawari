@@ -5,6 +5,16 @@ def packageJson = new groovy.json.JsonSlurper().parse(file('../../package.json')
 def appVersion = packageJson.version
 def (major, minor, patch) = appVersion.tokenize('.').collect { it.toInteger() }
 
+// One app per language (-PhimawariEdition=en or zh-CN, default en). The
+// English app keeps the original id so it updates the earlier two-language app;
+// the Chinese app is a separate app beside it.
+def edition = project.findProperty('himawariEdition') ?: 'en'
+def editions = [
+    'en'   : [id: 'io.github.dargeron.himawari', name: 'Himawari'],
+    'zh-CN': [id: 'io.github.dargeron.himawari.zh', name: 'Himawari 向日葵'],
+]
+if (!editions.containsKey(edition)) throw new GradleException("Unknown himawariEdition: ${edition}")
+
 // Release signing comes from the environment (GitHub Actions secrets or a
 // local keystore); without it, Gradle produces an unsigned release.
 def keystore = System.getenv('HIMAWARI_KEYSTORE')
@@ -13,7 +23,9 @@ android {
     namespace = "io.github.dargeron.himawari"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.github.dargeron.himawari"
+        applicationId editions[edition].id
+        resValue 'string', 'app_name', editions[edition].name
+        resValue 'string', 'title_activity_main', editions[edition].name
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode major * 10000 + minor * 100 + patch
@@ -28,6 +40,9 @@ android {
     // Pictures, voices, music and fonts are already compressed. Storing them
     // as they are keeps the APK build fast and lets audio seek without
     // decompressing.
+    buildFeatures {
+        resValues = true
+    }
     androidResources {
         noCompress += ['webp', 'mp3', 'm4a', 'woff2', 'png']
     }

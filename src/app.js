@@ -109,7 +109,7 @@ export function startGame(boot = {}) {
     createAudio,
     fullscreen: {available: !!document.fullscreenEnabled && !isNative(), toggle: toggleFullscreen},
     install: boot.install,
-    language: {label: t('other.label'), href: '../' + t('other.route') + '/index.html', code: t('other.code')},
+    language: L.single ? null : {label: t('other.label'), href: '../' + t('other.route') + '/index.html', code: t('other.code')},
     onOpen: () => {
       clearTimeout(autoTimer);
       audio.hold();

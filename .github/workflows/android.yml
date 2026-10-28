@@ -44,11 +44,6 @@ jobs:
         run: npm ci --no-audit --no-fund
       - name: Original rules, winning route and both language packs
         run: npm run test:logic
-      - name: Build both editions with every file inside the app
-        run: python3 tools/build.py --app
-      - name: Copy the game into the Android project
-        run: npx cap sync android
-
       # A persistent key (repository secrets HIMAWARI_KEYSTORE_BASE64 and
       # HIMAWARI_KEYSTORE_PASSWORD; alias himawari unless HIMAWARI_KEY_ALIAS
       # says otherwise) lets every release install over the previous one.
@@ -85,46 +80,54 @@ jobs:
             } >> "$GITHUB_ENV"
           fi
 
-      - name: Build the APK
-        working-directory: android
-        run: ./gradlew --no-daemon assembleRelease
-
-      - name: Name and fingerprint the APK
+      # One app per language: the English app keeps the original app id, the
+      # Chinese app is a separate app (see android/app/build.gradle).
+      - name: Build the English and Chinese apps
         run: |
           version="$(node -p "require('./package.json').version")"
-          apk="Himawari-$version.apk"
-          mv android/app/build/outputs/apk/release/app-release.apk "$apk"
-          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify "$apk"
-          echo "Signing key: $SIGNING"
-          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --print-certs "$apk" | grep -i 'SHA-256'
-          sha256sum "$apk" > "$apk.sha256"
-          {
-            echo "VERSION=$version"
-            echo "APK=$apk"
-            echo "APK_SHA256=$(cut -d' ' -f1 "$apk.sha256")"
-            echo "APK_MB=$(( $(stat -c%s "$apk") / 1000000 ))"
-          } >> "$GITHUB_ENV"
+          echo "VERSION=$version" >> "$GITHUB_ENV"
+          for pair in en:English:EN zh-CN:Chinese:ZH; do
+            IFS=: read -r edition label var <<< "$pair"
+            python3 tools/build.py --app --edition "$edition"
+            npx cap sync android
+            (cd android && ./gradlew --no-daemon assembleRelease -PhimawariEdition="$edition")
+            apk="Himawari-$version-$label.apk"
+            mv android/app/build/outputs/apk/release/app-release.apk "$apk"
+            "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify "$apk"
+            echo "$apk signing key: $SIGNING"
+            "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --print-certs "$apk" | grep -i 'SHA-256'
+            "$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$apk" | grep -E "^package:|^application-label:" || true
+            sha256sum "$apk" > "$apk.sha256"
+            {
+              echo "APK_$var=$apk"
+              echo "SHA256_$var=$(cut -d' ' -f1 "$apk.sha256")"
+              echo "MB_$var=$(( $(stat -c%s "$apk") / 1000000 ))"
+            } >> "$GITHUB_ENV"
+          done
 
       - uses: actions/upload-artifact@v4
         with:
           name: himawari-android
           path: |
-            ${{ env.APK }}
-            ${{ env.APK }}.sha256
+            Himawari-*.apk
+            Himawari-*.apk.sha256
           retention-days: 30
 
-      - name: Attach the APK to the release
+      - name: Attach the APKs to the release
         if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'release' || github.ref == 'refs/heads/release-drop'
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.event.release.tag_name || (github.ref == 'refs/heads/release-drop' && format('v{0}', env.VERSION)) || github.ref_name }}
         run: |
           notes="$RUNNER_TEMP/notes.md"
-          sed -e "s/{{VERSION}}/$VERSION/g" -e "s/{{APK}}/$APK/g" -e "s/{{SHA256}}/$APK_SHA256/g" -e "s/{{MB}}/$APK_MB/g" \
+          sed -e "s/{{VERSION}}/$VERSION/g" \
+            -e "s/{{APK_EN}}/$APK_EN/g" -e "s/{{SHA256_EN}}/$SHA256_EN/g" -e "s/{{MB_EN}}/$MB_EN/g" \
+            -e "s/{{APK_ZH}}/$APK_ZH/g" -e "s/{{SHA256_ZH}}/$SHA256_ZH/g" -e "s/{{MB_ZH}}/$MB_ZH/g" \
             .github/release-notes.md > "$notes"
           if [ "$SIGNING" = temporary ]; then cat .github/release-notes-temporary-key.md >> "$notes"; fi
+          files=("$APK_EN" "$APK_EN.sha256" "$APK_ZH" "$APK_ZH.sha256")
           if gh release view "$TAG" > /dev/null 2>&1; then
-            gh release upload "$TAG" "$APK" "$APK.sha256" --clobber
+            gh release upload "$TAG" "${files[@]}" --clobber
             if [ -z "$(gh release view "$TAG" --json body --jq .body)" ]; then
               gh release edit "$TAG" --title "Himawari $VERSION" --notes-file "$notes"
             fi
@@ -132,7 +135,7 @@ jobs:
             # From release-drop the tag does not exist yet: create it at this commit.
             target=(--verify-tag)
             [ "$GITHUB_REF" = refs/heads/release-drop ] && target=(--target "$GITHUB_SHA")
-            gh release create "$TAG" "$APK" "$APK.sha256" --title "Himawari $VERSION" --notes-file "$notes" "${target[@]}"
+            gh release create "$TAG" "${files[@]}" --title "Himawari $VERSION" --notes-file "$notes" "${target[@]}"
           fi
 
       - name: Delete the release-drop branch
