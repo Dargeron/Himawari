@@ -91,7 +91,7 @@ for name, entry in original_art.items():
 config = read(PACK / 'narrator.json')
 if CODE == 'en':
     assert config['voice'] == 'Harry' and config['voice_id'] == 'SOYHLrjzK2X1ezoPC6cr'
-    opening = ROOT / prefix / 'Harry-opening.mp3'
+    opening = ROOT / prefix / 'Harry-opening.m4a'
     assert sha(opening.read_bytes()) == config['opening_sha256'], 'The approved original Harry opening has changed'
 else:
     assert config['voice'] == 'Julian' and config['language_code'] == 'zh'

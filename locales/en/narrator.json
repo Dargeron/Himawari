@@ -10,7 +10,9 @@
   },
   "direction": "Use the original first Harry audition: tense, self-serious, worried and firm. Do not use the more frantic refinement.",
   "opening_source": "First Harry audition, unchanged",
-  "opening_sha256": "4c0b423783ac8d5046cbcfd03bbadbd597a5a0450c0cea7ca7375e1bd258aa19",
   "casting_status": "Approved for the complete game",
-  "sample_prompt": "[quietly] Last night I had that nightmare again. My precious sunflower, withered, dead. Murdered.\n[tense] I don’t know what to do anymore. I know it’s going to happen tonight, I just know. So I have to find the murderer first.\nOh, my sunflower, the light of my days. My loyal companion... Even in my darkest hour I kept nurturing it, and that’s all that kept me sane.\n[worried] I don’t want it to die... I don’t want to be alone...\n[firmly] I have to keep it alive."
+  "sample_prompt": "[quietly] Last night I had that nightmare again. My precious sunflower, withered, dead. Murdered.\n[tense] I don’t know what to do anymore. I know it’s going to happen tonight, I just know. So I have to find the murderer first.\nOh, my sunflower, the light of my days. My loyal companion... Even in my darkest hour I kept nurturing it, and that’s all that kept me sane.\n[worried] I don’t want it to die... I don’t want to be alone...\n[firmly] I have to keep it alive.",
+  "opening_master_sha256": "4c0b423783ac8d5046cbcfd03bbadbd597a5a0450c0cea7ca7375e1bd258aa19",
+  "opening_sha256": "f81b2b6a670b3e8b840f63052757e54ac90dc79ef319c241f041c4d671c679be",
+  "encoding": "AAC-LC 64 kbit/s mono .m4a, re-encoded from the approved 128 kbit/s MP3 masters (git history before 2.4) with sample-exact timing"
 }
