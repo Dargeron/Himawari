@@ -108,6 +108,26 @@ export function createSettings(ctx) {
       render() {
         const flower = $('nb-credits-flower');
         if (!flower.getAttribute('src')) flower.src = assetURL('assets/art/original/hima3.webp');
+        // The field recordings behind the ambient sounds, as their licences ask.
+        const sources = $('nb-credits-ambience'),
+          list = sources.querySelector('ul'),
+          recordings = L.ambience?.recordings ?? [];
+        sources.hidden = !recordings.length;
+        if (list.childElementCount !== recordings.length) {
+          list.replaceChildren(
+            ...recordings.map(r => {
+              const item = document.createElement('li'),
+                link = document.createElement('a');
+              link.className = 'nb-link';
+              link.href = r.url;
+              link.target = '_blank';
+              link.rel = 'noopener';
+              link.textContent = r.title;
+              item.append(link, ` · ${r.author} · ${r.license}`);
+              return item;
+            }),
+          );
+        }
       },
       focusTarget: () => root.querySelector('#nb-credits [data-back]'),
     },

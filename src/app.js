@@ -16,6 +16,7 @@ import {createPrefetch} from './prefetch.js';
 import {isNative, onBack, onLifecycle, shareFile} from './native.js';
 import {
   advanceAction,
+  ambienceFor,
   continuation,
   displayLoop,
   flowerFor,
@@ -225,6 +226,7 @@ export function startGame(boot = {}) {
     if (s.screen.kind === 'map') showMapScreen(s);
     else showStoryScreen(s, freshSegment);
     audio.music(musicFor(s));
+    audio.ambience(ambienceFor(s));
     if (active) {
       noteDawn(s);
       save();
@@ -566,6 +568,7 @@ export function startGame(boot = {}) {
     typewriter.stop();
     audio.stop();
     audio.music(0);
+    audio.ambience('');
     map.hide();
     $('game').hidden = true;
     stage.show(COVER_ART, {focus: L.focus?.['2464']});

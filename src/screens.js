@@ -52,6 +52,18 @@ export function musicFor(s) {
   return screen.music;
 }
 
+// The place's ambient sound (content/ambience.json): the town on the map,
+// each place's own, and the quiet of the night; none for the opening and
+// the endings.
+export function ambienceFor(s) {
+  const {screen, state} = s,
+    sounds = L.ambience;
+  if (!sounds || screen.finished) return '';
+  if (screen.kind === 'map') return sounds.map ?? '';
+  if (screen.kind === 'intro') return isNight(s) && !state.introNode.startsWith('victory') ? (sounds.night ?? '') : '';
+  return sounds.places?.[state.place] ?? '';
+}
+
 export function paragraphs(text) {
   return String(text).trim().split(/\n+/).filter(Boolean);
 }

@@ -108,6 +108,8 @@
   "nb.settings.voiceRate": "Narration speed",
   "nb.settings.music": "Music",
   "nb.settings.musicVolume": "Music volume",
+  "nb.settings.ambience": "Ambient sounds",
+  "nb.settings.ambienceVolume": "Ambience volume",
   "nb.settings.reading": "Reading",
   "nb.settings.textSpeed": "Text speed",
   "nb.settings.speed.slow": "Slow",
@@ -160,6 +162,7 @@
   "credits.narrationName": "Harry (English) · Julian (Mandarin), ElevenLabs voices",
   "credits.music": "Music",
   "credits.musicName": "the original soundtrack",
+  "credits.ambience": "Ambient sounds",
   "credits.note": "The original game’s decisions, puzzles and endings were recovered, and its writing is preserved.",
   "credits.link": "The original Himawari on itch.io"
 }

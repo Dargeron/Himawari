@@ -85,6 +85,72 @@ export function createAudio(settings, onStatus = () => {}) {
       else if (previousMusic !== currentMusic) previousMusic.pause();
     }
     fadeFrame = requestAnimationFrame(tick);
+    airFade();
+  }
+
+  // Ambient sound: a quiet loop for the place, made on first use. Two players
+  // take turns, so a change of place crossfades and each loop's seam is
+  // overlapped instead of left as a gap; the level drops while the voice reads.
+  let airs = null,
+    air = 0,
+    airName = '',
+    airTimer = 0;
+  function airLevel() {
+    return suspended || !settings.ambienceEnabled ? 0 : settings.ambienceVolume * (playing || ducked ? 0.45 : 1);
+  }
+  function airStep() {
+    const level = airLevel();
+    let moving = false;
+    for (const a of airs) {
+      const goal = a === airs[air] && airName ? level : 0;
+      const v = a.volume + (goal - a.volume) * 0.12;
+      a.volume = Math.max(0, Math.min(1, Math.abs(goal - v) < 0.003 ? goal : v));
+      if (a.volume !== goal) moving = true;
+      else if (goal === 0 && !a.paused) a.pause();
+    }
+    if (!moving) {
+      clearInterval(airTimer);
+      airTimer = 0;
+    }
+  }
+  function airFade() {
+    if (!airs) return;
+    const a = airs[air];
+    if (airName && airLevel() > 0 && a.paused) a.play().catch(() => {});
+    if (!airTimer) airTimer = setInterval(airStep, 50);
+  }
+  function seam(event) {
+    const a = event.target;
+    if (a !== airs[air] || !airName || !a.duration || a.duration - a.currentTime > 2.5) return;
+    const next = airs[1 - air];
+    next.pause();
+    if (next.src !== a.src) next.src = a.src;
+    next.currentTime = 0;
+    next.volume = 0;
+    air = 1 - air;
+    airFade();
+  }
+  function ambience(name = '') {
+    if (!airs && !name) return;
+    if (!airs) {
+      airs = [new Audio(), new Audio()];
+      for (const a of airs) {
+        a.preload = 'none';
+        a.addEventListener('timeupdate', seam);
+      }
+    }
+    if (name !== airName) {
+      airName = name;
+      air = 1 - air;
+      const a = airs[air];
+      a.pause();
+      if (name) {
+        a.src = assetURL('assets/ambience/' + name + '.m4a');
+        a.volume = 0;
+        a.load();
+      }
+    }
+    airFade();
   }
   function requestPlay() {
     const myToken = token,
@@ -134,8 +200,7 @@ export function createAudio(settings, onStatus = () => {}) {
     const changedFile = loadedFile !== clip.file;
     const ownsClip = () => myToken === token && queue[index] === clip;
     const ready = () => {
-      if (!ownsClip() || voice.readyState < 1 || voice.seeking || Math.abs(voice.currentTime - startAt) > 0.04)
-        return;
+      if (!ownsClip() || voice.readyState < 1 || voice.seeking || Math.abs(voice.currentTime - startAt) > 0.04) return;
       prepared = true;
       clearSeek();
       if (playing && !suspended) {
@@ -386,6 +451,7 @@ export function createAudio(settings, onStatus = () => {}) {
     paused = queue.length > 0 && !completed;
     currentMusic.pause();
     previousMusic.pause();
+    for (const a of airs ?? []) a.pause();
     emit();
   }
   function resume() {
@@ -458,6 +524,7 @@ export function createAudio(settings, onStatus = () => {}) {
       }
     },
     music,
+    ambience,
     update,
     suspend,
     resume,

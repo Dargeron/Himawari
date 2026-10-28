@@ -1364,6 +1364,19 @@ html:lang(zh-CN) .nb-wordmark {
   line-height: 1.35;
 }
 
+.nb-sources {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8em;
+  line-height: 1.4;
+  color: var(--page-ink-dim);
+}
+
+.nb-sources li + li {
+  margin-top: 3px;
+}
+
 .nb-credits-note {
   margin: 0 0 10px;
   padding-top: 18px;

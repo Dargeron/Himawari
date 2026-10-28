@@ -64,6 +64,7 @@ def pack_data(code):
     if focus.exists():
         data['focus'] = json.loads(focus.read_text())
     data['light'] = read_json('content/scene-light.json')
+    data['ambience'] = read_json('content/ambience.json')
     if code == 'zh-CN':
         data['pronunciations'] = read_json('locales/zh-CN/name-pronunciations.json')
         english = read_json('locales/en/literals.json')
@@ -186,7 +187,7 @@ def edition_assets(code, data):
     """Every file the edition can request, as path -> {bytes, sha256}."""
     files = set(ROOT.glob('assets/art/original/*.webp')) | set(ROOT.glob('assets/art/scenes/*.webp'))
     files |= set(ROOT.glob('assets/art/cover/*.webp'))
-    files |= set(ROOT.glob('assets/music/*.m4a')) | set(edition_fonts(code))
+    files |= set(ROOT.glob('assets/music/*.m4a')) | set(ROOT.glob('assets/ambience/*.m4a')) | set(edition_fonts(code))
     files |= set(ROOT.glob('assets/icons/*.png'))
     files |= {ROOT / clip['file'] for clip in data['narration'].values()}
     manifest = {}

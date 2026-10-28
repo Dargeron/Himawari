@@ -15,6 +15,8 @@ export function defaultSettings() {
     voiceRate: 1,
     musicEnabled: true,
     musicVolume: 0.15,
+    ambienceEnabled: true,
+    ambienceVolume: 0.45,
     largeText: false,
     reducedMotion: reduceMotion(),
     textSpeed: 'normal',
@@ -23,7 +25,7 @@ export function defaultSettings() {
   };
 }
 
-const ranges = {voiceVolume: [0, 1], musicVolume: [0, 0.5], voiceRate: [0.75, 1.5]};
+const ranges = {voiceVolume: [0, 1], musicVolume: [0, 0.5], ambienceVolume: [0, 1], voiceRate: [0.75, 1.5]};
 
 export function loadSettings() {
   const settings = defaultSettings();
@@ -36,7 +38,15 @@ export function loadSettings() {
     settings[key] = Math.max(min, Math.min(max, settings[key]));
   }
   if (!Object.hasOwn(textSpeeds, settings.textSpeed)) settings.textSpeed = defaults.textSpeed;
-  for (const key of ['narrationEnabled', 'musicEnabled', 'largeText', 'reducedMotion', 'narrateRead', 'autoContinue'])
+  for (const key of [
+    'narrationEnabled',
+    'musicEnabled',
+    'ambienceEnabled',
+    'largeText',
+    'reducedMotion',
+    'narrateRead',
+    'autoContinue',
+  ])
     settings[key] = !!settings[key];
   return settings;
 }

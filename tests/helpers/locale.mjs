@@ -24,6 +24,8 @@ export function localeData(code) {
     stringCaches: read(`locales/${code}/string-caches.json`),
     narration: read(`locales/${code}/narration.json`),
     scenes: read('content/scene-illustrations.json'),
+    light: read('content/scene-light.json'),
+    ambience: read('content/ambience.json'),
     strings: uiStrings(code),
   };
   if (code === 'zh-CN') {

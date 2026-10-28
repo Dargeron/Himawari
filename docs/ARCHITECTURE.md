@@ -56,7 +56,7 @@ Full-screen cards mark the turn of the day, nightfall and the loop reset. The no
 
 ## Language packs
 
-A pack is `src/locales/<code>.js` (behaviour) plus data assembled by `tools/build.py` (`pack_data`) and mirrored for Node tests by `tests/helpers/locale.mjs`: literals, string caches, narration manifest, scene illustrations and focal points, interface strings (`locales/<code>/ui*.json`, merged; duplicate keys fail the build), and for Chinese the name pronunciations and English history used to migrate old saves. Each edition keeps its own save and settings keys, so existing saves keep working.
+A pack is `src/locales/<code>.js` (behaviour) plus data assembled by `tools/build.py` (`pack_data`) and mirrored for Node tests by `tests/helpers/locale.mjs`: literals, string caches, narration manifest, scene illustrations, focal points and living lights (`content/scene-light.json`), the ambient sound for each place (`content/ambience.json`), interface strings (`locales/<code>/ui*.json`, merged; duplicate keys fail the build), and for Chinese the name pronunciations and English history used to migrate old saves. Each edition keeps its own save and settings keys, so existing saves keep working.
 
 ## Narration
 
