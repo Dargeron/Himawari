@@ -72,6 +72,7 @@ export function startGame(boot = {}) {
   const hud = createHud($('hud'), {card: $('card'), settings});
   const prefetch = createPrefetch(boot);
   const map = createMap($('map'), {
+    reduced: () => settings.reducedMotion,
     onGo: id => act('go', id),
     onPin: id => {
       journal.togglePin(id);
@@ -702,7 +703,7 @@ export function startGame(boot = {}) {
       advance();
     } else if (/^[1-8]$/.test(key)) {
       const n = Number(key);
-      if (screen.kind === 'map') act('go', n);
+      if (screen.kind === 'map') map.go(n);
       else if (screen.kind === 'story' && !screen.input && !inkbox.writing) {
         const option = visibleOptions(screen).find(o => o.choice === n);
         if (option && !continuation(screen)) choose(option);

@@ -14,6 +14,17 @@
   background: var(--ink);
 }
 
+/* Pinch, drag and the mouse wheel belong to the drawing, not the page. */
+.map {
+  touch-action: none;
+}
+
+.map.leaving {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 460ms var(--ease);
+}
+
 .map-backdrop {
   position: absolute;
   inset: -60px;
@@ -22,8 +33,10 @@
 }
 
 .map-sheet {
+  --z: 1;
   position: relative;
   container-type: inline-size;
+  transform-origin: 0 0;
   aspect-ratio: 1280 / 974;
   width: var(--sheet-w);
 }
@@ -111,6 +124,8 @@
 .map-place {
   position: absolute;
   translate: -50% -50%;
+  /* Tags keep their size while the drawing zooms. */
+  scale: calc(1 / var(--z));
   display: flex;
   align-items: center;
   pointer-events: auto;
@@ -265,6 +280,11 @@ html:lang(zh-CN) .map-prompt {
   .map-turn {
     display: block;
   }
+}
+
+.map.zoomed .map-turn,
+.map.zoomed .map-hint {
+  display: none;
 }
 
 @media (hover: none), (max-width: 720px) {
