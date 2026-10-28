@@ -6,7 +6,6 @@ Every night someone murders Harry's sunflower, and every morning he wakes up to 
 
 ### New in 2.3
 
-- **Signed with Himawari's permanent key.** If you have 2.1 or 2.2 installed, do this once: *Notebook → Settings → Export save*, uninstall the old app, install this one and *Import save*. From now on every update installs straight over the previous one, with your progress kept.
 - **Voice and text speed in the ink box:** *voice* turns Harry's narration on or off, and *×2* writes the text twice as fast as he speaks while he keeps reading; the next passage starts its own narration.
 - **The voice no longer drops out** mid-passage when a recording's download is interrupted: it picks up again from the same word.
 - **The water plant's public entrance** now shows the guard and lets you choose to fight, flee or talk your way in (the game skipped straight to the fight).
