@@ -168,7 +168,13 @@ function click(g, node) {
   assert.equal(dawn.state.phase, 'Dawn');
   assert.equal(diary().hidden, true, 'Nothing to start again at dawn');
   g.click('#nb-close');
-  for (const action of route.actions.slice(1, 5)) play(action);
+  // Each place has its ambient loop playing under the scene.
+  const ambient = () => g.voices.filter(v => /\/ambience\//.test(v.src) && !v.paused).map(v => v.src);
+  play(route.actions[1]);
+  const place = g.snapshot().state.place;
+  assert.equal(ambient().length, 1);
+  assert.match(ambient()[0], new RegExp(`assets/ambience/${L.ambience.places[place]}\\.m4a`));
+  for (const action of route.actions.slice(2, 5)) play(action);
   const later = g.snapshot();
   assert.notEqual(later.state.t, dawn.state.t);
   assert.ok(g.$('.map-place.visited'), 'A place visited today is marked');

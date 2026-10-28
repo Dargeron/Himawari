@@ -1,4 +1,79 @@
 {
-  "places": {},
-  "recordings": []
+  "_about": "Ambient loop per place (assets/ambience/<name>.m4a): excerpts of field recordings, looped with a 3 s crossfade, filtered and evened out to about -30 LUFS, AAC 64 kbit/s mono. The scrapyard loop is synthesised wind (no third-party material). Night at home uses the ticking clock.",
+  "places": {
+    "1": "home",
+    "2": "park",
+    "3": "scrapyard",
+    "4": "warehouse",
+    "5": "pizzeria",
+    "6": "waterplant",
+    "7": "avenue",
+    "8": "school"
+  },
+  "night": "home",
+  "recordings": [
+    {
+      "place": "home",
+      "title": "Wall clock with weight, ticking",
+      "author": "Work With Sounds / Technical Museum of Slovenia",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:WWS_Wallclockwithweightticking.ogg",
+      "excerpt": "1.95-46.69"
+    },
+    {
+      "place": "park",
+      "title": "Birds, fountain and cars (Real Jardín Botánico, Madrid)",
+      "author": "Grupo4AAA",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Sonido_p%C3%A1jaros_fuente_y_coches.ogg",
+      "excerpt": "2.00-60.01"
+    },
+    {
+      "place": "warehouse",
+      "title": "Ambiance in Ouvrage G",
+      "author": "Thomas Bresson",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:2013-03-21-ambiance-ouv-g.ogg",
+      "excerpt": "274.00-326.99"
+    },
+    {
+      "place": "waterplant",
+      "title": "Water intake pumping station",
+      "author": "Work With Sounds / Technical Museum of Slovenia",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:WWS_Waterintakepumpingstation.ogg",
+      "excerpt": "5.00-57.99"
+    },
+    {
+      "place": "pizzeria",
+      "title": "Restaurant ambience",
+      "author": "stephan (PDSounds)",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "url": "https://commons.wikimedia.org/wiki/File:Restaurant_ambience.ogg",
+      "excerpt": "17.00-75.00"
+    },
+    {
+      "place": "avenue",
+      "title": "Residential street, Tomaszów Mazowiecki",
+      "author": "WrS.tm.pl",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "url": "https://commons.wikimedia.org/wiki/File:20220623_Noise_pollution._Tomasz%C3%B3w_Mazowiecki_(60,000_population_town),_residential_area.oga",
+      "excerpt": "23.00-86.00"
+    },
+    {
+      "place": "school",
+      "title": "City playground, Boxhagener Platz, Berlin",
+      "author": "foongaz",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url": "https://commons.wikimedia.org/wiki/File:209901_foongaz_city-playground-boxhagenerplatz-berlin.wav",
+      "excerpt": "17.00-69.99"
+    }
+  ]
 }

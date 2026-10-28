@@ -123,7 +123,13 @@ export function createSettings(ctx) {
               link.target = '_blank';
               link.rel = 'noopener';
               link.textContent = r.title;
-              item.append(link, ` · ${r.author} · ${r.license}`);
+              const licence = document.createElement('a');
+              licence.className = 'nb-link';
+              licence.href = r.licenseUrl;
+              licence.target = '_blank';
+              licence.rel = 'noopener';
+              licence.textContent = r.license;
+              item.append(link, ` · ${r.author} · `, licence);
               return item;
             }),
           );

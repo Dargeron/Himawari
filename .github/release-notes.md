@@ -12,7 +12,7 @@ Every night someone murders Harry's sunflower, and every morning he wakes up to 
 - **Start today again:** *Notebook → Diary → Back to dawn* returns to this morning's dawn when a day has gone wrong. The notebook keeps everything Harry has learned.
 - **A day strip** under the time of day shows what is spent and what is left of today, and the sunflower that tells the time is readable on bright pictures.
 - **Living pictures:** lamps, lanterns and ovens waver like real flames, and dust drifts in the sunlight of bright rooms (off with *Reduce motion*).
-- **Ambient sound for every place:** the pizzeria's chatter, the water plant's pumps, birds in the park, the quiet of the night… with its own switch and volume in Settings.
+- **Ambient sound for every place:** a ticking clock in Harry's flat, birds and a fountain in the park, wind over the scrapyard, the pizzeria's chatter, water rushing through the plant's pipes, children in the schoolyard… quietly under the narration, with its own switch and volume in Settings.
 
 ### Earlier in 2.3
 

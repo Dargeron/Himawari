@@ -63,6 +63,21 @@ for key, clip in manifest.items():
     assert 0 <= clip['start'] < clip['end'] <= durations[clip['file']] + 0.25, (key, clip)
 assert len(list(ROOT.glob('assets/music/*.m4a'))) == 13
 
+# Ambient loops: one file per name in the place map, nothing unused, every
+# third-party recording credited with its source and licence.
+ambience = read(ROOT / 'content/ambience.json')
+loops = set(ambience['places'].values()) | {ambience['night']}
+assert {p.stem for p in ROOT.glob('assets/ambience/*.m4a')} == loops, 'Ambient loops and the place map differ'
+for name in loops:
+    stream = json.loads(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'stream=codec_name,channels:format=duration',
+                                        '-of', 'json', str(ROOT / f'assets/ambience/{name}.m4a')],
+                                       capture_output=True, text=True, check=True).stdout)
+    assert stream['streams'][0]['codec_name'] == 'aac' and stream['streams'][0]['channels'] == 1, name
+    assert 30 <= float(stream['format']['duration']) <= 90, name
+credited = {r['place'] for r in ambience['recordings']}
+assert credited == loops - {'scrapyard'}, 'Every recorded loop is credited (the scrapyard wind is synthesised)'
+assert all(r['url'].startswith('https://') and r['licenseUrl'].startswith('https://') and r['author'] for r in ambience['recordings'])
+
 # The author's original sprites: untouched PNGs, faithful WebP copies.
 original_art = read(ROOT / 'content/original-art.json')
 compression = read(ROOT / 'content/art-compression.json')['assets']
@@ -118,6 +133,7 @@ print(json.dumps({
     'recordings': len({v['file'] for v in manifest.values()}),
     'narrationMinutes': round(sum(v for k, v in durations.items() if '/narration/' in k) / 60, 1),
     'musicTracks': 13,
+    'ambientLoops': len(loops),
     'originalSpritesUnchanged': len(original_art),
     'credentialsExcluded': True,
 }))
