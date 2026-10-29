@@ -91,6 +91,8 @@ export function createAudio(settings, onStatus = () => {}) {
   // Ambient sound: a quiet loop for the place, made on first use. Two players
   // take turns, so a change of place crossfades and each loop's seam is
   // overlapped instead of left as a gap; the level drops while the voice reads.
+  // Each player's level is kept apart from its volume, which some browsers
+  // (iOS) do not let a page change, so a faded-out player still stops.
   let airs = null,
     air = 0,
     airName = '',
@@ -103,9 +105,10 @@ export function createAudio(settings, onStatus = () => {}) {
     let moving = false;
     for (const a of airs) {
       const goal = a === airs[air] && airName ? level : 0;
-      const v = a.volume + (goal - a.volume) * 0.12;
-      a.volume = Math.max(0, Math.min(1, Math.abs(goal - v) < 0.003 ? goal : v));
-      if (a.volume !== goal) moving = true;
+      const v = a.level + (goal - a.level) * 0.12;
+      a.level = Math.abs(goal - v) < 0.003 ? goal : v;
+      a.volume = Math.max(0, Math.min(1, a.level));
+      if (a.level !== goal) moving = true;
       else if (goal === 0 && !a.paused) a.pause();
     }
     if (!moving) {
@@ -126,7 +129,7 @@ export function createAudio(settings, onStatus = () => {}) {
     next.pause();
     if (next.src !== a.src) next.src = a.src;
     next.currentTime = 0;
-    next.volume = 0;
+    next.volume = next.level = 0;
     air = 1 - air;
     airFade();
   }
@@ -136,6 +139,7 @@ export function createAudio(settings, onStatus = () => {}) {
       airs = [new Audio(), new Audio()];
       for (const a of airs) {
         a.preload = 'none';
+        a.level = 0;
         a.addEventListener('timeupdate', seam);
       }
     }
@@ -146,7 +150,7 @@ export function createAudio(settings, onStatus = () => {}) {
       a.pause();
       if (name) {
         a.src = assetURL('assets/ambience/' + name + '.m4a');
-        a.volume = 0;
+        a.volume = a.level = 0;
         a.load();
       }
     }
