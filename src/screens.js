@@ -52,9 +52,9 @@ export function musicFor(s) {
   return screen.music;
 }
 
-// The place's ambient sound (content/ambience.json): the town on the map,
-// each place's own, and the quiet of the night; none for the opening and
-// the endings.
+// The ambient sound (content/ambience.json): each place's own, and the
+// night's (the clock ticking at home); the map has one only if the file names
+// it, and the opening and the endings have none.
 export function ambienceFor(s) {
   const {screen, state} = s,
     sounds = L.ambience;
