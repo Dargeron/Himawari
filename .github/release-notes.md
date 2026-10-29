@@ -2,23 +2,29 @@
 
 Every night someone murders Harry's sunflower, and every morning he wakes up to the same day. A narrated time-loop mystery by **Liam McHara (Guillem) & Albert Casals**.
 
-**One app, both editions:** English (narrated by Harry) and 简体中文 (朱利安朗读). Choose on first launch; change it any time from the cover or the notebook.
+**Two apps, one per language:** English (narrated by Harry) and 简体中文 (朱利安朗读). Install the one you want; both can sit side by side.
 
-### New in 2.3
+### New in 2.4
 
-- **Signed with Himawari's permanent key.** If you have 2.1 or 2.2 installed, do this once: *Notebook → Settings → Export save*, uninstall the old app, install this one and *Import save*. From now on every update installs straight over the previous one, with your progress kept.
-- **Voice and text speed in the ink box:** *voice* turns Harry's narration on or off, and *×2* writes the text twice as fast as he speaks while he keeps reading; the next passage starts its own narration.
-- **The voice no longer drops out** mid-passage when a recording's download is interrupted: it picks up again from the same word.
-- **The water plant's public entrance** now shows the guard and lets you choose to fight, flee or talk your way in (the game skipped straight to the fight).
-- **Back to the original watercolours.** The pictures redrawn in 2.1 and 2.2 lost the game's painted style. Every one of them is the original painting again, edited only where it showed the wrong thing: Valentine's new look (glasses and the sticker notebook she never puts down), the hobo outside the pizzeria, the Voice in the alley, the water-plant guard, and a neighbour who comes through the window at midnight in a dynamite vest with a very calm, very wrong smile.
+- **Two apps, one per language.** English and Chinese are now separate apps, each much smaller than the old two-in-one. The Chinese one is a new app called *Himawari 向日葵*: to bring a Chinese save from 2.3 across, export it from the old app first (*Notebook → Settings → Export save*) and import it in the new one.
+- **Smaller download:** the narration is stored at half the size with no audible difference.
+- **The town map fills the screen,** with numbered tags pinned on the drawing. Pinch, drag or double-tap to zoom (the mouse wheel on a computer); choosing a place flies into its building.
+- **Start today again:** *Notebook → Diary → Back to dawn* returns to this morning's dawn when a day has gone wrong. The notebook keeps everything Harry has learned.
+- **A day strip** under the time of day shows what is spent and what is left of today, and the sunflower that tells the time is readable on bright pictures.
+- **Living pictures:** lamps, lanterns and ovens waver like real flames, and dust drifts in the sunlight of bright rooms (off with *Reduce motion*).
+- **Ambient sound for every place:** a ticking clock in Harry's flat, birds and a fountain in the park, wind over the scrapyard, the pizzeria's chatter, water rushing through the plant's pipes, children in the schoolyard… quietly under the narration, with its own switch and volume in Settings.
 
-### Earlier in 2.2
+### Earlier in 2.3
 
-- The school gate works in the morning; the narrator starts every line from its first word and never reads the choices aloud; the control-room button works however you reach it; Fermat's counter opens by bribing the hobo with the gardener's sandwich; the gun, the gardener, the park sweeper and the girl on the avenue are once a day.
+- Voice on/off and ×2 text speed in the ink box; the voice no longer drops out mid-passage; the water plant's public entrance shows the guard; every redrawn picture is the original watercolour again, edited only where it showed the wrong thing.
 
 ### Install
 
-1. Download **{{APK}}** below (about {{MB}} MB: every picture, voice and piece of music is inside, so the game plays fully offline).
+1. Download the app for your language below:
+   - **English:** **{{APK_EN}}** (about {{MB_EN}} MB)
+   - **简体中文:** **{{APK_ZH}}** (约 {{MB_ZH}} MB)
+
+   Every picture, voice and piece of music is inside, so the game plays fully offline.
 2. Open it on your Android phone or tablet (Android 7 or newer). If asked, allow your browser or file manager to *install unknown apps*.
 3. Headphones recommended.
 
@@ -29,4 +35,4 @@ Every night someone murders Harry's sunflower, and every morning he wakes up to 
 - The Android back button closes what is open, or opens the notebook; on the cover it closes the app.
 - Progress saves automatically. *Notebook → Settings → Export save* shares a copy of your save (to Drive, Files, email…); *Import save* restores it, also on the website.
 
-SHA-256: `{{SHA256}}`
+SHA-256 · English: `{{SHA256_EN}}` · 简体中文: `{{SHA256_ZH}}`

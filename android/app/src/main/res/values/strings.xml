@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Himawari</string>
-    <string name="title_activity_main">Himawari</string>
+    <!-- app_name and title_activity_main come from app/build.gradle, per language edition. -->
     <string name="package_name">io.github.dargeron.himawari</string>
     <string name="custom_url_scheme">io.github.dargeron.himawari</string>
 </resources>

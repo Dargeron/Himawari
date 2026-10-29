@@ -311,7 +311,7 @@ def main():
     if not ed.en:
         transcripts = {}
         for path in sorted(cache.glob('*.json')):
-            f = f'assets/narration/{args.code}/{path.stem}.mp3'
+            f = f'assets/narration/{args.code}/{path.stem}.m4a'
             if (ROOT / f).exists():
                 transcripts[f] = ed.heard(json.loads(path.read_text()))
         for key in list(gaps):

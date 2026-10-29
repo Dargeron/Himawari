@@ -336,6 +336,10 @@ export function createJournal(saved) {
   function map(day = data.day) {
     return {visits: data.visits.filter(v => v.day === day).map(v => ({...v})), pins: [...data.pins]};
   }
+  // Starting a day again: its visits never happened.
+  function forgetVisits(day) {
+    data.visits = data.visits.filter(v => v.day !== day);
+  }
   function togglePin(place) {
     if (!destinations.some(d => d.id === place)) return;
     data.pins = data.pins.includes(place) ? data.pins.filter(p => p !== place) : [...data.pins, place];
@@ -400,6 +404,7 @@ export function createJournal(saved) {
     echo,
     map,
     togglePin,
+    forgetVisits,
     markDiscoveries,
     clearUnread,
     ritual,

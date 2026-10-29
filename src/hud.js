@@ -41,10 +41,28 @@ export function tally(count, {max = 20} = {}) {
   return svg;
 }
 
+// The day at a glance: Dawn, Morning, Noon, Afternoon and Dusk as five marks,
+// the hours gone filled, the present one lit; at night all five are spent.
+function dayStrip(s) {
+  const now = isNight(s) ? 6 : Math.max(1, Math.min(5, s.state.t));
+  const marks = [1, 2, 3, 4, 5].map(i => {
+    const mark = document.createElement('i');
+    mark.className = i < now ? 'gone' : i === now ? 'now' : 'ahead';
+    return mark;
+  });
+  if (now === 6) {
+    const moon = document.createElement('i');
+    moon.className = 'moon';
+    marks.push(moon);
+  }
+  return marks;
+}
+
 export function createHud(root, {card, settings}) {
   const flower = root.querySelector('#hud-flower'),
     phase = root.querySelector('#hud-phase'),
     loop = root.querySelector('#hud-loop'),
+    day = root.querySelector('#hud-day'),
     time = root.querySelector('#hud-time'),
     note = root.querySelector('#hud-note'),
     badge = root.querySelector('#notebook-badge');
@@ -58,6 +76,7 @@ export function createHud(root, {card, settings}) {
     flower.src = assetURL(flowerFor(s));
     phase.textContent = phaseName(s);
     loop.replaceChildren(tally(n));
+    day.replaceChildren(...dayStrip(s));
     time.setAttribute('aria-label', t('hud.time', {loop: n, phase: phaseName(s)}));
     document.documentElement.dataset.phase = isNight(s) ? 'night' : s.state.phase.toLowerCase();
   }

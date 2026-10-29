@@ -16,6 +16,7 @@ import {createPrefetch} from './prefetch.js';
 import {isNative, onBack, onLifecycle, shareFile} from './native.js';
 import {
   advanceAction,
+  ambienceFor,
   continuation,
   displayLoop,
   flowerFor,
@@ -41,6 +42,7 @@ export function startGame(boot = {}) {
     guide = createGuide(),
     journal = null,
     history = [],
+    dawn = null,
     saved = null,
     active = false,
     current = engine.snapshot(),
@@ -66,11 +68,15 @@ export function startGame(boot = {}) {
 
   const typewriter = createTypewriter({settings});
   const audio = createAudio(settings, onVoice);
-  const stage = createStage($('stage'), {whenReady: (path, ms) => boot.whenReady?.(path, ms) ?? Promise.resolve(true)});
+  const stage = createStage($('stage'), {
+    whenReady: (path, ms) => boot.whenReady?.(path, ms) ?? Promise.resolve(true),
+    reduced: () => settings.reducedMotion,
+  });
   const inkbox = createInkbox($('inkbox'), {typewriter, settings});
   const hud = createHud($('hud'), {card: $('card'), settings});
   const prefetch = createPrefetch(boot);
   const map = createMap($('map'), {
+    reduced: () => settings.reducedMotion,
     onGo: id => act('go', id),
     onPin: id => {
       journal.togglePin(id);
@@ -92,6 +98,8 @@ export function startGame(boot = {}) {
     exportSave,
     importSave,
     restart: begin,
+    canRestartDay,
+    restartDay,
     toTitle: () => {
       notebook.close();
       showTitle();
@@ -109,7 +117,9 @@ export function startGame(boot = {}) {
     createAudio,
     fullscreen: {available: !!document.fullscreenEnabled && !isNative(), toggle: toggleFullscreen},
     install: boot.install,
-    language: {label: t('other.label'), href: '../' + t('other.route') + '/index.html', code: t('other.code')},
+    language: L.single
+      ? null
+      : {label: t('other.label'), href: '../' + t('other.route') + '/index.html', code: t('other.code')},
     onOpen: () => {
       clearTimeout(autoTimer);
       audio.hold();
@@ -216,7 +226,9 @@ export function startGame(boot = {}) {
     if (s.screen.kind === 'map') showMapScreen(s);
     else showStoryScreen(s, freshSegment);
     audio.music(musicFor(s));
+    audio.ambience(ambienceFor(s));
     if (active) {
+      noteDawn(s);
       save();
       prefetch.current(s);
       if (lastSave) prefetch.ahead(s, lastSave.engine);
@@ -245,6 +257,14 @@ export function startGame(boot = {}) {
         rewind: true,
         duration: 2400,
       };
+    if (transition === 'dawn')
+      return {
+        flowerPath: 'assets/art/original/hima1.webp',
+        title: t('card.dawnAgain'),
+        sub: tally(displayLoop(s)),
+        rewind: true,
+        duration: 2000,
+      };
     if (transition === 'night') return {flowerPath: 'assets/art/original/hima5.webp', title: L.phases.Night};
     return {flowerPath: flowerFor(s), title: phaseName(s)};
   }
@@ -259,7 +279,7 @@ export function startGame(boot = {}) {
       focus = L.focus?.[key],
       art = sceneArtPath(s);
     box.dataset.side = focus?.box === 'right' ? 'right' : 'left';
-    stage.show(art, {focus, fit: art.startsWith('assets/art/original/') ? 'contain' : 'cover'});
+    stage.show(art, {focus, fit: art.startsWith('assets/art/original/') ? 'contain' : 'cover', light: L.light?.[key]});
     if (freshSegment) inkbox.clear();
     const text = screen.finished ? t('ink.gameOver') : screen.text;
     const speaks = settings.narrationEnabled && (!read || settings.narrateRead) && !skipping;
@@ -315,10 +335,9 @@ export function startGame(boot = {}) {
     $('game').dataset.screen = 'map';
     box.dataset.side = 'right';
     stage.show('assets/art/original/mapa_joc.webp', {fit: 'fill'});
+    // The map carries its own prompt and numbered tags; the ink box rests.
     map.show(s, journal.map(guideDay(s)));
     inkbox.clear();
-    inkbox.passage(t('map.prompt'), {instant: true, kind: 'map'});
-    inkbox.respond(map.placeList());
     $('read-mark').hidden = true;
     $('skip-button').hidden = true;
     $('key-hint').textContent = t('hint.places');
@@ -417,10 +436,42 @@ export function startGame(boot = {}) {
 
   // --- Sessions ---------------------------------------------------------------
 
+  // The day at dawn: kept when the town map first appears on a loop's dawn,
+  // so the player can start that day again (the notebook keeps what was
+  // learned; the clue already used stays used).
+  function noteDawn(s) {
+    if (s.screen.kind !== 'map' || s.state.t !== 1 || s.screen.finished) return;
+    if (dawn?.loop === s.state.loop) return;
+    dawn = {loop: s.state.loop, engine: engine.exportSave()};
+  }
+
+  function canRestartDay() {
+    const s = current;
+    return (
+      active &&
+      !!s &&
+      dawn?.loop === s.state.loop &&
+      !isNight(s) &&
+      !s.screen.finished &&
+      !(s.screen.kind === 'map' && s.state.t === 1)
+    );
+  }
+
+  function restartDay() {
+    if (!canRestartDay()) return;
+    const next = createEngine();
+    next.importSave(dawn.engine);
+    engine = next;
+    journal.forgetVisits(dawn.loop);
+    notebook.close();
+    render(engine.snapshot(), {transition: 'dawn', discoveries: false});
+  }
+
   function save() {
     const payload = {
       edition: 1,
       engine: engine.exportSave(),
+      dawn,
       guide: guide.exportSave(),
       journal: journal.exportSave(),
       history: history.slice(-120),
@@ -467,6 +518,7 @@ export function startGame(boot = {}) {
     guide = createGuide();
     journal = createJournal();
     history = [];
+    dawn = null;
     enterGame();
     render(engine.snapshot(), {discoveries: false});
   }
@@ -492,6 +544,7 @@ export function startGame(boot = {}) {
             )
             .slice(-120)
         : [];
+      dawn = Number.isInteger(saved.dawn?.loop) && saved.dawn.engine ? saved.dawn : null;
       guide = createGuide(saved.guide);
       if (saved.guide?.version !== 1) guide.recoverHistory(history);
       journal = createJournal(saved.journal);
@@ -515,6 +568,7 @@ export function startGame(boot = {}) {
     typewriter.stop();
     audio.stop();
     audio.music(0);
+    audio.ambience('');
     map.hide();
     $('game').hidden = true;
     stage.show(COVER_ART, {focus: L.focus?.['2464']});
@@ -657,7 +711,7 @@ export function startGame(boot = {}) {
       advance();
     } else if (/^[1-8]$/.test(key)) {
       const n = Number(key);
-      if (screen.kind === 'map') act('go', n);
+      if (screen.kind === 'map') map.go(n);
       else if (screen.kind === 'story' && !screen.input && !inkbox.writing) {
         const option = visibleOptions(screen).find(o => o.choice === n);
         if (option && !continuation(screen)) choose(option);

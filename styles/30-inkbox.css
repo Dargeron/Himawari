@@ -68,26 +68,9 @@
   margin-top: 0.9em;
 }
 
-.passage.is-map p {
-  font-style: italic;
-}
-
-html:lang(zh-CN) .passage.is-map p {
-  font-style: normal;
-}
-
 /* Paragraphs not yet reached stay folded, so the box grows as it is written. */
 .passage p.unwritten {
   display: none;
-}
-
-.story-box[data-mode='map'] .ink-bar > :not(.key-hint) {
-  display: none;
-}
-
-.story-box[data-mode='map'] .key-hint {
-  margin-left: auto;
-  display: inline;
 }
 
 .chosen {

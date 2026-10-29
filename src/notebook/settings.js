@@ -53,6 +53,7 @@ export function createSettings(ctx) {
   api.install?.onChange?.(syncInstall);
 
   const language = $('nb-language');
+  language.closest('section').hidden = !api.language;
   if (api.language) {
     language.href = api.language.href;
     language.textContent = api.language.label;
@@ -107,6 +108,32 @@ export function createSettings(ctx) {
       render() {
         const flower = $('nb-credits-flower');
         if (!flower.getAttribute('src')) flower.src = assetURL('assets/art/original/hima3.webp');
+        // The field recordings behind the ambient sounds, as their licences ask.
+        const sources = $('nb-credits-ambience'),
+          list = sources.querySelector('ul'),
+          recordings = L.ambience?.recordings ?? [];
+        sources.hidden = !recordings.length;
+        if (list.childElementCount !== recordings.length) {
+          list.replaceChildren(
+            ...recordings.map(r => {
+              const item = document.createElement('li'),
+                link = document.createElement('a');
+              link.className = 'nb-link';
+              link.href = r.url;
+              link.target = '_blank';
+              link.rel = 'noopener';
+              link.textContent = r.title;
+              const licence = document.createElement('a');
+              licence.className = 'nb-link';
+              licence.href = r.licenseUrl;
+              licence.target = '_blank';
+              licence.rel = 'noopener';
+              licence.textContent = r.license;
+              item.append(link, ` · ${r.author} · `, licence);
+              return item;
+            }),
+          );
+        }
       },
       focusTarget: () => root.querySelector('#nb-credits [data-back]'),
     },

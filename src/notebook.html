@@ -55,6 +55,15 @@
        <ul id="nb-prepared" class="nb-checks"></ul>
        <p id="nb-prepared-empty" class="nb-empty small" hidden>{{nb.diary.preparedEmpty}}</p>
       </section>
+      <section id="nb-redo" class="nb-redo" aria-labelledby="nb-redo-h" hidden>
+       <h3 id="nb-redo-h" class="nb-h3">{{nb.diary.redo}}</h3>
+       <p class="nb-small">{{nb.diary.redoNote}}</p>
+       <div class="nb-actions">
+        <button id="nb-redo-button" class="nb-button" type="button">{{nb.diary.redoButton}}</button>
+        <button id="nb-redo-confirm" class="nb-button danger" type="button" hidden>{{nb.diary.redoConfirm}}</button>
+        <button id="nb-redo-cancel" class="nb-button" type="button" hidden>{{nb.diary.redoCancel}}</button>
+       </div>
+      </section>
      </div>
     </div>
     <div class="nb-page">
@@ -182,6 +191,8 @@
       </div>
       <div class="nb-row"><label for="nb-music">{{nb.settings.music}}</label><input id="nb-music" class="nb-switch" type="checkbox" role="switch" data-setting="musicEnabled"></div>
       <div class="nb-row"><label for="nb-music-volume">{{nb.settings.musicVolume}}</label><input id="nb-music-volume" class="nb-range" type="range" min="0" max="0.5" step="0.01" data-setting="musicVolume"></div>
+      <div class="nb-row"><label for="nb-ambience">{{nb.settings.ambience}}</label><input id="nb-ambience" class="nb-switch" type="checkbox" role="switch" data-setting="ambienceEnabled"></div>
+      <div class="nb-row"><label for="nb-ambience-volume">{{nb.settings.ambienceVolume}}</label><input id="nb-ambience-volume" class="nb-range" type="range" min="0" max="1" step="0.01" data-setting="ambienceVolume"></div>
      </section>
      <section class="nb-group" aria-labelledby="nb-set-reading">
       <h3 id="nb-set-reading" class="nb-h3">{{nb.settings.reading}}</h3>
@@ -261,6 +272,7 @@
       <div><dt>{{credits.interface}}</dt><dd>{{credits.interfaceName}}</dd></div>
       <div><dt>{{credits.narration}}</dt><dd>{{credits.narrationName}}</dd></div>
       <div><dt>{{credits.music}}</dt><dd>{{credits.musicName}}</dd></div>
+      <div id="nb-credits-ambience" hidden><dt>{{credits.ambience}}</dt><dd>{{credits.ambienceNote}}<ul class="nb-credit-sources"></ul></dd></div>
      </dl>
      <p class="nb-credits-note">{{credits.note}}</p>
      <p><a class="nb-link" href="https://liammchara.itch.io/himawari" target="_blank" rel="noopener">{{credits.link}} <span aria-hidden="true">↗</span></a></p>

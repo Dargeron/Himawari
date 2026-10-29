@@ -1,29 +1,61 @@
-/* The town map: the author's drawing, whole, beside the ink box. */
+/* The town map: the author's drawing, whole and as large as the screen allows,
+   over a blurred copy of itself so it reaches every edge. Place names are
+   numbered paper tags pinned on the drawing. */
 .map {
-  --map-box: min(23rem, 30vw);
+  --sheet-w: min(100vw, 100svh * 1280 / 974);
+  --sheet-h: calc(var(--sheet-w) * 974 / 1280);
+  --gap-y: calc((100svh - var(--sheet-h)) / 2);
   position: fixed;
   inset: 0;
   z-index: var(--z-map);
   display: grid;
   place-items: center;
-  padding: calc(var(--edge-top) + 78px) calc(var(--map-box) + var(--edge-right) + 4vw) calc(var(--edge-bottom) + 8px)
-    calc(var(--edge-left) + 1vw);
+  overflow: hidden;
+  background: var(--ink);
+}
+
+/* Pinch, drag and the mouse wheel belong to the drawing, not the page. */
+.map {
+  touch-action: none;
+}
+
+.map.leaving {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 460ms var(--ease);
+}
+
+.map-backdrop {
+  position: absolute;
+  inset: -60px;
+  background: var(--map-url) center / cover no-repeat;
+  filter: blur(26px) saturate(0.85) brightness(0.58);
 }
 
 .map-sheet {
+  --z: 1;
   position: relative;
+  container-type: inline-size;
+  transform-origin: 0 0;
   aspect-ratio: 1280 / 974;
-  width: min(100%, calc((100svh - var(--edge-top) - var(--edge-bottom) - 86px) * 1280 / 974));
-  box-shadow:
-    0 22px 60px rgba(0, 0, 0, 0.6),
-    0 0 0 1px rgba(0, 0, 0, 0.25);
-  rotate: -0.6deg;
+  width: var(--sheet-w);
 }
 
 .map-art {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+/* Soft edges, so the drawing melts into its blurred surroundings. */
+.map-art,
+.map-tint {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 2.5%, #000 97.5%, transparent),
+    linear-gradient(180deg, transparent, #000 2.5%, #000 97.5%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent, #000 2.5%, #000 97.5%, transparent),
+    linear-gradient(180deg, transparent, #000 2.5%, #000 97.5%, transparent);
+  mask-composite: intersect;
 }
 
 .map-sheet .translated-signs {
@@ -82,168 +114,194 @@
     0 0 36px 4px rgba(233, 185, 73, 0.4);
 }
 
-/* A paper tag with the place's name, and pencil marks for today's visits. */
-.spot-tag {
+/* A numbered paper tag on each place, with pencil marks for today's visits. */
+.map-places {
   position: absolute;
-  left: 50%;
-  bottom: 6%;
-  translate: -50% 0;
-  rotate: -2deg;
-  padding: 2px 12px 1px;
-  background: var(--page);
-  color: var(--page-ink);
-  font-family: var(--font-hand);
-  font-size: clamp(15px, 1.35vw, 22px);
-  line-height: 1.15;
-  white-space: nowrap;
-  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.32);
-  opacity: 0;
-  transition: opacity 180ms;
+  inset: 0;
   pointer-events: none;
 }
 
-.spot-visits {
-  display: block;
+.map-place {
+  position: absolute;
+  translate: -50% -50%;
+  /* Tags keep their size while the drawing zooms. */
+  scale: calc(1 / var(--z));
+  display: flex;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.map-place:nth-child(odd) {
+  rotate: -2deg;
+}
+.map-place:nth-child(even) {
+  rotate: 1.5deg;
+}
+
+.map-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0.12em 0.7em 0.08em 0.45em;
+  background: var(--page);
+  color: var(--page-ink);
+  font-family: var(--font-hand);
+  font-size: clamp(12px, 1.6cqw, 23px);
+  line-height: 1.1;
+  white-space: nowrap;
+  box-shadow:
+    2px 3px 0 rgba(0, 0, 0, 0.3),
+    0 4px 14px rgba(0, 0, 0, 0.25);
+  transition:
+    translate 160ms var(--ease),
+    box-shadow 160ms var(--ease);
+}
+
+.tag-n {
+  display: grid;
+  place-items: center;
+  width: 1.45em;
+  height: 1.45em;
+  border-radius: 50%;
+  background: var(--page-ink);
+  color: var(--sun);
+  font-size: 0.95em;
+  line-height: 1;
+}
+
+.tag-words {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tag-visits {
   font-size: 0.72em;
   color: var(--page-ink-dim);
 }
 
-.spot-visits:empty {
+.tag-visits:empty {
   display: none;
 }
 
-.map-spot.lit .spot-tag,
-.map-spot:focus-visible .spot-tag,
-.map-spot.visited .spot-tag {
-  opacity: 1;
+.map-place.lit .map-tag,
+.map-tag:focus-visible {
+  outline: none;
+  translate: 0 -2px;
+  box-shadow:
+    0 0 0 2px var(--sun),
+    2px 5px 0 rgba(0, 0, 0, 0.3),
+    0 0 28px 4px rgba(233, 185, 73, 0.45);
 }
 
-.map-spot.visited:not(.lit) .spot-tag {
-  opacity: 0.8;
-  scale: 0.86;
+.map-place.visited:not(.lit) .map-tag {
+  background: var(--page-shade);
 }
 
-.spot-pin {
-  position: absolute;
-  top: 4%;
-  right: 6%;
-  color: var(--heart);
-  font-size: clamp(18px, 1.8vw, 28px);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  opacity: 0;
-}
-
-.map-spot.pinned .spot-pin {
-  opacity: 1;
-}
-
-/* The place list in the ink box. */
-.story-box[data-mode='map'] {
-  left: auto;
-  right: calc(var(--edge-right) + 1.5vw);
-  width: min(23rem, 30vw);
-}
-
-.ink-places {
-  list-style: none;
-  margin: 0.3em 0 0.2em;
-  padding: 0;
+/* The pin: a small flag beside the tag, dim until it is set. */
+.tag-flag {
   display: grid;
-  gap: 1px;
-}
-
-.ink-place {
-  display: flex;
-  align-items: center;
-}
-
-.place {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  white-space: nowrap;
-  align-items: baseline;
-  gap: 0 0.7em;
-  min-height: 42px;
-  padding: 0.3em 0.55em;
-  border-radius: 3px;
-  text-align: left;
-  font-family: var(--font-story);
-  font-size: calc(var(--text-story) * 0.92);
-  line-height: 1.25;
-}
-
-.place.lit,
-.place:focus-visible {
-  background: rgba(243, 234, 214, 0.08);
-}
-
-.place.lit .place-name,
-.place:focus-visible .place-name {
-  text-decoration: underline;
-  text-decoration-color: var(--sun);
-  text-underline-offset: 0.22em;
-}
-
-.place-visits {
-  flex-basis: 100%;
-  padding-left: 1.55em;
-  font-family: var(--font-hand);
-  font-size: 0.95em;
+  place-items: center;
+  width: 1.7em;
+  height: 1.7em;
+  margin-left: 0.2em;
+  border-radius: 50%;
+  background: rgba(13, 9, 6, 0.55);
   color: var(--paper-faint);
+  font-size: clamp(11px, 1.3cqw, 18px);
+  opacity: 0;
+  transition: opacity 160ms;
 }
 
-.place-pin {
-  width: 40px;
-  min-height: 40px;
-  color: var(--paper-faint);
-  opacity: 0.35;
-  font-size: 1.05em;
-}
-
-.place-pin:hover {
-  opacity: 0.8;
-}
-
-.place-pin[aria-pressed='true'] {
-  color: var(--heart);
+.map-place:hover .tag-flag,
+.map-place.lit .tag-flag,
+.tag-flag:focus-visible,
+.map-place.pinned .tag-flag {
   opacity: 1;
 }
 
-@media (max-width: 720px), (max-aspect-ratio: 1/1) {
-  .map {
-    place-items: start center;
-    padding: calc(var(--edge-top) + 72px) var(--edge-right) 0 var(--edge-left);
-  }
+.map-place.pinned .tag-flag {
+  color: var(--heart);
+  background: var(--page);
+}
 
-  .map-sheet {
-    width: min(100%, calc(42svh * 1280 / 974));
-    rotate: 0deg;
-  }
+/* The question and the keys, in ink, above and below the drawing. */
+.map-prompt,
+.map-hint {
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  margin: 0;
+  padding: 0.2em 0.9em 0.25em;
+  border-radius: 3px;
+  background: rgba(13, 9, 6, 0.72);
+  color: var(--paper-on-ink);
+  white-space: nowrap;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
 
-  .story-box[data-mode='map'] {
-    left: var(--edge-left);
-    right: var(--edge-right);
-    width: auto;
-    max-width: 46rem;
-    margin: 0 auto;
-    max-height: 46svh;
-  }
+.map-prompt {
+  top: max(var(--edge-top), calc(var(--gap-y) - 3.2em));
+  font-family: var(--font-story);
+  font-size: clamp(19px, 2vw, 27px);
+  font-style: italic;
+  font-weight: 400;
+}
 
-  .ink-places {
-    grid-template-columns: 1fr 1fr;
-  }
+html:lang(zh-CN) .map-prompt {
+  font-style: normal;
+}
 
-  .place-visits {
-    padding-left: 0;
-    font-size: 0.85em;
-  }
+.map-hint {
+  bottom: max(var(--edge-bottom), calc(var(--gap-y) - 2.6em));
+  font-family: var(--font-hand);
+  font-size: clamp(15px, 1.3vw, 19px);
+  color: var(--paper-faint);
+}
 
-  .place-pin {
+/* Upright phones: the whole town fits the width; a sideways phone shows it bigger. */
+.map-turn {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: calc(100svh - var(--gap-y) + 1.2em);
+  translate: -50% 0;
+  margin: 0;
+  font-family: var(--font-hand);
+  font-size: 17px;
+  color: var(--paper-faint);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+@media (hover: none) and (max-aspect-ratio: 3/4) {
+  .map-turn {
+    display: block;
+  }
+}
+
+.map.zoomed .map-turn,
+.map.zoomed .map-hint {
+  display: none;
+}
+
+@media (hover: none), (max-width: 720px) {
+  .map-hint {
     display: none;
   }
 
-  .spot-tag {
-    font-size: 13px;
+  .tag-flag {
+    display: none;
   }
+
+  .map-place.pinned .tag-flag {
+    display: grid;
+  }
+}
+
+/* The ink box rests while the map is open. */
+.story-box[data-mode='map'] {
+  display: none;
 }

@@ -1364,6 +1364,31 @@ html:lang(zh-CN) .nb-wordmark {
   line-height: 1.35;
 }
 
+.nb-credit-sources {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8em;
+  line-height: 1.4;
+  color: var(--page-ink-dim);
+}
+
+.nb-credit-sources li + li {
+  margin-top: 6px;
+}
+
+/* Inline text links inside a sentence of credits, not tap-sized buttons. */
+.nb-credit-sources .nb-link {
+  display: inline;
+  min-height: 0;
+  padding: 0;
+  font: inherit;
+}
+
+.nb-credit-sources li > .nb-link:first-child {
+  color: var(--page-ink);
+}
+
 .nb-credits-note {
   margin: 0 0 10px;
   padding-top: 18px;

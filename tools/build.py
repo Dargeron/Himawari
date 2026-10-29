@@ -63,6 +63,8 @@ def pack_data(code):
     focus = ROOT / 'content/scene-focus.json'
     if focus.exists():
         data['focus'] = json.loads(focus.read_text())
+    data['light'] = read_json('content/scene-light.json')
+    data['ambience'] = read_json('content/ambience.json')
     if code == 'zh-CN':
         data['pronunciations'] = read_json('locales/zh-CN/name-pronunciations.json')
         english = read_json('locales/en/literals.json')
@@ -185,7 +187,7 @@ def edition_assets(code, data):
     """Every file the edition can request, as path -> {bytes, sha256}."""
     files = set(ROOT.glob('assets/art/original/*.webp')) | set(ROOT.glob('assets/art/scenes/*.webp'))
     files |= set(ROOT.glob('assets/art/cover/*.webp'))
-    files |= set(ROOT.glob('assets/music/*.m4a')) | set(edition_fonts(code))
+    files |= set(ROOT.glob('assets/music/*.m4a')) | set(ROOT.glob('assets/ambience/*.m4a')) | set(edition_fonts(code))
     files |= set(ROOT.glob('assets/icons/*.png'))
     files |= {ROOT / clip['file'] for clip in data['narration'].values()}
     manifest = {}
@@ -195,7 +197,10 @@ def edition_assets(code, data):
     return manifest
 
 
-def build(complete=False, output=ROOT / 'dist', app=False):
+def build(complete=False, output=ROOT / 'dist', app=False, only=None):
+    """Build the editions into `output`. `only` builds a single edition (an
+    app per language): its pack has no link to the other language, and the
+    root page opens the edition directly instead of the language picker."""
     if output.exists():
         shutil.rmtree(output)
     output.mkdir(parents=True)
@@ -203,8 +208,11 @@ def build(complete=False, output=ROOT / 'dist', app=False):
     mode = 'local' if app else 'complete' if complete else 'progressive'
     summary = {'version': VERSION, 'mode': mode}
     shared = {}
-    for code, edition in EDITIONS.items():
+    editions = {only: EDITIONS[only]} if only else EDITIONS
+    for code, edition in editions.items():
         data = pack_data(code)
+        if only:
+            data['single'] = True
         target = output / edition['route']
         target.mkdir()
         manifest = edition_assets(code, data)
@@ -252,7 +260,13 @@ def build(complete=False, output=ROOT / 'dist', app=False):
     scenes = list((output / 'assets/art/scenes').glob('*.webp'))
     if len(scenes) != SCENE_COUNT or len({sha256(p.read_bytes()) for p in scenes}) != SCENE_COUNT:
         raise ValueError(f'Expected {SCENE_COUNT} distinct scene illustrations')
-    shutil.copyfile(ROOT / 'web/index.html', output / 'index.html')
+    if only:
+        route = EDITIONS[only]['route']
+        (output / 'index.html').write_text(
+            f'<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url={route}/index.html">'
+            f'<script>location.replace("{route}/index.html")</script>\n')
+    else:
+        shutil.copyfile(ROOT / 'web/index.html', output / 'index.html')
     (output / '.nojekyll').touch()
     total = sum(p.stat().st_size for p in output.rglob('*') if p.is_file())
     if total >= 1_000_000_000:
@@ -287,5 +301,7 @@ if __name__ == '__main__':
     parser.add_argument('--complete', action='store_true', help='download every asset before the title screen')
     parser.add_argument('--app', action='store_true', help='package every asset inside an app; nothing is downloaded')
     parser.add_argument('--out', default=None)
+    parser.add_argument('--edition', choices=sorted(EDITIONS), help='build only this edition (one app per language)')
     args = parser.parse_args()
-    build(args.complete, Path(args.out) if args.out else ROOT / ('dist-app' if args.app else 'dist'), app=args.app)
+    build(args.complete, Path(args.out) if args.out else ROOT / ('dist-app' if args.app else 'dist'), app=args.app,
+          only=args.edition)

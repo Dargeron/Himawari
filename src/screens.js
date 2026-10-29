@@ -52,6 +52,18 @@ export function musicFor(s) {
   return screen.music;
 }
 
+// The ambient sound (content/ambience.json): each place's own, and the
+// night's (the clock ticking at home); the map has one only if the file names
+// it, and the opening and the endings have none.
+export function ambienceFor(s) {
+  const {screen, state} = s,
+    sounds = L.ambience;
+  if (!sounds || screen.finished) return '';
+  if (screen.kind === 'map') return sounds.map ?? '';
+  if (screen.kind === 'intro') return isNight(s) && !state.introNode.startsWith('victory') ? (sounds.night ?? '') : '';
+  return sounds.places?.[state.place] ?? '';
+}
+
 export function paragraphs(text) {
   return String(text).trim().split(/\n+/).filter(Boolean);
 }
